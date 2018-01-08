@@ -234,9 +234,19 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     dc:title "FaBiO, the FRBR-aligned Bibliographic Ontology"^^xsd:string ;
     vann:preferredNamespacePrefix "fabio"^^xsd:string ;
     vann:preferredNamespaceUri "http://purl.org/spar/fabio/"^^xsd:anyURI ;
-    rdfs:comment """FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web bibliographic records of scholarly endeavours. It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
+    rdfs:comment """The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references.
 
-This ontology is available at http://purl.org/spar/fabio, and uses the namespace prefix fabio."""^^xsd:string ;
+**URL:** http://purl.org/spar/fabio
+
+**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**Contributors:** [Paolo Ciccarese](https://orcid.org/0000-0002-5156-2703), [Tim Clark](https://orcid.org/0000-0003-4060-7360)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/fabio
+
+**Cite as:** Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf"""^^xsd:string ;
     owl:imports spar:frbr ;
     owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-07-11-fabio-1_9_3.owl> ;
     owl:versionIRI <http://purl.org/spar/fabio/2017-05-29> ;
@@ -1552,10 +1562,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:comment "A scholarly periodical primarily devoted to the publication of original research papers. [Printed and electronic manifestations of the same journal are usually identified by separate print and electronic International Standard Serial Numbers (ISSN or eISSN, respectively), that identifies the journal as a whole, not to individual issues of it.]"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty frbr:part ;
-            owl:someValuesFrom :JournalIssue ],
+            owl:someValuesFrom :JournalVolume ],
         [ a owl:Restriction ;
             owl:onProperty frbr:part ;
-            owl:someValuesFrom :JournalVolume ],
+            owl:someValuesFrom :JournalIssue ],
         :Periodical .
 
 :JournalNewsItem a owl:Class ;
@@ -1804,11 +1814,11 @@ dcterms:issued a owl:DatatypeProperty ;
     dc:description "An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films."@en ;
     rdfs:comment "A real object that is an exemplar of a fabio:Manifestation, such as a particular copy of the book 'Alice's adventures in Wonderland', that a person may own."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :isStoredOn ;
-            owl:someValuesFrom :AnalogStorageMedium ],
-        [ a owl:Restriction ;
             owl:onProperty frbr:exemplarOf ;
             owl:someValuesFrom :AnalogManifestation ],
+        [ a owl:Restriction ;
+            owl:onProperty :isStoredOn ;
+            owl:someValuesFrom :AnalogStorageMedium ],
         :Item ;
     owl:disjointWith :DigitalItem .
 
@@ -2042,11 +2052,11 @@ xsd:gYear a rdfs:Datatype .
     dc:description "A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web."@en ;
     rdfs:comment "A digital object, such as a computer file."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :isStoredOn ;
-            owl:someValuesFrom :DigitalStorageMedium ],
-        [ a owl:Restriction ;
             owl:onProperty frbr:exemplarOf ;
             owl:someValuesFrom :DigitalManifestation ],
+        [ a owl:Restriction ;
+            owl:onProperty :isStoredOn ;
+            owl:someValuesFrom :DigitalStorageMedium ],
         :Item .
 
 :JournalIssue a owl:Class ;
@@ -2250,15 +2260,15 @@ frbr:Work a owl:Class .
     rdfs:label "item"@en ;
     dc:description "A fabio:Item can only have part or be part of another fabio:Item. Moreover, it can be an exemplar only of a fabio:Manifestation."@en ;
     rdfs:comment "A subclass of FRBR item, restricted to exemplars of fabio:Manifestations.  An example of a fabio:Item is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.  "@en ;
-    rdfs:subClassOf [ a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :Manifestation ;
+            owl:onProperty frbr:exemplarOf ],
+        [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Restriction ;
                         owl:allValuesFrom frbr:Item ;
                         owl:onProperty frbr:part ] [ a owl:Restriction ;
                         owl:allValuesFrom frbr:Item ;
                         owl:onProperty frbr:partOf ] ) ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom :Manifestation ;
-            owl:onProperty frbr:exemplarOf ],
         frbr:Item .
 
 :DigitalStorageMedium a owl:Class ;
@@ -2323,23 +2333,23 @@ frbr:Endeavour a owl:Class .
     rdfs:label "expression"@en ;
     dc:description "A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s)."@en ;
     rdfs:comment "A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  "@en ;
-    rdfs:subClassOf [ a owl:Class ;
-            owl:intersectionOf ( [ a owl:Restriction ;
-                        owl:allValuesFrom frbr:Expression ;
-                        owl:onProperty frbr:part ] [ a owl:Restriction ;
-                        owl:allValuesFrom frbr:Expression ;
-                        owl:onProperty frbr:partOf ] ) ],
-        [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom :Manifestation ;
             owl:onProperty frbr:embodiment ],
         [ a owl:Restriction ;
             owl:allValuesFrom :Work ;
             owl:onProperty frbr:realizationOf ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:partOf ] ) ],
         frbr:Expression .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( :AuthorityFile :Taxonomy :Thesaurus ) .
+    owl:members ( :BachelorsThesis :DoctoralThesis :MastersThesis ) .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( :BachelorsThesis :DoctoralThesis :MastersThesis ) .
+    owl:members ( :AuthorityFile :Taxonomy :Thesaurus ) .
 

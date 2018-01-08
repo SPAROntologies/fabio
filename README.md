@@ -1,6 +1,6 @@
 # FRBR-aligned Bibliographic Ontology (FaBiO)
 
-The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references;
+The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references.
 
 **URL:** http://purl.org/spar/fabio
 
