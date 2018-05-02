@@ -155,7 +155,7 @@
 FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations (fabio:hasManifestation and fabio:isManifestationOf), Works and Items (fabio:hasPortrayal and fabio:isPortrayedBy), and Expressions and Items  (fabio:hasRepresentation and fabio:isRepresentedBy).</dc:description>
     <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FaBiO, the FRBR-aligned Bibliographic Ontology</dc:title>
     <owl:versionIRI rdf:resource="http://purl.org/spar/fabio/2018-05-02"/>
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-05-29</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-05-02</dc:date>
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
     <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim Clark</dc:contributor>
     <dc:description rdf:resource="http://purl.org/spar/fabio/FRBR%20diagram%20with%20new%20Fabio%20verbs.png"/>

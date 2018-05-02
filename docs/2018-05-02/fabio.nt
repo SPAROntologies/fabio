@@ -1257,7 +1257,7 @@ _:N3f050e2f1faa46c5a9623fe8083cbcca <http://www.w3.org/2002/07/owl#onProperty> <
 <http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/fabio/hasShortTitle> .
 <http://purl.org/spar/fabio/Announcement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#label> "repository"@en .
-<http://purl.org/spar/fabio> <http://purl.org/dc/elements/1.1/date> "2017-05-29"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/fabio> <http://purl.org/dc/elements/1.1/date> "2018-05-02"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://purl.org/spar/fabio/PatentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N669bd62aa1624de3b151638596a4073f .
 <http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A paper that typically accompanies a poster describing some preliminary  results of research, usually presented during a conference or a workshop."@en .
 <http://purl.org/spar/fabio/UncontrolledVocabulary> <http://www.w3.org/2000/01/rdf-schema#label> "uncontrolled vocabulary"@en .
