@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.org/spar/fabio/"
      xml:base="http://purl.org/spar/fabio/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:fabio="http://purl.org/spar/fabio/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -10,15 +11,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:spar="http://purl.org/spar/"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/spar/fabio">
+        <owl:versionIRI rdf:resource="http://purl.org/spar/fabio/2018-05-02"/>
         <owl:imports rdf:resource="http://purl.org/spar/frbr"/>
-        <owl:versionIRI rdf:resource="http://purl.org/spar/fabio/2017-05-29"/>
-        <owl:priorVersion rdf:resource="https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-07-11-fabio-1_9_3.owl"/>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabio</vann:preferredNamespacePrefix>
+        <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode).</dc:rights>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references.
 
@@ -35,16 +35,16 @@
 **Cite as:** Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf</rdfs:comment>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Shotton</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-05-29</dc:date>
+        <dc:description rdf:resource="http://purl.org/spar/fabio/FRBR%20diagram%20with%20new%20Fabio%20verbs.png"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. 
 
 FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations (fabio:hasManifestation and fabio:isManifestationOf), Works and Items (fabio:hasPortrayal and fabio:isPortrayedBy), and Expressions and Items  (fabio:hasRepresentation and fabio:isRepresentedBy).</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FaBiO, the FRBR-aligned Bibliographic Ontology</dc:title>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paolo Ciccarese</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim Clark</dc:contributor>
-        <dc:description rdf:resource="FRBR%20diagram%20with%20new%20Fabio%20verbs.png"/>
-        <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</dc:rights>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://purl.org/spar/fabio/2017-05-29"/>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/spar/fabio/</vann:preferredNamespaceUri>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.9.4</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -755,6 +755,15 @@ The date can be expressed in three different formats:
     
 
 
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/abstract">
+        <rdfs:comment xml:lang="en">A summary of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">abstract</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
@@ -1298,7 +1307,7 @@ Recommended best practice is to identify the resource by means of a string confo
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">An identifier, in form of a URL, for a particular resource.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web.</rdfs:comment>
         <rdfs:label xml:lang="en">has URL</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2483,8 +2492,10 @@ Similarly, the following concluding passage from William Wordsworth&apos;s poem 
     <!-- http://purl.org/spar/fabio/InUsePaper -->
 
     <owl:Class rdf:about="http://purl.org/spar/fabio/InUsePaper">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
-        <rdfs:comment xml:lang="en">A report presenting existing research or technology that is actual use (or at least plans for deployment) outside the research group that conducted the research or that developed the technology. </rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
+        <rdfs:comment xml:lang="en">A scholarly work that describes applied and validated solutions such as software tools, systems or architectures that benefit from the use of the technology of a particular scholarly domain. Usually, papers of this kind should also provide convincing evidence that there is use of the proposed application or tool by the target user group, preferably outside the institution that conducted its development.
+
+E.g. see http://iswc2018.semanticweb.org/call-for-in-use-track-papers/.</rdfs:comment>
         <rdfs:label xml:lang="en">in-use paper</rdfs:label>
     </owl:Class>
     
@@ -2922,6 +2933,16 @@ Examples of different manifestations of a single &apos;version of record&apos; e
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A document that contains metadata information describing one or more characteristics of an entity.</rdfs:comment>
         <rdfs:label xml:lang="en">metadata document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/MethodsPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/MethodsPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
+        <rdfs:comment xml:lang="en">A scholarly work detailing a method, procedure or experimental protocol employed in a particular scholarly domain.</rdfs:comment>
+        <rdfs:label xml:lang="en">methods paper</rdfs:label>
     </owl:Class>
     
 
@@ -3425,6 +3446,19 @@ Examples of different manifestations of a single &apos;version of record&apos; e
     
 
 
+    <!-- http://purl.org/spar/fabio/PositionPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PositionPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Opinion"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
+        <rdfs:comment xml:lang="en">A scholarly work that reports a particular intellectual position or viewpoint regarding a particular scholarly topic. Usually, these papers are dependent on the author&apos;s opinion or interpretation, do not have an evaluation, and need to present relevant and novel discussion points in a thorough manner.
+
+E.g. see https://datasciencehub.net/content/guidelines-authors</rdfs:comment>
+        <rdfs:label xml:lang="en">position paper</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/spar/fabio/PosterPaper -->
 
     <owl:Class rdf:about="http://purl.org/spar/fabio/PosterPaper">
@@ -3723,9 +3757,23 @@ Similarly, the words &quot;but Brutus is an honourable man&quot; from Mark Anton
     <!-- http://purl.org/spar/fabio/ResearchPaper -->
 
     <owl:Class rdf:about="http://purl.org/spar/fabio/ResearchPaper">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
-        <rdfs:comment xml:lang="en">A report of original research findings, either published in written form, or delivered orally at a meeting.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
+        <rdfs:comment xml:lang="en">A scholarly work that reports original research contributions addressing theoretical, analytical or experimental aspects of a particular scholarly domain.
+
+E.g. see http://iswc2018.semanticweb.org/call-for-research-track-papers/.</rdfs:comment>
         <rdfs:label xml:lang="en">research paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ResourcePaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ResourcePaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
+        <rdfs:comment xml:lang="en">A scholarly work that describes resources developed to provide experimental materials or facilities, support a research hypothesis, to provide answers to a research question, or that have contributed to the generation of novel scientific work. Examples of such resources include, for experimental sciences, mouse mutant lines and large communally used X-ray or neutron sources, and, for computer sciences, datasets, ontologies, vocabularies, ontology design patterns, evaluation benchmarks or methods, services, APIs and software frameworks, workflows, crowdsourcing task designs, protocols and metrics.
+
+E.g. see http://iswc2018.semanticweb.org/call-for-resources-track-papers/</rdfs:comment>
+        <rdfs:label xml:lang="en">resource paper</rdfs:label>
     </owl:Class>
     
 
@@ -3763,6 +3811,29 @@ A retraction is a public statement made about an earlier statement that withdraw
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An article that contains a review.</rdfs:comment>
         <rdfs:label xml:lang="en">review article</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ReviewPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ReviewPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Review"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
+        <rdfs:comment xml:lang="en">A scholarly work that surveys the state of the art of topics central to a particular subject or relating to a specific domain (e.g. the scope of a certain journal or conference). Papers of this kind may contain a selective bibliography listing key papers related to the subject or providing advice on information sources, or they may strive to be comprehensive, covering all contributions to the development of a topic and exploring their different findings or views.
+
+E.g. see http://www.emeraldgrouppublishing.com/products/journals/author_guidelines.htm?id=JD</rdfs:comment>
+        <rdfs:label xml:lang="en">review paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ScholarlyWork -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ScholarlyWork">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
+        <rdfs:comment xml:lang="en">A work that reports scholarly activity on a particular topic, either published in written form, or delivered orally at a meeting.</rdfs:comment>
+        <rdfs:label xml:lang="en">scholarly work</rdfs:label>
     </owl:Class>
     
 
@@ -4649,5 +4720,5 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
