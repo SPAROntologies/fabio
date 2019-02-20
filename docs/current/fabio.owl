@@ -15,7 +15,7 @@
      xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/spar/fabio">
-        <owl:versionIRI rdf:resource="http://purl.org/spar/fabio/2018-05-02"/>
+        <owl:versionIRI rdf:resource="http://purl.org/spar/fabio/2019-02-19"/>
         <owl:imports rdf:resource="http://purl.org/spar/frbr"/>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabio</vann:preferredNamespacePrefix>
         <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode).</dc:rights>
@@ -34,7 +34,6 @@
 
 **Cite as:** Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf</rdfs:comment>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Shotton</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-05-02</dc:date>
         <dc:description rdf:resource="http://purl.org/spar/fabio/FRBR%20diagram%20with%20new%20Fabio%20verbs.png"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. 
 
@@ -42,9 +41,10 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FaBiO, the FRBR-aligned Bibliographic Ontology</dc:title>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paolo Ciccarese</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim Clark</dc:contributor>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0</owl:versionInfo>
-        <owl:priorVersion rdf:resource="http://purl.org/spar/fabio/2017-05-29"/>
+        <owl:priorVersion rdf:resource="http://purl.org/spar/fabio/2018-05-02"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1</owl:versionInfo>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/spar/fabio/</vann:preferredNamespaceUri>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-02-19</dc:date>
     </owl:Ontology>
     
 
@@ -276,6 +276,17 @@ Typically, rights information includes a statement about various property rights
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">A property linking a particular work to its manifestations.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.</rdfs:comment>
         <rdfs:label xml:lang="en">has manifestation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/fabio/hasPlaceOfPublication -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/fabio/hasPlaceOfPublication">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+        <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Place"/>
+        <rdfs:comment xml:lang="en">The place (usually, the city) where the publisher of a particular bibliographic resource is located.</rdfs:comment>
+        <rdfs:label xml:lang="en">has place of publication</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1496,6 +1507,82 @@ Recommended best practice is to identify the resource by means of a string confo
         <rdfs:comment xml:lang="en"> A computer program that enables a separate computer to interact programmatically with the computer running the API.  (Commonly abbreviated &apos;API&apos;.)</rdfs:comment>
         <rdfs:label xml:lang="en">API</rdfs:label>
         <rdfs:label xml:lang="en">application programming interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ArchivalDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ArchivalDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+        <rdfs:comment xml:lang="en">An archival document is a realization of the content related to an archival record. It can be exemplified as a book, a document, a letter, a database, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">archival document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ArchivalDocumentSet -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ArchivalDocumentSet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ExpressionCollection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of archival document.</rdfs:comment>
+        <rdfs:label xml:lang="en">archival document set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ArchivalRecord -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ArchivalRecord">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An archival record connotes a material created or received by a person, family, or organization, public or private, in the conduct of their affairs that is preserved because of the enduring value contained in the information it contains or as evidence of the function and the responsibilities of its creator.</rdfs:comment>
+        <rdfs:label xml:lang="en">archival record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ArchivalRecordSet -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ArchivalRecordSet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WorkCollection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalRecord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalRecord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocumentSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of archival records.</rdfs:comment>
+        <rdfs:label xml:lang="en">archival record set</rdfs:label>
     </owl:Class>
     
 
@@ -4720,5 +4807,5 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
