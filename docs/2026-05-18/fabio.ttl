@@ -370,7 +370,7 @@ What are the preferred labels of all subject terms assigned to the article with 
     ?subjectTerm a fabio:SubjectTerm ;
             skos:prefLabel ?subjectLabel .
 
-"""^^xsd:string ;
+"""^^xsd:string .
 
 
 prism:alternateTitle a owl:DatatypeProperty ;
