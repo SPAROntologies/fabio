@@ -2676,9 +2676,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:analog-magnetic-tape .
     """ .
 
 :cd a :DigitalStorageMedium,
@@ -2689,9 +2688,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:cd .
     """ .
 
 :cloud a :DigitalStorageMedium,
@@ -2701,9 +2699,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:cloud .
     """ .
 
 :dateLastUpdated a owl:DatatypeProperty,
@@ -2715,9 +2712,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-dataset a fabio:Dataset ;
+            fabio:dateLastUpdated \"2026-04-29T09:00:00\"^^xsd:dateTime .
     """ .
 
 :digital-magnetic-tape a :DigitalStorageMedium,
@@ -2727,9 +2723,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:digital-magnetic-tape .
     """ .
 
 :dvd a :DigitalStorageMedium,
@@ -2741,9 +2736,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:dvd .
     """ .
 
 :film a :AnalogStorageMedium,
@@ -2753,9 +2747,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:film .
     """ .
 
 :floppy-disk a :DigitalStorageMedium,
@@ -2765,9 +2758,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:floppy-disk .
     """ .
 
 :hard-drive a :DigitalStorageMedium,
@@ -2778,9 +2770,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:hard-drive .
     """ .
 
 :hasAccessDate a owl:DatatypeProperty ;
@@ -2792,9 +2783,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-dataset a fabio:Dataset ;
+            fabio:hasAccessDate \"2026-04-29T09:41:00\"^^xsd:dateTime .
     """ .
 
 :hasArXivId a owl:DatatypeProperty ;
@@ -2805,9 +2795,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-preprint a fabio:Preprint ;
+            fabio:hasArXivId \"2304.12345v1\" .
     """ .
 
 :hasCODEN a owl:DatatypeProperty ;
@@ -2818,9 +2807,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal a fabio:Journal ;
+            fabio:hasCODEN \"JBCHA3\" .
     """ .
 
 :hasCharacterCount a owl:DatatypeProperty,
@@ -2833,9 +2821,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+:my-manuscript a fabio:Manuscript ;
+    fabio:hasCharacterCount \"15400\"^^xsd:positiveInteger .
     """ .
 
 :hasCopyrightYear a owl:DatatypeProperty,
@@ -2848,9 +2835,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-preprint a fabio:Preprint ;
+            fabio:hasCopyrightYear \"2026\"^^xsd:gYear .
     """ .
 
 :hasCorrectionDate a owl:DatatypeProperty ;
@@ -2861,9 +2847,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-preprint a fabio:Preprint ;
+            fabio:hasCorrectionDate \"2026-04-29T00:00:00\"^^xsd:dateTime .
     """ .
 
 :hasDateCollected a owl:DatatypeProperty ;
@@ -2874,9 +2859,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-dataset a fabio:Dataset ;
+            fabio:hasDateCollected \"2026-04-29T00:00:00\"^^xsd:dateTime .
     """ .
 
 :hasDateReceived a owl:DatatypeProperty ;
@@ -2887,9 +2871,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-dataset a fabio:Dataset ;
+            fabio:hasDateReceived \"2026-04-28T00:00:00\"^^xsd:dateTime .
     """ .
 
 :hasDeadline a owl:DatatypeProperty ;
@@ -2900,9 +2883,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-call-for-applications a fabio:CallForApplications ;
+            fabio:hasDeadline \"2026-06-30T23:59:59Z\"^^xsd:dateTime .
     """ .
 
 :hasDecisionDate a owl:DatatypeProperty,
@@ -2914,9 +2896,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-call-for-applications a fabio:CallForApplications ;
+            fabio:hasDecisionDate \"2026-07-15T23:59:59Z\"^^xsd:dateTime .
     """ .
 
 :hasDepositDate a owl:DatatypeProperty ;
@@ -2928,9 +2909,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-preprint a fabio:Preprint ;
+            fabio:hasDepositDate \"2026-04-28T00:00:00Z\"^^xsd:dateTime .
     """ .
 
 :hasDiscipline a owl:ObjectProperty ;
@@ -2945,9 +2925,10 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-term-dictionary a fabio:TermDictionary ;
+            fabio:hasDiscipline
+                dbpedia:Computer_science ,
+                dbpedia:Law .
     """ .
 
 :hasDistributionDate a owl:DatatypeProperty ;
@@ -2958,9 +2939,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-preprint a fabio:Preprint ;
+            fabio:hasDistributionDate \"2026-04-27T00:00:00Z\"^^xsd:dateTime .
     """ .
 
 :hasElectronicArticleIdentifier a owl:DatatypeProperty ;
@@ -2971,9 +2951,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasElectronicArticleIdentifier \"e12345\" .
     """ .
 
 :hasEmbargoDate a owl:DatatypeProperty,
@@ -2985,9 +2964,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasEmbargoDate \"2026-04-28T00:00:00\"^^xsd:dateTime .
     """ .
 
 :hasEmbargoDuration a owl:DatatypeProperty ;
@@ -2997,9 +2975,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasEmbargoDuration \"2026-04-28T00:00:00/2026-04-29T00:00:00\"^^xsd:dateTime .
     """ .
 
 :hasHandle a owl:DatatypeProperty ;
@@ -3012,9 +2989,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasHandle \"20.500.12345/6789\" .
     """ .
 
 :hasIssnL a owl:DatatypeProperty ;
@@ -3025,9 +3001,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasIssnL \"1234-5678\" .
     """ .
 
 :hasManifestation a owl:ObjectProperty ;
@@ -3041,9 +3016,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-research-paper a fabio:ResearchPaper ;
+            fabio:hasManifestation :my-print-object .
     """ .
 
 :hasNLMJournalTitleAbbreviation a owl:DatatypeProperty ;
@@ -3054,9 +3028,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal a fabio:Journal ;
+            fabio:hasNLMJournalTitleAbbreviation \"J Biomed Inform\" .
     """ .
 
 :hasNationalLibraryOfMedicineJournalId a owl:DatatypeProperty,
@@ -3072,9 +3045,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal a fabio:Journal ;
+            fabio:hasNationalLibraryOfMedicineJournalId \"9604648\" .
     """ .
 
 :hasPII a owl:DatatypeProperty ;
@@ -3085,9 +3057,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPII \"S0169-7161(26)00123-4\" .
     """ .
 
 :hasPageCount a owl:DatatypeProperty,
@@ -3100,9 +3071,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPageCount \"35\"^^xsd:positiveInteger .
     """ .
 
 :hasPatentNumber a owl:DatatypeProperty ;
@@ -3112,9 +3082,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-patent a fabio:Patent ;
+            fabio:hasPatentNumber \"US1234567B2\" .
     """ .
 
 :hasPlaceOfPublication a owl:ObjectProperty ;
@@ -3125,9 +3094,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPlaceOfPublication :london .
     """ .
 
 :hasPortrayal a owl:ObjectProperty ;
@@ -3141,9 +3109,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-research-paper a fabio:ResearchPaper;
+            fabio:hasPortrayal :my-digital-item .
     """ .
 
 :hasPrimarySubjectTerm a owl:ObjectProperty ;
@@ -3153,9 +3120,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPrimarySubjectTerm <http://id.nlm.nih.gov/mesh/D005806> .
     """ .
 
 :hasPubMedCentralId a owl:DatatypeProperty,
@@ -3169,9 +3135,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPubMedCentralId \"PMC1234567\" .
     """ .
 
 :hasPubMedId a owl:DatatypeProperty,
@@ -3185,9 +3150,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPubMedId \"34567890\" .
     """ .
 
 :hasPublicationYear a owl:DatatypeProperty,
@@ -3199,9 +3163,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPublicationYear \"2007\"^^xsd:gYear .
     """ .
 
 :hasRepresentation a owl:ObjectProperty ;
@@ -3215,9 +3178,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasRepresentation :my-digital-item .
     """ .
 
 :hasRequestDate a owl:DatatypeProperty ;
@@ -3227,9 +3189,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasRequestDate \"2026-05-15\"^^xsd:date .
     """ .
 
 :hasRetractionDate a owl:DatatypeProperty,
@@ -3241,9 +3202,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasRetractionDate \"2026-10-29\"^^xsd:date .
     """ .
 
 :hasSICI a owl:DatatypeProperty,
@@ -3258,9 +3218,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasSICI \"0015-6914(199612)18:12<12:SIAI>2.0.TX;2-B\" .
     """ .
 
 :hasSeason a owl:DatatypeProperty ;
@@ -3270,9 +3229,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasSeason \"spring\" .
     """ .
 
 :hasSequenceIdentifier a owl:DatatypeProperty ;
@@ -3283,9 +3241,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasSequenceIdentifier \"1\" .
     """ .
 
 :hasStandardNumber a owl:DatatypeProperty ;
@@ -3295,9 +3252,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasStandardNumber \"ISO 9001:2015\" .
     """ .
 
 :hasSubtitle a owl:DatatypeProperty ;
@@ -3309,9 +3265,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasSubtitle \"Practical Guide to Ontologies and Linked Data\"@en .
     """ .
 
 :hasTranslatedSubtitle a owl:DatatypeProperty ;
@@ -3321,9 +3276,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasTranslatedSubtitle \"Guida pratica alle ontologie e ai Linked Data\"@it .
     """ .
 
 :hasTranslatedTitle a owl:DatatypeProperty ;
@@ -3333,9 +3287,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasTranslatedTitle \"Il Web Semantico\"@it .
     """ .
 
 :hasURL a owl:DatatypeProperty ;
@@ -3347,9 +3300,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasURL \"https://www.example.org/articles/intro-semantic-web\"^^xsd:anyURI .
     """ .
 
 :hasVolumeCount a owl:DatatypeProperty,
@@ -3362,9 +3314,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-book-series a fabio:BookSeries ;
+            fabio:hasVolumeCount \"12\"^^xsd:nonNegativeInteger .
     """ .
 
 :internet a :DigitalStorageMedium,
@@ -3374,9 +3325,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:internet .
     """ .
 
 :intranet a :DigitalStorageMedium,
@@ -3386,9 +3336,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:intranet .
     """ .
 
 :paper a :AnalogStorageMedium,
@@ -3398,9 +3347,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:paper .
     """ .
 
 :ram a :DigitalStorageMedium,
@@ -3411,9 +3359,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:ram .
     """ .
 
 :solid-state-memory a :DigitalStorageMedium,
@@ -3423,9 +3370,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:solid-state-memory .
     """ .
 
 :usesCalendar a owl:DatatypeProperty,
@@ -3436,9 +3382,8 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-work a fabio:Work ;
+            fabio:usesCalendar \"lunar\" .
     """ .
 
 :vinyl-disk a :AnalogStorageMedium,
@@ -3448,23 +3393,19 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:vinyl .
     """ .
 
 :web a :DigitalStorageMedium,
         owl:NamedIndividual ;
-    rdfs:label "WWW"@en,
-        "Web"@en,
-        "World Wide Web"@en ;
+    rdfs:label "World Wide Web"@en ;
     rdfs:comment "A system of interlinked hypertext documents written in HTML and accessed using the HTTP protocol via the Internet."@en ;
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:web .
     """ .
 
 vann:preferredNamespacePrefix a owl:AnnotationProperty .
@@ -3490,9 +3431,8 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-abstract a fabio:Abstract ;
+            c4o:hasContent \"In the legal domain, ontologies enjoy quite some reputation as a way to model normative knowledge about laws and jurisprudence. This paper describes the methodology followed when developing the ontology used by the second version of the prototype Iuriservice, a web-based intelligent FAQ for judicial use.\"@en .
     """ .
 
 :Anthology a owl:Class ;
@@ -3502,9 +3442,9 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-anthology a fabio:Anthology ;
+            dcterms:title \"The Best Science Fiction Ever Written\"@en ;
+            frbr:part :my-story, :my-another-story .
     """ .
 
 :ArchivalDocumentSet a owl:Class ;
@@ -3520,9 +3460,11 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-archival-document-set a fabio:ArchivalDocumentSet ;
+            dcterms:title \"Collection of documents related to Alan Turing's correspondence\"@en ;
+            frbr:part :my-archival-document, :my-another-archival-document ;
+            frbr:realizationOf :my-archival-record-set ;
+            dcterms:description \"A collection of various archival documents.\"@en .
     """ .
 
 :ArtisticWork a owl:Class ;
@@ -3532,9 +3474,10 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-artistic-work a fabio:ArtisticWork ;
+            dcterms:title \"The Starry Night\"@en ;
+            dcterms:creator :vincent-van-gogh ;
+            dcterms:description \"The conceptual artistic creation representing Van Gogh's vision of the night sky from Saint-Rémy-de-Provence.\"@en .
     """ .
 
 :AuthorityFile a owl:Class ;
@@ -3544,9 +3487,10 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-authority-file a fabio:AuthorityFile ;
+            dcterms:title \"Virtual International Authority File (VIAF)\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A controlled vocabulary that clusters different forms of a name into a single authoritative record.\"@en .
     """ .
 
 :BachelorsThesis a owl:Class ;
@@ -3556,9 +3500,9 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-bachelors-thesis a fabio:BachelorsThesis ;
+            dcterms:title \"Sorting Algorithms Performance Analyis in Python\"@en ;
+            dcterms:description \"A thesis submitted for the degree of Bachelor of Science in Computer Science.\"@en .
     """ .
 
 :Blog a owl:Class ;
@@ -3568,9 +3512,11 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-blog a fabio:Blog ;
+            dcterms:title \"The Semantic Web Insights Blog\"@en ;
+            frbr:part :my-blog-post, :my-another-blog-post ;
+            fabio:hasURL \"https://blog.example.org/semantic-web\"^^xsd:anyURI ;
+            dcterms:description \"A web manifestation used for publishing periodic entries about linked data technologies.\"@en .
     """ .
 
 :BookSet a owl:Class ;
@@ -3583,9 +3529,10 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-book-set a fabio:BookSet ;
+            dcterms:title \"The Lord of the Rings (Boxed Set)\"@en ;
+            frbr:part :my-book, :my-another-book, :my-even-another-book ;
+            dcterms:description \"A finite collection of books published together as a single unit or boxed set.\"@en .
     """ .
 
 :CaseForSupport a owl:Class ;
@@ -3595,9 +3542,11 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-case-for-support a fabio:CaseForSupport ;
+            dcterms:title \"Scientific Rationale for Neural Network Optimization Project\"@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-case-for-support-document ;
+            dcterms:description \"The conceptual work providing the intellectual justification and research plan for a grant application.\"@en .
     """ .
 
 :CaseReport a owl:Class ;
@@ -3607,9 +3556,11 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-case-report a fabio:CaseReport ;
+            dcterms:title \"Rare neurological manifestations in a 45-year-old patient\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:subject <http://purl.bioontology.org/ontology/MESH/D009422> ;
+            dcterms:description \"A detailed report of the symptoms, diagnosis, and treatment of an individual clinical case.\"@en .
     """ .
 
 :Catalog a owl:Class ;
@@ -3619,9 +3570,10 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-catalog a fabio:Catalog ;
+            dcterms:title \"Online Public Access Catalog (OPAC) - University Library\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A systematic list of items, such as books or manuscripts, arranged in a specific order to facilitate discovery.\"@en .
     """ .
 
 :Chapter a owl:Class ;
@@ -3631,9 +3583,11 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-chapter a fabio:Chapter ;
+            dcterms:title \"Introduction to SPARQL Query Language\"@en ;
+            frbr:partOf :my-book ;
+            fabio:hasSequenceIdentifier \"1\" ;
+            dcterms:description \"The introductory chapter of a technical handbook.\"@en .
     """ .
 
 :CollectedWorks a owl:Class ;
@@ -3643,9 +3597,10 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-collected-works a fabio:CollectedWorks ;
+            dcterms:title \"Luigi Pirandello's works\"@en ;
+            frbr:part :my-artistic-work, :my-another-artistic-work ;
+            dcterms:description \"The complete intellectual output of Luigi Pirandello, gathered as a single conceptual collection.\"@en .
     """ .
 
 :Comment a owl:Class ;
@@ -3655,9 +3610,9 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-comment a fabio:Comment ;
+            dcterms:title \"Clarification on the methodology section\"@en ;
+            dcterms:description \"A brief note or remark providing clarification or personal opinion on a specific part of a document.\"@en .
     """ .
 
 :ConferencePaper a owl:Class ;
@@ -3667,9 +3622,10 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-conference-paper a fabio:ConferencePaper ;
+            dcterms:title \"Advancements in Neural Symbolic Integration\" ;
+            frbr:partOf :my-conference-proceedings ;
+            dcterms:description \"A paper presented at a conference and subsequently published in the conference proceedings.\"@en .
     """ .
 
 :DisciplineDictionary a owl:Class ;
@@ -3683,9 +3639,11 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-discipline-dictionary a fabio:DisciplineDictionary ;
+            dcterms:title \"Dictionary of Clinical Medicine\"@en ;
+            dcterms:creator :medical-society ;
+            fabio:isSchemeOf <http://purl.bioontology.org/ontology/MESH/D008511> ;
+            dcterms:description \"A dictionary containing the specialized vocabulary and terminology used in the field of medicine.\"@en .
     """ .
 
 :DoctoralThesis a owl:Class ;
@@ -3695,9 +3653,9 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-doctoral-thesis a fabio:DoctoralThesis ;
+            dcterms:title \"Scalable Error Correction in Quantum Computing Architecture\"@en ;
+            dcterms:description \"A thesis presented for the degree of Doctor of Philosophy.\"@en .
     """ .
 
 :Excerpt a owl:Class ;
@@ -3725,9 +3683,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-excerpt a fabio:Excerpt ;
+            dcterms:title \"Excerpt from Chapter 1: The Beginning\"@en ;
+            frbr:partOf :my-book ;
+            dcterms:description \"A short extract from a film, broadcast, or piece of music or writing.\"@en .
     """ .
 
 :GrantApplication a owl:Class ;
@@ -3737,9 +3696,11 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-grant-application a fabio:GrantApplication ;
+            dcterms:title \"Advanced AI for Climate Resilience Proposal\"@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-grant-application-document ;
+            dcterms:description \"A formal request for financial assistance to support a specific research project or initiative.\"@en .
     """ .
 
 :Journal a owl:Class ;
@@ -3755,9 +3716,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-journal a fabio:Journal ;
+            dcterms:title \"Journal of Semantic Web Research\"@en ;
+            frbr:part :my-journal-issue , :my-journal-volume ;
+            dcterms:description \"A scholarly periodical maintaining high standards of research and typically published at regular intervals.\"@en .
     """ .
 
 :JournalNewsItem a owl:Class ;
@@ -3785,9 +3747,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-magazine a fabio:Magazine ;
+            dcterms:title \"National Geographic Magazine\"@en ;
+            frbr:part :my-magazine-issue ;
+            dcterms:description \"A periodical publication containing articles and illustrations, typically of popular interest and current events.\"@en .
     """ .
 
 :MagazineNewsItem a owl:Class ;
@@ -3800,9 +3763,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-magazine-news-item a fabio:MagazineNewsItem ;
+            dcterms:title \"New AI Regulations Announced in Brussels\"@en ;
+            frbr:partOf :my-magazine-issue ;
+            dcterms:description \"A short news report published in a magazine, typically concerning current events or social announcements.\"@en .
     """ .
 
 :MastersThesis a owl:Class ;
@@ -3812,9 +3776,9 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-master-thesis a fabio:MastersThesis ;
+            dcterms:title \"Linked Data analysis in the library science domain\"@en ;
+            dcterms:description \"A thesis reporting the results of a period of study, submitted in partial fulfilment of the requirements for a master's degree.\"@en .
     """ .
 
 :Micropost a owl:Class ;
@@ -3825,9 +3789,9 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-micropost a fabio:Micropost ;
+            frbr:partOf :my-microblog ;
+            dcterms:description \"A very short post on a microblog, typically limited to a few hundred characters.\"@en .
     """ .
 
 :MinimalInformationStandard a owl:Class ;
@@ -3837,9 +3801,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-minimal-information-standard a fabio:MinimalInformationStandard ;
+            dcterms:title \"MIAME: Minimum Information About a Microarray Experiment\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A standard specifying the minimum information required to report a particular type of scientific experiment.\"@en .
     """ .
 
 :Movie a owl:Class ;
@@ -3852,9 +3817,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-movie a fabio:Movie ;
+            dcterms:title \"Interstellar\"@en ;
+            frbr:realizationOf :my-moving-image ;
+            dcterms:description \"A recording of moving images that tells a story and that people watch on a screen or television.\"@en .
     """ .
 
 :MovingImage a owl:Class ;
@@ -3865,9 +3831,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-moving-image a fabio:MovingImage ;
+            dcterms:creator :john-doe ;
+            dcterms:title \"Interstellar\"@en ;
+            dcterms:description \"A creation consisting of a series of images that, when shown in rapid succession, give the impression of movement.\"@en .
     """ .
 
 :MusicalComposition a owl:Class ;
@@ -3877,9 +3844,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-musical-composition a fabio:MusicalComposition ;
+            dcterms:title \"Symphony n. 5\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A creative work of a musical nature, typically consisting of a sequence of notes and rhythms.\"@en .
     """ .
 
 :Newspaper a owl:Class ;
@@ -3892,9 +3860,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-newspaper a fabio:Newspaper ;
+            dcterms:title \"Corriere della Sera\"@en ;
+            frbr:part :my-newspaper-issue ;
+            dcterms:description \"A periodical publication containing news, other informative articles, and advertising.\"@en .
     """ .
 
 :Ontology a owl:Class ;
@@ -3904,9 +3873,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-ontology a fabio:Ontology ;
+            dcterms:title \"Citation Typing Ontology\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A formal explicit specification of a shared conceptualization.\"@en .
     """ .
 
 :Page a owl:Class ;
@@ -3916,9 +3886,9 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-page a fabio:Page ;
+            dcterms:title \"Page 42\"@en ;
+            dcterms:description \"One side of a leaf of something printed or written, such as a book, manuscript or letter.\"@en .
     """ .
 
 :Patent a owl:Class ;
@@ -3928,9 +3898,11 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-patent a fabio:Patent ;
+            dcterms:title \"AI-based ice cream generator\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:identifier \"US123456789\" ;
+            dcterms:description \"A government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.\"@en .
     """ .
 
 :PatentApplication a owl:Class ;
@@ -3940,9 +3912,11 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-patent-application a fabio:PatentApplication ;
+            dcterms:title \"Application for patenting an AI-based ice cream generator\"@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-patent-application-document ;
+            dcterms:description \"A formal request for the grant of a patent for an invention.\"@en .
     """ .
 
 :PolicyDocument a owl:Class ;
@@ -3955,9 +3929,10 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-policy-document a fabio:PolicyDocument ;
+            dcterms:title \"University Policy for Open Access v3.0\"@en ;
+            frbr:realizationOf :my-policy ;
+            dcterms:description \"A document that describes a set of principles or rules agreed upon by an organization or government.\"@en .
     """ .
 
 :ProjectReport a owl:Class ;
@@ -3967,19 +3942,20 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-project-report a fabio:ProjectReport ;
+            dcterms:title \"Report on first semester 2026\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A report on the progress, results or status of a project.\"@en .
     """ .
 
 :Quotation a owl:Class ;
     rdfs:label "quotation"@en ;
-    dc:description """A quotation is a repetition of what someone has said, and is presented "within quotation marks", for example:
+    dc:description """A quotation is a repetition of what someone has said, and is presented \"within quotation marks\", for example:
 
 On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words:
-       " . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . ."
+       \" . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . .\"
 
-Similarly, the words "but Brutus is an honourable man" from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play."""@en ;
+Similarly, the words \"but Brutus is an honourable man\" from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play."""@en ;
     rdfs:comment """A passage of speech selected from a larger verbal or written expression for use in another expression, with specific attribution to its original source, and usually demarcated by quotation marks and / or by placing it in a separate indented paragraph. 
 
 [Note: Use fabio:Quotation to indicate a segment or passage selected from another expression that is a passage of speech, and fabio:Excerpt to indicate a segment or passage selected from another expression that is not a passage of speech.]"""@en ;
@@ -3988,9 +3964,9 @@ Similarly, the words "but Brutus is an honourable man" from Mark Antony's funera
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-quotation a fabio:Quotation ;
+            dcterms:title \"Quotation from The Thing\"@en ;
+            dcterms:description \"A passage os speech selected from a larger expression.\"@en .
     """ .
 
 :RapidCommunication a owl:Class ;
@@ -4001,9 +3977,9 @@ Similarly, the words "but Brutus is an honourable man" from Mark Antony's funera
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-rapid-communication a fabio:RapidCommunication ;
+            dcterms:title \"Preliminary results for new vaccine\"@en ;
+            dcterms:description \"A short paper reporting a piece of research that is particularly timely and relevant, published more quickly than a full research paper.\"@en .
     """ .
 
 :Retraction a owl:Class ;
@@ -4014,9 +3990,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-retraction a fabio:Retraction ;
+            dcterms:title \"Retraction of 'Statistical analysis of environmental data 2024'\"@en ;
+            dcterms:creation :john-doe ;
+            dcterms:description \"A statement issued by authors, editors or other authorized officials to withdraw a previously published work or part thereof.\"@en .
     """ .
 
 :Series a owl:Class ;
@@ -4026,9 +4003,9 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-series a fabio:Series ;
+            dcterms:title \"Lecture Notes in Computer Science\"@en ;
+            dcterms:description \"A sequence of separate expressions published in succession by a single publisher, typically with a common title for the entire set.\"@en .
     """ .
 
 :SoundRecording a owl:Class ;
@@ -4038,9 +4015,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-sound-recording a fabio:SoundRecording ;
+            dcterms:title \"Audio recording of lesson 01\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A recording of sound, such as music, speech, or other sounds.\"@en .
     """ .
 
 :Table a owl:Class ;
@@ -4050,9 +4028,9 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-table a fabio:Table ;
+            dcterms:title \"Table 1: Comparative analysis of results\"@en ;
+            dcterms:description \"A set of data arranged in rows and columns.\"@en .
     """ .
 
 :Taxonomy a owl:Class ;
@@ -4062,9 +4040,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-taxonomy a fabio:Taxonomy ;
+            dcterms:title \"Taxonomy for scholarly research activities\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.\"@en .
     """ .
 
 :Thesaurus a owl:Class ;
@@ -4074,9 +4053,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-thesaurus a fabio:Thesaurus ;
+            dcterms:title \"UNESCO Thesaurus\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A controlled vocabulary in which concepts are represented by preferred terms, and relationships between concepts are explicitly stated.\"@en .
     """ .
 
 :TrialReport a owl:Class ;
@@ -4086,9 +4066,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-trial-report a fabio:TrialReport ;
+            dcterms:title \"Report on Phase 3 experiments' results\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A report of a trial, typically a clinical trial of a drug or a medical procedure.\"@en .
     """ .
 
 :UncontrolledVocabulary a owl:Class ;
@@ -4098,9 +4079,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-uncontrolled-vocabulary a fabio:UncontrolledVocabulary ;
+            dcterms:title \"User folksonomy\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A collection of terms that are not part of a controlled vocabulary, such as a set of keywords chosen by a service's user community.\"@en .
     """ .
 
 :VocabularyDocument a owl:Class ;
@@ -4113,9 +4095,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-vocabulary-document a fabio:VocabularyDocument ;
+            dcterms:title \"SKOS Simple Knowledge Organization System Reference\"@en ;
+            frbr:realizationOf :my-vocabulary ;
+            dcterms:description \"A document that describes a vocabulary, such as a formal specification or a user guide.\"@en .
     """ .
 
 :VocabularyMapping a owl:Class ;
@@ -4125,9 +4108,10 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-vocabulary-mapping a fabio:VocabularyMapping ;
+            dcterms:title \"Semantic mapping between MeSH and LCSH\"@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description \"A document describing the mapping between two vocabularies.\"@en .
     """ .
 
 :WikiEntry a owl:Class ;
@@ -4138,9 +4122,9 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-wiki-entry a fabio:WikiEntry ;
+            dcterms:title \"Definition of Project X\"@en ;
+            dcterms:description \"A single article or page within a wiki.\"@en .
     """ .
 
 :WorkCollection a owl:Class ;
@@ -4153,9 +4137,11 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-work-collection a fabio:WorkCollection ;
+            dcterms:title \"John Doe's works\"@en ;
+            dcterms:creator :john-doe ;
+            frbr:part :my-work, :my-another-work ;
+            dcterms:description \"A collection of works, for example the 'complete works' of an author.\"@en .
     """ .
 
 :WorkshopPaper a owl:Class ;
@@ -4165,9 +4151,9 @@ A retraction is a public statement made about an earlier statement that withdraw
     rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
     sw:term_status "stable"@en ;
     vann:example """
-        :my-algorithm a fabio:Algorithm ;
-            dcterms:title \"Distance Calculator\"@en ;
-            dcterms:description \"Algorithm for calculating the distance between to geo locations.\"@en .
+        :my-workshop-paper a fabio:WorkshopPaper ;
+            dcterms:title \"New perspectives for Linked Data analysis\"@en ;
+            dcterms:description \"A paper presented at a workshop and potentially published in the workshop proceedings.\"@en .
     """ .
 
 :hasShortTitle a owl:DatatypeProperty ;
