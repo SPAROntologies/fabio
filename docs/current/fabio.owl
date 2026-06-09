@@ -2477,6 +2477,13 @@ The date can be expressed in three different formats:
     
 
 
+    <!-- http://purl.org/spar/fabio#Software -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio#Software"/>
+    
+
+
     <!-- http://purl.org/spar/fabio/Abstract -->
 
 
@@ -3500,6 +3507,12 @@ The date can be expressed in three different formats:
 
     <owl:Class rdf:about="http://purl.org/spar/fabio/ComputerProgram">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio#Software"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <vann:example>
         :my-computer-program a fabio:ComputerProgram ;
             dcterms:title &apos;Statistical Analysis Script in Python&apos;@en ;
@@ -6924,6 +6937,25 @@ Note: Use fabio:Quotation to indicate a segment or passage selected from another
         <rdfs:comment xml:lang="en">A work of fiction that is usually written in prose, often in narrative format. This format tends to be more focused and less elaborate than longer works of fiction such as novels.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
         <rdfs:label xml:lang="en">short story</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Software -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Software">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
+        <vann:example>
+        :my-software a fabio:Software ;
+            dcterms:title &apos;Data Parser Tool&apos;@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description &apos;A set of instructions that a computer can use to perform a specific task.&apos;@en .
+            </vann:example>
+        <rdfs:comment xml:lang="en">The distinct intellectual creation of a computer program or software application. It represents the abstract concept, logic, and intended functionality of the software, independent of any specific source code implementation, programming language, or compiled version.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+        <rdfs:label xml:lang="en">software</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:Class>
     

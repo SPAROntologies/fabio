@@ -1941,6 +1941,10 @@ owl:topDataProperty rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
+###  http://purl.org/spar/fabio#Software
+:Software rdf:type owl:Class .
+
+
 ###  http://purl.org/spar/fabio/Abstract
 <http://purl.org/spar/fabio/Abstract> rdf:type owl:Class ;
                                       rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ;
@@ -2736,7 +2740,11 @@ owl:topDataProperty rdf:type owl:DatatypeProperty .
 
 ###  http://purl.org/spar/fabio/ComputerProgram
 <http://purl.org/spar/fabio/ComputerProgram> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ;
+                                             rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/vocab/frbr/core#realizationOf> ;
+                                                               owl:someValuesFrom :Software
+                                                             ] ;
                                              <http://purl.org/vocab/vann/example> """
         :my-computer-program a fabio:ComputerProgram ;
             dcterms:title 'Statistical Analysis Script in Python'@en ;
@@ -5408,6 +5416,21 @@ Note: Use fabio:Quotation to indicate a segment or passage selected from another
                                         rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
                                         rdfs:label "short story"@en ;
                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+
+
+###  http://purl.org/spar/fabio/Software
+<http://purl.org/spar/fabio/Software> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/spar/fabio/Work> ;
+                                      <http://purl.org/vocab/vann/example> """
+        :my-software a fabio:Software ;
+            dcterms:title 'Data Parser Tool'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A set of instructions that a computer can use to perform a specific task.'@en .
+            """ ;
+                                      rdfs:comment "The distinct intellectual creation of a computer program or software application. It represents the abstract concept, logic, and intended functionality of the software, independent of any specific source code implementation, programming language, or compiled version."@en ;
+                                      rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
+                                      rdfs:label "software"@en ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 
 
 ###  http://purl.org/spar/fabio/Song

@@ -1228,6 +1228,9 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+# http://purl.org/spar/fabio#Software
+<http://purl.org/spar/fabio#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.org/spar/fabio/Abstract
 <http://purl.org/spar/fabio/Abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Abstract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
@@ -1745,6 +1748,10 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/ComputerProgram
 <http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio#Software> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ComputerProgram> <http://purl.org/vocab/vann/example> "\n        :my-computer-program a fabio:ComputerProgram ;\n            dcterms:title 'Statistical Analysis Script in Python'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realizationOf :my-software ;\n            dcterms:language <http://purl.org/NET/marccodes/languages/python> ;\n            dcterms:description 'A set of instructions written in Python to automate data cleaning and visualization.'@en .\n    " .
 <http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of computer code in source or compiled form, employing one or more algorithms to be executed by a digital computer to undertake a particular task. Computer programs are collectively called 'software' to distinguish them from the equipment ('hardware') upon which they run."@en .
 <http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1772,10 +1779,10 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/ConferenceProceedings
 <http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/AcademicProceedings> .
-<http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ConferencePaper> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ConferencePaper> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ConferenceProceedings> <http://purl.org/vocab/vann/example> "\n        :my-conference-proceedings a fabio:ConferenceProceedings ;\n            dcterms:title 'Proceedings of the 25th International Semantic Web Conference'@en ;\n            frbr:part :my-conference-paper, :my-another-conference-paper ;\n            dcterms:description 'The formal record of a conference, containing the collection of papers and abstracts presented.'@en .\n    " .
 <http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected conference papers, or their abstracts, presented at a conference, seminar, symposium or similar event."@en .
 <http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1830,10 +1837,10 @@ _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/DataFile
 <http://purl.org/spar/fabio/DataFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Dataset> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Dataset> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DataFile> <http://purl.org/vocab/vann/example> "\n        :my-data-file a fabio:DataFile ;\n            dcterms:title 'Raw Survey Data on Urban Mobility'@en ;\n            frbr:realizationOf :my-dataset ;\n            dcterms:description 'A computer file containing structured or unstructured data, intended for processing by computer applications.'@en .\n    " .
 <http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#comment> "A realisation of a fabio:Dataset (a frbr:Work) containing a defined collection of data with specific content and possibly with a specific version number, that can be embodied as a fabio:DigitalManifestation (a frbr:Manifestation with a specific format) and be represented by a specific fabio:ComputerFile (a frbr:Item) on someone's hard drive."@en .
 <http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1843,10 +1850,10 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/DataManagementPlan
 <http://purl.org/spar/fabio/DataManagementPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DataManagementPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/DataManagementPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Proposition> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DataManagementPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Proposition> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DataManagementPlan> <http://purl.org/vocab/vann/example> "\n        :my-data-management-plan a fabio:DataManagementPlan ;\n            dcterms:title 'Data Management Plan for Project OpenScience'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realizationOf :my-proposition ;\n            dcterms:description 'A formal document outlining how data will be handled during and after a research project.'@en .\n    " .
 <http://purl.org/spar/fabio/DataManagementPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured document giving information about how data arising from a research project or other endeavour is to be manages, preserved and shared."@en .
 <http://purl.org/spar/fabio/DataManagementPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1929,10 +1936,10 @@ _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Diary
 <http://purl.org/spar/fabio/Diary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Notebook> .
-<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Entry> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Entry> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Diary> <http://purl.org/vocab/vann/example> "\n        :my-diary a fabio:Diary ;\n            dcterms:title 'John's personal diary'@en ;\n            dcterms:creator :john-doe ;\n            frbr:part :my-entry ;\n            dcterms:description 'A record of personal experiences, thoughts, and daily events, kept regularly by an individual.'@en .\n    " .
 <http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#comment> "A personal record, in a form of book, with discrete entries (often handwritten) arranged by date, reporting what has happened over the course of a day or other period of time."@en .
 <http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1942,14 +1949,14 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/DigitalItem
 <http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Item> .
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
-_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalStorageMedium> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isStoredOn> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalManifestation> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalStorageMedium> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isStoredOn> .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalManifestation> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DigitalItem> <http://purl.org/vocab/vann/example> "\n        :my-digital-item a fabio:DigitalItem ;\n            frbr:exemplarOf :my-digital-manifestation ;\n            fabio:hasURL 'https://example.org/download/paper.epub' ;\n            fabio:isStoredOn fabio:floppy-disk .\n    " .
 <http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A digital object, such as a computer file."@en .
 <http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1960,10 +1967,10 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/DigitalManifestation
 <http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Manifestation> .
-<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalItem> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalItem> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DigitalManifestation> <http://purl.org/vocab/vann/example> "\n        :my-digital-manifestation a fabio:DigitalManifestation ;\n            dcterms:publisher :my-publisher ;\n            frbr:exemplar :my-digital-item ;\n            dcterms:format application:epub ;\n            prism:publicationDate '2007-05-31'^^xsd:date .\n    " .
 <http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation that represents data in binary form, encoding the data as a series of 0s and 1s."@en .
 <http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1973,10 +1980,10 @@ _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/DigitalStorageMedium
 <http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/StorageMedium> .
-<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/DigitalItem> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/stores> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/DigitalItem> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/stores> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DigitalStorageMedium> <http://purl.org/vocab/vann/example> "\n        fabio:floppy-disk a fabio:DigitalStorageMedium .\n    " .
 <http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "A means of storing information in digital form, involving binary encoding of data in 0s and 1s, e.g. a computer random access memory, hard disc, USB stick, CD, DVD or digital magnetic tape."@en .
 <http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -1995,10 +2002,10 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/DisciplineDictionary
 <http://purl.org/spar/fabio/DisciplineDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DisciplineDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://purl.org/spar/fabio/DisciplineDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
-_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/SubjectDiscipline> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isSchemeOf> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DisciplineDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/SubjectDiscipline> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isSchemeOf> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DisciplineDictionary> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/fabio/TermDictionary> .
 <http://purl.org/spar/fabio/DisciplineDictionary> <http://purl.org/vocab/vann/example> "\n        :my-discipline-dictionary a fabio:DisciplineDictionary ;\n            dcterms:title 'Dictionary of Clinical Medicine'@en ;\n            dcterms:creator :medical-society ;\n            fabio:isSchemeOf <http://purl.bioontology.org/ontology/MESH/D008511> ;\n            dcterms:description 'A dictionary containing the specialized vocabulary and terminology used in the field of medicine.'@en .\n    " .
 <http://purl.org/spar/fabio/DisciplineDictionary> <http://www.w3.org/2000/01/rdf-schema#comment> "A discipline dictionary is a collection of subject disciplines."@en .
@@ -2036,10 +2043,10 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Editorial
 <http://purl.org/spar/fabio/Editorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Opinion> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Opinion> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Editorial> <http://purl.org/vocab/vann/example> "\n        :my-editorial a fabio:Editorial ;\n            dcterms:title 'The Future of Open Science in 2026'@en ;\n            frbr:realizationOf :my-opinion ;\n            dcterms:description 'An article expressing the opinion or policy of the editors or publishers of a publication.'@en .\n    " .
 <http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of an opinion written by an editor."@en .
 <http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2132,29 +2139,29 @@ _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Expression
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid58 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
-_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
-_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
-_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
-_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
-_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid59 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
-_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Work> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Work> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Expression> <http://purl.org/vocab/vann/example> "\n        :my-expression a fabio:Expression ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:realizationOf :my-work ;\n            frbr:embodiment :my-digital-manifestation ;\n            dcterms:description 'The intellectual content of a work.'@en .\n    " .
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en .
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2165,10 +2172,10 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/ExpressionCollection
 <http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
-_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Expression> .
-_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Expression> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ExpressionCollection> <http://purl.org/vocab/vann/example> "\n        :my-expression-collection a fabio:ExpressionCollection ;\n            dcterms:title 'Collected Papers on Biotechnology 2020-2025'@en ;\n            frbr:part :my-research-paper, :my-dataset ;\n            dcterms:description 'A collection of expressions, such as a book series or a thematic set of research articles.'@en .\n    " .
 <http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of expressions, for example a periodical or a book series."@en .
 <http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2178,10 +2185,10 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Figure
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
-_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/StillImage> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/StillImage> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Figure> <http://purl.org/vocab/vann/example> "\n        :my-figure a fabio:Figure ;\n            dcterms:title 'Figure 1: Annual Population Growth'@en ;\n            frbr:partOf :my-research-paper ;\n            frbr:realizationOf :my-still-image ;\n            dcterms:description 'A visual representation of information, such as a drawing, painting, photograph, or diagram, used to illustrate or explain a point.'@en .\n    " .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual communication object comprising one or more still images on a related theme. If included within a publication, a figure is typically unaligned with the main body of text, having its own descriptive textual figure legend."@en .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2228,10 +2235,10 @@ _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/GrantApplicationDocument
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
-_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/GrantApplication> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/GrantApplication> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://purl.org/vocab/vann/example> "\n        :my-grant-application-document a fabio:GrantApplicationDocument ;\n            dcterms:title 'Project Proposal: Neural Networks for Climate v1.0'@en ;\n            frbr:realizationOf :my-grant-application ;\n            dcterms:description 'A document representing a grant application, such as a PDF or a printed form.'@en .\n    " .
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a grant application, usually containing a case for support document."@en .
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2259,15 +2266,15 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/InBrief
 <http://purl.org/spar/fabio/InBrief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
-<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
-_:genid68 <http://www.w3.org/2002/07/owl#unionOf> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MagazineNewsItem> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalNewsItem> .
+<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#unionOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MagazineNewsItem> .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalNewsItem> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/InBrief> <http://purl.org/vocab/vann/example> "\n        :my-in-brief a fabio:InBrief ;\n            dcterms:title 'Science In Brief - March 2026'@en ;\n            dcterms:description 'A short summary or a collection of brief news items or notes.'@en .\n    " .
 <http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#comment> "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."@en .
 <http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2295,10 +2302,10 @@ _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/InstructionManual
 <http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
-_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/InstructionalWork> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/InstructionalWork> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/InstructionManual> <http://purl.org/vocab/vann/example> "\n        :my-instruction-manual a fabio:InstructionManual ;\n            dcterms:title 'User Manual for Digital Camera Model X100'@en ;\n            frbr:realizationOf :my-instructional-work ;\n            dcterms:description 'A document providing detailed information on how to use, install, or maintain a particular product or system.'@en .\n    " .
 <http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/2000/01/rdf-schema#comment> "An instructional document typically supplied with a technologically advanced consumer product, such as a car or a computer application, or with an item of complex equipment such as a microscope."@en .
 <http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2317,25 +2324,25 @@ _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Item
 <http://purl.org/spar/fabio/Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Item> .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid72 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
-_:genid74 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
-_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
-_:genid76 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
-_:genid77 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid73 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Item> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            dcterms:title 'article_456.pdf'@en ;\n            frbr:exemplarOf :my-manifestation ;\n            dcterms:description 'A singular, localized exemplar of a manifestation.'@en .\n    " .
 <http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Item, restricted to exemplars of `fabio:Manifestation`."@en .
 <http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2346,10 +2353,10 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/ItemCollection
 <http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Item> .
-<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
-_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Item> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Item> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ItemCollection> <http://purl.org/vocab/vann/example> "\n        :my-item-collection a fabio:ItemCollection ;\n            dcterms:title 'Collection of historical items'@en ;\n            frbr:part :my-item, :my-another-item ;\n            dcterms:description 'A collection of items, such as a physical library collection or a set of digital files.'@en .\n    " .
 <http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of items."@en .
 <http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2359,14 +2366,14 @@ _:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Journal
 <http://purl.org/spar/fabio/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Periodical> .
-<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
-_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
-_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalVolume> .
+_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
 _:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalVolume> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Journal> <http://purl.org/vocab/vann/example> "\n        :my-journal a fabio:Journal ;\n            dcterms:title 'Journal of Semantic Web Research'@en ;\n            frbr:part :my-journal-issue , :my-journal-volume ;\n            dcterms:description 'A scholarly periodical maintaining high standards of research and typically published at regular intervals.'@en .\n    " .
 <http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#comment> "A scholarly periodical primarily devoted to the publication of original research papers."@en .
 <http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2377,10 +2384,10 @@ _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/JournalArticle
 <http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
-<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
-_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
-_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/JournalArticle> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'OPJK and DILIGENT: ontology modeling in a distributed environment' ;\n            prism:doi '10.1007/s10506-007-9036-2' ;\n            frbr:embodiment :my-analog-manifestation , :my-digital-manifestation ;\n            frbr:partOf :my-journal-issue .\n    " .
 <http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."@en .
 <http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2390,10 +2397,10 @@ _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/JournalEditorial
 <http://purl.org/spar/fabio/JournalEditorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/JournalEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Editorial> .
-<http://purl.org/spar/fabio/JournalEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/JournalEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/JournalEditorial> <http://purl.org/vocab/vann/example> "\n        :my-journal-editorial a fabio:JournalEditorial ;\n            dcterms:title 'The Future of Open Access in 2026'@en ;\n            frbr:partOf :my-journal-issue ;\n            dcterms:description 'An article in a journal or other periodical that presents the opinion of the editor, publisher, or editorial board.'@en .\n    " .
 <http://purl.org/spar/fabio/JournalEditorial> <http://www.w3.org/2000/01/rdf-schema#comment> "An editorial published in an issue of a journal."@en .
 <http://purl.org/spar/fabio/JournalEditorial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2403,10 +2410,10 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/JournalIssue
 <http://purl.org/spar/fabio/JournalIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/JournalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/PeriodicalIssue> .
-<http://purl.org/spar/fabio/JournalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
-_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalVolume> .
-_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/JournalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalVolume> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/JournalIssue> <http://purl.org/vocab/vann/example> "\n        :my-journal-issue a fabio:JournalIssue ;\n            dcterms:title 'Journal of Semantic Web, Volume 1, Issue 1'@en ;\n            frbr:partOf :my-journal-volume ;\n            dcterms:description 'A particular issue of a journal or other periodical.'@en .\n    " .
 <http://purl.org/spar/fabio/JournalIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published issue of a journal, one or more of which will constitute a volume of the journal."@en .
 <http://purl.org/spar/fabio/JournalIssue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2416,10 +2423,10 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/JournalNewsItem
 <http://purl.org/spar/fabio/JournalNewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/JournalNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
-<http://purl.org/spar/fabio/JournalNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
-_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/JournalNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/JournalNewsItem> <http://purl.org/vocab/vann/example> "\n        :my-algorithm a fabio:Algorithm ;\n            dcterms:title 'Distance Calculator'@en ;\n            dcterms:description 'Algorithm for calculating the distance between to geo locations.'@en .\n    " .
 <http://purl.org/spar/fabio/JournalNewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A news report published in a journal issue."@en .
 <http://purl.org/spar/fabio/JournalNewsItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2429,10 +2436,10 @@ _:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/JournalVolume
 <http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/PeriodicalVolume> .
-<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
-_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Journal> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Journal> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/JournalVolume> <http://purl.org/vocab/vann/example> "\n        :my-journal-volume a fabio:JournalVolume ;\n            dcterms:title 'Journal of Semantic Web Research, Volume 1'@en ;\n            frbr:partOf :my-journal ;\n            dcterms:description 'A particular volume of a journal or other periodical, usually collecting all issues published within a single year.'@en .\n    " .
 <http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published volume of a journal, comprising one or more journal issues."@en .
 <http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2496,10 +2503,10 @@ _:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Magazine
 <http://purl.org/spar/fabio/Magazine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Magazine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Periodical> .
-<http://purl.org/spar/fabio/Magazine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
-_:genid86 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
-_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Magazine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Magazine> <http://purl.org/vocab/vann/example> "\n        :my-magazine a fabio:Magazine ;\n            dcterms:title 'National Geographic Magazine'@en ;\n            frbr:part :my-magazine-issue ;\n            dcterms:description 'A periodical publication containing articles and illustrations, typically of popular interest and current events.'@en .\n    " .
 <http://purl.org/spar/fabio/Magazine> <http://www.w3.org/2000/01/rdf-schema#comment> "A periodical, usually devoted to a particular topic or domain of interest, and usually published weekly or monthly, consisting primarily of non-peer reviewed editorials, journalistic news items and more substantive articles, reviews, book reviews and discussions concerning current or recent events and publications, and matters of interest to the domain served by the magazine."@en .
 <http://purl.org/spar/fabio/Magazine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2510,10 +2517,10 @@ _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/MagazineArticle
 <http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
-<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
-_:genid87 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
-_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/MagazineArticle> <http://purl.org/vocab/vann/example> "\n        :my-magazine-article a fabio:MagazineArticle ;\n            dcterms:title 'The Future of Arctic Ice: A 2026 Perspective'@en ;\n            frbr:partOf :my-magazine-issue ;\n            dcterms:description 'An article published in a magazine, typically written for a general audience.'@en .\n    " .
 <http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article published in a magazine issue."@en .
 <http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2523,10 +2530,10 @@ _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/MagazineEditorial
 <http://purl.org/spar/fabio/MagazineEditorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/MagazineEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Editorial> .
-<http://purl.org/spar/fabio/MagazineEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
-_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/MagazineEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/MagazineEditorial> <http://purl.org/vocab/vann/example> "\n        :my-magazine-editorial a fabio:MagazineEditorial ;\n            dcterms:title 'A New Era for Digital Media'@en ;\n            frbr:partOf :my-magazine-issue ;\n            dcterms:description 'An editorial article published in a magazine, typically expressing the views of the editor or the publisher.'@en .\n    " .
 <http://purl.org/spar/fabio/MagazineEditorial> <http://www.w3.org/2000/01/rdf-schema#comment> "An editorial published in an issue of a magazine."@en .
 <http://purl.org/spar/fabio/MagazineEditorial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2536,10 +2543,10 @@ _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/MagazineIssue
 <http://purl.org/spar/fabio/MagazineIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/MagazineIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/PeriodicalIssue> .
-<http://purl.org/spar/fabio/MagazineIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
-_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Magazine> .
-_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/MagazineIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Magazine> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/MagazineIssue> <http://purl.org/vocab/vann/example> "\n        :my-magazine-issue a fabio:MagazineIssue ;\n            dcterms:title 'TIME Magazine - May 2026 Issue'@en ;\n            frbr:partOf :my-magazine ;\n            dcterms:description 'A particular issue of a magazine.'@en .\n    " .
 <http://purl.org/spar/fabio/MagazineIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published  issue of a magazine, identified by date, and sometimes also by place (e.g. 'West Coast edition') or language (e.g. 'Spanish edition')."@en .
 <http://purl.org/spar/fabio/MagazineIssue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2549,10 +2556,10 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/MagazineNewsItem
 <http://purl.org/spar/fabio/MagazineNewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/MagazineNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
-<http://purl.org/spar/fabio/MagazineNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
-_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
-_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/MagazineNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/MagazineNewsItem> <http://purl.org/vocab/vann/example> "\n        :my-magazine-news-item a fabio:MagazineNewsItem ;\n            dcterms:title 'New AI Regulations Announced in Brussels'@en ;\n            frbr:partOf :my-magazine-issue ;\n            dcterms:description 'A short news report published in a magazine, typically concerning current events or social announcements.'@en .\n    " .
 <http://purl.org/spar/fabio/MagazineNewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A news report published in a magazine issue."@en .
 <http://purl.org/spar/fabio/MagazineNewsItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2562,29 +2569,29 @@ _:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Manifestation
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Manifestation> .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid91 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
-_:genid93 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
-_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid95 .
-_:genid95 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
-_:genid96 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
-_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodimentOf> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid92 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 _:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
-_:genid97 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Item> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
+_:genid97 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodimentOf> .
 _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Item> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Manifestation> <http://purl.org/vocab/vann/example> "\n        :my-manifestation a fabio:Manifestation ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:embodimentOf :my-article ;\n            frbr:exemplar :my-digital-item ;\n            dcterms:description 'The digital or physical instantiation of an expression.'@en .\n    " .
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Manifestation, restricted to manifestations of `fabio:Expression`. `fabio:Manifestation` specifically applies to electronic (digital) as well as to physical manifestations of expressions."@en .
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2595,10 +2602,10 @@ _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/ManifestationCollection
 <http://purl.org/spar/fabio/ManifestationCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ManifestationCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Manifestation> .
-<http://purl.org/spar/fabio/ManifestationCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ManifestationCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ManifestationCollection> <http://purl.org/vocab/vann/example> "\n        :my-manifestation-collection a fabio:ManifestationCollection ;\n            dcterms:title 'The Complete Works of Shakespeare - Hardback Collection'@en ;\n            frbr:part :my-analog-manifestation, :my-digital-manifestation ;\n            dcterms:description 'A collection of manifestations, such as a set of books or a digital archive of files.'@en .\n    " .
 <http://purl.org/spar/fabio/ManifestationCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of manifestations."@en .
 <http://purl.org/spar/fabio/ManifestationCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2645,10 +2652,10 @@ _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/MetadataDocument
 <http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
-_:genid99 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Metadata> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Metadata> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/MetadataDocument> <http://purl.org/vocab/vann/example> "\n        :my-metadata-document a fabio:MetadataDocument ;\n            dcterms:title 'XML schema for my dataset'@en ;\n            frbr:realizationOf :my-metadata ;\n            dcterms:description 'A document consisting entirely of metadata describing one or more other resources.'@en .\n    " .
 <http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document that contains metadata information describing one or more characteristics of an entity."@en .
 <http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2705,10 +2712,10 @@ _:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/spar/fabio/Movie
 <http://purl.org/spar/fabio/Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/Movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
-_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MovingImage> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MovingImage> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Movie> <http://purl.org/vocab/vann/example> "\n        :my-movie a fabio:Movie ;\n            dcterms:title 'Interstellar'@en ;\n            frbr:realizationOf :my-moving-image ;\n            dcterms:description 'A recording of moving images that tells a story and that people watch on a screen or television.'@en .\n    " .
 <http://purl.org/spar/fabio/Movie> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a moving image."@en .
 <http://purl.org/spar/fabio/Movie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2748,10 +2755,10 @@ _:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/NewsItem
 <http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
-_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewsReport> .
-_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewsReport> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/NewsItem> <http://purl.org/vocab/vann/example> "\n        :my-news-item a fabio:NewsItem ;\n            dcterms:title 'New archeological site found in Rome'@en ;\n            frbr:realizationOf :my-news-report ;\n            dcterms:description 'A report of a recent event or a piece of new information, typically published in a newspaper or broadcast.'@en .\n    " .
 <http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A published news report."@en .
 <http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2770,10 +2777,10 @@ _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/Newspaper
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Periodical> .
-<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
-_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
-_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Newspaper> <http://purl.org/vocab/vann/example> "\n        :my-newspaper a fabio:Newspaper ;\n            dcterms:title 'Corriere della Sera'@en ;\n            frbr:part :my-newspaper-issue ;\n            dcterms:description 'A periodical publication containing news, other informative articles, and advertising.'@en .\n    " .
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest."@en .
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2783,10 +2790,10 @@ _:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/NewspaperArticle
 <http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
-<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
-_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
-_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/NewspaperArticle> <http://purl.org/vocab/vann/example> "\n        :my-newspaper-article a fabio:NewspaperArticle ;\n            dcterms:title 'Results from administrative elections 2026'@en ;\n            frbr:partOf :my-newspaper-issue ;\n            dcterms:description 'An article published in a newspaper.'@en .\n    " .
 <http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article written by a journalist and published in a newspaper."@en .
 <http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2796,10 +2803,10 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/NewspaperEditorial
 <http://purl.org/spar/fabio/NewspaperEditorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/NewspaperEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Editorial> .
-<http://purl.org/spar/fabio/NewspaperEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
-_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
-_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewspaperEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/NewspaperEditorial> <http://purl.org/vocab/vann/example> "\n        :my-newspaper-editorial a fabio:NewspaperEditorial ;\n            dcterms:title 'The future of Italian market'@en ;\n            frbr:partOf :my-newspaper-issue ;\n            dcterms:description 'An editorial article published in a newspaper, typically expressing the opinion of the editor or the newspaper's management.'@en .\n    " .
 <http://purl.org/spar/fabio/NewspaperEditorial> <http://www.w3.org/2000/01/rdf-schema#comment> "An editorial published in an issue of a newspaper."@en .
 <http://purl.org/spar/fabio/NewspaperEditorial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2809,10 +2816,10 @@ _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/NewspaperIssue
 <http://purl.org/spar/fabio/NewspaperIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/NewspaperIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/PeriodicalIssue> .
-<http://purl.org/spar/fabio/NewspaperIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
-_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Newspaper> .
-_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewspaperIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Newspaper> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/NewspaperIssue> <http://purl.org/vocab/vann/example> "\n        :my-newspaper-issue a fabio:NewspaperIssue ;\n            dcterms:title 'The New York Times - Edition of April 28, 2026'@en ;\n            frbr:partOf :my-newspaper ;\n            dcterms:description 'A particular issue of a newspaper.'@en .\n    " .
 <http://purl.org/spar/fabio/NewspaperIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published issue of a newspaper, identified by date, and sometimes also by place or time (e.g. 'Late London Edition')."@en .
 <http://purl.org/spar/fabio/NewspaperIssue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2822,10 +2829,10 @@ _:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/NewspaperNewsItem
 <http://purl.org/spar/fabio/NewspaperNewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/NewspaperNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
-<http://purl.org/spar/fabio/NewspaperNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
-_:genid106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
-_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewspaperNewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+_:genid107 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/NewspaperNewsItem> <http://purl.org/vocab/vann/example> "\n        :my-newspaper-news-item a fabio:NewspaperNewsItem ;\n            dcterms:title 'Roadworks in Bubble Avenue'@en ;\n            frbr:partOf :my-newspaper-issue ;\n            dcterms:description 'A short news report published in a newspaper, typically concerning current events or social announcements.'@en .\n    " .
 <http://purl.org/spar/fabio/NewspaperNewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A news report published in a newspaper issue."@en .
 <http://purl.org/spar/fabio/NewspaperNewsItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2881,10 +2888,10 @@ _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/OntologyDocument
 <http://purl.org/spar/fabio/OntologyDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/OntologyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/VocabularyDocument> .
-<http://purl.org/spar/fabio/OntologyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
-_:genid107 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Ontology> .
-_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/OntologyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Ontology> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/OntologyDocument> <http://purl.org/vocab/vann/example> "\n        :my-ontology-document a fabio:OntologyDocument ;\n            dcterms:title 'Citation Typing Ontology'@en ;\n            frbr:realizationOf :my-ontology ;\n            dcterms:description 'A document consisting entirely of an ontology, or a part of an ontology.'@en .\n    " .
 <http://purl.org/spar/fabio/OntologyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing an ontology."@en .
 <http://purl.org/spar/fabio/OntologyDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2949,10 +2956,10 @@ _:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/PatentApplicationDocument
 <http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
-_:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PatentApplication> .
-_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PatentApplication> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/PatentApplicationDocument> <http://purl.org/vocab/vann/example> "\n        :my-patent-application-document a fabio:PatentApplicationDocument ;\n            dcterms:title 'Technical description for an AI-based ice cream generator'@en ;\n            frbr:realizationOf :my-patent-application ;\n            dcterms:description 'A document containing the text or drawings of a patent application.'@en .\n    " .
 <http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical or electronic realization of a patent application."@en .
 <http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2962,10 +2969,10 @@ _:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/PatentDocument
 <http://purl.org/spar/fabio/PatentDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/PatentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
-<http://purl.org/spar/fabio/PatentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
-_:genid109 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Patent> .
-_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/PatentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Patent> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/PatentDocument> <http://purl.org/vocab/vann/example> "\n        :my-patent-document a fabio:PatentDocument ;\n            dcterms:title 'Technical text for a patent on an AI-based ice cream generator'@en ;\n            frbr:realizationOf :my-patent ;\n            dcterms:description 'A document containing the text or drawings of a patent.'@en .\n    " .
 <http://purl.org/spar/fabio/PatentDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical or electronic realization of a patent."@en .
 <http://purl.org/spar/fabio/PatentDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2975,10 +2982,10 @@ _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/Periodical
 <http://purl.org/spar/fabio/Periodical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ExpressionCollection> .
-<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
-_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PeriodicalIssue> .
-_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PeriodicalIssue> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Periodical> <http://purl.org/vocab/vann/example> "\n        :my-periodical a fabio:Periodical ;\n            dcterms:title 'Nature'@en ;\n            dcterms:issn '1476-4687' ;\n            frbr:part :my-periodical-issue ;\n            dcterms:description 'A publication that is issued in parts at regular intervals.'@en .\n    " .
 <http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#comment> "A publication issued on a regular and ongoing basis as a series of issues, each issue comprising separate periodical items, for example editorials, articles, news items and/or other writings."@en .
 <http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -2988,10 +2995,10 @@ _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/PeriodicalIssue
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
-_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
-_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
+_:genid112 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://purl.org/vocab/vann/example> "\n        :my-periodical-issue a fabio:PeriodicalIssue ;\n            dcterms:title 'Nature Volume 600 Issue 7887'@en ;\n            fabio:hasSequenceIdentifier '7887' ;\n            frbr:partOf :my-periodical-issue , :my-periodical-volume ;\n            dcterms:description 'A single issue of a periodical publication.'@en .\n    " .
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular issue of a periodical, identified and distinguished from other issues of the same publication by date and/or issue number and/or volume number, and comprising separate periodical items such as editorials, articles and news items."@en .
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3000,26 +3007,26 @@ _:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://purl.org/spar/fabio/PeriodicalItem
 <http://purl.org/spar/fabio/PeriodicalItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PeriodicalItem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid112 .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid112 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid118 .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid114 .
-_:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid115 .
-_:genid115 <http://www.w3.org/2002/07/owl#unionOf> _:genid117 .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/PeriodicalVolume> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/PeriodicalIssue> .
+<http://purl.org/spar/fabio/PeriodicalItem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid113 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid115 .
+_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#unionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/PeriodicalVolume> .
 _:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/PeriodicalIssue> .
 _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/spar/fabio/PeriodicalItem> <http://purl.org/vocab/vann/example> "\n        :my-periodical-item a fabio:PeriodicalItem ;\n            dcterms:title 'The future of open science'@en ;\n            frbr:partOf :my-periodical-issue , :my-periodical-volume ;\n            dcterms:description 'An item published within an issue of a periodical.'@en .\n    " .
 <http://purl.org/spar/fabio/PeriodicalItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of writing published in a periodical issue, typically accompanied by other items by different authors."@en .
 <http://purl.org/spar/fabio/PeriodicalItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3029,10 +3036,10 @@ _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/PeriodicalVolume
 <http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
-_:genid119 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
-_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/PeriodicalVolume> <http://purl.org/vocab/vann/example> "\n        :my-periodical-volume a fabio:PeriodicalVolume ;\n            dcterms:title 'Nature Volume 600'@en ;\n            fabio:hasSequenceIdentifier '600' ;\n            frbr:partOf :my-periodical ;\n            dcterms:description 'A single volume of a periodical publication, usually collecting several issues.'@en .\n    " .
 <http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published volume of a periodical."@en .
 <http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3087,10 +3094,10 @@ _:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/PolicyDocument
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
-_:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Policy> .
-_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Policy> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/PolicyDocument> <http://purl.org/vocab/vann/example> "\n        :my-policy-document a fabio:PolicyDocument ;\n            dcterms:title 'University Policy for Open Access v3.0'@en ;\n            frbr:realizationOf :my-policy ;\n            dcterms:description 'A document that describes a set of principles or rules agreed upon by an organization or government.'@en .\n    " .
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how something should be done."@en .
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3212,10 +3219,10 @@ _:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/ProjectReportDocument
 <http://purl.org/spar/fabio/ProjectReportDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ProjectReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ReportDocument> .
-<http://purl.org/spar/fabio/ProjectReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
-_:genid121 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ProjectReport> .
-_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ProjectReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ProjectReport> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ProjectReportDocument> <http://purl.org/vocab/vann/example> "\n        :my-project-report-document a fabio:ProjectReportDocument ;\n            dcterms:title 'Project X final report'@en ;\n            frbr:realizationOf :my-project-report ;\n            dcterms:description 'A document containing a report on the progress, results or status of a project.'@en .\n    " .
 <http://purl.org/spar/fabio/ProjectReportDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing a project report, intended to be delivered to a customer or funding agency describing the results achieved within a specific project."@en .
 <http://purl.org/spar/fabio/ProjectReportDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3273,10 +3280,10 @@ _:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/ReferenceBook
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Book> .
-<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
-_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
-_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ReferenceBook> <http://purl.org/vocab/vann/example> "\n        :my-reference-book a fabio:ReferenceBook ;\n            dcterms:title 'Oxford English Dictionary, 12th Edition'@en ;\n            frbr:realizationOf :my-reference-work ;\n            dcterms:description 'A book intended to be consulted for information rather than read from beginning to end.'@en .\n    " .
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#comment> "A book containing authoritative factual information, such as a dictionary, encyclopaedia, handbook or field guide, which is a realisation of a certain reference work and may contain several reference entries."@en .
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3286,10 +3293,10 @@ _:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/ReferenceEntry
 <http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Entry> .
-<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
-_:genid123 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
-_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
+_:genid124 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ReferenceEntry> <http://purl.org/vocab/vann/example> "\n        :my-reference-entry a fabio:ReferenceEntry ;\n            dcterms:title 'Definition of 'Ontology''@en ;\n            frbr:realizationOf :my-reference-work ;\n            dcterms:description 'A discrete item of information in a reference book, such as a dictionary entry or an encyclopedia article.'@en .\n    " .
 <http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular reference entry containing authoritative factual information on a certain topic, usually contained in a larger expression."@en .
 <http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3335,10 +3342,10 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/ReportDocument
 <http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
-_:genid124 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Report> .
-_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Report> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ReportDocument> <http://purl.org/vocab/vann/example> "\n        :my-report-document a fabio:ReportDocument ;\n            dcterms:title 'Yearly report on scientific research'@en ;\n            frbr:realizationOf :my-report ;\n            dcterms:description 'A document containing a report.'@en .\n    " .
 <http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a report, usually in printed form."@en .
 <http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3395,10 +3402,10 @@ _:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/RetractionNotice
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Comment> .
-<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
-_:genid125 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Retraction> .
-_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
+_:genid126 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Retraction> .
+_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/RetractionNotice> <http://purl.org/vocab/vann/example> "\n        :my-retraction-notice a fabio:RetractionNotice ;\n            dcterms:title 'Notice of retraction for article ID-456'@en ;\n            frbr:realizationOf :my-retraction ;\n            dcterms:description 'A formal public notice about a retraction.'@en .\n    " .
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a retraction. A formal document which publicly withdraws, cancels, refutes, reverses an earlier statement or publication or announces the act of desisting from publishing the original statement."@en .
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3417,10 +3424,10 @@ _:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/ReviewArticle
 <http://purl.org/spar/fabio/ReviewArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ReviewArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
-<http://purl.org/spar/fabio/ReviewArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
-_:genid126 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Review> .
-_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ReviewArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Review> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ReviewArticle> <http://purl.org/vocab/vann/example> "\n        :my-review-article a fabio:ReviewArticle ;\n            dcterms:title 'Review of the book 'Intelligent Agents 101''@en ;\n            frbr:realizationOf :my-review ;\n            dcterms:description 'An article containing a review.'@en .\n    " .
 <http://purl.org/spar/fabio/ReviewArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article that contains a review."@en .
 <http://purl.org/spar/fabio/ReviewArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3482,6 +3489,15 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/2000/01/rdf-schema#label> "short story"@en .
 <http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 # 
+# http://purl.org/spar/fabio/Software
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/Software> <http://purl.org/vocab/vann/example> "\n        :my-software a fabio:Software ;\n            dcterms:title 'Data Parser Tool'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A set of instructions that a computer can use to perform a specific task.'@en .\n            " .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#comment> "The distinct intellectual creation of a computer program or software application. It represents the abstract concept, logic, and intended functionality of the software, independent of any specific source code implementation, programming language, or compiled version."@en .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#label> "software"@en .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
 # http://purl.org/spar/fabio/Song
 <http://purl.org/spar/fabio/Song> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Song> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/MusicalComposition> .
@@ -3512,10 +3528,10 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/SpecificationDocument
 <http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid127 .
-_:genid127 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Specification> .
-_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Specification> .
+_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/SpecificationDocument> <http://purl.org/vocab/vann/example> "\n        :my-specification-document a fabio:SpecificationDocument ;\n            dcterms:title 'Specification document for HTTP/1.1'@en ;\n            frbr:realizationOf :my-specification ;\n            dcterms:description 'A document containing a specification.'@en .\n    " .
 <http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a specification (a standard, a workflow, etc.)."@en .
 <http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3560,10 +3576,10 @@ _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/StructuredSummary
 <http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
-_:genid128 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MinimalInformationStandard> .
-_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid129 .
+_:genid129 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MinimalInformationStandard> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/StructuredSummary> <http://purl.org/vocab/vann/example> "\n        :my-structured-summary a fabio:StructuredSummary ;\n            dcterms:title 'Structured summary of Project X'@en ;\n            frbr:realizationOf :my-minimal-information-standard ;\n            dcterms:description 'A summary of a document that is structured into formal sections, such as Background, Methods, Results, and Conclusions.'@en .\n    " .
 <http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard. Such a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF. Such a structured summary differs from the Abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects."@en .
 <http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3574,10 +3590,10 @@ _:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/SubjectDiscipline
 <http://purl.org/spar/fabio/SubjectDiscipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/SubjectDiscipline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://purl.org/spar/fabio/SubjectDiscipline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid129 .
-_:genid129 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DisciplineDictionary> .
-_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/SubjectDiscipline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
+_:genid130 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DisciplineDictionary> .
+_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/SubjectDiscipline> <http://purl.org/vocab/vann/example> "\n        :my-subject-discipline a fabio:SubjectDiscipline ;\n            dcterms:title 'Computational Linguistics'@en ;\n            skos:isScheme :my-discipline-dictionary ;\n            dcterms:description 'A branch of knowledge or field of study, such as physics, history, or linguistics.'@en .\n    " .
 <http://purl.org/spar/fabio/SubjectDiscipline> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept that identifies a field of knowledge or human activity defined in a controlled vocabulary, such as Computer Science, Biology, Economics, Cookery or Swimming."@en .
 <http://purl.org/spar/fabio/SubjectDiscipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3587,10 +3603,10 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/SubjectTerm
 <http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
-_:genid130 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/TermDictionary> .
-_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
+_:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/TermDictionary> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/SubjectTerm> <http://purl.org/vocab/vann/example> "\n        :my-subject-term a fabio:SubjectTerm ;\n            dcterms:title 'Semantic Web'@en ;\n            skos:inScheme :my-term-dictionary ;\n            dcterms:description 'A word or phrase used to describe the subject matter of a work.'@en .\n    " .
 <http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept that defines a term within the controlled vocabulary of a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, used as an annotation to describe the subject, meaning or content of an entity."@en .
 <http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3673,10 +3689,10 @@ _:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/TermDictionary
 <http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
-_:genid131 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/SubjectTerm> .
-_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isSchemeOf> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/SubjectTerm> .
+_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isSchemeOf> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/TermDictionary> <http://purl.org/vocab/vann/example> "\n        :my-term-dictionary a fabio:TermDictionary ;\n            dcterms:title 'Artificial Intelligence Glossary'@en ;\n            skos:isSchemeOf :my-subject-term ;\n            dcterms:description 'A collection of terms and their definitions, often specific to a particular subject or field.'@en .\n    " .
 <http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#comment> "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."@en .
 <http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3687,10 +3703,10 @@ _:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/Textbook
 <http://purl.org/spar/fabio/Textbook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Book> .
-<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
-_:genid132 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/InstructionalWork> .
-_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
+_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/InstructionalWork> .
+_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Textbook> <http://purl.org/vocab/vann/example> "\n        :my-text-book a fabio:TextBook ;\n            dcterms:title 'Introduction to Meta-ontologies'@en ;\n            frbr:realizationOf :my-instructional-work ;\n            dcterms:description 'A book used as a standard source of information for the formal study of a particular subject.'@en .\n    " .
 <http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#comment> "A book containing instructional material relating to a particular topic of academic study, designed to be read by students."@en .
 <http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3773,10 +3789,10 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/VocabularyDocument
 <http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
-_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Vocabulary> .
-_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
+_:genid134 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Vocabulary> .
+_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/VocabularyDocument> <http://purl.org/vocab/vann/example> "\n        :my-vocabulary-document a fabio:VocabularyDocument ;\n            dcterms:title 'SKOS Simple Knowledge Organization System Reference'@en ;\n            frbr:realizationOf :my-vocabulary ;\n            dcterms:description 'A document that describes a vocabulary, such as a formal specification or a user guide.'@en .\n    " .
 <http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing a vocabulary"@en .
 <http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3796,10 +3812,10 @@ _:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/VocabularyMappingDocument
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
-<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
-_:genid134 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/VocabularyMapping> .
-_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
+_:genid135 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/VocabularyMapping> .
+_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://purl.org/vocab/vann/example> "\n        :my-vocabulary-mapping-document a fabio:VocabularyMappingDocument ;\n            dcterms:title 'Technical documentation on MeSH-LCSH mapping'@en ;\n            frbr:realizationOf :my-vocabulary-mapping ;\n            dcterms:description 'A document that describes a vocabulary mapping, such as a formal specification or a user guide.'@en .\n    " .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing a vocabulary mapping."@en .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3818,10 +3834,10 @@ _:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/WebContent
 <http://purl.org/spar/fabio/WebContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
-_:genid135 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/WebManifestation> .
-_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid136 .
+_:genid136 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/WebManifestation> .
+_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/WebContent> <http://purl.org/vocab/vann/example> "\n        :my-web-content a fabio:WebContent ;\n            dcterms:title 'Content of SPUK's home page'@en ;\n            frbr:embodiment :my-web-manifestation ;\n            dcterms:description 'A document or other resource that is delivered to a user over the World Wide Web.'@en .\n    " .
 <http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#comment> "Information prepared specifically and primarily for manifestation in a web page, comprising text, images, datasets and/or other works."@en .
 <http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3896,25 +3912,25 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/Work
 <http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid136 .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid136 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid139 .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid137 .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid138 .
-_:genid138 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
-_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid140 .
-_:genid140 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
-_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid141 .
-_:genid141 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
-_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid137 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid139 .
+_:genid139 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 _:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
+_:genid142 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
+_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Work> <http://purl.org/vocab/vann/example> "\n        :my-work a fabio:Work ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:realization :my-expression ;\n            dcterms:description 'A conceptual endeavor as imagined by its creator.'@en .\n    " .
 <http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references."@en .
 <http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3925,10 +3941,10 @@ _:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/WorkCollection
 <http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
-<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
-_:genid142 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Work> .
-_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
+_:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Work> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/WorkCollection> <http://purl.org/dc/elements/1.1/creator> "A collection of works."@en .
 <http://purl.org/spar/fabio/WorkCollection> <http://purl.org/vocab/vann/example> "\n        :my-work-collection a fabio:WorkCollection ;\n            dcterms:title 'John Doe's works'@en ;\n            dcterms:creator :john-doe ;\n            frbr:part :my-work, :my-another-work ;\n            dcterms:description 'A collection of works, for example the 'complete works' of an author.'@en .\n    " .
 <http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -3974,10 +3990,10 @@ _:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio/WorkshopProceedings
 <http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/AcademicProceedings> .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
-_:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/WorkshopPaper> .
-_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
+_:genid144 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/WorkshopPaper> .
+_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/WorkshopProceedings> <http://purl.org/vocab/vann/example> "\n        :my-workshop-proceedings a fabio:WorkshopProceedings ;\n            dcterms:title 'Proceedings of the International Workshop on Linked Open Data 2026'@en ;\n            frbr:part :my-workshop-paper ;\n            dcterms:description 'A collection of papers presented at a workshop.'@en .\n    " .
 <http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected workshop papers, or their abstracts, presented at a workshop or similar event."@en .
 <http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
@@ -4035,7 +4051,6 @@ _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/spar/fabio
 <http://purl.org/spar/fabio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/fabio> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/legalcode> .
-<https://creativecommons.org/licenses/by/4.0/legalcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/fabio> <http://purl.org/dc/terms/abstract> "The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references."@en .
 <http://purl.org/spar/fabio> <http://purl.org/dc/terms/created> "2017-05-29" .
 <http://purl.org/spar/fabio> <http://purl.org/dc/terms/issued> "2017-05-29" .
@@ -4182,6 +4197,7 @@ _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://purl.org/spar/fabio/web> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 # 
 # https://creativecommons.org/licenses/by/4.0/legalcode
+<https://creativecommons.org/licenses/by/4.0/legalcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # 
 # 
@@ -4203,28 +4219,28 @@ _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # #################################################################
 # 
 # 
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid144 <http://www.w3.org/2002/07/owl#members> _:genid147 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid145 <http://www.w3.org/2002/07/owl#members> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
 _:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Thesaurus> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Taxonomy> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Thesaurus> .
 _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/AuthorityFile> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Taxonomy> .
 _:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/AuthorityFile> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid148 <http://www.w3.org/2002/07/owl#members> _:genid151 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid149 <http://www.w3.org/2002/07/owl#members> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
 _:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid149 .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MastersThesis> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/DoctoralThesis> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MastersThesis> .
 _:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/BachelorsThesis> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/DoctoralThesis> .
 _:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/BachelorsThesis> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
