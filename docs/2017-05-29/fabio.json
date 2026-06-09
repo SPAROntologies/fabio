@@ -1313,7 +1313,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A document embodying a policy that descibes and defines how something should be done. "
+        "@value": "A document embodying a policy that describes and defines how something should be done. "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2679,7 +2679,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The International Standard Serial Number, ISSN, an identifer for serial publications."
+        "@value": "The International Standard Serial Number, ISSN, an identifier for serial publications."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
@@ -3395,7 +3395,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."
+        "@value": "A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -4133,7 +4133,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A document embodying a policy that descibes and defines how data should be managed, preserved and shared."
+        "@value": "A document embodying a policy that describes and defines how data should be managed, preserved and shared."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -4408,7 +4408,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A policy that descibes and defines how data should be managed, preserved and shared."
+        "@value": "A policy that describes and defines how data should be managed, preserved and shared."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -7138,7 +7138,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A persistent identifier of the Handel system for digital objects and other resources on the Internet."
+        "@value": "A persistent identifier of the Handle system for digital objects and other resources on the Internet."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [

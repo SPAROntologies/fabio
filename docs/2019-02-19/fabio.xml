@@ -528,7 +528,7 @@ E.g. see http://iswc2018.semanticweb.org/call-for-in-use-track-papers/.</rdfs:co
   <rdf:Description rdf:about="http://purl.org/spar/fabio/DataManagementPolicyDocument">
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/PolicyDocument"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A document embodying a policy that descibes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A document embodying a policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
     <rdfs:label xml:lang="en">data management policy document</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/UncontrolledVocabulary">
@@ -719,7 +719,7 @@ E.g. see http://www.emeraldgrouppublishing.com/products/journals/author_guidelin
   <rdf:Description rdf:about="http://purl.org/spar/fabio/PolicyDocument">
     <rdfs:label xml:lang="en">policy document</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:comment xml:lang="en">A document embodying a policy that descibes and defines how something should be done. </rdfs:comment>
+    <rdfs:comment xml:lang="en">A document embodying a policy that describes and defines how something should be done. </rdfs:comment>
     <rdfs:subClassOf rdf:nodeID="N9b6f87960190417f992c86bd0e6474a8"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -816,7 +816,7 @@ E.g. see http://www.emeraldgrouppublishing.com/products/journals/author_guidelin
   <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/issn">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:comment xml:lang="en">The International Standard Serial Number, ISSN, an identifer for serial publications.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The International Standard Serial Number, ISSN, an identifier for serial publications.</rdfs:comment>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
     <rdfs:isDefinedBy rdf:resource="http://www.issn.org/"/>
     <rdfs:label xml:lang="en">has ISSN</rdfs:label>
@@ -1041,7 +1041,7 @@ E.g. see http://iswc2018.semanticweb.org/call-for-research-track-papers/.</rdfs:
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:comment xml:lang="en">A persistent identifier of the Handel system for digital objects and other resources on the Internet.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A persistent identifier of the Handle system for digital objects and other resources on the Internet.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Article">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -2684,7 +2684,7 @@ A retraction is a public statement made about an earlier statement that withdraw
   <rdf:Description rdf:about="http://purl.org/spar/fabio/DataManagementPolicy">
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Policy"/>
     <rdfs:label xml:lang="en">data management policy</rdfs:label>
-    <rdfs:comment xml:lang="en">A policy that descibes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ReferenceWork">
@@ -2870,7 +2870,7 @@ A retraction is a public statement made about an earlier statement that withdraw
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
     <rdfs:label xml:lang="en">has patent number</rdfs:label>
-    <rdfs:comment xml:lang="en">A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:nodeID="Ne53c6c96a1a847d4bd428dd55c6a824c">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>

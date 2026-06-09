@@ -326,7 +326,7 @@ _:Ne56dd426365a4f4e9c4348dcf2f3e75e <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/spar/fabio/OntologyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/VocabularyDocument> .
 <http://purl.org/spar/fabio/DisciplineDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N93b7edf3823a4363a92165d3135932f6 .
-<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/JournalIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published issue of a journal, one or more of which will constitute a volume of the journal."@en .
 <http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Item> .
 <http://prismstandard.org/namespaces/basic/2.0/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -931,7 +931,7 @@ _:N18c69017cac74c1cb7ba2994656b4ca1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 _:Nbb077f5ccb594108903facd0553ac184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/WebPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
+<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
 <http://purl.org/spar/fabio/DefinitiveVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Manuscript> .
 <http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Opinion> .
 <http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#label> "letter"@en .
@@ -1183,7 +1183,7 @@ _:Ndbb863a1418146ad8a1ff446d124cc1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fabio/SubjectDiscipline> .
 <http://prismstandard.org/namespaces/basic/2.0/issueIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handel system for digital objects and other resources on the Internet."@en .
+<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handle system for digital objects and other resources on the Internet."@en .
 <http://purl.org/spar/fabio/Vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/hard-drive> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-volatile storage device for digital data, composed of one or more rigid discs (platters) mounted side by side on a motor-driven spindle within a metal case. Data are encoded magnetically by read/write heads that float on cushions of air in close proximity to the surfaces of the rotated platters."@en .
 <http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1918,7 +1918,7 @@ _:Na991885d3e674426a0200514040134ac <http://www.w3.org/2002/07/owl#onProperty> <
 <http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#comment> "The name or identifier of the section or part of a resource, for example Part 2 of Issue 6 of Volume 127 of the Journal of Cell Biology, or the Travel Section of a newspaper issue."@en .
 <http://purl.org/spar/fabio/hasCopyrightYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://purl.org/spar/fabio/Script> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/Specification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:N1ff06cd05dab4d628358423245caed33 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 <http://prismstandard.org/namespaces/basic/2.0/eIssn> <http://www.w3.org/2000/01/rdf-schema#label> "has electronic International Standard Serial Number"@en .
@@ -1954,7 +1954,7 @@ _:N906e6ba768b641e388a917be0cb90908 <http://www.w3.org/2002/07/owl#onProperty> <
 <http://purl.org/spar/fabio/Novel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/LiteraryArtisticWork> .
 _:Nb89d7cf7611d4c7ca56da0b72ef8c1ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/RapidCommunication> .
 <http://purl.org/spar/fabio/MusicalComposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/LiteraryArtisticWork> .
-<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifer for serial publications."@en .
+<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifier for serial publications."@en .
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "has title"@en .
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N316a9a3c955443449760498dbd83fcba .
 _:Ndbb863a1418146ad8a1ff446d124cc1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne9e8f145fbc7415fab7a46023424e6db .
@@ -1994,7 +1994,7 @@ _:N8e6c9684bfbc4205abcb3c7a65f3a39e <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 _:N8249849340b649b0b8e8938cbb6712d4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
 <http://purl.org/spar/fabio/cd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/2000/01/rdf-schema#comment> "A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event."@en .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how something should be done. "@en .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how something should be done. "@en .
 _:N316a9a3c955443449760498dbd83fcba <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Policy> .
 <http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Policy> .
 <http://purl.org/spar/fabio/dvd> <http://www.w3.org/2000/01/rdf-schema#label> "digital versatile disc"@en .

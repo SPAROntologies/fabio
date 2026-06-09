@@ -10,7 +10,7 @@ _:N8a9ded59abe44728ab22c331012f476c <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://purl.org/spar/fabio/Questionnaire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 _:N7a02069150b74ccbb424210f284f4fdd <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Book> .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how something should be done. "@en .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how something should be done. "@en .
 <http://purl.org/spar/fabio/Directory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Database> .
 <http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://www.w3.org/2000/01/rdf-schema#label> "alternate title"@en .
 <http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -85,7 +85,7 @@ _:Nfccf60ad7cee46ddb1d3da34222ef530 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/fabio/ApplicationProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/MusicalComposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/LiteraryArtisticWork> .
 <http://purl.org/spar/fabio/Tweet> <http://www.w3.org/2000/01/rdf-schema#label> "tweet"@en .
-<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
+<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing a vocabulary mapping"@en .
 <http://purl.org/spar/fabio/CitationMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "citation metadata"@en .
 <http://prismstandard.org/namespaces/basic/2.0/doi> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.doi.org/> .
@@ -267,7 +267,7 @@ _:Nca91fe0819ef4f14964597a49a711b0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/fabio/ConferencePaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ProceedingsPaper> .
 <http://purl.org/spar/fabio/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/AnalogManifestation> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/fabio/DigitalManifestation> .
-<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "thesis"@en .
 <http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "specification document"@en .
 _:N7a02069150b74ccbb424210f284f4fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -776,7 +776,7 @@ _:Na572123b1c584f06a387f1462fce5050 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nf6c56bf7efd44e0492f71cf8615dd109 .
 _:N8c1e7796b2cf487abd5de85cbf19c8a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handel system for digital objects and other resources on the Internet."@en .
+<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handle system for digital objects and other resources on the Internet."@en .
 <http://purl.org/spar/fabio/Folksonomy> <http://www.w3.org/2000/01/rdf-schema#comment> "A system of classification derived from the practice and method of collaboratively creating and managing tags to annotate and categorize content in a particular domain. [Contrast fabio:Ontology]"@en .
 <http://purl.org/spar/fabio/BookSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of books having certain characteristics in common that informally allow their identification together as a group - for instance, the books of the Harry Potter saga."@en .
 <http://purl.org/spar/fabio/hasDistributionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -1178,7 +1178,7 @@ _:Nf641eb2a7eef43e3a6012a71ff754262 <http://www.w3.org/2002/07/owl#onProperty> <
 <http://purl.org/spar/fabio/Excerpt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#label> "newspaper"@en .
 _:N0a5f447249ca4aa793c5e64b53addffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifer for serial publications."@en .
+<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifier for serial publications."@en .
 <http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Entry> .
 _:N2b02ce275a61427c9ccdf49e1276140c <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
 _:Ndf54d701e9b24d6f97513d19b9206b22 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
@@ -1588,7 +1588,7 @@ _:Nd83f14b54e9442a3b8728ad989e1a830 <http://www.w3.org/2002/07/owl#allValuesFrom
 <http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2000/01/rdf-schema#comment> "A supplement to a publication such as a book, journal, magazine or newspaper, additional to the main publication.  For example, a colour supplement to a sunday newspaper, or a special supplementary issue of a journal or a journal volume containing invited articles on a special topic, or abstracts or papers presented at a scientific conference."@en .
 _:N31abd517b68e4aa3b1a3aec0eff42911 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
 <http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#label> "book series"@en .
-<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/DataRepository> <http://www.w3.org/2000/01/rdf-schema#comment> "A repository for storing data."@en .
 <http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/WorkPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

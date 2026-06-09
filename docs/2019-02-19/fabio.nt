@@ -748,7 +748,7 @@ _:Nd2fb51b4264c400b996e9a7aa0b71ea8 <http://www.w3.org/2002/07/owl#onProperty> <
 <http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Item> .
 <http://purl.org/spar/fabio/ram> <http://www.w3.org/2000/01/rdf-schema#comment> "Abbreviation of Random Access Memory.  A form of rewritable computer data storage that takes the form of integrated circuits that allow data to be stored and accessed in any order (i.e. at random), thereby achieving greater speed than for access of data stored in linear form on digital magnetic tape."@en .
 <http://purl.org/spar/fabio/Email> <http://www.w3.org/2000/01/rdf-schema#label> "e-mail"@en .
-<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#label> "figure"@en .
 <http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/spar/fabio/BookChapter> <http://www.w3.org/2000/01/rdf-schema#comment> "A defined chapter of a book, usually with a separate title or number."@en .
@@ -904,7 +904,7 @@ _:N2a25089c84bb45ecb56762dd0cee2570 <http://www.w3.org/2002/07/owl#allValuesFrom
 <http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected papers, or their abstracts, presented at an academic meeting."@en .
 _:N690f0d7c856d44b9a09e3440733b87fd <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
 <http://purl.org/spar/fabio/LaboratoryNotebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handel system for digital objects and other resources on the Internet."@en .
+<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handle system for digital objects and other resources on the Internet."@en .
 <http://purl.org/spar/fabio/Screenplay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:Ne53c6c96a1a847d4bd428dd55c6a824c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:Ne53c6c96a1a847d4bd428dd55c6a824c <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
@@ -1061,7 +1061,7 @@ _:Nf476d950980e4c1f978913ad10577082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N03cb3c1fc28e4cb392c6c322cb74a861 .
 <http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#label> "has subtitle"@en .
 <http://purl.org/spar/fabio/Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "A description and definition of how something should be done.  Ideally a policy should be both effective in achieving its goals and acceptable to those who have to abide by it."@en .
-<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
+<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
 _:N66e89c82b47f4c799cd9f6e9fae6e2c3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nd3d4bac4e5df40748296c8d301434a4d .
 <http://purl.org/spar/fabio/MeetingReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Report> .
@@ -1557,7 +1557,7 @@ _:N2c754a3a025a4ec6b22ed10537ad793c <http://www.w3.org/2002/07/owl#onProperty> <
 <http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/BookReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Review> .
 <http://purl.org/spar/fabio/hasDistributionDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
-<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/Poem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/LiteraryArtisticWork> .
 <http://purl.org/spar/fabio/Abstract> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/fabio/StructuredSummary> .
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ne53c6c96a1a847d4bd428dd55c6a824c .
@@ -1833,7 +1833,7 @@ _:Nfbf0339c6866447486be51d5e604ffdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
 <http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Opinion> .
 <http://purl.org/spar/fabio/RelationalDatabase> <http://www.w3.org/2000/01/rdf-schema#comment> "A database in which the data are arranged in tables according to their common characteristics, with relationships between the tables being defined by a relational model or schema. A relational database is highly optimized for performance, and is queried using a database query language such as SQL (Structured Query Language).  The software used to create a relational database is called a relational database management system (RDBMS)."@en .
-<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifer for serial publications."@en .
+<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifier for serial publications."@en .
 _:Nc56a9d6e3816411e8a051ba561b8b390 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
 <http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/hasVolumeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -2102,7 +2102,7 @@ _:N5b166517706248b5b7579a03157acbc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#label> "has submission date"@en .
 _:N5a32cfebd9d8404c9d2422dd74b4bbdd <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
 <http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how something should be done. "@en .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how something should be done. "@en .
 <http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .

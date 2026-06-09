@@ -60,7 +60,7 @@ prism:issn a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "has ISSN"@en,
         "has International Standard Serial Number"@en ;
-    rdfs:comment "The International Standard Serial Number, ISSN, an identifer for serial publications."@en ;
+    rdfs:comment "The International Standard Serial Number, ISSN, an identifier for serial publications."@en ;
     rdfs:domain frbr:Endeavour ;
     rdfs:isDefinedBy <http://www.issn.org/> ;
     rdfs:subPropertyOf dcterms:identifier .
@@ -423,12 +423,12 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
 
 :DataManagementPolicy a owl:Class ;
     rdfs:label "data management policy"@en ;
-    rdfs:comment "A policy that descibes and defines how data should be managed, preserved and shared."@en ;
+    rdfs:comment "A policy that describes and defines how data should be managed, preserved and shared."@en ;
     rdfs:subClassOf :Policy .
 
 :DataManagementPolicyDocument a owl:Class ;
     rdfs:label "data management policy document"@en ;
-    rdfs:comment "A document embodying a policy that descibes and defines how data should be managed, preserved and shared."@en ;
+    rdfs:comment "A document embodying a policy that describes and defines how data should be managed, preserved and shared."@en ;
     rdfs:subClassOf :PolicyDocument .
 
 :DataMangementPlan a owl:Class ;
@@ -1212,7 +1212,7 @@ A retraction is a public statement made about an earlier statement that withdraw
 
 :hasHandle a owl:DatatypeProperty ;
     rdfs:label "has handle"@en ;
-    rdfs:comment "A persistent identifier of the Handel system for digital objects and other resources on the Internet."@en ;
+    rdfs:comment "A persistent identifier of the Handle system for digital objects and other resources on the Internet."@en ;
     rdfs:domain frbr:Endeavour ;
     rdfs:isDefinedBy <http://www.handle.net/> ;
     rdfs:range xsd:string ;
@@ -1266,7 +1266,7 @@ A retraction is a public statement made about an earlier statement that withdraw
 
 :hasPatentNumber a owl:DatatypeProperty ;
     rdfs:label "has patent number"@en ;
-    rdfs:comment "A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en ;
+    rdfs:comment "A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en ;
     rdfs:subPropertyOf dcterms:identifier .
 
 :hasPortrayal a owl:ObjectProperty ;
@@ -1657,7 +1657,7 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
 
 :PolicyDocument a owl:Class ;
     rdfs:label "policy document"@en ;
-    rdfs:comment "A document embodying a policy that descibes and defines how something should be done. "@en ;
+    rdfs:comment "A document embodying a policy that describes and defines how something should be done. "@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty frbr:realizationOf ;
             owl:someValuesFrom :Policy ],

@@ -43,7 +43,7 @@ _:Na6b7030626194c5eba2d0e9bd02b7c87 <http://www.w3.org/2002/07/owl#allValuesFrom
 <http://purl.org/spar/fabio/Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "thesis"@en .
 _:N7e9d7f99d40a4149a73c593de4ff8b2f <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
 <http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/DataFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published volume of a journal, comprising one or more journal issues."@en .
 _:N3b2b21e73c564f71aafa8983fd7a6dfa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N272f322978914788942e59f6295666ac .
@@ -473,7 +473,7 @@ _:N7c6daad35eff4fccaec523d46f5a0ba2 <http://www.w3.org/2002/07/owl#onProperty> <
 <http://purl.org/spar/fabio/CaseForSupport> <http://www.w3.org/2000/01/rdf-schema#label> "case for support"@en .
 <http://purl.org/spar/fabio/PrintObject> <http://www.w3.org/2000/01/rdf-schema#comment> "An analog manifestation in physical printed form, typically on paper."@en .
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how data should be managed, preserved and shared."@en .
+<http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how data should be managed, preserved and shared."@en .
 <http://purl.org/spar/fabio/Hardback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:N7cde612930bd41dea2ec82651fef0947 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/hasPII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -654,7 +654,7 @@ _:N5cfe6805ae774a328d72eaf183a066d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 _:N38e067966cd14bf48bdf8faf3d214f7c <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
 <http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected conference papers, or their abstracts, presented at a conference, seminar, symposium or similar event."@en .
 <http://purl.org/spar/fabio/Book> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-serial document that is complete in one volume or a designated finite number of volumes.  A book published by a publisher is usually  identified by an International Standard Book Number (ISBN), and may be manifested as a physical printed publication on paper bound in a hard or soft cover, or in electronic format as an 'e-book'."@en .
-<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handel system for digital objects and other resources on the Internet."@en .
+<http://purl.org/spar/fabio/hasHandle> <http://www.w3.org/2000/01/rdf-schema#comment> "A persistent identifier of the Handle system for digital objects and other resources on the Internet."@en .
 <http://purl.org/spar/fabio/AnalogManifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation in an analog form."@en .
 <http://purl.org/spar/fabio/LaboratoryNotebook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Notebook> .
 <http://purl.org/spar/fabio/hasIssnL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
@@ -1295,7 +1295,7 @@ _:N35a4347469f24101b416687705ec3d7c <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/fabio/DataManagementPolicyDocument> <http://www.w3.org/2000/01/rdf-schema#label> "data management policy document"@en .
 <http://purl.org/spar/fabio/ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of metadata elements, policies and guidelines defined for a particular application.  The metadata elements used in the application profile may be drawn from more than one element sets, including locally defined sets. "@en .
 <http://purl.org/spar/fabio/ManifestationCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of manifestations."@en .
-<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifer for serial publications."@en .
+<http://prismstandard.org/namespaces/basic/2.0/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "The International Standard Serial Number, ISSN, an identifier for serial publications."@en .
 <http://purl.org/spar/fabio/Triplestore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/JournalEditorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N50330592874648b6b9412c478c014635 .
 <http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ProceedingsPaper> .
@@ -1687,7 +1687,7 @@ _:Nc28c3ce67e95451a80023824dc99f48b <http://www.w3.org/2002/07/owl#onProperty> <
 <http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2000/01/rdf-schema#label> "has character count"@en .
 <http://purl.org/spar/fabio/Play> <http://www.w3.org/2000/01/rdf-schema#comment> "A form of literature written by a playwright, usually consisting of scripted dialogue between characters, intended for theatrical performance rather than reading."@en .
-<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
+<http://purl.org/spar/fabio/hasPatentNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en .
 <http://purl.org/spar/fabio/Oration> <http://www.w3.org/2000/01/rdf-schema#label> "oration"@en .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/NewspaperNewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1954,7 +1954,7 @@ _:Nff03339f4b6a44b7ae1ef2742d465bf8 <http://www.w3.org/2002/07/owl#someValuesFro
 <http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/spar/fabio/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/LectureNotes> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing notes that summarize a lecture or course of lectures."@en .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that descibes and defines how something should be done. "@en .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how something should be done. "@en .
 <http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#comment> "A realisation of a fabio:Dataset (a frbr:Work) containing a defined collection of data with specific content and possibly with a specific version number, that can be embodied as a fabio:Digital Manifestation (a frbr:Manifestation with a specific format) and be represented by a specific fabio:ComputerFile (a frbr:Item) on someone's hard drive."@en .
 <http://purl.org/spar/fabio/CaseReport> <http://www.w3.org/2000/01/rdf-schema#label> "case report"@en .
