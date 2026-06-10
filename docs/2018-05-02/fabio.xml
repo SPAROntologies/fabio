@@ -354,7 +354,7 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">data management policy document</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/PolicyDocument"/>
-    <rdfs:comment xml:lang="en">A document embodying a policy that descibes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A document embodying a policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/solid-state-memory">
     <rdfs:comment xml:lang="en">A digital storage device built entirely from solid electronic materials with no moving parts, e.g. a USB flash drive.</rdfs:comment>
@@ -649,7 +649,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
   </rdf:Description>
   <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/issn">
     <rdfs:label xml:lang="en">has International Standard Serial Number</rdfs:label>
-    <rdfs:comment xml:lang="en">The International Standard Serial Number, ISSN, an identifer for serial publications.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The International Standard Serial Number, ISSN, an identifier for serial publications.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://www.issn.org/"/>
     <rdfs:label xml:lang="en">has ISSN</rdfs:label>
@@ -1678,7 +1678,7 @@ A retraction is a public statement made about an earlier statement that withdraw
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasHandle">
     <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     <rdfs:isDefinedBy rdf:resource="http://www.handle.net/"/>
-    <rdfs:comment xml:lang="en">A persistent identifier of the Handel system for digital objects and other resources on the Internet.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A persistent identifier of the Handle system for digital objects and other resources on the Internet.</rdfs:comment>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
     <rdfs:label xml:lang="en">has handle</rdfs:label>
@@ -1745,7 +1745,7 @@ Recommended best practice is to use a controlled vocabulary such as RFC 4646 [ht
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Policy"/>
     <rdfs:label xml:lang="en">data management policy</rdfs:label>
-    <rdfs:comment xml:lang="en">A policy that descibes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/doi">
     <rdfs:isDefinedBy rdf:resource="http://www.doi.org/"/>
@@ -2378,7 +2378,7 @@ Date may be used to express temporal information at any level of granularity. Re
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/PolicyDocument">
-    <rdfs:comment xml:lang="en">A document embodying a policy that descibes and defines how something should be done. </rdfs:comment>
+    <rdfs:comment xml:lang="en">A document embodying a policy that describes and defines how something should be done. </rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:nodeID="N316a9a3c955443449760498dbd83fcba"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
@@ -2926,7 +2926,7 @@ E.g. see http://iswc2018.semanticweb.org/call-for-research-track-papers/.</rdfs:
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasPatentNumber">
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:comment xml:lang="en">A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document.</rdfs:comment>
     <rdfs:label xml:lang="en">has patent number</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="N59b68a84c0ba48c598b82e33409be3d1">

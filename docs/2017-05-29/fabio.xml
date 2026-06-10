@@ -55,12 +55,12 @@
     <rdfs:label xml:lang="en">has ISSN</rdfs:label>
     <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:comment xml:lang="en">The International Standard Serial Number, ISSN, an identifer for serial publications.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The International Standard Serial Number, ISSN, an identifier for serial publications.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/PolicyDocument">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A document embodying a policy that descibes and defines how something should be done. </rdfs:comment>
+    <rdfs:comment xml:lang="en">A document embodying a policy that describes and defines how something should be done. </rdfs:comment>
     <rdfs:label xml:lang="en">policy document</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
     <rdfs:subClassOf rdf:nodeID="N88ede37542444cb38fde4b2a300c32d8"/>
@@ -535,7 +535,7 @@ Examples of different manifestations of a single 'version of record' expression 
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasPatentNumber">
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-    <rdfs:comment xml:lang="en">A unique identifing number issued by a patent authority to identify a patent, displayed at the beginning of the patent document.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document.</rdfs:comment>
     <rdfs:label xml:lang="en">has patent number</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -1460,7 +1460,7 @@ Examples of a Creator include a person, an organization, or a service. Typically
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/PolicyDocument"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">data management policy document</rdfs:label>
-    <rdfs:comment xml:lang="en">A document embodying a policy that descibes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A document embodying a policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Thesis">
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Book"/>
@@ -1529,7 +1529,7 @@ Typically, rights information includes a statement about various property rights
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/DataManagementPolicy">
-    <rdfs:comment xml:lang="en">A policy that descibes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">data management policy</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Policy"/>
@@ -1662,7 +1662,7 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:isDefinedBy rdf:resource="http://www.handle.net/"/>
-    <rdfs:comment xml:lang="en">A persistent identifier of the Handel system for digital objects and other resources on the Internet.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A persistent identifier of the Handle system for digital objects and other resources on the Internet.</rdfs:comment>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
     <rdfs:label xml:lang="en">has handle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>

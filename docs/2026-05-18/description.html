@@ -1,0 +1,309 @@
+<h2>Description</h2>
+<p>The <em>FRBR-aligned Bibliographic Ontology</em> (<em>FaBiO</em>) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
+FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials. 
+However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections.</p>
+<p>FaBiO already imports several entities from existing standards for bibliographic entity descriptions, i.e., FRBR, DC Terms, PRISM and SKOS. 
+In addition, FaBiO has been developed so to limit any restriction to its classes as well as the domains and ranges of its properties. 
+This flexibility has the great advantage of allowing FaBiO to be used together with other models.</p>
+<p>In particular, FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. 
+The following Graffoo diagram shows additional properties that have been added to extends the FRBR data model by linking Works and Manifestations (<code>fabio:hasManifestation</code> and <code>fabio:isManifestationOf</code>), Works and Items (<code>fabio:hasPortrayal</code> and <code>fabio:isPortrayedBy</code>), and Expressions and Items (<code>fabio:hasRepresentation</code> and <code>fabio:isRepresentedBy</code>).</p>
+<p><img alt="A diagram of FaBiO." src="fabio.png" /></p>
+<p>With FaBiO, it thus becomes possible:</p>
+<ul>
+<li>to write semantic descriptions of a wide variety of bibliographic objects, including conference papers (<code>fabio:ConferencePaper</code>), journal articles (<code>fabio:JournalArticle</code>), journal issues and volumes (<code>fabio:JournalIssue</code> and <code>fabio:JournalVolume</code>), using terms that closely resemble the language used in everyday speech by academics and publishers;</li>
+<li>to employ FRBR categories (i.e., <code>fabio:Work</code>, <code>fabio:Expression</code>, <code>fabio:Manifestation</code> and <code>fabio:Item</code>, all subclasses of the related FRBR classes) to define clear separations between each part of the publishing process, which involves different people (authors, publishers, readers), depending on which aspect of the bibliographic entity we are considering: the high-level conceptualisation of the research paper, the version of record of that paper forming a journal article, the publication of the article in various formats, and the individual physical or electronic exemplars of the published article that people may read and own;</li>
+<li>to include with ease elements from other vocabularies which describe particular entities involved in the publishing process that are not specified by FaBiO itself, such as those from FOAF for persons and organisations.</li>
+</ul>
+<h2>Examples of use</h2>
+<p>In the following subsections, we introduce some examples to showcase how to use FaBiO. </p>
+<p>The prefixes that are used in all the examples provided below are defined as follows:</p>
+<pre><code>@prefix : &lt;http://www.sparontologies.net/example/&gt; .
+@prefix application: &lt;http://purl.org/NET/mediatypes/application/&gt; .
+@prefix co: &lt;http://purl.org/co/&gt; .
+@prefix dbpedia: &lt;http://dbpedia.org/resource/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix fabio: &lt;http://purl.org/spar/fabio/&gt; .
+@prefix facet: &lt;http://link.springer.com/facet/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix frbr: &lt;http://purl.org/vocab/frbr/core#&gt; .
+@prefix prism: &lt;http://prismstandard.org/namespaces/basic/2.0/&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+</code></pre>
+<h3>Describing a bibliographic entity</h3>
+<p>FaBiO allows one to describe information related to a bibliographic entity such as the following one:</p>
+<ul>
+<li>Pompeu Casanovas, Núria Casellas, Christoph Tempich, Denny Vrandečić, Richard Benjamins (2007). OPJK and DILIGENT: ontology modeling in a distributed environment. Artificial Intelligence and Law, 15 (2): 171-186. June 2007. Springer. DOI: 10.1007/s10506-007-9036-2. Print ISSN 0924-8463. Online ISSN 1572-8382. Published online (PDF) May 31, 2007.</li>
+</ul>
+<p>From the previous reference we can extract the following information:</p>
+<ol>
+<li>the document is an academic research article – deducible from the journal in which it is published;</li>
+<li>Pompeu Casanovas, Núria Casellas, Christoph Tempich, Denny Vrandečić, and Richard Benjamins are the authors of the article;</li>
+<li>the article was published in 2007;</li>
+<li>the article is titled <code>OPJK and DILIGENT: ontology modeling in a distributed environment</code>;</li>
+<li>it was published in the 2nd issue of the 15th volume of Artificial Intelligence and Law;</li>
+<li>the DOI of the article is <code>10.1007/s10506-007-9036-2</code>;</li>
+<li>the Print ISSN of the journal is <code>0924-8463</code>;</li>
+<li>the Online ISSN of the journal is <code>1572-8382</code>;</li>
+<li>the PDF version of the article was published online on May 31, 2007;</li>
+<li>the journal issue within which the printed version of the article was published bears the publication date June 2007;</li>
+<li>the page range of the article within the printed version is <code>171-186</code>;</li>
+<li>the publisher of the journal is Springer.</li>
+</ol>
+<p>By using FaBiO entities, which also include part of the FRBR, DC Terms and PRISM vocabularies, it is possible to create a full description of all the aspects introduced by the aforementioned twelve points.</p>
+<pre><code>:opjk-and-diligent a fabio:ResearchPaper ;
+    dcterms:creator :casanovas , :casellas,
+        :tempich, :vrandecic, :benjamins ;
+    frbr:realization :version-of-record .
+
+:version-of-record a fabio:JournalArticle ;
+    dcterms:title 'OPJK and DILIGENT: ontology
+        modeling in a distributed environment' ;
+    fabio:hasPublicationYear '2007'^^xsd:gYear ;
+    prism:doi '10.1007/s10506-007-9036-2' ;
+    frbr:embodiment :printed , :pdf ;
+    frbr:partOf :ai-and-law-15-2 .
+
+:ai-and-law-15-2 a fabio:JournalIssue ;
+    prism:issueIdentifier '2' ;
+    frbr:embodiment :printed-issue ;
+    frbr:partOf :ai-and-law-15 .
+
+:ai-and-law-15 a fabio:JournalVolume ;
+    prism:volume '15' ;
+    frbr:partOf :ai-and-law .
+
+:ai-and-law a fabio:Journal ;
+    dcterms:title 'Artificial Intelligence and Law' .
+
+:printed-issue a fabio:Paperback ;
+    dcterms:publisher :springer ;
+    prism:publicationDate '2007-06'^^xsd:gYearMonth ;
+    frbr:part :printed .
+
+:printed a fabio:PrintObject ;
+    dcterms:publisher :springer ;
+    prism:publicationDate '2007-06'^^xsd:gYearMonth ;
+    prism:startingPage '171' ;
+    prism:endingPage '186' .
+
+:pdf a fabio:DigitalManifestation ;
+    dcterms:publisher :springer ;
+    dcterms:format application:pdf ;
+    prism:publicationDate '2007-05-31'^^xsd:date .
+
+:casanovas a foaf:Person ;
+    foaf:givenName 'Pompeu' ;
+    foaf:familyName 'Casanovas' .
+
+:casellas a foaf:Person ;
+    foaf:givenName 'Nuria' ;
+    foaf:familyName 'Casellas' .
+
+:tempich a foaf:Person ;
+    foaf:givenName 'Christoph' ;
+    foaf:familyName 'Tempich' .
+
+:vrandecic a foaf:Person ;
+    foaf:givenName 'Denny' ;
+    foaf:familyName 'Vrandečić' .
+
+:benjamins a foaf:Person ;
+    foaf:givenName 'Richard' ;
+    foaf:familyName 'Benjamins' .
+
+:springer a foaf:Organization ;
+    foaf:name 'Springer' .
+</code></pre>
+<h3>Specifying ordered lists of authors</h3>
+<p>Sometimes, it is important to keep track of the actual order the authors of a paper as they appear in the author list. 
+The usual approach is to use RDF collections for handling it. 
+However, this choice can have several drawbacks, first of all that it is not a fully OWL 2 DL compliant way of modelling ordered items – and this could result in having reasoners running with unexpected behaviour or not running at all.</p>
+<p>Even if FaBiO does not handle author ordering directly, it is possible to use it in combination with other pure OWL 2 DL compliant ontologies, such as the Collections Ontology (CO) – that is fully described in the paper 'The Collections Ontology: creating and handling collections in OWL 2 DL frameworks' by Ciccarese and Peroni – which was specifically designed for defining orders among items. 
+This ontology allows us to link a co:List of authors through the dcterms:creator property.</p>
+<pre><code>:opjk-and-diligent a fabio:ResearchPaper ;
+    dcterms:creator :author-list .
+
+:author-list a co:List , foaf:Group ;
+    co:firstItem :author-item-1 ;
+    co:item
+        :author-item-1 ,
+        :author-item-2 ,
+        :author-item-3 ,
+        :author-item-4 ,
+        :author-item-5 ;
+    co:lastItem :author-item-5 ;
+    co:size '5'^^xsd:nonNegativeInteger .
+
+:author-item-1 a co:ListItem ;
+    co:index '1'^^xsd:positiveInteger ;
+    co:itemContent :casanovas ;
+    co:nextItem :author-item-2 .
+
+:author-item-2 a co:ListItem ;
+    co:index '2'^^xsd:positiveInteger ;
+    co:itemContent :casellas ;
+    co:nextItem :author-item-3 .
+
+:author-item-3 a co:ListItem ;
+    co:index '3'^^xsd:positiveInteger ;
+    co:itemContent :tempich ;
+    co:nextItem :author-item-4 .
+
+:author-item-4 a co:ListItem ;
+    co:index '4'^^xsd:positiveInteger ;
+    co:itemContent :vrandecic ;
+    co:nextItem :author-item-5 .
+
+:author-item-5 a co:ListItem ;
+    co:index '5'^^xsd:positiveInteger ;
+    co:itemContent :benjamins .
+
+:casanovas a foaf:Person ;
+    foaf:givenName 'Pompeu' ;
+    foaf:familyName 'Casanovas' .
+
+:casellas a foaf:Person ;
+    foaf:givenName 'Nuria' ;
+    foaf:familyName 'Casellas' .
+
+:tempich a foaf:Person ;
+    foaf:givenName 'Christoph' ;
+    foaf:familyName 'Tempich' .
+
+:vrandecic a foaf:Person ;
+    foaf:givenName 'Denny' ;
+    foaf:familyName 'Vrandečić' .
+
+:benjamins a foaf:Person ;
+    foaf:givenName 'Richard' ;
+    foaf:familyName 'Benjamins' .
+</code></pre>
+<h3>Associating keywords, subject terms and disciplines to a paper</h3>
+<p>One of the most important needs for a publisher is to categorise each bibliographic entity it produces by adding free-text keywords and/or specific terms structured according to recognised classification systems and/or thesauri developed for specific academic disciplines. 
+While through FaBiO the definition of keywords is possible using the PRISM property <code>prism:keyword</code>, terms from thesauri, structured vocabularies and classification systems are described using SKOS.</p>
+<p>To this end, FaBiO extends some classes and properties of SKOS. 
+First of all any FRBR endeavour can be associated (<code>fabio:hasSubjectTerm</code>) with one or more descriptive terms (<code>fabio:SubjectTerm</code>, a sub-class of <code>skos:Concept</code>) found in a specific dictionary (<code>fabio:TermDictionary</code>, a sub-class of <code>skos:ConceptScheme</code>) that is relevant to (<code>fabio:hasDiscipline</code>) particular disciplines (<code>fabio:SubjectDiscipline</code>, also a sub-class of <code>skos:Concept</code>) describing a field of knowledge or human activity such as computer science, biology, economics, cookery or swimming. 
+At the same time, the subject disciplines can be grouped by an opportune vocabulary (i.e., <code>fabio:DisciplineDictionary</code>).</p>
+<pre><code>:opjk-and-diligent a fabio:ResearchPaper ;
+    fabio:hasSubjectTerm
+        facet:air-and-space-law ,
+        facet:computational-linguistics ,
+        facet:philosophy-of-law ,
+        facet:legal-aspects-of-computing ,
+        facet:artificial-intelligence-incl-robotics ;
+    prism:keywords
+        'legal ontologies' ,
+        'methodology' ,
+        'ontology modeling' ,
+        'professional knowledge' ,
+        'rhetorical structure theory' .
+
+&lt;http://link.springer.com/facet&gt; a fabio:TermDictionary ;
+    skos:prefLabel 'Facet dictionary used in Springer library' ;
+    fabio:hasDiscipline
+        dbpedia:Computer_science ,
+        dbpedia:Law .
+
+facet:air-and-space-law a fabio:SubjectTerm ;
+    skos:prefLabel 'Air and Space Law' ;
+    skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+facet:computational-linguistics a fabio:SubjectTerm ;
+    skos:prefLabel 'Computational Linguistics' ;
+    skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+facet:philosophy-of-law a fabio:SubjectTerm ;
+    skos:prefLabel 'Philosophy of Law' ;
+    skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+facet:legal-aspects-of-computing a fabio:SubjectTerm ;
+    skos:prefLabel 'Legal Aspects of Computing' ;
+    skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+facet:artificial-intelligence-incl-robotics a fabio:SubjectTerm ;
+    skos:prefLabel 'Artificial Intelligence (incl. Robotics)' ;
+    skos:inScheme &lt;http://link.springer.com/facet&gt; .
+</code></pre>
+<h2>Competency Questions</h2>
+<p>FaBiO can be used for answering several questions related to bibliographic objects and other entities involved in the publishing process.</p>
+<p>In the following subsections, some of them are introduced together with their respective SPARQL queries. </p>
+<p>The prefixes that are used in all the SPARQL queries provided below are defined as follows:</p>
+<pre><code>PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX fabio: &lt;http://purl.org/spar/fabio/&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX frbr: &lt;http://purl.org/vocab/frbr/core#&gt;
+PREFIX prism: &lt;http://prismstandard.org/namespaces/basic/2.0/&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+</code></pre>
+<h3>CQ1</h3>
+<p>What are the titles and publication years of all available journal articles?</p>
+<pre><code>SELECT ?title ?year
+WHERE {
+?article a fabio:JournalArticle ;
+        dcterms:title ?title ;
+        fabio:hasPublicationYear ?year .
+}
+</code></pre>
+<h3>CQ2</h3>
+<p>Who are the authors (first and last names) of the article with the DOI '10.1007/s10506-007-9036-2'?</p>
+<pre><code>SELECT ?givenName ?familyName
+WHERE {
+?article a fabio:JournalArticle ;
+        prism:doi '10.1007/s10506-007-9036-2' .
+
+?paper a fabio:ResearchPaper ;
+        frbr:realization ?article ;
+        dcterms:creator ?author .
+
+?author foaf:givenName ?givenName ;
+        foaf:familyName ?familyName .
+}
+</code></pre>
+<h3>CQ3</h3>
+<p>In which journal, volume, and issue was the article with the DOI '10.1007/s10506-007-9036-2'?</p>
+<pre><code>SELECT ?journalTitle ?volume ?issue
+WHERE {
+?article a fabio:JournalArticle ;
+        prism:doi '10.1007/s10506-007-9036-2' ;
+        frbr:partOf ?journalIssue .
+
+?journalIssue a fabio:JournalIssue ;
+        prism:issueIdentifier ?issue ;
+        frbr:partOf ?journalVolume .
+
+?journalVolume a fabio:JournalVolume ;
+        prism:volume ?volume ;
+        frbr:partOf ?journal .
+
+?journal a fabio:Journal ;
+        dcterms:title ?journalTitle .
+}
+</code></pre>
+<h3>CQ4</h3>
+<p>What are the keywords associated with the article with the DOI '10.1007/s10506-007-9036-2'?</p>
+<pre><code>SELECT ?keyword
+WHERE {
+?article a fabio:JournalArticle ;
+        prism:doi '10.1007/s10506-007-9036-2' .
+
+?paper a fabio:ResearchPaper ;
+        prism:keywords ?keyword .
+}
+</code></pre>
+<h3>CQ5</h3>
+<p>What are the preferred labels of all subject terms assigned to the article with the DOI '10.1007/s10506-007-9036-2'?</p>
+<pre><code>SELECT ?keyword
+WHERE {
+?article a fabio:JournalArticle ;
+        prism:doi '10.1007/s10506-007-9036-2' .
+
+?paper a fabio:ResearchPaper ;
+        fabio:hasSubjectTerm ?subjectTerm .
+
+?subjectTerm a fabio:SubjectTerm ;
+        skos:prefLabel ?subjectLabel .
+}
+</code></pre>
