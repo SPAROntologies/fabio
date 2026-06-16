@@ -366,6 +366,7 @@ What are the preferred labels of all subject terms assigned to the article with 
                               owl:priorVersion <http://purl.org/spar/fabio/2023-05-09> ;
                               owl:versionInfo "2.3" ;
                               <https://schema.org/codeRepository> <https://github.com/SPAROntologies/fabio> ;
+                              <https://w3id.org/mod#status> "Published version" ;
                               <https://w3id.org/widoco/vocab#introduction> """
 The _FRBR-aligned Bibliographic Ontology_ (_FaBiO_) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
 FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials. 
@@ -461,6 +462,10 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://schema.org/codeRepository
 <https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#status
+<https://w3id.org/mod#status> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/widoco/vocab#introduction

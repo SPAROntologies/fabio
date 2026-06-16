@@ -3,6 +3,7 @@
      xml:base="http://purl.org/spar/fabio"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -376,6 +377,7 @@ What are the preferred labels of all subject terms assigned to the article with 
         <owl:priorVersion rdf:resource="http://purl.org/spar/fabio/2023-05-09"/>
         <owl:versionInfo>2.3</owl:versionInfo>
         <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/fabio"/>
+        <mod:status>Published version</mod:status>
         <vocab:introduction xml:lang="en">
 The _FRBR-aligned Bibliographic Ontology_ (_FaBiO_) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
 FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials. 
@@ -544,6 +546,13 @@ Additional properties have been added to extends the FRBR data model by linking 
 
 
     <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- https://w3id.org/mod#status -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#status"/>
     
 
 
