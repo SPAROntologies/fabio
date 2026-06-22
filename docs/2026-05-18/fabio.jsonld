@@ -1963,6 +1963,9 @@
   "http://purl.org/dc/terms/modified" : [ {
     "@value" : "2026-05-18"
   } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://ror.org/00wb4mk85"
+  } ],
   "http://purl.org/ontology/bibo/doi" : [ {
     "@value" : "10.1016/j.websem.2012.08.001"
   } ],
@@ -1976,6 +1979,9 @@
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://www.sparontologies.net/ontologies/fabio"
   } ],
+  "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
+    "@id" : "http://purl.org/spar/fabio/2023-05-09"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.org/spar/frbr"
   } ],
@@ -1988,8 +1994,14 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "2.3"
   } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "http://purl.org/spar/fabio/spar.png"
+  } ],
   "https://schema.org/codeRepository" : [ {
     "@id" : "https://github.com/SPAROntologies/fabio"
+  } ],
+  "https://schema.org/includedInDataCatalog" : [ {
+    "@id" : "https://fairsharing.org/"
   } ],
   "https://w3id.org/mod#status" : [ {
     "@value" : "Published version"
@@ -10741,10 +10753,19 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://creativecommons.org/licenses/by/4.0/legalcode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "https://ror.org/00wb4mk85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/includedInDataCatalog",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/mod#status",
