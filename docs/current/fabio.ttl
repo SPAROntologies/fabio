@@ -363,9 +363,12 @@ What are the preferred labels of all subject terms assigned to the article with 
                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "fabio" ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/spar/fabio/"^^xsd:anyURI ;
                               rdfs:seeAlso <http://www.sparontologies.net/ontologies/fabio> ;
+                              owl:backwardCompatibleWith <http://purl.org/spar/fabio/2023-05-09> ;
                               owl:priorVersion <http://purl.org/spar/fabio/2023-05-09> ;
                               owl:versionInfo "2.3" ;
+                              <http://xmlns.com/foaf/0.1/logo> <http://purl.org/spar/fabio/spar.png> ;
                               <https://schema.org/codeRepository> <https://github.com/SPAROntologies/fabio> ;
+                              <https://schema.org/includedInDataCatalog> <https://fairsharing.org/> ;
                               <https://w3id.org/mod#status> "Published version" ;
                               <https://w3id.org/widoco/vocab#introduction> """
 The _FRBR-aligned Bibliographic Ontology_ (_FaBiO_) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
@@ -460,8 +463,16 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 <http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> rdf:type owl:AnnotationProperty .
+
+
 ###  https://schema.org/codeRepository
 <https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/includedInDataCatalog
+<https://schema.org/includedInDataCatalog> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/mod#status
@@ -6280,6 +6291,7 @@ owl:Thing rdf:type owl:Class .
 ###  http://purl.org/spar/fabio
 <http://purl.org/spar/fabio> rdf:type owl:NamedIndividual ;
                              <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+                             <http://purl.org/dc/terms/publisher> <https://ror.org/00wb4mk85> ;
                              <http://purl.org/dc/terms/abstract> "The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references."@en ;
                              <http://purl.org/dc/terms/created> "2017-05-29" ;
                              <http://purl.org/dc/terms/issued> "2017-05-29" ;
@@ -6488,6 +6500,10 @@ owl:Thing rdf:type owl:Class .
 
 ###  https://creativecommons.org/licenses/by/4.0/legalcode
 <https://creativecommons.org/licenses/by/4.0/legalcode> rdf:type owl:NamedIndividual .
+
+
+###  https://ror.org/00wb4mk85
+<https://ror.org/00wb4mk85> rdf:type owl:NamedIndividual .
 
 
 #################################################################
