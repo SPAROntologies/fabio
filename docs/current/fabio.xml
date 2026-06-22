@@ -9,6 +9,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
@@ -374,9 +375,12 @@ What are the preferred labels of all subject terms assigned to the article with 
         <vann:preferredNamespacePrefix>fabio</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/spar/fabio/</vann:preferredNamespaceUri>
         <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/fabio"/>
+        <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/fabio/2023-05-09"/>
         <owl:priorVersion rdf:resource="http://purl.org/spar/fabio/2023-05-09"/>
         <owl:versionInfo>2.3</owl:versionInfo>
+        <foaf:logo rdf:resource="http://purl.org/spar/fabio/spar.png"/>
         <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/fabio"/>
+        <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
         <mod:status>Published version</mod:status>
         <vocab:introduction xml:lang="en">
 The _FRBR-aligned Bibliographic Ontology_ (_FaBiO_) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
@@ -542,10 +546,24 @@ Additional properties have been added to extends the FRBR data model by linking 
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
     <!-- https://schema.org/codeRepository -->
 
 
     <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- https://schema.org/includedInDataCatalog -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/includedInDataCatalog"/>
     
 
 
@@ -8067,6 +8085,7 @@ A `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, 
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio">
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
+        <terms:publisher rdf:resource="https://ror.org/00wb4mk85"/>
         <terms:abstract xml:lang="en">The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references.</terms:abstract>
         <terms:created>2017-05-29</terms:created>
         <terms:issued>2017-05-29</terms:issued>
@@ -8339,6 +8358,13 @@ A `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, 
 
 
     <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by/4.0/legalcode"/>
+    
+
+
+    <!-- https://ror.org/00wb4mk85 -->
+
+
+    <owl:NamedIndividual rdf:about="https://ror.org/00wb4mk85"/>
     
 
 

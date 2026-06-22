@@ -66,6 +66,7 @@ $(function(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>FaBiO, the FRBR-aligned Bibliographic Ontology</h1>
+<img src="http://purl.org/spar/fabio/spar.png" width="50/">
 <h2>Release: 2017-05-29</h2>
 
 
@@ -87,6 +88,8 @@ $(function(){
 <dt>Contributors:</dt>
 <dd>Paolo Ciccarese</dd><dd>Sebastian Barzaghi</dd><dd>Tim Clark</dd>
 
+<dt>Publisher:</dt>
+<dd>https://ror.org/00wb4mk85</dd>
 <dt>Imported Ontologies:</dt>
 <dd><a href="http://purl.org/spar/frbr">frbr</a></dd>
 
@@ -98,6 +101,8 @@ $(function(){
 <dd>Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf</dd>
 <dt>DOI:</dt>
 <dd><a href="http://dx.doi.org/10.1016/j.websem.2012.08.001"><img src ="https://img.shields.io/badge/DOI-10.1016/j.websem.2012.08.001-blue.svg" alt="10.1016/j.websem.2012.08.001" /></a></dd>
+<dt>Compatible with:</dt>
+<dd><a href="http://purl.org/spar/fabio/2023-05-09">http://purl.org/spar/fabio/2023-05-09</a></dd>
 <dt>Vocabulary maintained at:</dt>
 <dd><a href="https://github.com/SPAROntologies/fabio">https://github.com/SPAROntologies/fabio</a></dd>
 </dl>
@@ -135,11 +140,13 @@ Additional properties have been added to extends the FRBR data model by linking 
 <tr><td><b>core</b></td><td>&lt;http://purl.org/vocab/frbr/core#&gt;</td></tr>
 <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
 <tr><td><b>fabio</b></td><td>&lt;http://purl.org/spar/fabio/&gt;</td></tr>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
 <tr><td><b>mod</b></td><td>&lt;https://w3id.org/mod#&gt;</td></tr>
 <tr><td><b>ns</b></td><td>&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>ror</b></td><td>&lt;https://ror.org/00&gt;</td></tr>
 <tr><td><b>schema</b></td><td>&lt;https://schema.org/&gt;</td></tr>
 <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
 <tr><td><b>spar</b></td><td>&lt;http://purl.org/spar/&gt;</td></tr>
@@ -18546,6 +18553,9 @@ This section provides details for each class and property defined by FaBiO, the 
    </dt>
    <dd>
     <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">has license</a> <sup class="type-op" title="object property">op</sup> <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" title="https://creativecommons.org/licenses/by/4.0/legalcode">legalcode</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">has publisher</a> <sup class="type-op" title="object property">op</sup> <a href="https://ror.org/00wb4mk85" target="_blank" title="https://ror.org/00wb4mk85">00wb4mk85</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">abstract</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references."@en</span>
