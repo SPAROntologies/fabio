@@ -371,6 +371,7 @@ What are the preferred labels of all subject terms assigned to the article with 
     }
 
 </terms:description>
+        <terms:source rdf:resource="https://www.loc.gov/catdir/cpso/frbreng.pdf"/>
         <bibo:doi>10.1016/j.websem.2012.08.001</bibo:doi>
         <vann:preferredNamespacePrefix>fabio</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/spar/fabio/</vann:preferredNamespaceUri>
@@ -459,6 +460,13 @@ Additional properties have been added to extends the FRBR data model by linking 
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -1182,20 +1190,6 @@ Additional properties have been added to extends the FRBR data model by linking 
         <rdfs:label xml:lang="en">is realization of</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#relatedEndeavour -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     
 
 
@@ -7239,13 +7233,13 @@ Note: Use fabio:Quotation to indicate a segment or passage selected from another
     
 
 
-    <!-- http://purl.org/spar/fabio/SupplementaryInformation -->
+    <!-- http://purl.org/spar/fabio/SupplementaryInformationFile -->
 
 
-    <owl:Class rdf:about="http://purl.org/spar/fabio/SupplementaryInformation">
+    <owl:Class rdf:about="http://purl.org/spar/fabio/SupplementaryInformationFile">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
         <vann:example>
-        :my-supplementary-information a fabio:SupplementaryInformation ;
+        :my-supplementary-information a fabio:SupplementaryInformationFile ;
             dcterms:title &apos;Extended tables&apos;@en ;
             dcterms:description &apos;Information that is relevant to a work but is not essential to its understanding and is usually published separately.&apos;@en .
     </vann:example>
@@ -7984,48 +7978,6 @@ A `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, 
     
 
 
-    <!-- http://purl.org/vocab/frbr/core#Endeavour -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Endeavour"/>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Expression -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression"/>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Item -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Item"/>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Manifestation -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Manifestation"/>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Work -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Work"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
 
@@ -8365,21 +8317,6 @@ A `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, 
 
 
     <owl:NamedIndividual rdf:about="https://ror.org/00wb4mk85"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://purl.org/spar/fabio/SupplementaryInformationFile">
-        <rdfs:comment xml:lang="en">A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher&apos;s web site via a hyperlink from the journal article itself.</rdfs:comment>
-    </rdf:Description>
     
 
 
