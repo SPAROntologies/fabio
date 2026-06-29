@@ -1867,6 +1867,9 @@
     "@value" : "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/vocab/vann/example" : [ {
@@ -1965,6 +1968,9 @@
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://ror.org/00wb4mk85"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://www.loc.gov/catdir/cpso/frbreng.pdf"
   } ],
   "http://purl.org/ontology/bibo/doi" : [ {
     "@value" : "10.1016/j.websem.2012.08.001"
@@ -7557,10 +7563,10 @@
     "@value" : "For example, a colour supplement to a sunday newspaper, or a special supplementary issue of a journal or a journal volume containing invited articles on a special topic, or abstracts or papers presented at a scientific conference."
   } ]
 }, {
-  "@id" : "http://purl.org/spar/fabio/SupplementaryInformation",
+  "@id" : "http://purl.org/spar/fabio/SupplementaryInformationFile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/vocab/vann/example" : [ {
-    "@value" : "\n        :my-supplementary-information a fabio:SupplementaryInformation ;\n            dcterms:title 'Extended tables'@en ;\n            dcterms:description 'Information that is relevant to a work but is not essential to its understanding and is usually published separately.'@en .\n    "
+    "@value" : "\n        :my-supplementary-information a fabio:SupplementaryInformationFile ;\n            dcterms:title 'Extended tables'@en ;\n            dcterms:description 'Information that is relevant to a work but is not essential to its understanding and is usually published separately.'@en .\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -7579,12 +7585,6 @@
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@language" : "en",
     "@value" : "stable"
-  } ]
-}, {
-  "@id" : "http://purl.org/spar/fabio/SupplementaryInformationFile",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself."
   } ]
 }, {
   "@id" : "http://purl.org/spar/fabio/SystematicReview",
@@ -10425,21 +10425,6 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://purl.org/vocab/frbr/core#Endeavour",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/vocab/frbr/core#Expression",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/vocab/frbr/core#Item",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/vocab/frbr/core#Manifestation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/vocab/frbr/core#Work",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://purl.org/vocab/frbr/core#embodiment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/vocab/vann/example" : [ {
@@ -10608,9 +10593,6 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://purl.org/vocab/vann/example",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -10641,14 +10623,8 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
-  "@id" : "http://www.w3.org/2002/07/owl#Thing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]

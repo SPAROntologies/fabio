@@ -359,6 +359,7 @@ What are the preferred labels of all subject terms assigned to the article with 
     }
 
 """ ;
+                              <http://purl.org/dc/terms/source> <https://www.loc.gov/catdir/cpso/frbreng.pdf> ;
                               <http://purl.org/ontology/bibo/doi> "10.1016/j.websem.2012.08.001" ;
                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "fabio" ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/spar/fabio/"^^xsd:anyURI ;
@@ -413,6 +414,10 @@ Additional properties have been added to extends the FRBR data model by linking 
 
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/ontology/bibo/doi
@@ -936,14 +941,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                 rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
                                                 rdfs:label "is realization of"@en ;
                                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/vocab/frbr/core#relatedEndeavour
-<http://purl.org/vocab/frbr/core#relatedEndeavour> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdf:type owl:ObjectProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -5644,18 +5641,18 @@ Note: Use fabio:Quotation to indicate a segment or passage selected from another
                                         <http://www.w3.org/2004/02/skos/core#scopeNote> "For example, a colour supplement to a sunday newspaper, or a special supplementary issue of a journal or a journal volume containing invited articles on a special topic, or abstracts or papers presented at a scientific conference."@en .
 
 
-###  http://purl.org/spar/fabio/SupplementaryInformation
-<http://purl.org/spar/fabio/SupplementaryInformation> rdf:type owl:Class ;
-                                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ;
-                                                      <http://purl.org/vocab/vann/example> """
-        :my-supplementary-information a fabio:SupplementaryInformation ;
+###  http://purl.org/spar/fabio/SupplementaryInformationFile
+<http://purl.org/spar/fabio/SupplementaryInformationFile> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ;
+                                                          <http://purl.org/vocab/vann/example> """
+        :my-supplementary-information a fabio:SupplementaryInformationFile ;
             dcterms:title 'Extended tables'@en ;
             dcterms:description 'Information that is relevant to a work but is not essential to its understanding and is usually published separately.'@en .
     """ ;
-                                                      rdfs:comment "A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself."@en ;
-                                                      rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
-                                                      rdfs:label "supplementary information file"@en ;
-                                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+                                                          rdfs:comment "A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself."@en ;
+                                                          rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
+                                                          rdfs:label "supplementary information file"@en ;
+                                                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 
 
 ###  http://purl.org/spar/fabio/SystematicReview
@@ -6226,30 +6223,6 @@ A `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, 
                                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 
 
-###  http://purl.org/vocab/frbr/core#Endeavour
-<http://purl.org/vocab/frbr/core#Endeavour> rdf:type owl:Class .
-
-
-###  http://purl.org/vocab/frbr/core#Expression
-<http://purl.org/vocab/frbr/core#Expression> rdf:type owl:Class .
-
-
-###  http://purl.org/vocab/frbr/core#Item
-<http://purl.org/vocab/frbr/core#Item> rdf:type owl:Class .
-
-
-###  http://purl.org/vocab/frbr/core#Manifestation
-<http://purl.org/vocab/frbr/core#Manifestation> rdf:type owl:Class .
-
-
-###  http://purl.org/vocab/frbr/core#Work
-<http://purl.org/vocab/frbr/core#Work> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2002/07/owl#Thing
-owl:Thing rdf:type owl:Class .
-
-
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
                                               owl:disjointWith <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
@@ -6504,13 +6477,6 @@ owl:Thing rdf:type owl:Class .
 
 ###  https://ror.org/00wb4mk85
 <https://ror.org/00wb4mk85> rdf:type owl:NamedIndividual .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-<http://purl.org/spar/fabio/SupplementaryInformationFile> rdfs:comment "A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself."@en .
 
 
 #################################################################
