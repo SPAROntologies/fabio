@@ -6,12 +6,17 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b115">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/PeriodicalIssue"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Periodical">
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">periodical</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ExpressionCollection"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b115"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b115"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-periodical a fabio:Periodical ;
             dcterms:title 'Nature'@en ;
@@ -19,12 +24,7 @@
             frbr:part :my-periodical-issue ;
             dcterms:description 'A publication that is issued in parts at regular intervals.'@en .
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">A publication issued on a regular and ongoing basis as a series of issues, each issue comprising separate periodical items, for example editorials, articles, news items and/or other writings.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b115">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/PeriodicalIssue"/>
+    <rdfs:label xml:lang="en">periodical</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

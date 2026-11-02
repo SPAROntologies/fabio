@@ -24,14 +24,14 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
+        "@value": "digital video disc"
+      },
+      {
+        "@language": "en",
         "@value": "digital versatile disc"
       },
       {
         "@value": "DVD"
-      },
-      {
-        "@language": "en",
-        "@value": "digital video disc"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [

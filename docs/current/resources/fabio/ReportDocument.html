@@ -375,11 +375,11 @@ What are the preferred labels of all subject terms assigned to the article with 
     """ ;
         rdfs:comment "The realization of a report, usually in printed form."@en ;
         rdfs:isDefinedBy fabio: ;
-        rdfs:subClassOf _:n6180652088774126a964ddb1b76a8d19b102,
+        rdfs:subClassOf _:nbd59893e8a4144f9864e0ea78c01ebc3b102,
             fabio:Expression ;
         vs:term_status reg:statusStable .
 
-    _:n6180652088774126a964ddb1b76a8d19b102 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b102 a owl:Restriction ;
         owl:onProperty frbr:realizationOf ;
         owl:someValuesFrom fabio:Report .
 }
@@ -416,10 +416,10 @@ What are the preferred labels of all subject terms assigned to the article with 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "http://purl.org/spar/fabio/Expression"
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b102"
           },
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b102"
+            "@id": "http://purl.org/spar/fabio/Expression"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -429,7 +429,7 @@ What are the preferred labels of all subject terms assigned to the article with 
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b102",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b102",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -448,16 +448,16 @@ What are the preferred labels of all subject terms assigned to the article with 
     "@id": "http://purl.org/spar/fabio"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_80b03dbba88b3b7a8196ed8e6bac81cb_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a report, usually in printed form."@en &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b102 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Expression> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b102 &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b102 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://purl.org/vocab/vann/example> "\n        :my-report-document a fabio:ReportDocument ;\n            dcterms:title 'Yearly report on scientific research'@en ;\n            frbr:realizationOf :my-report ;\n            dcterms:description 'A document containing a report.'@en .\n    " &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b102 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/fabio/Report> &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#label> "report document"@en &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://purl.org/vocab/vann/example> "\n        :my-report-document a fabio:ReportDocument ;\n            dcterms:title 'Yearly report on scientific research'@en ;\n            frbr:realizationOf :my-report ;\n            dcterms:description 'A document containing a report.'@en .\n    " &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b102 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b102 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/fabio/Report> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b102 &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b102 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/ReportDocument> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Expression> &lt;http://purl.org/spar/fabio> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

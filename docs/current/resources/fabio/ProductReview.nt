@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2000/01/rdf-schema#label> "product review"@en .
-<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Review> .
-<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A written review and critical analysis of the purpose, features, performance and other qualities of a product."@en .
+<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2000/01/rdf-schema#label> "product review"@en .
 <http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ProductReview> <http://purl.org/vocab/vann/example> "\n        :my-product-review a fabio:ProductReview ;\n            dcterms:title 'Technical review of Smartphone XYZ 2026'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A critical review of a product, such as a software application, a piece of hardware, or a commercial tool.'@en .\n    " .
+<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ProductReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A written review and critical analysis of the purpose, features, performance and other qualities of a product."@en .

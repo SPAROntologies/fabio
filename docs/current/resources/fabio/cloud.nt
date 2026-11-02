@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/fabio/cloud> <http://purl.org/vocab/vann/example> "\n        :my-fabio-item a fabio:Item ;\n            fabio:isStoredOn fabio:cloud .\n    " .
-<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2000/01/rdf-schema#comment> "A distributed and commoditized Internet-based computing resource, whereby shared services, software programs, and information storage facilities are provided to computers and other devices on demand, at locations of which the user may be unaware, like the electricity grid."@en .
-<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2000/01/rdf-schema#label> "cloud" .
-<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/DigitalStorageMedium> .
+<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2000/01/rdf-schema#comment> "A distributed and commoditized Internet-based computing resource, whereby shared services, software programs, and information storage facilities are provided to computers and other devices on demand, at locations of which the user may be unaware, like the electricity grid."@en .
+<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/cloud> <http://purl.org/vocab/vann/example> "\n        :my-fabio-item a fabio:Item ;\n            fabio:isStoredOn fabio:cloud .\n    " .
+<http://purl.org/spar/fabio/cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/cloud> <http://www.w3.org/2000/01/rdf-schema#label> "cloud" .

@@ -1,4 +1,4 @@
-<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA location.\n"@en .
-<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#label> "place"@en .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA location.\n"@en .

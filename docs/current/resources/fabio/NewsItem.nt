@@ -1,11 +1,11 @@
-_:n6180652088774126a964ddb1b76a8d19b114 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewsReport> .
-<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#label> "news item"@en .
-<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n6180652088774126a964ddb1b76a8d19b114 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:n6180652088774126a964ddb1b76a8d19b114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A published news report."@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b114 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewsReport> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b114 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/NewsItem> <http://purl.org/vocab/vann/example> "\n        :my-news-item a fabio:NewsItem ;\n            dcterms:title 'New archeological site found in Rome'@en ;\n            frbr:realizationOf :my-news-report ;\n            dcterms:description 'A report of a recent event or a piece of new information, typically published in a newspaper or broadcast.'@en .\n    " .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A published news report."@en .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b114 .
 <http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b114 .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#label> "news item"@en .

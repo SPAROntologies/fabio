@@ -6,8 +6,10 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/keyword">
-    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has keyword</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A keyword associated with a resource, that is likely to be used in search queries.</rdfs:comment>
     <vann:example>
         :my-research-paper a fabio:ResearchPaper ;
             prism:keyword
@@ -17,10 +19,8 @@
                 'professional knowledge' ,
                 'rhetorical structure theory' .
     </vann:example>
-    <rdfs:label xml:lang="en">has keyword</rdfs:label>
-    <rdfs:comment xml:lang="en">A keyword associated with a resource, that is likely to be used in search queries.</rdfs:comment>
     <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
   </rdf:Description>
 </rdf:RDF>

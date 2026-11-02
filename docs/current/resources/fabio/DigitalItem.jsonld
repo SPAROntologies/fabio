@@ -31,10 +31,10 @@
         "@id": "http://purl.org/spar/fabio/Item"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b107"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b106"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b106"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b107"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -50,23 +50,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b107",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#exemplarOf"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/fabio/DigitalManifestation"
-      }
-    ]
-  },
-  {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b106",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b106",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -78,6 +62,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://purl.org/spar/fabio/DigitalStorageMedium"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b107",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#exemplarOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/DigitalManifestation"
       }
     ]
   }

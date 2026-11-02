@@ -7,19 +7,19 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/language">
-    <rdfs:label xml:lang="en">has language</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
-    <vann:example>
-        :my-dataset a fabio:Dataset ;
-            dcterms:language &lt;http://lexvo.org/id/iso639-3/ita&gt; .
-    </vann:example>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     <skos:note xml:lang="en">
 Examples include written, spoken, sign, and computer languages. 
 Recommended best practice is to use a controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).
 </skos:note>
+    <vann:example>
+        :my-dataset a fabio:Dataset ;
+            dcterms:language &lt;http://lexvo.org/id/iso639-3/ita&gt; .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has language</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

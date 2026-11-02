@@ -387,7 +387,7 @@ The date can be expressed in three different formats:
         rdfs:comment "The date on which a resource is published or disclosed."@en ;
         rdfs:domain frbr:Endeavour ;
         rdfs:isDefinedBy prism: ;
-        rdfs:range _:n6180652088774126a964ddb1b76a8d19b1 ;
+        rdfs:range _:nbd59893e8a4144f9864e0ea78c01ebc3b1 ;
         rdfs:subPropertyOf dcterms:issued ;
         vs:term_status reg:statusStable ;
         skos:note """
@@ -396,16 +396,16 @@ The date can be expressed in three different formats:
 - yyyy-mm (i.e., xsd:gYearMonth)
 - yyyy (i.e., xsd:gYear)"""@en .
 
-    _:n6180652088774126a964ddb1b76a8d19b1 a rdfs:Datatype ;
-        owl:unionOf _:n6180652088774126a964ddb1b76a8d19b2 .
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b1 a rdfs:Datatype ;
+        owl:unionOf _:nbd59893e8a4144f9864e0ea78c01ebc3b2 .
 
-    _:n6180652088774126a964ddb1b76a8d19b2 rdf:first xsd:date ;
-        rdf:rest _:n6180652088774126a964ddb1b76a8d19b3 .
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b2 rdf:first xsd:date ;
+        rdf:rest _:nbd59893e8a4144f9864e0ea78c01ebc3b3 .
 
-    _:n6180652088774126a964ddb1b76a8d19b3 rdf:first xsd:gYear ;
-        rdf:rest _:n6180652088774126a964ddb1b76a8d19b4 .
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b3 rdf:first xsd:gYear ;
+        rdf:rest _:nbd59893e8a4144f9864e0ea78c01ebc3b4 .
 
-    _:n6180652088774126a964ddb1b76a8d19b4 rdf:first xsd:gYearMonth ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b4 rdf:first xsd:gYearMonth ;
         rdf:rest () .
 }
 
@@ -447,7 +447,7 @@ The date can be expressed in three different formats:
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b1"
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b1"
           }
         ],
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -468,7 +468,7 @@ The date can be expressed in three different formats:
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b1",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b1",
         "@type": [
           "http://www.w3.org/2000/01/rdf-schema#Datatype"
         ],
@@ -491,25 +491,25 @@ The date can be expressed in three different formats:
     ],
     "@id": "http://purl.org/spar/fabio"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_6b4b1e8fa9567cd1c95c68eb908526cb_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n6180652088774126a964ddb1b76a8d19b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.w3.org/2001/XMLSchema#gYear> &lt;http://purl.org/spar/fabio> .
-&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
-&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/fabio> .
-&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://purl.org/vocab/vann/example> "\n        :my-paperback a fabio:Paperback ;\n            prism:publicationDate '2007-06'^^xsd:gYearMonth .\n    " &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2000/01/rdf-schema#Datatype> &lt;http://purl.org/spar/fabio> .
+]</code></pre></div><div class="tab-pane fade" id=id_6b4b1e8fa9567cd1c95c68eb908526cb_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nbd59893e8a4144f9864e0ea78c01ebc3b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.w3.org/2001/XMLSchema#date> &lt;http://purl.org/spar/fabio> .
 &lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b1 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n6180652088774126a964ddb1b76a8d19b2 &lt;http://purl.org/spar/fabio> .
-&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#FunctionalProperty> &lt;http://purl.org/spar/fabio> .
-&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:n6180652088774126a964ddb1b76a8d19b1 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b4 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.w3.org/2001/XMLSchema#date> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b3 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.w3.org/2001/XMLSchema#gYearMonth> &lt;http://purl.org/spar/fabio> .
-&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has publication date"@en &lt;http://purl.org/spar/fabio> .
-&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2004/02/skos/core#note> "\nThe date can be expressed in three different formats:\n- yyyy-mm-dd (i.e., xsd:date)\n- yyyy-mm (i.e., xsd:gYearMonth)\n- yyyy (i.e., xsd:gYear)"@en &lt;http://purl.org/spar/fabio> .
 &lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf> &lt;http://purl.org/dc/terms/issued> &lt;http://purl.org/spar/fabio> .
+&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b4 &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/fabio> .
+&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has publication date"@en &lt;http://purl.org/spar/fabio> .
+&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:nbd59893e8a4144f9864e0ea78c01ebc3b1 &lt;http://purl.org/spar/fabio> .
 &lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://prismstandard.org/namespaces/basic/2.0/> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b1 &lt;http://www.w3.org/2002/07/owl#unionOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b2 &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.w3.org/2001/XMLSchema#gYearMonth> &lt;http://purl.org/spar/fabio> .
 &lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource is published or disclosed."@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b3 &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2000/01/rdf-schema#Datatype> &lt;http://purl.org/spar/fabio> .
+&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#FunctionalProperty> &lt;http://purl.org/spar/fabio> .
+&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
+&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://www.w3.org/2004/02/skos/core#note> "\nThe date can be expressed in three different formats:\n- yyyy-mm-dd (i.e., xsd:date)\n- yyyy-mm (i.e., xsd:gYearMonth)\n- yyyy (i.e., xsd:gYear)"@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.w3.org/2001/XMLSchema#gYear> &lt;http://purl.org/spar/fabio> .
+&lt;http://prismstandard.org/namespaces/basic/2.0/publicationDate> &lt;http://purl.org/vocab/vann/example> "\n        :my-paperback a fabio:Paperback ;\n            prism:publicationDate '2007-06'^^xsd:gYearMonth .\n    " &lt;http://purl.org/spar/fabio> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

@@ -6,11 +6,6 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b92">
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ArchivalRecord">
     <vann:example>
         :my-archival-record a fabio:ArchivalRecord ;
@@ -19,12 +14,17 @@
             frbr:realization :my-archival-document ;
             dcterms:description 'The conceptual archival entity representing the correspondence created by Alan Turing during his research.'@en .
     </vann:example>
-    <rdfs:label xml:lang="en">archival record</rdfs:label>
-    <rdfs:comment xml:lang="en">A material created or received by a person, family, or organization, public or private, in the conduct of their affairs that is preserved because of the enduring value contained in the information it contains or as evidence of the function and the responsibilities of its creator.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b92"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b92"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A material created or received by a person, family, or organization, public or private, in the conduct of their affairs that is preserved because of the enduring value contained in the information it contains or as evidence of the function and the responsibilities of its creator.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">archival record</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b92">
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

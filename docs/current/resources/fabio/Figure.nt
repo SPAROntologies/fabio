@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/Figure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual communication object comprising one or more still images on a related theme. If included within a publication, a figure is typically unaligned with the main body of text, having its own descriptive textual figure legend."@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#label> "figure"@en .
 <http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-_:n6180652088774126a964ddb1b76a8d19b17 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:n6180652088774126a964ddb1b76a8d19b17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/StillImage> .
-<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b17 .
-<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Figure> <http://purl.org/vocab/vann/example> "\n        :my-figure a fabio:Figure ;\n            dcterms:title 'Figure 1: Annual Population Growth'@en ;\n            frbr:partOf :my-research-paper ;\n            frbr:realizationOf :my-still-image ;\n            dcterms:description 'A visual representation of information, such as a drawing, painting, photograph, or diagram, used to illustrate or explain a point.'@en .\n    " .
-<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual communication object comprising one or more still images on a related theme. If included within a publication, a figure is typically unaligned with the main body of text, having its own descriptive textual figure legend."@en .
+<http://purl.org/spar/fabio/Figure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b17 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b17 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/StillImage> .

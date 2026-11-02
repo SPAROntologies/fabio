@@ -7,20 +7,20 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/AnalogStorageMedium">
-    <rdfs:label xml:lang="en">analog storage medium</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b113"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/StorageMedium"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         fabio:paper a fabio:AnalogStorageMedium .
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">analog storage medium</rdfs:label>
     <rdfs:comment xml:lang="en">A means of storing information in non-digital form, e.g. paper, film (for analogue photographs or movies), magnetic tape (for analogue sound recordings or video recordings) or vinyl disc.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b113"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/StorageMedium"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b113">
-    <owl:onProperty rdf:resource="http://purl.org/spar/fabio/stores"/>
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b113">
     <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/AnalogItem"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/fabio/stores"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

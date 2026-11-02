@@ -31,7 +31,7 @@
         "@id": "http://purl.org/spar/fabio/VocabularyDocument"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b33"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b33"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b33",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b33",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

@@ -6,6 +6,8 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Patent">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-patent a fabio:Patent ;
             dcterms:title 'AI-based ice cream generator'@en ;
@@ -14,10 +16,8 @@
             dcterms:description 'A government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.'@en .
     </vann:example>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
-    <rdfs:comment xml:lang="en">A formal disclosure of a new invention approved by a governmental patent agency, made to register intellectual property rights, and to give exclusive rights to the inventor or assignee to manufacture, use, license or sell the invention for a certain number of years.</rdfs:comment>
-    <rdfs:label xml:lang="en">patent</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">patent</rdfs:label>
+    <rdfs:comment xml:lang="en">A formal disclosure of a new invention approved by a governmental patent agency, made to register intellectual property rights, and to give exclusive rights to the inventor or assignee to manufacture, use, license or sell the invention for a certain number of years.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

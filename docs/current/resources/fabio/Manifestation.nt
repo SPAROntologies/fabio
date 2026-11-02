@@ -1,29 +1,29 @@
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2004/02/skos/core#note> "A `fabio:Manifestation` can only have part or be part of another `fabio:Manifestation`. Moreover, it can be an embodiment only of a `fabio:Expression` and it can be exemplified only by instances of `fabio:Item`.\n    \nExamples of different manifestations of a single 'version of record' expression of a scholarly work include an article in a print journal or the on-line version of that article as a web page."@en .
-_:n6180652088774126a964ddb1b76a8d19b118 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
-_:n6180652088774126a964ddb1b76a8d19b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b122 .
-_:n6180652088774126a964ddb1b76a8d19b119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n6180652088774126a964ddb1b76a8d19b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b124 .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b121 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Manifestation> .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#label> "manifestation"@en .
-_:n6180652088774126a964ddb1b76a8d19b122 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
-_:n6180652088774126a964ddb1b76a8d19b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b121 .
-_:n6180652088774126a964ddb1b76a8d19b122 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Manifestation, restricted to manifestations of `fabio:Expression`. `fabio:Manifestation` specifically applies to electronic (digital) as well as to physical manifestations of expressions."@en .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b120 .
-_:n6180652088774126a964ddb1b76a8d19b118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b119 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
 <http://purl.org/spar/fabio/Manifestation> <http://purl.org/vocab/vann/example> "\n        :my-manifestation a fabio:Manifestation ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:embodimentOf :my-article ;\n            frbr:exemplar :my-digital-item ;\n            dcterms:description 'The digital or physical instantiation of an expression.'@en .\n    " .
-_:n6180652088774126a964ddb1b76a8d19b121 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:n6180652088774126a964ddb1b76a8d19b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b119 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
-_:n6180652088774126a964ddb1b76a8d19b121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b118 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodimentOf> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2004/02/skos/core#note> "A `fabio:Manifestation` can only have part or be part of another `fabio:Manifestation`. Moreover, it can be an embodiment only of a `fabio:Expression` and it can be exemplified only by instances of `fabio:Item`.\n    \nExamples of different manifestations of a single 'version of record' expression of a scholarly work include an article in a print journal or the on-line version of that article as a web page."@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b118 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b122 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b122 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b118 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b119 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Item> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#label> "manifestation"@en .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Manifestation, restricted to manifestations of `fabio:Expression`. `fabio:Manifestation` specifically applies to electronic (digital) as well as to physical manifestations of expressions."@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b121 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b124 .
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n6180652088774126a964ddb1b76a8d19b122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b119 .
-<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b118 .
-_:n6180652088774126a964ddb1b76a8d19b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n6180652088774126a964ddb1b76a8d19b119 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Item> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6180652088774126a964ddb1b76a8d19b118 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodimentOf> .
-_:n6180652088774126a964ddb1b76a8d19b120 <http://www.w3.org/2002/07/owl#intersectionOf> _:n6180652088774126a964ddb1b76a8d19b123 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b120 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b120 <http://www.w3.org/2002/07/owl#intersectionOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b123 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nbd59893e8a4144f9864e0ea78c01ebc3b122 .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nbd59893e8a4144f9864e0ea78c01ebc3b121 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b121 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b119 .

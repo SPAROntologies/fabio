@@ -6,24 +6,24 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/ConferencePaper"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ConferenceProceedings">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/AcademicProceedings"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b13"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b13"/>
+    <rdfs:comment xml:lang="en">A document containing the programme and collected conference papers, or their abstracts, presented at a conference, seminar, symposium or similar event.</rdfs:comment>
+    <rdfs:label xml:lang="en">conference proceedings</rdfs:label>
     <vann:example>
         :my-conference-proceedings a fabio:ConferenceProceedings ;
             dcterms:title 'Proceedings of the 25th International Semantic Web Conference'@en ;
             frbr:part :my-conference-paper, :my-another-conference-paper ;
             dcterms:description 'The formal record of a conference, containing the collection of papers and abstracts presented.'@en .
     </vann:example>
-    <rdfs:label xml:lang="en">conference proceedings</rdfs:label>
-    <rdfs:comment xml:lang="en">A document containing the programme and collected conference papers, or their abstracts, presented at a conference, seminar, symposium or similar event.</rdfs:comment>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b13">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/ConferencePaper"/>
   </rdf:Description>
 </rdf:RDF>

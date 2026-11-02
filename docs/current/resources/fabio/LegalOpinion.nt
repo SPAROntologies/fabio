@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Opinion> .
 <http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/2000/01/rdf-schema#label> "legal opinion"@en .
+<http://purl.org/spar/fabio/LegalOpinion> <http://purl.org/vocab/vann/example> "\n        :my-legal-opinion a fabio:LegalOpinion ;\n            dcterms:title 'Legal Opinion on Intellectual Property Rights for Project X'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A formal written statement by a judicial officer or legal expert that sets out the legal principle and his or her application to a particular case.'@en .\n    " .
+<http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Opinion> .
+<http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/2000/01/rdf-schema#comment> "A written explanation by a judge or group of judges that accompanies a ruling in a legal case, laying out the reasons and legal principles for the ruling, and sometimes containing pronouncements about what the law is and how it should be interpreted."@en .
 <http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/LegalOpinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/LegalOpinion> <http://purl.org/vocab/vann/example> "\n        :my-legal-opinion a fabio:LegalOpinion ;\n            dcterms:title 'Legal Opinion on Intellectual Property Rights for Project X'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A formal written statement by a judicial officer or legal expert that sets out the legal principle and his or her application to a particular case.'@en .\n    " .

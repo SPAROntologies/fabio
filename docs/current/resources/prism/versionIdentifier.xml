@@ -6,16 +6,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/versionIdentifier">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-technical-report a fabio:TechnicalReport ;
             prism:versionIdentifier '2.1.4' .
     </vann:example>
     <rdfs:comment xml:lang="en">An identifier for a version of a resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     <rdfs:label>has version identifier</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,11 +1,11 @@
+_:nbd59893e8a4144f9864e0ea78c01ebc3b11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Proposition> .
 <http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b11 .
-<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#comment> "A document published by a funding agency requesting submission of applications for financial grants to fund projects, for example to enable research investigations in areas specified in the call."@en .
-<http://purl.org/spar/fabio/CallForApplications> <http://purl.org/vocab/vann/example> "\n        :my-call-for-applications a fabio:CallForApplications ;\n            dcterms:title 'ERC Starting Grants 2026 Call'@en ;\n            fabio:hasDeadline '2025-10-15T17:00:00Z'^^xsd:dateTime ;\n            frbr:realizationOf :my-proposition ;\n            dcterms:description 'Formal request for research proposals from early-career scientists to provide long-term funding.'@en .\n    " .
-_:n6180652088774126a964ddb1b76a8d19b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6180652088774126a964ddb1b76a8d19b11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n6180652088774126a964ddb1b76a8d19b11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Proposition> .
+<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b11 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/CallForApplications> <http://purl.org/vocab/vann/example> "\n        :my-call-for-applications a fabio:CallForApplications ;\n            dcterms:title 'ERC Starting Grants 2026 Call'@en ;\n            fabio:hasDeadline '2025-10-15T17:00:00Z'^^xsd:dateTime ;\n            frbr:realizationOf :my-proposition ;\n            dcterms:description 'Formal request for research proposals from early-career scientists to provide long-term funding.'@en .\n    " .
 <http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#label> "call for applications" .
+<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#comment> "A document published by a funding agency requesting submission of applications for financial grants to fund projects, for example to enable research investigations in areas specified in the call."@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .

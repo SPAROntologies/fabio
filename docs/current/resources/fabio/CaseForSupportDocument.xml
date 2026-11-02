@@ -8,7 +8,12 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/CaseForSupportDocument">
     <rdfs:comment xml:lang="en">A document containing the case for support for a particular project, usually contained within a grant application document but sometimes distributed separately, without the financial and organizational information that the grant application document also contains.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b12"/>
+    <rdfs:label xml:lang="en">case for support document</rdfs:label>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-case-for-support-document a fabio:CaseForSupportDocument ;
             dcterms:title 'Case for Support: Neural Network Optimization Project'@en ;
@@ -16,15 +21,10 @@
             frbr:embodiment :my-digital-manifestation ;
             dcterms:language &lt;http://lexvo.org/id/iso639-3/eng&gt; .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b12"/>
-    <rdfs:label xml:lang="en">case for support document</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b12">
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b12">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/CaseForSupport"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
   </rdf:Description>
 </rdf:RDF>

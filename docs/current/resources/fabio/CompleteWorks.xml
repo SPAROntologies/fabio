@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/CompleteWorks">
-    <rdfs:label xml:lang="en">complete works</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/CollectedWorks"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:comment xml:lang="en">A collection of all the literary or scholastic works of a single person.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/CollectedWorks"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
         :my-complete-works a fabio:CompleteWorks ;
             dcterms:title 'Dante Alighieri: the complete works'@en ;
             frbr:part :my-work, :my-another-work, :my-even-another-work ;
             dcterms:description 'The complete set of all the intellectual works of Dante Alighieri, published as a comprehensive collection.'@en .
     </vann:example>
+    <rdfs:label xml:lang="en">complete works</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:comment xml:lang="en">A collection of all the literary or scholastic works of a single person.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

@@ -387,7 +387,7 @@ It differs from the abstract of a journal article, in that the latter is written
         rdfs:comment "A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard."@en ;
         rdfs:isDefinedBy fabio: ;
         rdfs:seeAlso fabio:Abstract ;
-        rdfs:subClassOf _:n6180652088774126a964ddb1b76a8d19b98,
+        rdfs:subClassOf _:nbd59893e8a4144f9864e0ea78c01ebc3b98,
             fabio:SpecificationDocument ;
         vs:term_status reg:statusStable ;
         skos:note """
@@ -395,7 +395,7 @@ Such a structured summary can be embodied in both human-readable and machine-rea
 It differs from the abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.
                                                """@en .
 
-    _:n6180652088774126a964ddb1b76a8d19b98 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b98 a owl:Restriction ;
         owl:onProperty frbr:realizationOf ;
         owl:someValuesFrom fabio:MinimalInformationStandard .
 }
@@ -437,10 +437,10 @@ It differs from the abstract of a journal article, in that the latter is written
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b98"
+            "@id": "http://purl.org/spar/fabio/SpecificationDocument"
           },
           {
-            "@id": "http://purl.org/spar/fabio/SpecificationDocument"
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b98"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -456,7 +456,7 @@ It differs from the abstract of a journal article, in that the latter is written
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b98",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b98",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -474,19 +474,19 @@ It differs from the abstract of a journal article, in that the latter is written
     ],
     "@id": "http://purl.org/spar/fabio"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_5b299b0b1f81c59c2a3806095776afdc_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard."@en &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://purl.org/vocab/vann/example> "\n        :my-structured-summary a fabio:StructuredSummary ;\n            dcterms:title 'Structured summary of Project X'@en ;\n            frbr:realizationOf :my-minimal-information-standard ;\n            dcterms:description 'A summary of a document that is structured into formal sections, such as Background, Methods, Results, and Conclusions.'@en .\n    " &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b98 &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/SpecificationDocument> &lt;http://purl.org/spar/fabio> .
+]</code></pre></div><div class="tab-pane fade" id=id_5b299b0b1f81c59c2a3806095776afdc_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2004/02/skos/core#note> "\nSuch a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF. \nIt differs from the abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.\n                                               "@en &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b98 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b98 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/fabio/MinimalInformationStandard> &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#label> "structured summary"@en &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b98 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/fabio/MinimalInformationStandard> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://purl.org/vocab/vann/example> "\n        :my-structured-summary a fabio:StructuredSummary ;\n            dcterms:title 'Structured summary of Project X'@en ;\n            frbr:realizationOf :my-minimal-information-standard ;\n            dcterms:description 'A summary of a document that is structured into formal sections, such as Background, Methods, Results, and Conclusions.'@en .\n    " &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/SpecificationDocument> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b98 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b98 &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#seeAlso> &lt;http://purl.org/spar/fabio/Abstract> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b98 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b98 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/StructuredSummary> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard."@en &lt;http://purl.org/spar/fabio> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 
