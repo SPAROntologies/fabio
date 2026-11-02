@@ -12,16 +12,16 @@
             dcterms:title 'On the Origin of Species by Means of Natural Selection'@en ;
             frbr:exemplar :my-analog-item .
     </vann:example>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b91"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+    <rdfs:comment xml:lang="en">A manifestation in an analog form.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/DigitalManifestation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">analog manifestation</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b91"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/DigitalManifestation"/>
-    <rdfs:comment xml:lang="en">A manifestation in an analog form.</rdfs:comment>
+    <rdfs:label xml:lang="en">analog manifestation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b91">
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b91">
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#exemplar"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/AnalogItem"/>

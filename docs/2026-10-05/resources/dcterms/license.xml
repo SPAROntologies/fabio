@@ -6,15 +6,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/license">
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     <vann:example>
         :my-dataset a fabio:Dataset ;
             dcterms:license &lt;https://creativecommons.org/licenses/by/4.0/&gt; .
     </vann:example>
+    <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
     <rdfs:label xml:lang="en">has license</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

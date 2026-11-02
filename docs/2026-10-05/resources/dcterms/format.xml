@@ -12,14 +12,14 @@
             dcterms:format &lt;http://publications.europa.eu/resource/authority/file-type/CSV&gt; .
     </vann:example>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:label xml:lang="en">has format</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     <skos:note xml:lang="en">
 Examples of dimensions include size and duration. 
 Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types.
 </skos:note>
     <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
-    <rdfs:label xml:lang="en">has format</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

@@ -8,14 +8,14 @@
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
     <skos:note xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system.</skos:note>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">A unique and unambiguous reference to the resource within a given context.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:label xml:lang="en">has identifier</rdfs:label>
     <vann:example>
         :my-journal-article a fabio:JournalArticle ;
             dcterms:identifier 'doi:10.1000/182' .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <rdfs:comment xml:lang="en">A unique and unambiguous reference to the resource within a given context.</rdfs:comment>
-    <rdfs:label xml:lang="en">has identifier</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
 </rdf:RDF>

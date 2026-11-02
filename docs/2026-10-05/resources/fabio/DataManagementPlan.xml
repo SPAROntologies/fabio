@@ -6,19 +6,18 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b15">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b15">
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Proposition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/DataManagementPlan">
     <rdfs:comment xml:lang="en">A structured document giving information about how data arising from a research project or other endeavour is to be manages, preserved and shared.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b15"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
     <rdfs:label xml:lang="en">data management plan</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b15"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-data-management-plan a fabio:DataManagementPlan ;
             dcterms:title 'Data Management Plan for Project OpenScience'@en ;
@@ -26,5 +25,6 @@
             frbr:realizationOf :my-proposition ;
             dcterms:description 'A formal document outlining how data will be handled during and after a research project.'@en .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
 </rdf:RDF>

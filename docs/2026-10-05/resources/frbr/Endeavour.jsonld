@@ -28,12 +28,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b138"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b138"
       }
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b138",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b138",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

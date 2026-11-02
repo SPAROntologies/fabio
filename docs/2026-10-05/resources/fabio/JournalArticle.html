@@ -378,11 +378,11 @@ What are the preferred labels of all subject terms assigned to the article with 
     """ ;
         rdfs:comment "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."@en ;
         rdfs:isDefinedBy fabio: ;
-        rdfs:subClassOf _:n6180652088774126a964ddb1b76a8d19b24,
+        rdfs:subClassOf _:nbd59893e8a4144f9864e0ea78c01ebc3b24,
             fabio:Article ;
         vs:term_status reg:statusStable .
 
-    _:n6180652088774126a964ddb1b76a8d19b24 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b24 a owl:Restriction ;
         owl:onProperty frbr:partOf ;
         owl:someValuesFrom fabio:JournalIssue .
 }
@@ -419,10 +419,10 @@ What are the preferred labels of all subject terms assigned to the article with 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b24"
+            "@id": "http://purl.org/spar/fabio/Article"
           },
           {
-            "@id": "http://purl.org/spar/fabio/Article"
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b24"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -432,7 +432,7 @@ What are the preferred labels of all subject terms assigned to the article with 
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b24",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b24",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -450,17 +450,17 @@ What are the preferred labels of all subject terms assigned to the article with 
     ],
     "@id": "http://purl.org/spar/fabio"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_568c1d7c5925a2a948c6105d721d3ec1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n6180652088774126a964ddb1b76a8d19b24 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b24 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/fabio/JournalIssue> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'OPJK and DILIGENT: ontology modeling in a distributed environment' ;\n            prism:doi '10.1007/s10506-007-9036-2' ;\n            frbr:embodiment :my-analog-manifestation , :my-digital-manifestation ;\n            frbr:partOf :my-journal-issue .\n    " &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b24 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#partOf> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."@en &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b24 &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#label> "journal article"@en &lt;http://purl.org/spar/fabio> .
+]</code></pre></div><div class="tab-pane fade" id=id_568c1d7c5925a2a948c6105d721d3ec1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#label> "journal article"@en &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Article> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'OPJK and DILIGENT: ontology modeling in a distributed environment' ;\n            prism:doi '10.1007/s10506-007-9036-2' ;\n            frbr:embodiment :my-analog-manifestation , :my-digital-manifestation ;\n            frbr:partOf :my-journal-issue .\n    " &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b24 &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b24 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b24 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/fabio/JournalIssue> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b24 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#partOf> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/JournalArticle> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

@@ -7,23 +7,23 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ItemCollection">
-    <rdfs:comment xml:lang="en">A collection of items.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b23"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Item"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">item collection</rdfs:label>
     <vann:example>
         :my-item-collection a fabio:ItemCollection ;
             dcterms:title 'Collection of historical items'@en ;
             frbr:part :my-item, :my-another-item ;
             dcterms:description 'A collection of items, such as a physical library collection or a set of digital files.'@en .
     </vann:example>
-    <rdfs:label xml:lang="en">item collection</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Item"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b23"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A collection of items.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b23">
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b23">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Item"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
   </rdf:Description>
 </rdf:RDF>

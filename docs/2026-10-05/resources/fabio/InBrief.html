@@ -372,17 +372,17 @@ What are the preferred labels of all subject terms assigned to the article with 
     """ ;
         rdfs:comment "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."@en ;
         rdfs:isDefinedBy fabio: ;
-        rdfs:subClassOf _:n6180652088774126a964ddb1b76a8d19b19,
+        rdfs:subClassOf _:nbd59893e8a4144f9864e0ea78c01ebc3b19,
             fabio:NewsItem ;
         vs:term_status reg:statusStable .
 
-    _:n6180652088774126a964ddb1b76a8d19b19 a owl:Class ;
-        owl:unionOf _:n6180652088774126a964ddb1b76a8d19b20 .
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b19 a owl:Class ;
+        owl:unionOf _:nbd59893e8a4144f9864e0ea78c01ebc3b20 .
 
-    _:n6180652088774126a964ddb1b76a8d19b20 rdf:first fabio:JournalNewsItem ;
-        rdf:rest _:n6180652088774126a964ddb1b76a8d19b21 .
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b20 rdf:first fabio:JournalNewsItem ;
+        rdf:rest _:nbd59893e8a4144f9864e0ea78c01ebc3b21 .
 
-    _:n6180652088774126a964ddb1b76a8d19b21 rdf:first fabio:MagazineNewsItem ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b21 rdf:first fabio:MagazineNewsItem ;
         rdf:rest () .
 }
 
@@ -418,10 +418,10 @@ What are the preferred labels of all subject terms assigned to the article with 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b19"
+            "@id": "http://purl.org/spar/fabio/NewsItem"
           },
           {
-            "@id": "http://purl.org/spar/fabio/NewsItem"
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b19"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -431,7 +431,7 @@ What are the preferred labels of all subject terms assigned to the article with 
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b19",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b19",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -451,20 +451,20 @@ What are the preferred labels of all subject terms assigned to the article with 
     ],
     "@id": "http://purl.org/spar/fabio"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_6ffc4b151a8a165fc565ad776994eddb_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b19 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/fabio/JournalNewsItem> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."@en &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/InBrief> &lt;http://purl.org/vocab/vann/example> "\n        :my-in-brief a fabio:InBrief ;\n            dcterms:title 'Science In Brief - March 2026'@en ;\n            dcterms:description 'A short summary or a collection of brief news items or notes.'@en .\n    " &lt;http://purl.org/spar/fabio> .
+]</code></pre></div><div class="tab-pane fade" id=id_6ffc4b151a8a165fc565ad776994eddb_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/fabio/MagazineNewsItem> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b19 &lt;http://www.w3.org/2002/07/owl#unionOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b20 &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b21 &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/InBrief> &lt;http://purl.org/vocab/vann/example> "\n        :my-in-brief a fabio:InBrief ;\n            dcterms:title 'Science In Brief - March 2026'@en ;\n            dcterms:description 'A short summary or a collection of brief news items or notes.'@en .\n    " &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."@en &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/NewsItem> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/fabio/MagazineNewsItem> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/fabio/JournalNewsItem> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b19 &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/InBrief> &lt;http://www.w3.org/2000/01/rdf-schema#label> "in brief"@en &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b19 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n6180652088774126a964ddb1b76a8d19b20 &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b21 &lt;http://purl.org/spar/fabio> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

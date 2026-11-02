@@ -1,12 +1,12 @@
+<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b112 .
+<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b112 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isSchemeOf> .
+<http://purl.org/spar/fabio/TermDictionary> <http://purl.org/vocab/vann/example> "\n        :my-term-dictionary a fabio:TermDictionary ;\n            dcterms:title 'Artificial Intelligence Glossary'@en ;\n            skos:isSchemeOf :my-subject-term ;\n            dcterms:description 'A collection of terms and their definitions, often specific to a particular subject or field.'@en .\n    " .
+<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2004/02/skos/core#note> "A term dictionary is a collection of subject terms."@en .
 <http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b112 .
-<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#comment> "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."@en .
-<http://purl.org/spar/fabio/TermDictionary> <http://purl.org/vocab/vann/example> "\n        :my-term-dictionary a fabio:TermDictionary ;\n            dcterms:title 'Artificial Intelligence Glossary'@en ;\n            skos:isSchemeOf :my-subject-term ;\n            dcterms:description 'A collection of terms and their definitions, often specific to a particular subject or field.'@en .\n    " .
-_:n6180652088774126a964ddb1b76a8d19b112 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/SubjectTerm> .
-_:n6180652088774126a964ddb1b76a8d19b112 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isSchemeOf> .
-<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#label> "term dictionary"@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/TermDictionary> <http://www.w3.org/2000/01/rdf-schema#comment> "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b112 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/SubjectTerm> .

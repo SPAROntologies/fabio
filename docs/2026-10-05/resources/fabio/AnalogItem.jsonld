@@ -31,10 +31,10 @@
         "@id": "http://purl.org/spar/fabio/Item"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b90"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b90"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b89"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b89"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b90",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b90",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -71,7 +71,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b89",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b89",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

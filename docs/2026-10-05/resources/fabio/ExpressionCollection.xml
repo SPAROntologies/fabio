@@ -8,8 +8,9 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ExpressionCollection">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A collection of expressions, for example a periodical or a book series.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b117"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b117"/>
     <vann:example>
         :my-expression-collection a fabio:ExpressionCollection ;
             dcterms:title 'Collected Papers on Biotechnology 2020-2025'@en ;
@@ -17,13 +18,12 @@
             dcterms:description 'A collection of expressions, such as a book series or a thematic set of research articles.'@en .
     </vann:example>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:label xml:lang="en">expression collection</rdfs:label>
-    <rdfs:comment xml:lang="en">A collection of expressions, for example a periodical or a book series.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b117">
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b117">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

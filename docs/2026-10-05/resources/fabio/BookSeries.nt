@@ -1,13 +1,13 @@
+_:nbd59893e8a4144f9864e0ea78c01ebc3b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b10 .
+<http://purl.org/spar/fabio/BookSeries> <http://purl.org/vocab/vann/example> "\n        :my-book-series a fabio:BookSeries ;\n            dcterms:title 'Lecture Notes in Computer Science'@en ;\n            prism:issn '0302-9743' ;\n            frbr:part :my-book, :my-another-book ;\n            dcterms:description 'A theoretical and professional book series focused on computer science research and development.'@en .\n    " .
+<http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A sequence of books having certain characteristics in common that are formally identified together as a group."@en .
 <http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/fabio/BookSet> .
 <http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Series> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 <http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2004/02/skos/core#note> "Examples include the books in the Law, Governance and Technology Series published by Springer."@en .
-_:n6180652088774126a964ddb1b76a8d19b10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Book> .
 <http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#label> "book series"@en .
-<http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A sequence of books having certain characteristics in common that are formally identified together as a group."@en .
-_:n6180652088774126a964ddb1b76a8d19b10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Book> .
-_:n6180652088774126a964ddb1b76a8d19b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/BookSeries> <http://purl.org/vocab/vann/example> "\n        :my-book-series a fabio:BookSeries ;\n            dcterms:title 'Lecture Notes in Computer Science'@en ;\n            prism:issn '0302-9743' ;\n            frbr:part :my-book, :my-another-book ;\n            dcterms:description 'A theoretical and professional book series focused on computer science research and development.'@en .\n    " .
+<http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b10 .
+<http://purl.org/spar/fabio/BookSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Series> .

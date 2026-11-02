@@ -6,9 +6,7 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Metadata">
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-metadata a fabio:Metadata ;
             dcterms:title 'Metadata record for 'The Fellowship of the Ring''@en ;
@@ -17,6 +15,8 @@
     </vann:example>
     <rdfs:comment xml:lang="en">A separate work that provides information describing one or more characteristics of a resource or entity.</rdfs:comment>
     <rdfs:label xml:lang="en">metadata</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

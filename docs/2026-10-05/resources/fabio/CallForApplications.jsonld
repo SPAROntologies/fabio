@@ -27,7 +27,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b11"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b11"
       },
       {
         "@id": "http://purl.org/spar/fabio/Expression"
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b11",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b11",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

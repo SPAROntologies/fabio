@@ -6,15 +6,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/intranet">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdf:type rdf:resource="http://purl.org/spar/fabio/DigitalStorageMedium"/>
+    <rdfs:comment xml:lang="en">A private computer network, unconnected to the internet or separated from it by a firewall, that uses a network operating system and Internet Protocol technologies to permit an organization's information to be shared securely within that organization.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/fabio/DigitalStorageMedium"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label>intranet</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-item a fabio:Item ;
             fabio:isStoredOn fabio:intranet .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label>intranet</rdfs:label>
-    <rdfs:comment xml:lang="en">A private computer network, unconnected to the internet or separated from it by a firewall, that uses a network operating system and Internet Protocol technologies to permit an organization's information to be shared securely within that organization.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

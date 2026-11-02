@@ -6,9 +6,8 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/InstructionalWork">
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
     <vann:example>
         :my-instructional-work a fabio:InstructionalWork ;
             dcterms:title 'User Manual for Digital Camera Model X100'@en ;
@@ -16,8 +15,9 @@
             frbr:realization :my-instruction-manual ;
             dcterms:description 'A work whose primary purpose is to provide instruction or training in a particular subject or skill.'@en .
     </vann:example>
-    <rdfs:comment xml:lang="en">A work created for the purpose of education or instruction, that may be expressed as a text book, a lecture, a tutorial or an instruction manual.</rdfs:comment>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A work created for the purpose of education or instruction, that may be expressed as a text book, a lecture, a tutorial or an instruction manual.</rdfs:comment>
     <rdfs:label xml:lang="en">instructional work</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

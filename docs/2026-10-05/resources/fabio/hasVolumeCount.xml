@@ -8,16 +8,16 @@
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasVolumeCount">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:comment xml:lang="en">The count of the number of volumes a work includes.</rdfs:comment>
-    <rdfs:label xml:lang="en">has volume count</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-book-series a fabio:BookSeries ;
             fabio:hasVolumeCount '12'^^xsd:nonNegativeInteger .
     </vann:example>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:label xml:lang="en">has volume count</rdfs:label>
+    <rdfs:comment xml:lang="en">The count of the number of volumes a work includes.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

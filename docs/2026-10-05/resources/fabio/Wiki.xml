@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Wiki">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
-    <rdfs:label xml:lang="en">wiki</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A collaborative Web manifestation, usually maintained by a project team or group, providing easy-to-edit pages that can be used to accumulate related information for shared use by the group and/or publication.</rdfs:comment>
     <vann:example>
         :my-wiki a fabio:Wiki ;
             dcterms:title 'Collaborative Wiki for Project X'@en ;
             frbr:embodimentOf :my-web-content ;
             dcterms:description 'A website that allows collaborative editing of its content and structure by its users.'@en .
     </vann:example>
-    <rdfs:comment xml:lang="en">A collaborative Web manifestation, usually maintained by a project team or group, providing easy-to-edit pages that can be used to accumulate related information for shared use by the group and/or publication.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">wiki</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

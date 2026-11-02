@@ -6,16 +6,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasCODEN">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/CODEN"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
     <vann:example>
         :my-journal a fabio:Journal ;
             fabio:hasCODEN 'JBCHA3' .
     </vann:example>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:label xml:lang="en">has CODEN</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:comment xml:lang="en">A six character, alphanumeric bibliographic identification code, that provides concise, unique and unambiguous identification of the titles of serials and non-serial publications.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/CODEN"/>
   </rdf:Description>
 </rdf:RDF>
