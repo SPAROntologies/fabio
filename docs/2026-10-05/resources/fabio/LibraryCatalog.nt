@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/LibraryCatalog> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/LibraryCatalog> <http://purl.org/vocab/vann/example> "\n    :my-library-catalog a fabio:LibraryCatalog ;\n        dcterms:title 'Online Public Access Catalog (OPAC) - City Library'@en ;\n        dcterms:description 'A register of all bibliographic items found in a library or group of libraries.'@en .\n    " .
+<http://purl.org/spar/fabio/LibraryCatalog> <http://www.w3.org/2000/01/rdf-schema#label> "library catalog"@en .
+<http://purl.org/spar/fabio/LibraryCatalog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/LibraryCatalog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Catalog> .
+<http://purl.org/spar/fabio/LibraryCatalog> <http://www.w3.org/2000/01/rdf-schema#comment> "The catalog of the holdings of a library, for example that of the Library of Congress (http://catalog.loc.gov/)."@en .
+<http://purl.org/spar/fabio/LibraryCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

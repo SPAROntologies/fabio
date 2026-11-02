@@ -1,0 +1,7 @@
+<http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+<http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has alternate title"@en .
+<http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'Advanced Semantic Mapping in 2026'@en ;\n            prism:alternateTitle 'ASM 2026 Project Report'@en .\n    " .
+<http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "An alternative title for a resource."@en .
+<http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/alternateTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .

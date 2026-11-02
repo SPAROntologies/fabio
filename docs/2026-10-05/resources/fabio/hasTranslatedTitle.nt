@@ -1,0 +1,8 @@
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasTranslatedTitle 'Il Web Semantico'@it .\n    " .
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://www.w3.org/2004/02/skos/core#note> "\nThe language may be specified using the object property `dcterms:language`.\n                                                   "@en .
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has translated title"@en .
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "A version of the title of a resource translated into another language."@en .
+<http://purl.org/spar/fabio/hasTranslatedTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

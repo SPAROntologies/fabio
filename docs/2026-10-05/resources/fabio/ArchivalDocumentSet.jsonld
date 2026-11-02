@@ -1,0 +1,78 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/ArchivalDocumentSet",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-archival-document-set a fabio:ArchivalDocumentSet ;\n            dcterms:title 'Collection of documents related to Alan Turing's correspondence'@en ;\n            frbr:part :my-archival-document, :my-another-archival-document ;\n            frbr:realizationOf :my-archival-record-set ;\n            dcterms:description 'A collection of various archival documents.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A collection of archival documents."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "archival document set"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b64"
+      },
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b65"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/ExpressionCollection"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b64",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/ArchivalDocument"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b65",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/ArchivalDocument"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ]
+  }
+]

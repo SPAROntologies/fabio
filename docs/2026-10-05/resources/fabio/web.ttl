@@ -1,0 +1,18 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:web a fabio:DigitalStorageMedium,
+        owl:NamedIndividual ;
+    rdfs:label "World Wide Web"@en ;
+    vann:example """
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:web .
+    """ ;
+    rdfs:comment "A system of interlinked hypertext documents written in HTML and accessed using the HTTP protocol via the Internet."@en ;
+    rdfs:isDefinedBy fabio: ;
+    vs:term_status reg:statusStable .
+

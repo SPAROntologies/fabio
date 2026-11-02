@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PosterPaper a owl:Class ;
+    rdfs:label "poster paper"@en ;
+    vann:example """
+        :my-poster-paper a fabio:PosterPaper ;
+            dcterms:title 'Visualization of knowledge graphs on mobile devices'@en ;
+            dcterms:description 'A short paper describing a poster presented at a conference.'@en .
+    """ ;
+    rdfs:comment "A paper that typically accompanies a poster describing some preliminary results of research, usually presented during a conference or a workshop."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

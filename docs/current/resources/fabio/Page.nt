@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Page> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Page> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation that represents pages either in physical (e.g., one side of a sheet of paper) or in digital form (e.g., a page in a PDF, or a web page)."@en .
-<http://purl.org/spar/fabio/Page> <http://purl.org/vocab/vann/example> "\n        :my-page a fabio:Page ;\n            dcterms:title 'Page 42'@en ;\n            dcterms:description 'One side of a leaf of something printed or written, such as a book, manuscript or letter.'@en .\n    " .
 <http://purl.org/spar/fabio/Page> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Manifestation> .
+<http://purl.org/spar/fabio/Page> <http://purl.org/vocab/vann/example> "\n        :my-page a fabio:Page ;\n            dcterms:title 'Page 42'@en ;\n            dcterms:description 'One side of a leaf of something printed or written, such as a book, manuscript or letter.'@en .\n    " .
 <http://purl.org/spar/fabio/Page> <http://www.w3.org/2000/01/rdf-schema#label> "page"@en .
 <http://purl.org/spar/fabio/Page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Page> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Page> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

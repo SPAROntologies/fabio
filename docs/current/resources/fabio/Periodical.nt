@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nc2534d39d31a404c8051419731cd4b5eb115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb115 .
 <http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ExpressionCollection> .
-<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#comment> "A publication issued on a regular and ongoing basis as a series of issues, each issue comprising separate periodical items, for example editorials, articles, news items and/or other writings."@en .
+_:n6180652088774126a964ddb1b76a8d19b115 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#label> "periodical"@en .
+<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ExpressionCollection> .
 <http://purl.org/spar/fabio/Periodical> <http://purl.org/vocab/vann/example> "\n        :my-periodical a fabio:Periodical ;\n            dcterms:title 'Nature'@en ;\n            dcterms:issn '1476-4687' ;\n            frbr:part :my-periodical-issue ;\n            dcterms:description 'A publication that is issued in parts at regular intervals.'@en .\n    " .
-_:nc2534d39d31a404c8051419731cd4b5eb115 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PeriodicalIssue> .
-_:nc2534d39d31a404c8051419731cd4b5eb115 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:n6180652088774126a964ddb1b76a8d19b115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b115 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PeriodicalIssue> .
+<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b115 .
+<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Periodical> <http://www.w3.org/2000/01/rdf-schema#comment> "A publication issued on a regular and ongoing basis as a series of issues, each issue comprising separate periodical items, for example editorials, articles, news items and/or other writings."@en .

@@ -1,12 +1,7 @@
 [project]
 name = "fabio"
-version = "0.1.0"
-description = "Add your description here"
+version = "2.3.2"
+description = "The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "codespell>=2.4.2",
-    "markdown>=3.10.2",
-    "rdflib>=7.6.0",
-    "requests>=2.34.2",
-]
+dependencies = []

@@ -1,7 +1,7 @@
+<http://purl.org/dc/terms/date> <http://www.w3.org/2004/02/skos/core#note> "\nDate may be used to express temporal information at any level of granularity. \nRecommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 (http://www.w3.org/TR/NOTE-datetime).\n"@en .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#comment> "A point or period of time associated with an event in the lifecycle of a resource."@en .
 <http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#label> "has date"@en .
-<http://purl.org/dc/terms/date> <http://www.w3.org/2004/02/skos/core#note> "\nDate may be used to express temporal information at any level of granularity. \nRecommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 (http://www.w3.org/TR/NOTE-datetime).\n"@en .
 <http://purl.org/dc/terms/date> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:date '2026-04-29'^^xsd:date .\n    " .
-<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/date> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:LegalOpinion a owl:Class ;
+    rdfs:label "legal opinion"@en ;
+    vann:example """
+        :my-legal-opinion a fabio:LegalOpinion ;
+            dcterms:title 'Legal Opinion on Intellectual Property Rights for Project X'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A formal written statement by a judicial officer or legal expert that sets out the legal principle and his or her application to a particular case.'@en .
+    """ ;
+    rdfs:comment "A written explanation by a judge or group of judges that accompanies a ruling in a legal case, laying out the reasons and legal principles for the ruling, and sometimes containing pronouncements about what the law is and how it should be interpreted."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Opinion ;
+    vs:term_status reg:statusStable .
+

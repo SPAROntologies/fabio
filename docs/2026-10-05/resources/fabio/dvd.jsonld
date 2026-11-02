@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/dvd",
+    "@type": [
+      "http://purl.org/spar/fabio/DigitalStorageMedium",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-fabio-item a fabio:Item ;\n            fabio:isStoredOn fabio:dvd .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A non-rewritable optical disc storage medium resembling a compact disc (CD), usually used for video and data storage. A DVD has the same physical dimensions as a CD, but is capable of storing more than six times as much data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "digital versatile disc"
+      },
+      {
+        "@value": "DVD"
+      },
+      {
+        "@language": "en",
+        "@value": "digital video disc"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

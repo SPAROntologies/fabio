@@ -1,17 +1,17 @@
-_:nc2534d39d31a404c8051419731cd4b5eb84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc2534d39d31a404c8051419731cd4b5eb85 .
-<http://purl.org/spar/fabio/isPortrayalOf> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item;\n            fabio:isPortrayalOf :my-work .\n    " .
-<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n6180652088774126a964ddb1b76a8d19b83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#exemplarOf> .
+_:n6180652088774126a964ddb1b76a8d19b85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#realizationOf> .
 <http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The work of an item."@en .
-<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
-_:nc2534d39d31a404c8051419731cd4b5eb85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/spar/fabio/isPortrayalOf> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item;\n            fabio:isPortrayalOf :my-work .\n    " .
+_:n6180652088774126a964ddb1b76a8d19b85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:n6180652088774126a964ddb1b76a8d19b83 .
+<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2004/02/skos/core#note> "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
+<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nc2534d39d31a404c8051419731cd4b5eb84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodimentOf> .
-<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
 <http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#label> "is portrayal of"@en .
-<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:nc2534d39d31a404c8051419731cd4b5eb83 .
-_:nc2534d39d31a404c8051419731cd4b5eb83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#exemplarOf> .
-<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2004/02/skos/core#note> "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
-_:nc2534d39d31a404c8051419731cd4b5eb83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc2534d39d31a404c8051419731cd4b5eb84 .
-_:nc2534d39d31a404c8051419731cd4b5eb85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#realizationOf> .
 <http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Work> .
+_:n6180652088774126a964ddb1b76a8d19b83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b84 .
+<http://purl.org/spar/fabio/isPortrayalOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
+_:n6180652088774126a964ddb1b76a8d19b84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b85 .
+_:n6180652088774126a964ddb1b76a8d19b84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodimentOf> .

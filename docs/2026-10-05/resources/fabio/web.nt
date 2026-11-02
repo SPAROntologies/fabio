@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/web> <http://www.w3.org/2000/01/rdf-schema#comment> "A system of interlinked hypertext documents written in HTML and accessed using the HTTP protocol via the Internet."@en .
+<http://purl.org/spar/fabio/web> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/DigitalStorageMedium> .
+<http://purl.org/spar/fabio/web> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            fabio:isStoredOn fabio:web .\n    " .
+<http://purl.org/spar/fabio/web> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/web> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/fabio/web> <http://www.w3.org/2000/01/rdf-schema#label> "World Wide Web"@en .
+<http://purl.org/spar/fabio/web> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

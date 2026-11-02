@@ -1,0 +1,92 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/PeriodicalItem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-periodical-item a fabio:PeriodicalItem ;\n            dcterms:title 'The future of open science'@en ;\n            frbr:partOf :my-periodical-issue , :my-periodical-volume ;\n            dcterms:description 'An item published within an issue of a periodical.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A piece of writing published in a periodical issue, typically accompanied by other items by different authors."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "periodical item"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b36"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b36",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          },
+          {
+            "@id": "_:n6180652088774126a964ddb1b76a8d19b37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b37",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b38"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b38",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/PeriodicalIssue"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/PeriodicalVolume"
+          }
+        ]
+      }
+    ]
+  }
+]

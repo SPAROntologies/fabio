@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Script a owl:Class ;
+    rdfs:label "script"@en ;
+    vann:example """
+        :my-script a fabio:Script ;
+            dcterms:title 'Python script for bibliographic data cleaning'@en ;
+            dcterms:description 'A program or sequence of instructions that is interpreted or carried out by another program.'@en .
+    """ ;
+    rdfs:comment "A small computer program written in a scripting language such as JavaScript, PHP or Perl that allows control of one or more software applications."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ComputerProgram ;
+    vs:term_status reg:statusStable .
+

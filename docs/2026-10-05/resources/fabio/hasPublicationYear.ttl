@@ -1,0 +1,22 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fabio:hasPublicationYear a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has publication year"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPublicationYear '2007'^^xsd:gYear .
+    """ ;
+    rdfs:comment "The year in which a resource is published."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf dcterms:issued ;
+    vs:term_status reg:statusStable .
+

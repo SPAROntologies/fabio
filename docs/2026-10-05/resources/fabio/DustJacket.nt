@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/2000/01/rdf-schema#label> "dust jacket"@en .
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/2000/01/rdf-schema#comment> "A detachable outer cover, usually made of paper and printed with text and illustrations. This outer cover has folded flaps that hold it to the cover of a document."@en .
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/DustJacket> <http://purl.org/vocab/vann/example> "\n        :my-dust-jacket a fabio:DustJacket ;\n            dcterms:title 'Dust jacket for The Hobbit, First Edition'@en ;\n            dcterms:creator :j-r-r-tolkien ;\n            dcterms:description 'The detachable outer paper cover of a book, often with decorative illustrations and a summary of the work.'@en .\n    " .
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .

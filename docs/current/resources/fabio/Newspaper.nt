@@ -1,11 +1,11 @@
-_:nc2534d39d31a404c8051419731cd4b5eb74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
-<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Periodical> .
-<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb74 .
+_:n6180652088774126a964ddb1b76a8d19b74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest."@en .
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nc2534d39d31a404c8051419731cd4b5eb74 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Newspaper> <http://purl.org/vocab/vann/example> "\n        :my-newspaper a fabio:Newspaper ;\n            dcterms:title 'Corriere della Sera'@en ;\n            frbr:part :my-newspaper-issue ;\n            dcterms:description 'A periodical publication containing news, other informative articles, and advertising.'@en .\n    " .
-_:nc2534d39d31a404c8051419731cd4b5eb74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b74 .
 <http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#label> "newspaper"@en .
+<http://purl.org/spar/fabio/Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Periodical> .
+_:n6180652088774126a964ddb1b76a8d19b74 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/Newspaper> <http://purl.org/vocab/vann/example> "\n        :my-newspaper a fabio:Newspaper ;\n            dcterms:title 'Corriere della Sera'@en ;\n            frbr:part :my-newspaper-issue ;\n            dcterms:description 'A periodical publication containing news, other informative articles, and advertising.'@en .\n    " .
+_:n6180652088774126a964ddb1b76a8d19b74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .

@@ -1,6 +1,12 @@
 # FRBR-aligned Bibliographic Ontology (FaBiO)
 
-The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references.
+[![License](https://img.shields.io/github/license/SPAROntologies/fabio)](LICENSE.md)
+[![Release](https://img.shields.io/github/v/release/SPAROntologies/fabio)](https://github.com/SPAROntologies/fabio/releases/latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/SPAROntologies/fabio/validation.yml?label=tests)](https://github.com/SPAROntologies/fabio/actions/workflows/validation.yml)
+[![Documentation](https://img.shields.io/badge/docs-sparontologies.net-blue)](http://www.sparontologies.net/ontologies/fabio)
+[![IRI](https://img.shields.io/badge/IRI-purl.org%2Fspar%2Ffabio-blue)](http://purl.org/spar/fabio)
+
+The **_FRBR-aligned Bibliographic Ontology (FaBiO)_** is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references.
 
 **URL:** http://purl.org/spar/fabio
 
@@ -12,5 +18,5 @@ The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing en
 
 **Website:** http://www.sparontologies.net/ontologies/fabio
 
-**Cite as:** Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf
+**Cite as:** Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001.
 

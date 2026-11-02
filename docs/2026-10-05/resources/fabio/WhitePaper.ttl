@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WhitePaper a owl:Class ;
+    rdfs:label "white paper"@en ;
+    vann:example """
+        :my-white-paper a fabio:WhitePaper ;
+            dcterms:title 'Evolution of decentralized networks'@en ;
+            dcterms:description 'An authoritative report or guide that informs readers concisely about a complex issue and presents the issuing body's philosophy on the matter.'@en .
+    """ ;
+    rdfs:comment "An authoritative report or guide designed to educate readers and help people make decisions, or to explain technical problems and how to solve them. White papers are typically published by governments to propose new legislation for discussion, and by commercial companies to inform readers about products or services, as aids to marketing."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ReportDocument ;
+    vs:term_status reg:statusStable .
+

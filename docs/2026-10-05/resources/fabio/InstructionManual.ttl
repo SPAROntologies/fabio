@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:InstructionManual a owl:Class ;
+    rdfs:label "instruction manual"@en ;
+    vann:example """
+        :my-instruction-manual a fabio:InstructionManual ;
+            dcterms:title 'User Manual for Digital Camera Model X100'@en ;
+            frbr:realizationOf :my-instructional-work ;
+            dcterms:description 'A document providing detailed information on how to use, install, or maintain a particular product or system.'@en .
+    """ ;
+    rdfs:comment "An instructional document typically supplied with a technologically advanced consumer product, such as a car or a computer application, or with an item of complex equipment such as a microscope."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:InstructionalWork ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

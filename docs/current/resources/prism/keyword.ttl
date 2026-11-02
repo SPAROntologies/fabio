@@ -17,7 +17,7 @@ prism:keyword a owl:DatatypeProperty ;
                 'professional knowledge' ,
                 'rhetorical structure theory' .
     """ ;
-    rdfs:comment "A keyword associated with a reosurce, that is likely to be used in search queries."@en ;
+    rdfs:comment "A keyword associated with a resource, that is likely to be used in search queries."@en ;
     rdfs:domain frbr:Endeavour ;
     rdfs:isDefinedBy prism: ;
     rdfs:subPropertyOf owl:topDataProperty ;

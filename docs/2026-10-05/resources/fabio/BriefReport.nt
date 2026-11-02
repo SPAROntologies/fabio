@@ -1,0 +1,14 @@
+_:n6180652088774126a964ddb1b76a8d19b94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b95 .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+_:n6180652088774126a964ddb1b76a8d19b95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b93 <http://www.w3.org/2002/07/owl#unionOf> _:n6180652088774126a964ddb1b76a8d19b94 .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6180652088774126a964ddb1b76a8d19b94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/RapidCommunication> .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b93 .
+<http://purl.org/spar/fabio/BriefReport> <http://purl.org/vocab/vann/example> "\n        :my-brief-report a fabio:BriefReport ;\n            dcterms:title 'Preliminary Observations on the New Omicron Subvariant'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A short report providing early data and rapid updates on ongoing clinical observations.'@en ;\n            dcterms:subject <http://purl.uniprot.org/keywords/949> .\n    " .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2000/01/rdf-schema#comment> "A brief report document. This term may also be used synonymously with Rapid Communication to mean 'A short rapidly published research article or conference paper, typically reporting significant research results that have been recently discovered, or a brief news item reporting such discoveries.'"@en .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2000/01/rdf-schema#label> "brief report"@en .
+_:n6180652088774126a964ddb1b76a8d19b95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/ReportDocument> .

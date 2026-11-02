@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:CollectedWorks a owl:Class ;
+    rdfs:label "collected works"@en ;
+    vann:example """
+        :my-collected-works a fabio:CollectedWorks ;
+            dcterms:title 'Luigi Pirandello's works'@en ;
+            frbr:part :my-artistic-work, :my-another-artistic-work ;
+            dcterms:description 'The complete intellectual output of Luigi Pirandello, gathered as a single conceptual collection.'@en .
+    """ ;
+    rdfs:comment "A collection of the literary or scholastic works of a single person."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Anthology ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Erratum a owl:Class ;
+    rdfs:label "erratum"@en ;
+    vann:example """
+        :my-erraturm a fabio:Erratum ;
+            dcterms:title 'Erratum to: Quantum Computing Efficiency (Vol 12, 2025)'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A published correction of a significant error in a previously published work.'@en .
+    """ ;
+    rdfs:comment "A formal correction to an error introduced by the publisher into a previously published document."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Correction ;
+    vs:term_status reg:statusStable .
+

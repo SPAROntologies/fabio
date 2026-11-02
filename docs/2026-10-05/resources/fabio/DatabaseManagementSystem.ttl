@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DatabaseManagementSystem a owl:Class ;
+    rdfs:label "database management system"@en ;
+    vann:example """
+        :my-database-management-system a fabio:DatabaseManagementSystem ;
+            dcterms:title 'PostgreSQL 16.0'@en ;
+            frbr:realizationOf :my-software ;
+            dcterms:description 'A powerful, open source object-relational database system used to create, manage, and query databases.'@en .
+    """ ;
+    rdfs:comment "A software, commonly abbreviated as 'DBMS', used to create a database."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ComputerProgram ;
+    vs:term_status reg:statusStable .
+

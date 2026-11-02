@@ -1,16 +1,16 @@
-_:nc2534d39d31a404c8051419731cd4b5eb78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The discipline belonging to a certain subject vocabulary."@en .
+_:n6180652088774126a964ddb1b76a8d19b78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/isDisciplineOf> <http://purl.org/vocab/vann/example> "\n        :my-concept a skos:Concept ;\n            skos:prefLabel 'Ontology Engineering'@en ;\n            fabio:isDisciplineOf :my-research-paper .\n    " .
-_:nc2534d39d31a404c8051419731cd4b5eb80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.w3.org/2004/02/skos/core#inScheme> .
-<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/SubjectDiscipline> .
-<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#range> _:nc2534d39d31a404c8051419731cd4b5eb78 .
 <http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#label> "is discipline of"@en .
-_:nc2534d39d31a404c8051419731cd4b5eb79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/TermDictionary> .
-_:nc2534d39d31a404c8051419731cd4b5eb80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:nc2534d39d31a404c8051419731cd4b5eb78 <http://www.w3.org/2002/07/owl#unionOf> _:nc2534d39d31a404c8051419731cd4b5eb79 .
-_:nc2534d39d31a404c8051419731cd4b5eb79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc2534d39d31a404c8051419731cd4b5eb80 .
+<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+_:n6180652088774126a964ddb1b76a8d19b78 <http://www.w3.org/2002/07/owl#unionOf> _:n6180652088774126a964ddb1b76a8d19b79 .
+_:n6180652088774126a964ddb1b76a8d19b79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/TermDictionary> .
+_:n6180652088774126a964ddb1b76a8d19b80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#range> _:n6180652088774126a964ddb1b76a8d19b78 .
+_:n6180652088774126a964ddb1b76a8d19b80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The discipline belonging to a certain subject vocabulary."@en .
+<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/SubjectDiscipline> .
+_:n6180652088774126a964ddb1b76a8d19b79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b80 .
+<http://purl.org/spar/fabio/isDisciplineOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

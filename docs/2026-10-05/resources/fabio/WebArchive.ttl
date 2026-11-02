@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WebArchive a owl:Class ;
+    rdfs:label "web archive"@en ;
+    vann:example """
+        :my-web-archive a fabio:WebArchive ;
+            dcterms:title 'Wayback Machine'@en ;
+            dcterms:description 'A collection of web pages and associated assets that have been preserved for future reference.'@en .
+    """ ;
+    rdfs:comment "A snapshots of (part of) the World Wide Web."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Repository ;
+    vs:term_status reg:statusStable .
+

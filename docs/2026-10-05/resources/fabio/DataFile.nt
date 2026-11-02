@@ -1,0 +1,11 @@
+_:n6180652088774126a964ddb1b76a8d19b14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:n6180652088774126a964ddb1b76a8d19b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Dataset> .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b14 .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#comment> "A realisation of a fabio:Dataset (a frbr:Work) containing a defined collection of data with specific content and possibly with a specific version number, that can be embodied as a fabio:DigitalManifestation (a frbr:Manifestation with a specific format) and be represented by a specific fabio:ComputerFile (a frbr:Item) on someone's hard drive."@en .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#label> "data file"@en .
+<http://purl.org/spar/fabio/DataFile> <http://purl.org/vocab/vann/example> "\n        :my-data-file a fabio:DataFile ;\n            dcterms:title 'Raw Survey Data on Urban Mobility'@en ;\n            frbr:realizationOf :my-dataset ;\n            dcterms:description 'A computer file containing structured or unstructured data, intended for processing by computer applications.'@en .\n    " .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

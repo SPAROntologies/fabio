@@ -28,13 +28,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb68"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b69"
       },
       {
         "@id": "http://purl.org/spar/fabio/Periodical"
       },
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb69"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b68"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -50,23 +50,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb68",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#part"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/fabio/JournalIssue"
-      }
-    ]
-  },
-  {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb69",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b69",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -78,6 +62,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://purl.org/spar/fabio/JournalVolume"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b68",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/JournalIssue"
       }
     ]
   }

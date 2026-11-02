@@ -1,8 +1,8 @@
-<http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2000/01/rdf-schema#label> "computer application"@en .
-<http://purl.org/spar/fabio/ComputerApplication> <http://purl.org/vocab/vann/example> "\n        :my-computer-application a fabio:ComputerApplication ;\n            dcterms:title 'OpenRefine'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realizationOf :my-software ;\n            dcterms:description 'A powerful tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.'@en .\n    " .
 <http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "A computer program designed to assist a human user to perform one or more goal-oriented tasks such as word processing or image processing."@en .
 <http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ComputerProgram> .
+<http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2000/01/rdf-schema#label> "computer application"@en .
 <http://purl.org/spar/fabio/ComputerApplication> <http://www.w3.org/2004/02/skos/core#note> "A computer application will typically save its output files in one or more specific formats, conforming either to proprietary or open standards."@en .
+<http://purl.org/spar/fabio/ComputerApplication> <http://purl.org/vocab/vann/example> "\n        :my-computer-application a fabio:ComputerApplication ;\n            dcterms:title 'OpenRefine'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realizationOf :my-software ;\n            dcterms:description 'A powerful tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.'@en .\n    " .

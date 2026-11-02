@@ -1,0 +1,19 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasRequestDate a owl:DatatypeProperty ;
+    rdfs:label "has request date"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasRequestDate '2026-05-15'^^xsd:date .
+    """ ;
+    rdfs:comment "The date on which an agent is requested to do something, for example a reviewer is requested to write a review of a paper submitted to a journal for publication, or an author is requested to supply a revised version of the paper in response to the reviews received."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subPropertyOf dcterms:date ;
+    vs:term_status reg:statusStable .
+

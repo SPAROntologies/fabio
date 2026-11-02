@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/fabio/ram",
     "@type": [
-      "http://purl.org/spar/fabio/DigitalStorageMedium",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/fabio/DigitalStorageMedium"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -24,11 +24,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "random access memory"
+        "@value": "RAM"
       },
       {
         "@language": "en",
-        "@value": "RAM"
+        "@value": "random access memory"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [

@@ -1,16 +1,16 @@
-<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2002/07/owl#equivalentClass> _:nc2534d39d31a404c8051419731cd4b5eb138 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2002/07/owl#equivalentClass> _:n6180652088774126a964ddb1b76a8d19b138 .
 <http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
-_:nc2534d39d31a404c8051419731cd4b5eb138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nc2534d39d31a404c8051419731cd4b5eb141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc2534d39d31a404c8051419731cd4b5eb142 .
-_:nc2534d39d31a404c8051419731cd4b5eb142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:nc2534d39d31a404c8051419731cd4b5eb139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc2534d39d31a404c8051419731cd4b5eb140 .
-<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of different aspects of user interests in the products of intellectual or artistic artifact."@en .
-_:nc2534d39d31a404c8051419731cd4b5eb140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
-_:nc2534d39d31a404c8051419731cd4b5eb141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
-_:nc2534d39d31a404c8051419731cd4b5eb139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/vocab/frbr/core#Endeavour> <http://purl.org/vocab/vann/example> "\n        :my-resource a frbr:Endeavour .\n        " .
-_:nc2534d39d31a404c8051419731cd4b5eb140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc2534d39d31a404c8051419731cd4b5eb141 .
+_:n6180652088774126a964ddb1b76a8d19b139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
 <http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en .
-_:nc2534d39d31a404c8051419731cd4b5eb138 <http://www.w3.org/2002/07/owl#unionOf> _:nc2534d39d31a404c8051419731cd4b5eb139 .
-_:nc2534d39d31a404c8051419731cd4b5eb142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:n6180652088774126a964ddb1b76a8d19b139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b140 .
+_:n6180652088774126a964ddb1b76a8d19b141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:n6180652088774126a964ddb1b76a8d19b138 <http://www.w3.org/2002/07/owl#unionOf> _:n6180652088774126a964ddb1b76a8d19b139 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of different aspects of user interests in the products of intellectual or artistic artifact."@en .
+_:n6180652088774126a964ddb1b76a8d19b142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:n6180652088774126a964ddb1b76a8d19b141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b142 .
+_:n6180652088774126a964ddb1b76a8d19b138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b141 .
+_:n6180652088774126a964ddb1b76a8d19b142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n6180652088774126a964ddb1b76a8d19b140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://purl.org/vocab/vann/example> "\n        :my-resource a frbr:Endeavour .\n        " .

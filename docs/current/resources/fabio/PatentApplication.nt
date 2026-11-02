@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2000/01/rdf-schema#label> "patent application"@en .
-<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal disclosure of a new invention, made in application for a patent."@en .
 <http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Specification> .
+<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/PatentApplication> <http://purl.org/vocab/vann/example> "\n        :my-patent-application a fabio:PatentApplication ;\n            dcterms:title 'Application for patenting an AI-based ice cream generator'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-patent-application-document ;\n            dcterms:description 'A formal request for the grant of a patent for an invention.'@en .\n    " .
+<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal disclosure of a new invention, made in application for a patent."@en .
+<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PatentApplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

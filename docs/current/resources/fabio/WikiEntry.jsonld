@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/fabio/WebContent"
+        "@id": "http://purl.org/spar/fabio/Entry"
       },
       {
-        "@id": "http://purl.org/spar/fabio/Entry"
+        "@id": "http://purl.org/spar/fabio/WebContent"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [

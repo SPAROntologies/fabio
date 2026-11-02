@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasElectronicArticleIdentifier a owl:DatatypeProperty ;
+    rdfs:label "has electronic article identifier"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasElectronicArticleIdentifier 'e12345' .
+    """ ;
+    rdfs:comment "A local identifier for an article within an electronic (i.e. on line, in HTML format) periodical issue. Use in preference to `prism:startingPage` when the article lacks page numbers"@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,26 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Nanopublication a owl:Class ;
+    rdfs:label "nanopublication"@en ;
+    vann:example """
+        :my-nanopublication a fabio:Nanopublication ;
+            dcterms:title 'Interaction protein-gene NP-721'@en ;
+            dcterms:description 'The smallest unit of publishable information, an assertion that can be uniquely identified and attributed.'@en .
+    """ ;
+    rdfs:comment "A single, attributable and machine-readable factual assertion - the smallest unit of publishable information that can be uniquely identified and attributed to its author - typically expressed in RDF."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable ;
+    skos:note """The minimal components of a nanopublication are as follows:
+* the factual assertion itself, in the form subject, predicate and object (e.g. malaria is_a disease);
+* provenance information about the nanopublication, defining its authorship and creation date;
+* supporting information (optional), providing context for the assertion;
+* a unique identifier for the nanopublication, in the form of a URI;
+* an integrity key that ensures that the nanopublication is in its original form and has not been altered."""@en .
+

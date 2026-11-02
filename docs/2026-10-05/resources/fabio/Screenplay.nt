@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/Screenplay> <http://www.w3.org/2000/01/rdf-schema#label> "screenplay"@en .
+<http://purl.org/spar/fabio/Screenplay> <http://purl.org/vocab/vann/example> "\n        :my-screenplay a fabio:Screenplay ;\n            dcterms:title 'Screenplay for 'Possession''@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A document that outlines the story, characters, and dialogue of a film or television show.'@en .\n    " .
+<http://purl.org/spar/fabio/Screenplay> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Screenplay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/LiteraryArtisticWork> .
+<http://purl.org/spar/fabio/Screenplay> <http://www.w3.org/2000/01/rdf-schema#comment> "A written work made especially for a film or television program. Screenplays can be original works or adaptations from existing pieces of writing, for example novels."@en .
+<http://purl.org/spar/fabio/Screenplay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Screenplay> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

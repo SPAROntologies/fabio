@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ReferenceBook a owl:Class ;
+    rdfs:label "reference book"@en ;
+    vann:example """
+        :my-reference-book a fabio:ReferenceBook ;
+            dcterms:title 'Oxford English Dictionary, 12th Edition'@en ;
+            frbr:realizationOf :my-reference-work ;
+            dcterms:description 'A book intended to be consulted for information rather than read from beginning to end.'@en .
+    """ ;
+    rdfs:comment "A book containing authoritative factual information, such as a dictionary, encyclopaedia, handbook or field guide, which is a realisation of a certain reference work and may contain several reference entries."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:ReferenceWork ],
+        fabio:Book ;
+    vs:term_status reg:statusStable .
+

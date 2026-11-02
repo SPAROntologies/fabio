@@ -1,0 +1,27 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fabio:hasEmbargoDate a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has embargo date"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasEmbargoDate '2026-04-28T00:00:00'^^xsd:dateTime .
+    """ ;
+    rdfs:comment "The date before which a resource should not be published, or before which a press release should not be reported on."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf dcterms:date ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+For open-access journal articles, the embargo date is the date before which availability of the open-access version of the article is restricted by the publisher, following subscription-access availability of the published work. 
+The duration of the embargo period can be specified by `fabio:hasEmbargoDuration`.
+                                            """@en .
+

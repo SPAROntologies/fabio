@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/2000/01/rdf-schema#label> "examination paper"@en .
-<http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of questions on a particular topic designed to test the academic, professional or technical ability of the person taking the examination, with achievement of a pass grade in the examination typically being a prerequisite for the award of an educational award such as a degree, or of a professional or technical qualification."@en .
 <http://purl.org/spar/fabio/ExaminationPaper> <http://purl.org/vocab/vann/example> "\n        :my-examination-paper a fabio:ExaminationPaper ;\n            dcterms:title 'Final Exam: Ontology Engineering and Semantic Web'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A formal document containing a set of questions or exercises used to evaluate a student's knowledge or skills in a specific subject.'@en .\n    " .
-<http://purl.org/spar/fabio/ExaminationPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .

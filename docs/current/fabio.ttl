@@ -132,7 +132,7 @@ prism:keyword a owl:DatatypeProperty ;
                 'professional knowledge' ,
                 'rhetorical structure theory' .
     """ ;
-    rdfs:comment "A keyword associated with a reosurce, that is likely to be used in search queries."@en ;
+    rdfs:comment "A keyword associated with a resource, that is likely to be used in search queries."@en ;
     rdfs:domain frbr:Endeavour ;
     rdfs:isDefinedBy prism: ;
     rdfs:subPropertyOf owl:topDataProperty ;
@@ -441,7 +441,7 @@ bibo:doi a owl:AnnotationProperty .
     dcterms:bibliographicCitation "Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: https://doi.org/10.2139/ssrn.3198992"@en ;
     dcterms:created "2017-05-29" ;
     dcterms:description """
-The ***FRBR-aligned Bibliographic Ontology (FaBiO)*** is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
+The **_FRBR-aligned Bibliographic Ontology (FaBiO)_** is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
 FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials. 
 However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections.
 
@@ -784,7 +784,7 @@ What are the preferred labels of all subject terms assigned to the article with 
 """ ;
     dcterms:issued "2017-05-29" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-    dcterms:modified "2026-09-03" ;
+    dcterms:modified "2026-10-05" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/fabio/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.2f3180" ;
@@ -792,16 +792,21 @@ What are the preferred labels of all subject terms assigned to the article with 
     vann:preferredNamespacePrefix "fabio" ;
     vann:preferredNamespaceUri "http://purl.org/spar/fabio/"^^xsd:anyURI ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/fabio> ;
-    owl:backwardCompatibleWith fabio:2026-05-18 ;
+    owl:backwardCompatibleWith fabio:2026-09-03 ;
     owl:imports <http://purl.org/spar/frbr> ;
-    owl:priorVersion fabio:2026-05-18 ;
-    owl:versionIRI fabio:2026-09-03 ;
-    owl:versionInfo "2.3.1" ;
-    foaf:logo <https://github.com/SPAROntologies/fabio/blob/master/spar.png> ;
+    owl:priorVersion fabio:2026-09-03 ;
+    owl:versionIRI fabio:2026-10-05 ;
+    owl:versionInfo "2.3.2" ;
+    vann:changes <https://github.com/SPAROntologies/fabio/blob/master/CHANGELOG.md> ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/fabio> ;
     schema:image <https://github.com/SPAROntologies/fabio/blob/master/docs/current/fabio.png> ;
     schema:includedInDataCatalog <https://fairsharing.org/> ;
-    schema:keywords "bibliography"@en,
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "bibliography"@en,
         "bibliometrics"@en,
         "scholarly publishing"@en,
         "scientometrics"@en,
@@ -5455,7 +5460,7 @@ An example of a `fabio:Item` is a printed copy of a journal article on your desk
 frbr:Expression a owl:Class ;
     rdfs:label "expression"@en ;
     rdfs:comment """
-The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 
 An expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. 
 Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.

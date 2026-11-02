@@ -1,0 +1,11 @@
+<http://purl.org/spar/fabio/Editorial> <http://purl.org/vocab/vann/example> "\n        :my-editorial a fabio:Editorial ;\n            dcterms:title 'The Future of Open Science in 2026'@en ;\n            frbr:realizationOf :my-opinion ;\n            dcterms:description 'An article expressing the opinion or policy of the editors or publishers of a publication.'@en .\n    " .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:n6180652088774126a964ddb1b76a8d19b101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b101 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Opinion> .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#label> "editorial"@en .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b101 .
+_:n6180652088774126a964ddb1b76a8d19b101 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of an opinion written by an editor."@en .

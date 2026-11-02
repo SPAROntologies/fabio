@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Image> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Image> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Image> <http://purl.org/vocab/vann/example> "\n        :my-image a fabio:Image ;\n            dcterms:title 'Sunset'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A visual representation other than text, such as a photograph, painting, or drawing.'@en .\n    " .
 <http://purl.org/spar/fabio/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
-<http://purl.org/spar/fabio/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual representation other than text, including all types of moving image and still image."@en .
 <http://purl.org/spar/fabio/Image> <http://www.w3.org/2000/01/rdf-schema#label> "image"@en .
+<http://purl.org/spar/fabio/Image> <http://purl.org/vocab/vann/example> "\n        :my-image a fabio:Image ;\n            dcterms:title 'Sunset'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A visual representation other than text, such as a photograph, painting, or drawing.'@en .\n    " .
+<http://purl.org/spar/fabio/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual representation other than text, including all types of moving image and still image."@en .
+<http://purl.org/spar/fabio/Image> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Image> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

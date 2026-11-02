@@ -31,7 +31,7 @@
         "@id": "http://purl.org/spar/fabio/AcademicProceedings"
       },
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb50"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b50"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb50",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b50",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

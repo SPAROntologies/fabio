@@ -1,0 +1,10 @@
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://purl.org/vocab/vann/example> "\n    :my-manuscript a fabio:Manuscript ;\n        fabio:hasCharacterCount '15400'^^xsd:positiveInteger .\n    " .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The count of the number of characters in a textual resource."@en .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2000/01/rdf-schema#label> "has character count"@en .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://purl.org/spar/fabio/hasCharacterCount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

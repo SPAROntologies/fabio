@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/2000/01/rdf-schema#comment> "A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event."@en .
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/2000/01/rdf-schema#label> "conference poster"@en .
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ConferencePoster> <http://purl.org/vocab/vann/example> "\n        :my-conference-poster a fabio:ConferencePoster ;\n            dcterms:title 'Visualizing Neural-Symbolic Integration: A Case Study'@en ;\n            dcterms:description 'A large printed or digital sheet presenting research data and findings at a conference poster session.'@en .\n    " .
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

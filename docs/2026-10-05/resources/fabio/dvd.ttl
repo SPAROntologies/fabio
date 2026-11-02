@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:dvd a fabio:DigitalStorageMedium,
+        owl:NamedIndividual ;
+    rdfs:label "DVD",
+        "digital versatile disc"@en,
+        "digital video disc"@en ;
+    vann:example """
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:dvd .
+    """ ;
+    rdfs:comment "A non-rewritable optical disc storage medium resembling a compact disc (CD), usually used for video and data storage. A DVD has the same physical dimensions as a CD, but is capable of storing more than six times as much data."@en ;
+    rdfs:isDefinedBy fabio: ;
+    vs:term_status reg:statusStable .
+

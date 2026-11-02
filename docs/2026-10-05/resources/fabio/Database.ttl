@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Database a owl:Class ;
+    rdfs:label "database"@en ;
+    vann:example """
+        :my-database a fabio:Database ;
+            dcterms:title 'GenBank'@en ;
+            dcterms:description 'A comprehensive database that contains publicly available nucleotide sequences for more than 300,000 named organisms.'@en .
+    """ ;
+    rdfs:comment "A structured collection of logically related records or data usually stored and retrieved using computer-based means."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

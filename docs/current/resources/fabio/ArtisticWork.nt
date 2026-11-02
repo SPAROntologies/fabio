@@ -1,7 +1,7 @@
 <http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/2000/01/rdf-schema#comment> "A work regarded as art in its widest sense, including works from literature and music, visual art, etc."@en .
 <http://purl.org/spar/fabio/ArtisticWork> <http://purl.org/vocab/vann/example> "\n        :my-artistic-work a fabio:ArtisticWork ;\n            dcterms:title 'The Starry Night'@en ;\n            dcterms:creator :vincent-van-gogh ;\n            dcterms:description 'The conceptual artistic creation representing Van Gogh's vision of the night sky from Saint-Rémy-de-Provence.'@en .\n    " .
 <http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/2000/01/rdf-schema#label> "artistic work"@en .
-<http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/ArtisticWork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

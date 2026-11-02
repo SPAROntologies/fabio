@@ -1,8 +1,8 @@
-<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2004/02/skos/core#note> "\nExamples include written, spoken, sign, and computer languages. \nRecommended best practice is to use a controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).\n"@en .
 <http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#label> "has language"@en .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/language> <http://purl.org/vocab/vann/example> "\n        :my-dataset a fabio:Dataset ;\n            dcterms:language <http://lexvo.org/id/iso639-3/ita> .\n    " .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2004/02/skos/core#note> "\nExamples include written, spoken, sign, and computer languages. \nRecommended best practice is to use a controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).\n"@en .

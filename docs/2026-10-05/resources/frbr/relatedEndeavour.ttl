@@ -1,0 +1,14 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:relatedEndeavour a owl:ObjectProperty ;
+    rdfs:label "has related endeavour"@en ;
+    rdfs:comment "Another endeavour that is related in some way to an endeavour."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Endeavour ;
+    vs:term_status reg:statusStable .
+

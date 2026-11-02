@@ -1,0 +1,11 @@
+_:n6180652088774126a964ddb1b76a8d19b96 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Journal> .
+_:n6180652088774126a964ddb1b76a8d19b96 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b96 .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#label> "journal volume"@en .
+<http://purl.org/spar/fabio/JournalVolume> <http://purl.org/vocab/vann/example> "\n        :my-journal-volume a fabio:JournalVolume ;\n            dcterms:title 'Journal of Semantic Web Research, Volume 1'@en ;\n            frbr:partOf :my-journal ;\n            dcterms:description 'A particular volume of a journal or other periodical, usually collecting all issues published within a single year.'@en .\n    " .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/PeriodicalVolume> .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published volume of a journal, comprising one or more journal issues."@en .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/JournalVolume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

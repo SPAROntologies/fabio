@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/DataManagementPolicyDocument">
+    <rdfs:comment xml:lang="en">A document embodying a policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <vann:example>
+        :my-data-management-policy-document a fabio:DataManagementPolicyDocument ;
+            dcterms:title 'Official Research Data Policy Document'@en ;
+            frbr:realizationOf :my-data-management-policy ;
+            dcterms:description 'A physical or digital document that contains the text of a data management policy.'@en .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/PolicyDocument"/>
+    <rdfs:label xml:lang="en">data management policy document</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

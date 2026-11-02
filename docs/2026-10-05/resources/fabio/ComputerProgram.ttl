@@ -1,0 +1,26 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ComputerProgram a owl:Class ;
+    rdfs:label "computer program"@en ;
+    vann:example """
+        :my-computer-program a fabio:ComputerProgram ;
+            dcterms:title 'Statistical Analysis Script in Python'@en ;
+            dcterms:creator :john-doe ;
+            frbr:realizationOf :my-software ;
+            dcterms:language <http://purl.org/NET/marccodes/languages/python> ;
+            dcterms:description 'A set of instructions written in Python to automate data cleaning and visualization.'@en .
+    """ ;
+    rdfs:comment "A unit of computer code in source or compiled form, employing one or more algorithms to be executed by a digital computer to undertake a particular task. Computer programs are collectively called 'software' to distinguish them from the equipment ('hardware') upon which they run."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:Software ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

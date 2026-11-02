@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PeriodicalVolume a owl:Class ;
+    rdfs:label "periodical volume"@en ;
+    vann:example """
+        :my-periodical-volume a fabio:PeriodicalVolume ;
+            dcterms:title 'Nature Volume 600'@en ;
+            fabio:hasSequenceIdentifier '600' ;
+            frbr:partOf :my-periodical ;
+            dcterms:description 'A single volume of a periodical publication, usually collecting several issues.'@en .
+    """ ;
+    rdfs:comment "A particular published volume of a periodical."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:partOf ;
+            owl:someValuesFrom fabio:Periodical ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

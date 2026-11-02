@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fabio:hasNationalLibraryOfMedicineJournalId a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has National Library of Medicine journal identifier"@en ;
+    vann:example """
+        :my-journal a fabio:Journal ;
+            fabio:hasNationalLibraryOfMedicineJournalId '9604648' .
+    """ ;
+    rdfs:comment "An internal identifier for journals available from the National Library of Medicine repository."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:onDatatype xsd:string ;
+            owl:withRestrictions ( [ xsd:pattern "[0-9]+" ] ) ] ;
+    rdfs:seeAlso <http://www.nlm.nih.gov/> ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    vs:term_status reg:statusStable .
+

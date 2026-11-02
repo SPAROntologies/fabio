@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:NewspaperIssue a owl:Class ;
+    rdfs:label "newspaper issue"@en ;
+    vann:example """
+        :my-newspaper-issue a fabio:NewspaperIssue ;
+            dcterms:title 'The New York Times - Edition of April 28, 2026'@en ;
+            frbr:partOf :my-newspaper ;
+            dcterms:description 'A particular issue of a newspaper.'@en .
+    """ ;
+    rdfs:comment "A particular published issue of a newspaper, identified by date, and sometimes also by place or time (e.g. 'Late London Edition')."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:partOf ;
+            owl:someValuesFrom fabio:Newspaper ],
+        fabio:PeriodicalIssue ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,23 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ComputerApplication a owl:Class ;
+    rdfs:label "computer application"@en ;
+    vann:example """
+        :my-computer-application a fabio:ComputerApplication ;
+            dcterms:title 'OpenRefine'@en ;
+            dcterms:creator :john-doe ;
+            frbr:realizationOf :my-software ;
+            dcterms:description 'A powerful tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.'@en .
+    """ ;
+    rdfs:comment "A computer program designed to assist a human user to perform one or more goal-oriented tasks such as word processing or image processing."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ComputerProgram ;
+    vs:term_status reg:statusStable ;
+    skos:note "A computer application will typically save its output files in one or more specific formats, conforming either to proprietary or open standards."@en .
+

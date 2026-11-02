@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WorkPackage a owl:Class ;
+    rdfs:label "work package"@en ;
+    vann:example """
+        :my-work-package a fabio:WorkPackage ;
+            dcterms:title 'Work Package 1'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A major building block of a project's work plan.'@en .
+    """ ;
+    rdfs:comment "A component of the case for support of a grant application, describing a particular aspect of the work to be undertaken."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

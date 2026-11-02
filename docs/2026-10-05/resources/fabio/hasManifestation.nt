@@ -1,0 +1,16 @@
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/spar/fabio/hasManifestation> <http://purl.org/vocab/vann/example> "\n        :my-research-paper a fabio:ResearchPaper ;\n            fabio:hasManifestation :my-print-object .\n    " .
+_:n6180652088774126a964ddb1b76a8d19b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodiment> .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2000/01/rdf-schema#label> "has manifestation"@en .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:n6180652088774126a964ddb1b76a8d19b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/fabio/isManifestationOf> .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The manifestation of a work."@en .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2004/02/skos/core#note> "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
+_:n6180652088774126a964ddb1b76a8d19b54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#realization> .
+_:n6180652088774126a964ddb1b76a8d19b54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b55 .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:n6180652088774126a964ddb1b76a8d19b54 .
+<http://purl.org/spar/fabio/hasManifestation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .

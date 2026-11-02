@@ -1,0 +1,20 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasNLMJournalTitleAbbreviation a owl:DatatypeProperty ;
+    rdfs:label "has National Library of Medicine journal title abbreviation"@en ;
+    vann:example """
+        :my-journal a fabio:Journal ;
+            fabio:hasNLMJournalTitleAbbreviation 'J Biomed Inform' .
+    """ ;
+    rdfs:comment "An internal identifier for the abbreviation of the title of journals available from the National Library of Medicine repository."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subPropertyOf dcterms:identifier,
+        fabio:hasShortTitle ;
+    vs:term_status reg:statusStable .
+

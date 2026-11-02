@@ -1,0 +1,21 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fabio:hasDistributionDate a owl:DatatypeProperty ;
+    rdfs:label "has distribution date"@en ;
+    vann:example """
+        :my-preprint a fabio:Preprint ;
+            fabio:hasDistributionDate '2026-04-27T00:00:00Z'^^xsd:dateTime .
+    """ ;
+    rdfs:comment "The date on which something is distributed, for example the date on which a preprint of a document is e-mailed to colleagues and other academics by the author(s), or the date on which a printed announcement of forthcoming theatre events is mailed to those those on the theatre's mailing list."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf dcterms:date ;
+    vs:term_status reg:statusStable .
+

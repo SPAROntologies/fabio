@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Directory a owl:Class ;
+    rdfs:label "directory"@en ;
+    vann:example """
+        :my-directory a fabio:Directory ;
+            dcterms:title 'University Research Staff Directory 2026'@en ;
+            dcterms:description 'A systematic list of names, addresses, and other data of persons or organizations.'@en .
+    """ ;
+    rdfs:comment "A database of information which is heavily optimized for reading."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Database ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Manuscript a owl:Class ;
+    rdfs:label "manuscript"@en ;
+    vann:example """
+        :my-manuscript a fabio:Manuscript ;
+            dcterms:title 'Initial Draft: Deep Learning in Healthcare'@en ;
+            dcterms:description 'A textual work prepared 'by hand', including typescripts or word-processed pre-publication drafts.'@en .
+    """ ;
+    rdfs:comment "A textual work prepared 'by hand', such as a typescript or word-processed pre-publication draft of a research paper or a report, or a work not otherwise reproduced in multiple copies."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable ;
+    skos:note "Note: `fabio:Manuscript` is not intended to describe a handwritten historical document on paper or parchment, for which the FRBR distinctions between work, expression, manifestation and item (individual copy) becomes blurred."@en .
+

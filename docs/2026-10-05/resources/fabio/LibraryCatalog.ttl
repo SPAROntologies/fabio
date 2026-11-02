@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:LibraryCatalog a owl:Class ;
+    rdfs:label "library catalog"@en ;
+    vann:example """
+    :my-library-catalog a fabio:LibraryCatalog ;
+        dcterms:title 'Online Public Access Catalog (OPAC) - City Library'@en ;
+        dcterms:description 'A register of all bibliographic items found in a library or group of libraries.'@en .
+    """ ;
+    rdfs:comment "The catalog of the holdings of a library, for example that of the Library of Congress (http://catalog.loc.gov/)."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Catalog ;
+    vs:term_status reg:statusStable .
+

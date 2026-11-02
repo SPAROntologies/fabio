@@ -1,0 +1,7 @@
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2004/02/skos/core#note> "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:identifier 'doi:10.1000/182' .\n    " .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique and unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

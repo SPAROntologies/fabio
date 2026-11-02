@@ -1,0 +1,26 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fabio:hasSICI a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has SICI"@en,
+        "has Serial Item and Contribution Identifier"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasSICI '0015-6914(199612)18:12<12:SIAI>2.0.TX;2-B' .
+    """ ;
+    rdfs:comment "A code used to uniquely identify specific volumes, articles or other identifiable parts of a periodical. It is intended primarily for use by those members of the bibliographic community involved in the use or management of serial titles and their contributions."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso <http://www.niso.org/apps/group_public/project/details.php?project_id=75> ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fabio:hasURL a owl:DatatypeProperty ;
+    rdfs:label "has URL"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasURL 'https://www.example.org/articles/intro-semantic-web'^^xsd:anyURI .
+    """ ;
+    rdfs:comment "An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    vs:term_status reg:statusStable .
+

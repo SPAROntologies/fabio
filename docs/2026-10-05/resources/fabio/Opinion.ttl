@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Opinion a owl:Class ;
+    rdfs:label "opinion"@en ;
+    vann:example """
+        :my-opinion-2026 a fabio:Opinion ;
+            dcterms:title 'Legal opinion on GDPR v2'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A document containing a judgment, view, or statement of professional advice given by an expert.'@en .
+    """ ;
+    rdfs:comment "An expression of a personal or professional opinion on an issue or topic."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Patent a owl:Class ;
+    rdfs:label "patent"@en ;
+    vann:example """
+        :my-patent a fabio:Patent ;
+            dcterms:title 'AI-based ice cream generator'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:identifier 'US123456789' ;
+            dcterms:description 'A government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.'@en .
+    """ ;
+    rdfs:comment "A formal disclosure of a new invention approved by a governmental patent agency, made to register intellectual property rights, and to give exclusive rights to the inventor or assignee to manufacture, use, license or sell the invention for a certain number of years."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

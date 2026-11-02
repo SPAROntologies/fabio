@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/NewspaperIssue"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Newspaper">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">newspaper</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Periodical"/>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b74"/>
+    <vann:example>
+        :my-newspaper a fabio:Newspaper ;
+            dcterms:title 'Corriere della Sera'@en ;
+            frbr:part :my-newspaper-issue ;
+            dcterms:description 'A periodical publication containing news, other informative articles, and advertising.'@en .
+    </vann:example>
+  </rdf:Description>
+</rdf:RDF>

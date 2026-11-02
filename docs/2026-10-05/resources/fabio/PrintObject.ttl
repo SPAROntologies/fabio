@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PrintObject a owl:Class ;
+    rdfs:label "print object"@en ;
+    vann:example """
+        :my-print-object a fabio:PrintObject ;
+            dcterms:publisher :springer ;
+            prism:publicationDate '2007-06'^^xsd:gYearMonth ;
+            prism:startingPage '171' ;
+            prism:endingPage '186' .
+    """ ;
+    rdfs:comment "An analog manifestation in physical printed form, typically on paper."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:AnalogManifestation ;
+    vs:term_status reg:statusStable .
+

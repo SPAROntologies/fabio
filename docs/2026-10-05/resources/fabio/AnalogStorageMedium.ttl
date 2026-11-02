@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:AnalogStorageMedium a owl:Class ;
+    rdfs:label "analog storage medium"@en ;
+    vann:example """
+        fabio:paper a fabio:AnalogStorageMedium .
+    """ ;
+    rdfs:comment "A means of storing information in non-digital form, e.g. paper, film (for analogue photographs or movies), magnetic tape (for analogue sound recordings or video recordings) or vinyl disc."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom fabio:AnalogItem ;
+            owl:onProperty fabio:stores ],
+        fabio:StorageMedium ;
+    vs:term_status reg:statusStable .
+

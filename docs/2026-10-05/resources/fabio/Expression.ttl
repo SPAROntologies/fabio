@@ -1,0 +1,39 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Expression a owl:Class ;
+    rdfs:label "expression"@en ;
+    vann:example """
+        :my-expression a fabio:Expression ;
+            dcterms:title 'Towards a new Semantic Web'@en ;
+            frbr:realizationOf :my-work ;
+            frbr:embodiment :my-digital-manifestation ;
+            dcterms:description 'The intellectual content of a work.'@en .
+    """ ;
+    rdfs:comment "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fabio:Manifestation ;
+            owl:onProperty frbr:embodiment ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fabio:Work ;
+            owl:onProperty frbr:realizationOf ],
+        frbr:Expression ;
+    vs:term_status reg:statusStable ;
+    skos:note """For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.
+    
+A `fabio:Expression` can only have part or be part of another `fabio:Expression`. Moreover, it can be a representation only of a `fabio:Work`, and it can be embodied only in instances of `fabio:Manifestation`."""@en .
+

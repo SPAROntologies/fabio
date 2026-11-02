@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ReportingStandard a owl:Class ;
+    rdfs:label "reporting standard"@en ;
+    vann:example """
+        :my-reporting-standard a fabio:ReportingStandard ;
+            dcterms:title 'CONSORT 2010 Statement'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A set of guidelines or a formal agreement that specifies how information should be reported in a document.'@en .
+    """ ;
+    rdfs:comment "A set of recommendations for the minimum reporting requirements to be employed when reporting a particular type of investigation or project, for example a randomized clinical trial. A reporting standard may involve a checklist and a flow diagram, offers a standard way for authors to prepare a complete and transparent report of their findings, and aids their critical appraisal and interpretation of their data."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:MinimalInformationStandard ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

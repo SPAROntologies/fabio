@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nc2534d39d31a404c8051419731cd4b5eb34 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb34 .
-_:nc2534d39d31a404c8051419731cd4b5eb34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://purl.org/vocab/vann/example> "\n        :my-patent-application-document a fabio:PatentApplicationDocument ;\n            dcterms:title 'Technical description for an AI-based ice cream generator'@en ;\n            frbr:realizationOf :my-patent-application ;\n            dcterms:description 'A document containing the text or drawings of a patent application.'@en .\n    " .
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "patent application document"@en .
-<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b34 .
 <http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical or electronic realization of a patent application."@en .
-_:nc2534d39d31a404c8051419731cd4b5eb34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PatentApplication> .
+_:n6180652088774126a964ddb1b76a8d19b34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "patent application document"@en .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b34 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
+_:n6180652088774126a964ddb1b76a8d19b34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/PatentApplication> .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/PatentApplicationDocument> <http://purl.org/vocab/vann/example> "\n        :my-patent-application-document a fabio:PatentApplicationDocument ;\n            dcterms:title 'Technical description for an AI-based ice cream generator'@en ;\n            frbr:realizationOf :my-patent-application ;\n            dcterms:description 'A document containing the text or drawings of a patent application.'@en .\n    " .

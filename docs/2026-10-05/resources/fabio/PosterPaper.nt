@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A paper that typically accompanies a poster describing some preliminary results of research, usually presented during a conference or a workshop."@en .
+<http://purl.org/spar/fabio/PosterPaper> <http://purl.org/vocab/vann/example> "\n        :my-poster-paper a fabio:PosterPaper ;\n            dcterms:title 'Visualization of knowledge graphs on mobile devices'@en ;\n            dcterms:description 'A short paper describing a poster presented at a conference.'@en .\n    " .
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/2000/01/rdf-schema#label> "poster paper"@en .
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b90">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/AnalogManifestation"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/AnalogItem">
+    <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/DigitalItem"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Item"/>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b90"/>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b89"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">analog item</rdfs:label>
+    <skos:note xml:lang="en">An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films.</skos:note>
+    <rdfs:comment xml:lang="en">A real object that is an exemplar of a manifestation, such as a particular copy of the book 'Alice's adventures in Wonderland', that a person may own.</rdfs:comment>
+    <vann:example>
+        :my-analog-item a fabio:AnalogItem ;
+            dcterms:title 'On the Origin of Species by Means of Natural Selection'@en ;
+            fabio:isStoredOn fabio:paper ;
+            frbr:exemplarOf :my-analog-manifestation  .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b89">
+    <owl:onProperty rdf:resource="http://purl.org/spar/fabio/isStoredOn"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/AnalogStorageMedium"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

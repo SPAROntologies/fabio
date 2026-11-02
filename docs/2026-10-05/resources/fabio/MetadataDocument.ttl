@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:MetadataDocument a owl:Class ;
+    rdfs:label "metadata document"@en ;
+    vann:example """
+        :my-metadata-document a fabio:MetadataDocument ;
+            dcterms:title 'XML schema for my dataset'@en ;
+            frbr:realizationOf :my-metadata ;
+            dcterms:description 'A document consisting entirely of metadata describing one or more other resources.'@en .
+    """ ;
+    rdfs:comment "A document that contains metadata information describing one or more characteristics of a resource."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:Metadata ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

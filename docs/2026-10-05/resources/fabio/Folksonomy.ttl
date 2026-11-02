@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Folksonomy a owl:Class ;
+    rdfs:label "folksonomy"@en ;
+    vann:example """
+        :my-folksonomy a fabio:Folksonomy ;
+            dcterms:title 'User-generated tags for Nature Photography'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A system of classification derived from the practice of collaboratively creating and managing tags to annotate and categorize content.'@en .
+    """ ;
+    rdfs:comment "A system of classification derived from the practice and method of collaboratively creating and managing tags to annotate and categorize content in a particular domain."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:UncontrolledVocabulary ;
+    vs:term_status reg:statusStable .
+

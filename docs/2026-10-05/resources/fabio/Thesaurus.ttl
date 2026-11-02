@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Thesaurus a owl:Class ;
+    rdfs:label "thesaurus"@en ;
+    vann:example """
+        :my-thesaurus a fabio:Thesaurus ;
+            dcterms:title 'UNESCO Thesaurus'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A controlled vocabulary in which concepts are represented by preferred terms, and relationships between concepts are explicitly stated.'@en .
+    """ ;
+    rdfs:comment "A type of controlled vocabulary used in information retrieval applications for indexing or tagging purposes, in which relationships between terms are made explicit. These are normally hierarchical relationships (is-a, subsumption; e.g. a cow is a mammal), equivalency relationships relating non-preferred terms to preferred terms (e.g. pitch and frequency), or associative relationships, in which the relationship that exists is neither one of hierarchy or equivalence, but rather one of similarity (e.g. sports and leisure pursuits)."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ControlledVocabulary ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( fabio:AuthorityFile fabio:Taxonomy fabio:Thesaurus ) .
+

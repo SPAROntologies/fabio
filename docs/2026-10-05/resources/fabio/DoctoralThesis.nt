@@ -1,0 +1,15 @@
+<http://purl.org/spar/fabio/DoctoralThesis> <http://www.w3.org/2000/01/rdf-schema#label> "doctoral thesis"@en .
+_:n6180652088774126a964ddb1b76a8d19b155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b156 .
+_:n6180652088774126a964ddb1b76a8d19b154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/spar/fabio/DoctoralThesis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/DoctoralThesis> <http://www.w3.org/2000/01/rdf-schema#comment> "A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree."@en .
+_:n6180652088774126a964ddb1b76a8d19b157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MastersThesis> .
+_:n6180652088774126a964ddb1b76a8d19b157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/DoctoralThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Thesis> .
+<http://purl.org/spar/fabio/DoctoralThesis> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6180652088774126a964ddb1b76a8d19b156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b157 .
+_:n6180652088774126a964ddb1b76a8d19b156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/DoctoralThesis> .
+<http://purl.org/spar/fabio/DoctoralThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/BachelorsThesis> .
+_:n6180652088774126a964ddb1b76a8d19b154 <http://www.w3.org/2002/07/owl#members> _:n6180652088774126a964ddb1b76a8d19b155 .
+<http://purl.org/spar/fabio/DoctoralThesis> <http://purl.org/vocab/vann/example> "\n        :my-doctoral-thesis a fabio:DoctoralThesis ;\n            dcterms:title 'Scalable Error Correction in Quantum Computing Architecture'@en ;\n            dcterms:description 'A thesis presented for the degree of Doctor of Philosophy.'@en .\n    " .

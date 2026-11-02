@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ExpressionCollection a owl:Class ;
+    rdfs:label "expression collection"@en ;
+    vann:example """
+        :my-expression-collection a fabio:ExpressionCollection ;
+            dcterms:title 'Collected Papers on Biotechnology 2020-2025'@en ;
+            frbr:part :my-research-paper, :my-dataset ;
+            dcterms:description 'A collection of expressions, such as a book series or a thematic set of research articles.'@en .
+    """ ;
+    rdfs:comment "A collection of expressions, for example a periodical or a book series."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:Expression ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Anthology a owl:Class ;
+    rdfs:label "anthology"@en ;
+    vann:example """
+        :my-anthology a fabio:Anthology ;
+            dcterms:title 'The Best Science Fiction Ever Written'@en ;
+            frbr:part :my-story, :my-another-story .
+    """ ;
+    rdfs:comment "A collection of selected literary or scholastics works, for example poems, short stories, plays or research papers."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ExpressionCollection ;
+    vs:term_status reg:statusStable .
+

@@ -31,13 +31,13 @@
         "@id": "http://purl.org/vocab/frbr/core#Manifestation"
       },
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb120"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b120"
       },
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb118"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b119"
       },
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb119"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b118"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -53,7 +53,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb120",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b120",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -61,17 +61,17 @@
       {
         "@list": [
           {
-            "@id": "_:nc2534d39d31a404c8051419731cd4b5eb121"
+            "@id": "_:n6180652088774126a964ddb1b76a8d19b121"
           },
           {
-            "@id": "_:nc2534d39d31a404c8051419731cd4b5eb122"
+            "@id": "_:n6180652088774126a964ddb1b76a8d19b122"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb121",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b121",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -87,7 +87,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb122",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b122",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -103,23 +103,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb118",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/fabio/Expression"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#embodimentOf"
-      }
-    ]
-  },
-  {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb119",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b119",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -131,6 +115,22 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://purl.org/vocab/frbr/core#exemplar"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b118",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#embodimentOf"
       }
     ]
   }

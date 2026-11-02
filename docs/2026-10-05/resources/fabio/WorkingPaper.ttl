@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WorkingPaper a owl:Class ;
+    rdfs:label "working paper"@en ;
+    vann:example """
+        :my-working-paper a fabio:WorkingPaper ;
+            dcterms:title 'Preliminary analysis of new markets in 2026'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A technical report or draft of a research paper that has not yet been published in a peer-reviewed journal.'@en .
+    """ ;
+    rdfs:comment "An unpublished paper, usually circulated privately among a small group of peers, to provide information or with a request for comments or editorial improvement."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

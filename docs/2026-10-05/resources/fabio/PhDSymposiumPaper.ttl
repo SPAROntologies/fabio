@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PhDSymposiumPaper a owl:Class ;
+    rdfs:label "Ph.D. symposium paper"@en ;
+    vann:example """
+        :my-phd-symposium-paper a fabio:PhDSymposiumPaper ;
+            dcterms:title 'New approaches towards ontology engineering'@en ;
+            dcterms:description 'A paper presented at a PhD symposium, typically describing ongoing doctoral research.'@en .
+    """ ;
+    rdfs:comment "A paper, usually presented during a specific session of a conference dedicated to Ph.D. students, that describes ongoing Ph.D. student's research."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

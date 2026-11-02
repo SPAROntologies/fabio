@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Book a owl:Class ;
+    rdfs:label "book"@en ;
+    vann:example """
+        :my-book a fabio:Book ;
+            dcterms:title 'On the Origin of Species by Means of Natural Selection'@en ;
+            dcterms:creator :charles-darwin ;
+            frbr:realizationOf :my-work ;
+            frbr:embodiment :my-analog-manifestation ;
+            dcterms:language <http://lexvo.org/id/iso639-3/eng> .
+    """ ;
+    rdfs:comment "A non-serial document that is complete in one volume or a designated finite number of volumes. A book published by a publisher is usually identified by an International Standard Book Number (ISBN), and may be manifested as a physical printed publication on paper bound in a hard or soft cover, or in electronic format as an 'e-book'."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

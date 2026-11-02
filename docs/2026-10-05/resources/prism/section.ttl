@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+prism:section a owl:DatatypeProperty ;
+    rdfs:label "has section"@en ;
+    vann:example """
+        :my-news-article a fabio:NewsArticle ;
+            prism:section 'Technology and Research' .
+    """ ;
+    rdfs:comment "The name or identifier of the section or part of a resource."@en ;
+    rdfs:isDefinedBy prism: ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    vs:term_status reg:statusStable ;
+    skos:note "Examples include Part 2 of Issue 6 of Volume 127 of the Journal of Cell Biology, or the Travel Section of a newspaper issue."@en .
+

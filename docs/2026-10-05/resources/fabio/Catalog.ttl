@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Catalog a owl:Class ;
+    rdfs:label "catalog"@en ;
+    vann:example """
+        :my-catalog a fabio:Catalog ;
+            dcterms:title 'Online Public Access Catalog (OPAC) - University Library'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A systematic list of items, such as books or manuscripts, arranged in a specific order to facilitate discovery.'@en .
+    """ ;
+    rdfs:comment "A list of items describing the content of a resource, for example items in an exhibition, items offered for sale by a vendor, or entities contained within a library or collection. Ideally, catalogs are created according to specific and uniform principles of construction and are under the control of an authority file."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

@@ -28,13 +28,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb90"
-      },
-      {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb89"
-      },
-      {
         "@id": "http://purl.org/spar/fabio/Item"
+      },
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b90"
+      },
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b89"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb90",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b90",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -71,7 +71,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb89",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b89",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

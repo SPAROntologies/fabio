@@ -23,11 +23,11 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "DVD"
-      },
-      {
         "@language": "en",
         "@value": "digital versatile disc"
+      },
+      {
+        "@value": "DVD"
       },
       {
         "@language": "en",

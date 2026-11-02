@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/SystematicReview",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-systematic-review a fabio:SystematicReview ;\n            dcterms:title 'Bibliographic Data Science: a literature review'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A review of a clearly formulated question that uses systematic and explicit methods to identify, select, and critically appraise relevant research.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A literature review focused on a single question that tries to identify, appraise, select and synthesize all high quality research evidence relevant to that question."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "systematic review"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Review"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nSystematic reviews of high-quality randomized controlled trials are crucial to evidence-based medicine. \nAn understanding of systematic reviews and how to implement them in practice is becoming mandatory for all professionals involved in the delivery of health care. \nSystematic reviews are not limited to medicine, and are quite common in other sciences such as psychology, educational research and sociology.\n                                              "
+      }
+    ]
+  }
+]

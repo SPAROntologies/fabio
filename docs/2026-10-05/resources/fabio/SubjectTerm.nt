@@ -1,0 +1,11 @@
+<http://purl.org/spar/fabio/SubjectTerm> <http://purl.org/vocab/vann/example> "\n        :my-subject-term a fabio:SubjectTerm ;\n            dcterms:title 'Semantic Web'@en ;\n            skos:inScheme :my-term-dictionary ;\n            dcterms:description 'A word or phrase used to describe the subject matter of a work.'@en .\n    " .
+_:n6180652088774126a964ddb1b76a8d19b99 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n6180652088774126a964ddb1b76a8d19b99 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/TermDictionary> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept that defines a term within the controlled vocabulary of a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, used as an annotation to describe the subject, meaning or content of a resource."@en .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#label> "subject term"@en .
+_:n6180652088774126a964ddb1b76a8d19b99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b99 .

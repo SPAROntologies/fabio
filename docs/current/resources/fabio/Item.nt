@@ -1,25 +1,25 @@
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Item> .
-_:nc2534d39d31a404c8051419731cd4b5eb126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:nc2534d39d31a404c8051419731cd4b5eb125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb125 .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nc2534d39d31a404c8051419731cd4b5eb129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nc2534d39d31a404c8051419731cd4b5eb127 .
-_:nc2534d39d31a404c8051419731cd4b5eb128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nc2534d39d31a404c8051419731cd4b5eb126 .
-<http://purl.org/spar/fabio/Item> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            dcterms:title 'article_456.pdf'@en ;\n            frbr:exemplarOf :my-manifestation ;\n            dcterms:description 'A singular, localized exemplar of a manifestation.'@en .\n    " .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#label> "item"@en .
-_:nc2534d39d31a404c8051419731cd4b5eb125 <http://www.w3.org/2002/07/owl#intersectionOf> _:nc2534d39d31a404c8051419731cd4b5eb128 .
-_:nc2534d39d31a404c8051419731cd4b5eb126 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
-_:nc2534d39d31a404c8051419731cd4b5eb126 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:nc2534d39d31a404c8051419731cd4b5eb130 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
-_:nc2534d39d31a404c8051419731cd4b5eb127 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nc2534d39d31a404c8051419731cd4b5eb130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2004/02/skos/core#note> "\nA `fabio:Item` can only have part or be part of another `fabio:Item`. Moreover, it can be an exemplar only of a `fabio:Manifestation`.\n\nAn example of a `fabio:Item` is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.\n"@en .
-<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb130 .
-_:nc2534d39d31a404c8051419731cd4b5eb130 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
-_:nc2534d39d31a404c8051419731cd4b5eb127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b126 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
 <http://purl.org/spar/fabio/Item> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nc2534d39d31a404c8051419731cd4b5eb127 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
-_:nc2534d39d31a404c8051419731cd4b5eb129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:nc2534d39d31a404c8051419731cd4b5eb128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc2534d39d31a404c8051419731cd4b5eb129 .
+_:n6180652088774126a964ddb1b76a8d19b126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2004/02/skos/core#note> "\nA `fabio:Item` can only have part or be part of another `fabio:Item`. Moreover, it can be an exemplar only of a `fabio:Manifestation`.\n\nAn example of a `fabio:Item` is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.\n"@en .
+_:n6180652088774126a964ddb1b76a8d19b129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b127 .
+<http://purl.org/spar/fabio/Item> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            dcterms:title 'article_456.pdf'@en ;\n            frbr:exemplarOf :my-manifestation ;\n            dcterms:description 'A singular, localized exemplar of a manifestation.'@en .\n    " .
+_:n6180652088774126a964ddb1b76a8d19b130 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+_:n6180652088774126a964ddb1b76a8d19b127 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+_:n6180652088774126a964ddb1b76a8d19b125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b126 .
+_:n6180652088774126a964ddb1b76a8d19b129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b130 .
+_:n6180652088774126a964ddb1b76a8d19b130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Item> .
 <http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Item, restricted to exemplars of `fabio:Manifestation`."@en .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#label> "item"@en .
+<http://purl.org/spar/fabio/Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b125 .
+_:n6180652088774126a964ddb1b76a8d19b128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b129 .
+_:n6180652088774126a964ddb1b76a8d19b130 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
+_:n6180652088774126a964ddb1b76a8d19b127 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:n6180652088774126a964ddb1b76a8d19b126 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:n6180652088774126a964ddb1b76a8d19b125 <http://www.w3.org/2002/07/owl#intersectionOf> _:n6180652088774126a964ddb1b76a8d19b128 .

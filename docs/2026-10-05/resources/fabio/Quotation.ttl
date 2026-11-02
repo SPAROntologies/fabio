@@ -1,0 +1,31 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Quotation a owl:Class ;
+    rdfs:label "quotation"@en ;
+    vann:example """
+        :my-quotation a fabio:Quotation ;
+            dcterms:title 'Quotation from The Thing'@en ;
+            dcterms:description 'A passage os speech selected from a larger expression.'@en .
+    """ ;
+    rdfs:comment "A passage of speech selected from a larger verbal or written expression for use in another expression, with specific attribution to its original source, and usually demarcated by quotation marks and / or by placing it in a separate indented paragraph."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:Excerpt ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+A quotation is a repetition of what someone has said, and is presented 'within quotation marks', for example:
+
+    On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words:
+        ' . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . .'
+
+Similarly, the words 'but Brutus is an honourable man' from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play.
+
+Note: Use `fabio:Quotation` to indicate a segment or passage selected from another expression that is a passage of speech, and `fabio:Excerpt` to indicate a segment or passage selected from another expression that is not a passage of speech.
+"""@en .
+

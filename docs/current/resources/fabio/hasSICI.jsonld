@@ -29,11 +29,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has Serial Item and Contribution Identifier"
+        "@value": "has SICI"
       },
       {
         "@language": "en",
-        "@value": "has SICI"
+        "@value": "has Serial Item and Contribution Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [

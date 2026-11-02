@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasTranslatedTitle a owl:DatatypeProperty ;
+    rdfs:label "has translated title"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasTranslatedTitle 'Il Web Semantico'@it .
+    """ ;
+    rdfs:comment "A version of the title of a resource translated into another language."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subPropertyOf dcterms:title ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The language may be specified using the object property `dcterms:language`.
+                                                   """@en .
+

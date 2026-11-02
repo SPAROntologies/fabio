@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/AuthorityFile",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-authority-file a fabio:AuthorityFile ;\n            dcterms:title 'Virtual International Authority File (VIAF)'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A controlled vocabulary that clusters different forms of a name into a single authoritative record.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A controlled vocabulary or official list that establishes, for consistency, the authoritative forms of headings, and the preferred terms or proper names to be used, when creating a catalogue or when indexing and searching a set of entities within a defined domain."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "authority file"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/ControlledVocabulary"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b150",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/AuthorityFile"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Taxonomy"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Thesaurus"
+          }
+        ]
+      }
+    ]
+  }
+]

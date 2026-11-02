@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#label> "textbook"@en .
-<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb48 .
-_:nc2534d39d31a404c8051419731cd4b5eb48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/InstructionalWork> .
-<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#comment> "A book containing instructional material relating to a particular topic of academic study, designed to be read by students."@en .
-<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Book> .
-_:nc2534d39d31a404c8051419731cd4b5eb48 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/Textbook> <http://purl.org/vocab/vann/example> "\n        :my-text-book a fabio:TextBook ;\n            dcterms:title 'Introduction to Meta-ontologies'@en ;\n            frbr:realizationOf :my-instructional-work ;\n            dcterms:description 'A book used as a standard source of information for the formal study of a particular subject.'@en .\n    " .
 <http://purl.org/spar/fabio/Textbook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nc2534d39d31a404c8051419731cd4b5eb48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Textbook> <http://purl.org/vocab/vann/example> "\n        :my-text-book a fabio:TextBook ;\n            dcterms:title 'Introduction to Meta-ontologies'@en ;\n            frbr:realizationOf :my-instructional-work ;\n            dcterms:description 'A book used as a standard source of information for the formal study of a particular subject.'@en .\n    " .
+<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b48 .
+_:n6180652088774126a964ddb1b76a8d19b48 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
 <http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#label> "textbook"@en .
+<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Book> .
 <http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Textbook> <http://www.w3.org/2000/01/rdf-schema#comment> "A book containing instructional material relating to a particular topic of academic study, designed to be read by students."@en .
+_:n6180652088774126a964ddb1b76a8d19b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/InstructionalWork> .

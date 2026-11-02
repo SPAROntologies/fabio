@@ -1,0 +1,28 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:BookSeries a owl:Class ;
+    rdfs:label "book series"@en ;
+    vann:example """
+        :my-book-series a fabio:BookSeries ;
+            dcterms:title 'Lecture Notes in Computer Science'@en ;
+            prism:issn '0302-9743' ;
+            frbr:part :my-book, :my-another-book ;
+            dcterms:description 'A theoretical and professional book series focused on computer science research and development.'@en .
+    """ ;
+    rdfs:comment "A sequence of books having certain characteristics in common that are formally identified together as a group."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:Book ],
+        fabio:Series ;
+    owl:disjointWith fabio:BookSet ;
+    vs:term_status reg:statusStable ;
+    skos:note "Examples include the books in the Law, Governance and Technology Series published by Springer."@en .
+

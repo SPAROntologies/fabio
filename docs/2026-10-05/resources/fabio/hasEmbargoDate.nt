@@ -1,0 +1,10 @@
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasEmbargoDate '2026-04-28T00:00:00'^^xsd:dateTime .\n    " .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/2000/01/rdf-schema#label> "has embargo date"@en .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date before which a resource should not be published, or before which a press release should not be reported on."@en .
+<http://purl.org/spar/fabio/hasEmbargoDate> <http://www.w3.org/2004/02/skos/core#note> "\nFor open-access journal articles, the embargo date is the date before which availability of the open-access version of the article is restricted by the publisher, following subscription-access availability of the published work. \nThe duration of the embargo period can be specified by `fabio:hasEmbargoDuration`.\n                                            "@en .

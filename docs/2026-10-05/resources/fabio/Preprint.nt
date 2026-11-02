@@ -1,0 +1,8 @@
+<http://purl.org/spar/fabio/Preprint> <http://www.w3.org/2004/02/skos/core#note> "Note: For that version resubmitted after peer-review and revision, use fabio:Postprint. For the final published version use fabio:DefinitiveVersion."@en .
+<http://purl.org/spar/fabio/Preprint> <http://www.w3.org/2000/01/rdf-schema#comment> "The version of an author's original scholarly work, such as a research paper or a review, first submitted to publisher for publication."@en .
+<http://purl.org/spar/fabio/Preprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Preprint> <http://purl.org/vocab/vann/example> "\n        :my-preprint a fabio:Preprint ;\n            dcterms:title 'Advanced analysis of bibliographic metadata'@en ;\n            dcterms:description 'A version of a scholarly paper that precedes formal peer review and publication in a peer-reviewed scholarly journal.'@en .\n    " .
+<http://purl.org/spar/fabio/Preprint> <http://www.w3.org/2000/01/rdf-schema#label> "preprint"@en .
+<http://purl.org/spar/fabio/Preprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Manuscript> .
+<http://purl.org/spar/fabio/Preprint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Preprint> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

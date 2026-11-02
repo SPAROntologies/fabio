@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular issue of a periodical, identified and distinguished from other issues of the same publication by date and/or issue number and/or volume number, and comprising separate periodical items such as editorials, articles and news items."@en .
-<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nc2534d39d31a404c8051419731cd4b5eb116 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
-<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-_:nc2534d39d31a404c8051419731cd4b5eb116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nc2534d39d31a404c8051419731cd4b5eb116 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b116 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6180652088774126a964ddb1b76a8d19b116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://purl.org/vocab/vann/example> "\n        :my-periodical-issue a fabio:PeriodicalIssue ;\n            dcterms:title 'Nature Volume 600 Issue 7887'@en ;\n            fabio:hasSequenceIdentifier '7887' ;\n            frbr:partOf :my-periodical-issue , :my-periodical-volume ;\n            dcterms:description 'A single issue of a periodical publication.'@en .\n    " .
-<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb116 .
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b116 .
+_:n6180652088774126a964ddb1b76a8d19b116 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
 <http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#label> "periodical issue"@en .
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular issue of a periodical, identified and distinguished from other issues of the same publication by date and/or issue number and/or volume number, and comprising separate periodical items such as editorials, articles and news items."@en .

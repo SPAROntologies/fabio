@@ -1,0 +1,8 @@
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://www.w3.org/2000/01/rdf-schema#label> "has volume identifier"@en .
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier for a particular volume of a resource."@en .
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://purl.org/vocab/vann/example> "\n        :my-journal-volume a fabio:JournalVolume ;\n            prism:volume '15' .\n    " .
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .

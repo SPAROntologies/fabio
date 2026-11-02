@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A keyword associated with a reosurce, that is likely to be used in search queries."
+        "@value": "A keyword associated with a resource, that is likely to be used in search queries."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [

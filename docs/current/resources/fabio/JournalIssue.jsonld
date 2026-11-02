@@ -28,7 +28,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nc2534d39d31a404c8051419731cd4b5eb108"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b108"
       },
       {
         "@id": "http://purl.org/spar/fabio/PeriodicalIssue"
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:nc2534d39d31a404c8051419731cd4b5eb108",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b108",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

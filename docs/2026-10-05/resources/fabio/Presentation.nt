@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/2000/01/rdf-schema#label> "presentation"@en .
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Presentation> <http://purl.org/vocab/vann/example> "\n        :my-algorithm a fabio:Algorithm ;\n            dcterms:title 'Distance Calculator'@en ;\n            dcterms:description 'Algorithm for calculating the distance between to geo locations.'@en .\n    " .
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of slides containing text, tables or figures, designed to communicate ideas or research results, for projection and viewing by an audience at a conference, symposium, seminar, lecture, workshop or other gatherings, typically embodied in a particular manifestation format such as a SlideShare or PowerPoint slideshow."@en .
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

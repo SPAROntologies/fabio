@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+prism:eIssn a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has eISSN"@en,
+        "has electronic International Standard Serial Number"@en ;
+    vann:example """
+        :my-journal a fabio:Journal ;
+            prism:elssn '8765-4321' .
+    """ ;
+    rdfs:comment "An International Standard Serial Number, ISSN, for electronic versions of serial publications."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy prism: ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    vs:term_status reg:statusStable .
+

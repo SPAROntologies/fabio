@@ -1,8 +1,8 @@
+<http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/2000/01/rdf-schema#label> "uses calendar"@en .
+<http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/2000/01/rdf-schema#comment> "The calendar system used to specify a date, for example the Chinese, Gregorian, Hebrew, Islamic or Lunar calendar."@en .
-<http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/2000/01/rdf-schema#label> "uses calendar"@en .
-<http://purl.org/spar/fabio/usesCalendar> <http://purl.org/vocab/vann/example> "\n        :my-work a fabio:Work ;\n            fabio:usesCalendar 'lunar' .\n    " .
-<http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/usesCalendar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/spar/fabio/usesCalendar> <http://purl.org/vocab/vann/example> "\n        :my-work a fabio:Work ;\n            fabio:usesCalendar 'lunar' .\n    " .

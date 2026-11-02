@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:InBrief a owl:Class ;
+    rdfs:label "in brief"@en ;
+    vann:example """
+        :my-in-brief a fabio:InBrief ;
+            dcterms:title 'Science In Brief - March 2026'@en ;
+            dcterms:description 'A short summary or a collection of brief news items or notes.'@en .
+    """ ;
+    rdfs:comment "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( fabio:JournalNewsItem fabio:MagazineNewsItem ) ],
+        fabio:NewsItem ;
+    vs:term_status reg:statusStable .
+

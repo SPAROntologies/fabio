@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DefinitiveVersion a owl:Class ;
+    rdfs:label "definitive version"@en ;
+    vann:example """
+        :my-definitive-version a fabio:DefinitiveVersion ;
+            dcterms:title 'The Role of AI in Modern Medicine - Final Version'@en ;
+            dcterms:description 'The final version of an expression as it was published or released, incorporating all corrections and peer review changes.'@en .
+    """ ;
+    rdfs:comment "The final published expression of a work that bears the publisher's imprimatur."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Manuscript ;
+    vs:term_status reg:statusStable ;
+    skos:note "Typically for a journal article, the Definitive Version results from revision of an earlier submitted version of the work following peer review, and is then published in print and/or digital form after the publisher has assigned it a DOI. The Definitive Version is also known as the Version of Record, although according to the CrossRef Glossary (http://crossref.org/02publishers/glossary.html) that term can also refer to the author's final version of a work that is not formally published."@en .
+

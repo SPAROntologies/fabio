@@ -1,0 +1,8 @@
+<http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Entry> .
+<http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "Information manifested in a wiki. "@en .
+<http://purl.org/spar/fabio/WikiEntry> <http://purl.org/vocab/vann/example> "\n        :my-wiki-entry a fabio:WikiEntry ;\n            dcterms:title 'Definition of Project X'@en ;\n            dcterms:description 'A single article or page within a wiki.'@en .\n    " .
+<http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/WebContent> .
+<http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/2000/01/rdf-schema#label> "wiki entry"@en .
+<http://purl.org/spar/fabio/WikiEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

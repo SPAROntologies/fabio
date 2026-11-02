@@ -1,10 +1,10 @@
+<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/fabio/stores> .
+<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Item> .
+<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The medium upon which a given item is stored."@en .
 <http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fabio/StorageMedium> .
 <http://purl.org/spar/fabio/isStoredOn> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            fabio:isStoredOn fabio:floppy-disk .\n    " .
 <http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#label> "is stored on"@en .
-<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Item> .
-<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The medium upon which a given item is stored."@en .
-<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fabio/StorageMedium> .
 <http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/isStoredOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/fabio/stores> .

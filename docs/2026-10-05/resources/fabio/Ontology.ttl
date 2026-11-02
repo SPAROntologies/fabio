@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Ontology a owl:Class ;
+    rdfs:label "ontology"@en ;
+    vann:example """
+        :my-ontology a fabio:Ontology ;
+            dcterms:title 'Citation Typing Ontology'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A formal explicit specification of a shared conceptualization.'@en .
+    """ ;
+    rdfs:comment "A formal representation of a set of concepts within a domain of knowledge, and the logical relationships between those concepts."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:Folksonomy ;
+    rdfs:subClassOf fabio:ControlledVocabulary ;
+    vs:term_status reg:statusStable .
+

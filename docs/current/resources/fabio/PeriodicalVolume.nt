@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb97 .
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://purl.org/vocab/vann/example> "\n        :my-periodical-volume a fabio:PeriodicalVolume ;\n            dcterms:title 'Nature Volume 600'@en ;\n            fabio:hasSequenceIdentifier '600' ;\n            frbr:partOf :my-periodical ;\n            dcterms:description 'A single volume of a periodical publication, usually collecting several issues.'@en .\n    " .
-_:nc2534d39d31a404c8051419731cd4b5eb97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#label> "periodical volume"@en .
-_:nc2534d39d31a404c8051419731cd4b5eb97 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published volume of a periodical."@en .
+_:n6180652088774126a964ddb1b76a8d19b97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b97 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
 <http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-_:nc2534d39d31a404c8051419731cd4b5eb97 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Periodical> .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b97 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#label> "periodical volume"@en .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://purl.org/vocab/vann/example> "\n        :my-periodical-volume a fabio:PeriodicalVolume ;\n            dcterms:title 'Nature Volume 600'@en ;\n            fabio:hasSequenceIdentifier '600' ;\n            frbr:partOf :my-periodical ;\n            dcterms:description 'A single volume of a periodical publication, usually collecting several issues.'@en .\n    " .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b97 .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular published volume of a periodical."@en .

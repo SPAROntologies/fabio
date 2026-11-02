@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DemoPaper a owl:Class ;
+    rdfs:label "demo paper"@en ;
+    vann:example """
+        :my-demo-paper a fabio:DemoPaper ;
+            dcterms:title 'Visualizing Knowledge Graphs: A Real-time Interactive Tool'@en ;
+            dcterms:description 'A short paper describing a practical demonstration of a system, software tool, or technology presented at a conference.'@en .
+    """ ;
+    rdfs:comment "A demonstration paper, typically describing a new product, service or system created as a result of research, usually presented during a conference or workshop."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

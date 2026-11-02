@@ -1,0 +1,29 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DigitalItem a owl:Class ;
+    rdfs:label "digital item"@en ;
+    vann:example """
+        :my-digital-item a fabio:DigitalItem ;
+            frbr:exemplarOf :my-digital-manifestation ;
+            fabio:hasURL 'https://example.org/download/paper.epub' ;
+            fabio:isStoredOn fabio:floppy-disk .
+    """ ;
+    rdfs:comment "A digital object, such as a computer file."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fabio:isStoredOn ;
+            owl:someValuesFrom fabio:DigitalStorageMedium ],
+        [ a owl:Restriction ;
+            owl:onProperty frbr:exemplarOf ;
+            owl:someValuesFrom fabio:DigitalManifestation ],
+        fabio:Item ;
+    vs:term_status reg:statusStable ;
+    skos:note "A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web."@en .
+

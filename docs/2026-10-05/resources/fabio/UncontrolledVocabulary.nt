@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/UncontrolledVocabulary> <http://www.w3.org/2000/01/rdf-schema#label> "uncontrolled vocabulary"@en .
+<http://purl.org/spar/fabio/UncontrolledVocabulary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/UncontrolledVocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/UncontrolledVocabulary> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-defined collection of words and phrases relating to a particular domain of knowledge, usually added freely by a community, in which homonyms, synonyms and similar ambiguities of meaning present in natural language are not formally disambiguated."@en .
+<http://purl.org/spar/fabio/UncontrolledVocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Vocabulary> .
+<http://purl.org/spar/fabio/UncontrolledVocabulary> <http://purl.org/vocab/vann/example> "\n        :my-uncontrolled-vocabulary a fabio:UncontrolledVocabulary ;\n            dcterms:title 'User folksonomy'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A collection of terms that are not part of a controlled vocabulary, such as a set of keywords chosen by a service's user community.'@en .\n    " .
+<http://purl.org/spar/fabio/UncontrolledVocabulary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Retraction a owl:Class ;
+    rdfs:label "retraction"@en ;
+    vann:example """
+        :my-retraction a fabio:Retraction ;
+            dcterms:title 'Retraction of 'Statistical analysis of environmental data 2024''@en ;
+            dcterms:creation :john-doe ;
+            dcterms:description 'A statement issued by authors, editors or other authorized officials to withdraw a previously published work or part thereof.'@en .
+    """ ;
+    rdfs:comment "A public statement made about an earlier statement that withdraws, cancels, refutes, diametrically reverses the original statement or ceases and desists from publishing the original statement."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Announcement ;
+    vs:term_status reg:statusStable .
+

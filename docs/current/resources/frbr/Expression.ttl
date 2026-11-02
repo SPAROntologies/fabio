@@ -5,7 +5,7 @@
 frbr:Expression a owl:Class ;
     rdfs:label "expression"@en ;
     rdfs:comment """
-The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 
 An expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. 
 Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.

@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PersonalCommunication a owl:Class ;
+    rdfs:label "personal communication"@en ;
+    vann:example """
+        :my-personal-communication a fabio:PersonalCommunication ;
+            dcterms:title 'Technical discussion on data architecture'@en ;
+            dcterms:description 'A communication between specific individuals, such as a letter, an email, or a private conversation, not intended for public dissemination.'@en .
+    """ ;
+    rdfs:comment "Information communicated personally by verbal or written means from one individual to one or more another persons or organizations."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,9 @@
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://purl.org/vocab/vann/example> "\n        :my-call-for-applications a fabio:CallForApplications ;\n            fabio:hasDecisionDate '2026-07-15T23:59:59Z'^^xsd:dateTime .\n    " .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/2000/01/rdf-schema#label> "has decision date"@en .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a particular endeavour, such as a grant application, has been or will be approved or rejected by somebody."@en .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/spar/fabio/hasDecisionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .

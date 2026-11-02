@@ -1,0 +1,22 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fabio:hasDepositDate a owl:DatatypeProperty ;
+    rdfs:label "has deposit date"@en ;
+    vann:example """
+        :my-preprint a fabio:Preprint ;
+            fabio:hasDepositDate '2026-04-28T00:00:00Z'^^xsd:dateTime .
+    """ ;
+    rdfs:comment "The date on which a resource has been deposited, for example in a library, repository, supplementary information archive, database or similar place of document or information storage."@en ;
+    rdfs:domain fabio:Item ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf dcterms:date ;
+    vs:term_status reg:statusStable .
+

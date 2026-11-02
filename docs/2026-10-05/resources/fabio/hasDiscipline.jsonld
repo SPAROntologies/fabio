@@ -1,0 +1,78 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/hasDiscipline",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-term-dictionary a fabio:TermDictionary ;\n            fabio:hasDiscipline\n                dbpedia:Computer_science ,\n                dbpedia:Law .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The discipline to which a subject vocabulary belongs."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b51"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has discipline"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/fabio/SubjectDiscipline"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/isDisciplineOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyDisjointWith": [
+      {
+        "@id": "http://purl.org/spar/fabio/isSchemeOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b51",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/TermDictionary"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+          }
+        ]
+      }
+    ]
+  }
+]

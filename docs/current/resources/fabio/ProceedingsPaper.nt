@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A paper, typically the realization of a research paper reporting original research findings, usually published within an academic proceedings volume."@en .
-<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#label> "proceedings paper"@en .
 <http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/ProceedingsPaper> <http://purl.org/vocab/vann/example> "\n        :my-proceedings-paper a fabio:ProceedingsPaper ;\n            dcterms:title 'Deep Learning applied to Knowledge Graphs'@en ;\n            dcterms:description 'A paper published in the proceedings of a conference, workshop or similar event.'@en .\n    " .
+<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#label> "proceedings paper"@en .
+<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A paper, typically the realization of a research paper reporting original research findings, usually published within an academic proceedings volume."@en .
+<http://purl.org/spar/fabio/ProceedingsPaper> <http://purl.org/vocab/vann/example> "\n        :my-proceedings-paper a fabio:ProceedingsPaper ;\n            dcterms:title 'Deep Learning applied to Knowledge Graphs'@en ;\n            dcterms:description 'A paper published in the proceedings of a conference, workshop or similar event.'@en .\n    " .

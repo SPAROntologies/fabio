@@ -1,19 +1,19 @@
-_:nc2534d39d31a404c8051419731cd4b5eb7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
-<http://purl.org/spar/fabio/ArchivalRecordSet> <http://purl.org/vocab/vann/example> "\n        :my-archival-record-set a fabio:ArchivalRecordSet ;\n            dcterms:title 'The Alan Turing War-time Correspondence Collection'@en ;\n            frbr:part :my-archival-record, :my-another-archival-record ;\n            frbr:realization :my-archival-document-set ;\n            dcterms:description 'The conceptual collection of all archival records created by Turing during the conflict.'@en .\n    " .
-<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb7 .
-_:nc2534d39d31a404c8051419731cd4b5eb5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 <http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nc2534d39d31a404c8051419731cd4b5eb7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalDocumentSet> .
-_:nc2534d39d31a404c8051419731cd4b5eb5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ArchivalRecord> .
-<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nc2534d39d31a404c8051419731cd4b5eb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of archival records."@en .
-<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nc2534d39d31a404c8051419731cd4b5eb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#label> "archival record set"@en .
+_:n6180652088774126a964ddb1b76a8d19b7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b5 .
+_:n6180652088774126a964ddb1b76a8d19b5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/ArchivalRecordSet> <http://purl.org/vocab/vann/example> "\n        :my-archival-record-set a fabio:ArchivalRecordSet ;\n            dcterms:title 'The Alan Turing War-time Correspondence Collection'@en ;\n            frbr:part :my-archival-record, :my-another-archival-record ;\n            frbr:realization :my-archival-document-set ;\n            dcterms:description 'The conceptual collection of all archival records created by Turing during the conflict.'@en .\n    " .
+<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of archival records."@en .
+_:n6180652088774126a964ddb1b76a8d19b7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalDocumentSet> .
+<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ArchivalRecord> .
+<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b7 .
 <http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/WorkCollection> .
-_:nc2534d39d31a404c8051419731cd4b5eb6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb5 .
-_:nc2534d39d31a404c8051419731cd4b5eb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:nc2534d39d31a404c8051419731cd4b5eb6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalRecord> .
-<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb6 .
+<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b6 .
+_:n6180652088774126a964ddb1b76a8d19b6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalRecord> .
+<http://purl.org/spar/fabio/ArchivalRecordSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6180652088774126a964ddb1b76a8d19b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .

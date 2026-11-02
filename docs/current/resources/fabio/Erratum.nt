@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2000/01/rdf-schema#label> "erratum"@en .
-<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Erratum> <http://purl.org/vocab/vann/example> "\n        :my-erraturm a fabio:Erratum ;\n            dcterms:title 'Erratum to: Quantum Computing Efficiency (Vol 12, 2025)'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A published correction of a significant error in a previously published work.'@en .\n    " .
 <http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal correction to an error introduced by the publisher into a previously published document."@en .
 <http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Correction> .
-<http://purl.org/spar/fabio/Erratum> <http://purl.org/vocab/vann/example> "\n        :my-erraturm a fabio:Erratum ;\n            dcterms:title 'Erratum to: Quantum Computing Efficiency (Vol 12, 2025)'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A published correction of a significant error in a previously published work.'@en .\n    " .
+<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

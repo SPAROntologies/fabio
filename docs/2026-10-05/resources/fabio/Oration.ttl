@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Oration a owl:Class ;
+    rdfs:label "oration"@en ;
+    vann:example """
+        :my-oration a fabio:Oration ;
+            dcterms:title 'Oration for Open Day 2026'@en ;
+            dcterms:description 'A formal speech, especially one given on a ceremonial occasion.'@en .
+    """ ;
+    rdfs:comment "A formal speech, for example one delivered at a ceremonial occasion, or the written transcript of such a speech."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

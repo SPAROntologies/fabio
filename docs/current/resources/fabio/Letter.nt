@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#label> "letter"@en .
-<http://purl.org/spar/fabio/Letter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#comment> "A written or printed communication of a personal or professional nature between individuals and/or representatives of corporate bodies, usually transmitted by the postal service or published in a periodical. In the latter case, the letter is typically addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership."@en .
 <http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/Letter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Letter> <http://purl.org/vocab/vann/example> "\n        :my-letter a fabio:Letter ;\n            dcterms:description 'A written message addressed to a person or organization, typically sent by post or messenger.'@en .\n    " .
+<http://purl.org/spar/fabio/Letter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#comment> "A written or printed communication of a personal or professional nature between individuals and/or representatives of corporate bodies, usually transmitted by the postal service or published in a periodical. In the latter case, the letter is typically addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership."@en .
+<http://purl.org/spar/fabio/Letter> <http://purl.org/vocab/vann/example> "\n        :my-letter a fabio:Letter ;\n            dcterms:description 'A written message addressed to a person or organization, typically sent by post or messenger.'@en .\n    " .
+<http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#label> "letter"@en .

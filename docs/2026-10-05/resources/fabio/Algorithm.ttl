@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Algorithm a owl:Class ;
+    rdfs:label "algorithm"@en ;
+    vann:example """
+        :my-algorithm a fabio:Algorithm ;
+            dcterms:title 'Distance Calculator'@en ;
+            dcterms:computer :john-doe ;
+            dcterms:description 'Algorithm for calculating the distance between to geo locations.'@en .
+    """ ;
+    rdfs:comment "A precise sequential set of pre-defined logical rules or computational operations to be employed for solving a particular problem in a finite number of steps."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

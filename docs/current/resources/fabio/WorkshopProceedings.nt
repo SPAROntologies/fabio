@@ -1,11 +1,11 @@
-_:nc2534d39d31a404c8051419731cd4b5eb50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/WorkshopPaper> .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nc2534d39d31a404c8051419731cd4b5eb50 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/AcademicProceedings> .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected workshop papers, or their abstracts, presented at a workshop or similar event."@en .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#label> "workshop proceedings"@en .
-_:nc2534d39d31a404c8051419731cd4b5eb50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc2534d39d31a404c8051419731cd4b5eb50 .
 <http://purl.org/spar/fabio/WorkshopProceedings> <http://purl.org/vocab/vann/example> "\n        :my-workshop-proceedings a fabio:WorkshopProceedings ;\n            dcterms:title 'Proceedings of the International Workshop on Linked Open Data 2026'@en ;\n            frbr:part :my-workshop-paper ;\n            dcterms:description 'A collection of papers presented at a workshop.'@en .\n    " .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected workshop papers, or their abstracts, presented at a workshop or similar event."@en .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:n6180652088774126a964ddb1b76a8d19b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/AcademicProceedings> .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#label> "workshop proceedings"@en .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6180652088774126a964ddb1b76a8d19b50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/WorkshopPaper> .
+<http://purl.org/spar/fabio/WorkshopProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b50 .
+_:n6180652088774126a964ddb1b76a8d19b50 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .

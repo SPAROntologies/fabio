@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ProductReview a owl:Class ;
+    rdfs:label "product review"@en ;
+    vann:example """
+        :my-product-review a fabio:ProductReview ;
+            dcterms:title 'Technical review of Smartphone XYZ 2026'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A critical review of a product, such as a software application, a piece of hardware, or a commercial tool.'@en .
+    """ ;
+    rdfs:comment "A written review and critical analysis of the purpose, features, performance and other qualities of a product."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Review ;
+    vs:term_status reg:statusStable .
+

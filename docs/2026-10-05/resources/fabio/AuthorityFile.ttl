@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:AuthorityFile a owl:Class ;
+    rdfs:label "authority file"@en ;
+    vann:example """
+        :my-authority-file a fabio:AuthorityFile ;
+            dcterms:title 'Virtual International Authority File (VIAF)'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A controlled vocabulary that clusters different forms of a name into a single authoritative record.'@en .
+    """ ;
+    rdfs:comment "A controlled vocabulary or official list that establishes, for consistency, the authoritative forms of headings, and the preferred terms or proper names to be used, when creating a catalogue or when indexing and searching a set of entities within a defined domain."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ControlledVocabulary ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( fabio:AuthorityFile fabio:Taxonomy fabio:Thesaurus ) .
+

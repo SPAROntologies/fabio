@@ -1,8 +1,8 @@
-<http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal written request for financial support from a grant-giving body in support of a project, for example an academic research project."@en .
-<http://purl.org/spar/fabio/GrantApplication> <http://purl.org/vocab/vann/example> "\n        :my-grant-application a fabio:GrantApplication ;\n            dcterms:title 'Advanced AI for Climate Resilience Proposal'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-grant-application-document ;\n            dcterms:description 'A formal request for financial assistance to support a specific research project or initiative.'@en .\n    " .
 <http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/spar/fabio/CaseForSupport> .
+<http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/GrantApplication> <http://purl.org/vocab/vann/example> "\n        :my-grant-application a fabio:GrantApplication ;\n            dcterms:title 'Advanced AI for Climate Resilience Proposal'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-grant-application-document ;\n            dcterms:description 'A formal request for financial assistance to support a specific research project or initiative.'@en .\n    " .
 <http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2000/01/rdf-schema#label> "grant application"@en .
 <http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal written request for financial support from a grant-giving body in support of a project, for example an academic research project."@en .
 <http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/GrantApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
