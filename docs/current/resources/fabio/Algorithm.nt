@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Specification> .
 <http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Specification> .
+<http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "A precise sequential set of pre-defined logical rules or computational operations to be employed for solving a particular problem in a finite number of steps."@en .
 <http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2000/01/rdf-schema#label> "algorithm"@en .
 <http://purl.org/spar/fabio/Algorithm> <http://purl.org/vocab/vann/example> "\n        :my-algorithm a fabio:Algorithm ;\n            dcterms:title 'Distance Calculator'@en ;\n            dcterms:computer :john-doe ;\n            dcterms:description 'Algorithm for calculating the distance between to geo locations.'@en .\n    " .
-<http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Algorithm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

@@ -1,5 +1,26 @@
 [
   {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b150",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/AuthorityFile"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Taxonomy"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Thesaurus"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/fabio/Thesaurus",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -34,27 +55,6 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b150",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-    ],
-    "http://www.w3.org/2002/07/owl#members": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/fabio/AuthorityFile"
-          },
-          {
-            "@id": "http://purl.org/spar/fabio/Taxonomy"
-          },
-          {
-            "@id": "http://purl.org/spar/fabio/Thesaurus"
-          }
-        ]
       }
     ]
   }

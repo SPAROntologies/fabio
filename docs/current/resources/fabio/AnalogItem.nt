@@ -1,17 +1,17 @@
-_:ncae38abf83ba4d328dfdd9c9da48eef6b89 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isStoredOn> .
-<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/AnalogItem> <http://purl.org/vocab/vann/example> "\n        :my-analog-item a fabio:AnalogItem ;\n            dcterms:title 'On the Origin of Species by Means of Natural Selection'@en ;\n            fabio:isStoredOn fabio:paper ;\n            frbr:exemplarOf :my-analog-manifestation  .\n    " .
-<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b90 .
-<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A real object that is an exemplar of a manifestation, such as a particular copy of the book 'Alice's adventures in Wonderland', that a person may own."@en .
-<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2004/02/skos/core#note> "An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films."@en .
+_:n6180652088774126a964ddb1b76a8d19b90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/fabio/DigitalItem> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/AnalogStorageMedium> .
-<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/AnalogManifestation> .
 <http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Item> .
-<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b89 .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b90 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b89 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isStoredOn> .
+_:n6180652088774126a964ddb1b76a8d19b90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/AnalogManifestation> .
+_:n6180652088774126a964ddb1b76a8d19b90 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b90 .
+<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6180652088774126a964ddb1b76a8d19b89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/AnalogStorageMedium> .
 <http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#label> "analog item"@en .
+<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2004/02/skos/core#note> "An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films."@en .
+_:n6180652088774126a964ddb1b76a8d19b89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b89 .
+<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A real object that is an exemplar of a manifestation, such as a particular copy of the book 'Alice's adventures in Wonderland', that a person may own."@en .
+<http://purl.org/spar/fabio/AnalogItem> <http://purl.org/vocab/vann/example> "\n        :my-analog-item a fabio:AnalogItem ;\n            dcterms:title 'On the Origin of Species by Means of Natural Selection'@en ;\n            fabio:isStoredOn fabio:paper ;\n            frbr:exemplarOf :my-analog-manifestation  .\n    " .
+<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/AnalogItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b133">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b135">
+    <rdf:first rdf:nodeID="n6180652088774126a964ddb1b76a8d19b133"/>
+    <rdf:rest rdf:nodeID="n6180652088774126a964ddb1b76a8d19b136"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Work">
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b132"/>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b137"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:note xml:lang="en">FaBiO works, and their expressions and manifestations, are primarily textual publications such as books, magazines, newspapers and journals, and items of their content. However, they also include datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also bibliographies, reference lists, library catalogues and similar collections. For this reason, `fabio:Work` is not an equivalent class to `frbr:ScholarlyWork`. An example of a `fabio:Work` is your latest research paper. 
+    
+A `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, it can be realized only by instances of `fabio:Expression`.</skos:note>
+    <rdfs:comment xml:lang="en">A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">work</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+        :my-work a fabio:Work ;
+            dcterms:title 'Towards a new Semantic Web'@en ;
+            frbr:realization :my-expression ;
+            dcterms:description 'A conceptual endeavor as imagined by its creator.'@en .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b136">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6180652088774126a964ddb1b76a8d19b134"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b134">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b132">
+    <owl:intersectionOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b135"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b137">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

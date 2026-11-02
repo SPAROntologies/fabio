@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/ReportingStandard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">reporting standard</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/spar/fabio/MinimalInformationStandard"/>
+    <vann:example>
+        :my-reporting-standard a fabio:ReportingStandard ;
+            dcterms:title 'CONSORT 2010 Statement'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A set of guidelines or a formal agreement that specifies how information should be reported in a document.'@en .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:comment xml:lang="en">A set of recommendations for the minimum reporting requirements to be employed when reporting a particular type of investigation or project, for example a randomized clinical trial. A reporting standard may involve a checklist and a flow diagram, offers a standard way for authors to prepare a complete and transparent report of their findings, and aids their critical appraisal and interpretation of their data.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

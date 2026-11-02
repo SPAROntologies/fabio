@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/DigitalManifestation">
+    <rdfs:label xml:lang="en">digital manifestation</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b100"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:comment xml:lang="en">A manifestation that represents data in binary form, encoding the data as a series of 0s and 1s.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vann:example>
+        :my-digital-manifestation a fabio:DigitalManifestation ;
+            dcterms:publisher :my-publisher ;
+            frbr:exemplar :my-digital-item ;
+            dcterms:format application:epub ;
+            prism:publicationDate '2007-05-31'^^xsd:date .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b100">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/DigitalItem"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#exemplar"/>
+  </rdf:Description>
+</rdf:RDF>

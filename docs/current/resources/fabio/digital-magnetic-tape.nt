@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/2000/01/rdf-schema#label> "digital magnetic tape"@en .
-<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/DigitalStorageMedium> .
-<http://purl.org/spar/fabio/digital-magnetic-tape> <http://purl.org/vocab/vann/example> "\n        :my-fabio-item a fabio:Item ;\n            fabio:isStoredOn fabio:digital-magnetic-tape .\n    " .
 <http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/DigitalStorageMedium> .
+<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/2000/01/rdf-schema#label> "digital magnetic tape"@en .
+<http://purl.org/spar/fabio/digital-magnetic-tape> <http://purl.org/vocab/vann/example> "\n        :my-fabio-item a fabio:Item ;\n            fabio:isStoredOn fabio:digital-magnetic-tape .\n    " .
 <http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/2000/01/rdf-schema#comment> "A rewritable digital medium for magnetic recording of audio, video and other data, made of a thin magnetizable coating on a long, narrow strip of plastic, usually wound on a spool."@en .
+<http://purl.org/spar/fabio/digital-magnetic-tape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -1,8 +1,8 @@
-<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#label> "has rights"@en .
-<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about rights held in and over the resource."@en .
 <http://purl.org/dc/terms/rights> <http://purl.org/vocab/vann/example> "\n        :my-dataset a fabio:Dataset ;\n            dcterms:rights <https://creativecommons.org/publicdomain/zero/1.0/> .\n    " .
-<http://purl.org/dc/terms/rights> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/dc/terms/rights> <http://www.w3.org/2004/02/skos/core#note> "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#label> "has rights"@en .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about rights held in and over the resource."@en .

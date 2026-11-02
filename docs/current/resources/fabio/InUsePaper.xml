@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/InUsePaper">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">in-use paper</rdfs:label>
+    <rdfs:comment xml:lang="en">A scholarly work that describes applied and validated solutions such as software tools, systems or architectures that benefit from the use of the technology of a particular scholarly domain. Usually, papers of this kind should also provide convincing evidence that there is use of the proposed application or tool by the target user group, preferably outside the institution that conducted its development.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vann:example>
+        :my-in-use-paper a fabio:InUsePaper ;
+            dcterms:title 'Implementing Semantic Web Technologies in Healthcare Systems'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A paper describing the practical application or implementation of a particular technology, tool, or method in a real-world setting.'@en .
+    </vann:example>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
+  </rdf:Description>
+</rdf:RDF>

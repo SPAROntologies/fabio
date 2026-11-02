@@ -1,11 +1,11 @@
-_:ncae38abf83ba4d328dfdd9c9da48eef6b75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#label> "policy document"@en .
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document embodying a policy that describes and defines how something should be done."@en .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b75 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:n6180652088774126a964ddb1b76a8d19b75 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:n6180652088774126a964ddb1b76a8d19b75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Policy> .
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b75 .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#label> "policy document"@en .
 <http://purl.org/spar/fabio/PolicyDocument> <http://purl.org/vocab/vann/example> "\n        :my-policy-document a fabio:PolicyDocument ;\n            dcterms:title 'University Policy for Open Access v3.0'@en ;\n            frbr:realizationOf :my-policy ;\n            dcterms:description 'A document that describes a set of principles or rules agreed upon by an organization or government.'@en .\n    " .
 <http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Policy> .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b75 .

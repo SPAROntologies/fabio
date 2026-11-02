@@ -24,11 +24,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "random access memory"
+        "@value": "RAM"
       },
       {
         "@language": "en",
-        "@value": "RAM"
+        "@value": "random access memory"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [

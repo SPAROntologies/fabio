@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Script> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Script> <http://www.w3.org/2000/01/rdf-schema#label> "script"@en .
+<http://purl.org/spar/fabio/Script> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Script> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ComputerProgram> .
+<http://purl.org/spar/fabio/Script> <http://www.w3.org/2000/01/rdf-schema#comment> "A small computer program written in a scripting language such as JavaScript, PHP or Perl that allows control of one or more software applications."@en .
+<http://purl.org/spar/fabio/Script> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Script> <http://purl.org/vocab/vann/example> "\n        :my-script a fabio:Script ;\n            dcterms:title 'Python script for bibliographic data cleaning'@en ;\n            dcterms:description 'A program or sequence of instructions that is interpreted or carried out by another program.'@en .\n    " .
 <http://purl.org/spar/fabio/Script> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Script> <http://www.w3.org/2000/01/rdf-schema#comment> "A small computer program written in a scripting language such as JavaScript, PHP or Perl that allows control of one or more software applications."@en .
-<http://purl.org/spar/fabio/Script> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ComputerProgram> .
-<http://purl.org/spar/fabio/Script> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

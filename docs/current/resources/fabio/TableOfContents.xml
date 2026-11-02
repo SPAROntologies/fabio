@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/TableOfContents">
+    <rdfs:label xml:lang="en">table of contents</rdfs:label>
+    <skos:note xml:lang="en">
+A table of contents typically includes first-level headers, such as the chapter titles of a book, and may also include second- and even third-level headers. 
+In electronic works, the table of contents entries are often internally hyperlinked to the content items, so that clicking on the entry takes the reader to that item.
+                                             </skos:note>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+        :my-table-of-contents a fabio:TableOfContents ;
+            dcterms:title 'Table of contents for User Manual v1'@en ;
+            dcterms:description 'A list of the parts of a document, such as chapters or sections, organized in the order in which they appear.'@en .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A table listing the parts of publication such as a book or technical specification, and the pages on which these content elements start (if the publication is printed or otherwise organized into pages), usually listed in order of appearance.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Table"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Biography">
+    <rdfs:label xml:lang="en">biography</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vann:example>
+        :my-biography a fabio:Biography ;
+            dcterms:title 'Einstein: His Life and Universe'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:subject &lt;https://orcid.org/0000-0001-5109-3700&gt; ; 
+            dcterms:description 'A comprehensive scholarly work detailing the life history and scientific contributions of Albert Einstein.'@en .
+    </vann:example>
+    <rdfs:comment xml:lang="en">An account of the events, works and achievements, both personal and professional, of a person, either living or dead.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
+  </rdf:Description>
+</rdf:RDF>
