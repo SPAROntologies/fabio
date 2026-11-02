@@ -1,8 +1,8 @@
-<http://prismstandard.org/namespaces/basic/2.0/section> <http://purl.org/vocab/vann/example> "\n        :my-news-article a fabio:NewsArticle ;\n            prism:section 'Technology and Research' .\n    " .
-<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#comment> "The name or identifier of the section or part of a resource."@en .
-<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2004/02/skos/core#note> "Examples include Part 2 of Issue 6 of Volume 127 of the Journal of Cell Biology, or the Travel Section of a newspaper issue."@en .
-<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#label> "has section"@en .
 <http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#comment> "The name or identifier of the section or part of a resource."@en .
+<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2004/02/skos/core#note> "Examples include Part 2 of Issue 6 of Volume 127 of the Journal of Cell Biology, or the Travel Section of a newspaper issue."@en .
 <http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/section> <http://purl.org/vocab/vann/example> "\n        :my-news-article a fabio:NewsArticle ;\n            prism:section 'Technology and Research' .\n    " .
+<http://prismstandard.org/namespaces/basic/2.0/section> <http://www.w3.org/2000/01/rdf-schema#label> "has section"@en .

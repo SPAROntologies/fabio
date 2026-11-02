@@ -31,7 +31,7 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b103"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b103"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b103",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b103",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

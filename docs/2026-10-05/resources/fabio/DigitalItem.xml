@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/DigitalItem">
+    <rdfs:label xml:lang="en">digital item</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <skos:note xml:lang="en">A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web.</skos:note>
+    <vann:example>
+        :my-digital-item a fabio:DigitalItem ;
+            frbr:exemplarOf :my-digital-manifestation ;
+            fabio:hasURL 'https://example.org/download/paper.epub' ;
+            fabio:isStoredOn fabio:floppy-disk .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A digital object, such as a computer file.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Item"/>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b107"/>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b106"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b107">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/DigitalManifestation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b106">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/DigitalStorageMedium"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/fabio/isStoredOn"/>
+  </rdf:Description>
+</rdf:RDF>

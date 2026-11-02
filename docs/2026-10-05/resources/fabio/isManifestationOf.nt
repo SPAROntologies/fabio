@@ -1,15 +1,15 @@
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The work of a manifestation."@en .
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is manifestation of"@en .
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:ncae38abf83ba4d328dfdd9c9da48eef6b81 .
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2004/02/skos/core#note> "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Work> .
 <http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodimentOf> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ncae38abf83ba4d328dfdd9c9da48eef6b82 .
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/isManifestationOf> <http://purl.org/vocab/vann/example> "\n        :my-manifestation a fabio:Manifestation ;\n            fabio:isManifestationOf :my-work .\n    " .
-<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Manifestation> .
 <http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/isManifestationOf> <http://purl.org/vocab/vann/example> "\n        :my-manifestation a fabio:Manifestation ;\n            fabio:isManifestationOf :my-work .\n    " .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is manifestation of"@en .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:n6180652088774126a964ddb1b76a8d19b81 .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The work of a manifestation."@en .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2004/02/skos/core#note> "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6180652088774126a964ddb1b76a8d19b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n6180652088774126a964ddb1b76a8d19b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/isManifestationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Work> .
+_:n6180652088774126a964ddb1b76a8d19b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b82 .
+_:n6180652088774126a964ddb1b76a8d19b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodimentOf> .

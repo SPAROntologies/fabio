@@ -34,7 +34,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b1"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b1"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b1",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b1",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Datatype"
     ],

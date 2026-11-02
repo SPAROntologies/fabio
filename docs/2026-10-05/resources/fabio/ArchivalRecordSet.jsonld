@@ -28,16 +28,16 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b7"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b5"
+      },
+      {
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b7"
       },
       {
         "@id": "http://purl.org/spar/fabio/WorkCollection"
       },
       {
-        "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b5"
-      },
-      {
-        "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b6"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b6"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -47,23 +47,7 @@
     ]
   },
   {
-    "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/fabio/ArchivalDocumentSet"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#realization"
-      }
-    ]
-  },
-  {
-    "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b5",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b5",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -79,7 +63,23 @@
     ]
   },
   {
-    "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b6",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/ArchivalDocumentSet"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#realization"
+      }
+    ]
+  },
+  {
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b6",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

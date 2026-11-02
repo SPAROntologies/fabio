@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b72">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/MagazineIssue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/MagazineNewsItem">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A news report published in a magazine issue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">magazine news item</rdfs:label>
+    <vann:example>
+        :my-magazine-news-item a fabio:MagazineNewsItem ;
+            dcterms:title 'New AI Regulations Announced in Brussels'@en ;
+            frbr:partOf :my-magazine-issue ;
+            dcterms:description 'A short news report published in a magazine, typically concerning current events or social announcements.'@en .
+    </vann:example>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b72"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/NewsItem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

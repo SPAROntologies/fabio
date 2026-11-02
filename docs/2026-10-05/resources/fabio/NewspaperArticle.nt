@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article written by a journalist and published in a newspaper."@en .
-<http://purl.org/spar/fabio/NewspaperArticle> <http://purl.org/vocab/vann/example> "\n        :my-newspaper-article a fabio:NewspaperArticle ;\n            dcterms:title 'Results from administrative elections 2026'@en ;\n            frbr:partOf :my-newspaper-issue ;\n            dcterms:description 'An article published in a newspaper.'@en .\n    " .
 <http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#label> "newspaper article"@en .
-<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
-<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b30 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:n6180652088774126a964ddb1b76a8d19b30 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
 <http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b30 .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article written by a journalist and published in a newspaper."@en .
+<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b30 .
+<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:n6180652088774126a964ddb1b76a8d19b30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewspaperIssue> .
+_:n6180652088774126a964ddb1b76a8d19b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewspaperArticle> <http://purl.org/vocab/vann/example> "\n        :my-newspaper-article a fabio:NewspaperArticle ;\n            dcterms:title 'Results from administrative elections 2026'@en ;\n            frbr:partOf :my-newspaper-issue ;\n            dcterms:description 'An article published in a newspaper.'@en .\n    " .
+<http://purl.org/spar/fabio/NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .

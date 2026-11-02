@@ -23,11 +23,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "API"
+        "@value": "application programming interface"
       },
       {
         "@language": "en",
-        "@value": "application programming interface"
+        "@value": "API"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [

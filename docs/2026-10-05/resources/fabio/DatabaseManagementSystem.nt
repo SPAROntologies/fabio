@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ComputerProgram> .
-<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A software, commonly abbreviated as 'DBMS', used to create a database."@en .
+<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/DatabaseManagementSystem> <http://purl.org/vocab/vann/example> "\n        :my-database-management-system a fabio:DatabaseManagementSystem ;\n            dcterms:title 'PostgreSQL 16.0'@en ;\n            frbr:realizationOf :my-software ;\n            dcterms:description 'A powerful, open source object-relational database system used to create, manage, and query databases.'@en .\n    " .
+<http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ComputerProgram> .
 <http://purl.org/spar/fabio/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#label> "database management system"@en .

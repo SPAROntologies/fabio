@@ -1,29 +1,29 @@
-_:ncae38abf83ba4d328dfdd9c9da48eef6b145 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b148 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ncae38abf83ba4d328dfdd9c9da48eef6b145 .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b144 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2004/02/skos/core#note> "For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.\n    \nA `fabio:Expression` can only have part or be part of another `fabio:Expression`. Moreover, it can be a representation only of a `fabio:Work`, and it can be embodied only in instances of `fabio:Manifestation`."@en .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ncae38abf83ba4d328dfdd9c9da48eef6b147 .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b149 .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b143 .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b143 <http://www.w3.org/2002/07/owl#intersectionOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b146 .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b145 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ncae38abf83ba4d328dfdd9c9da48eef6b144 .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b144 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b149 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Work> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b148 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
-<http://purl.org/spar/fabio/Expression> <http://purl.org/vocab/vann/example> "\n        :my-expression a fabio:Expression ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:realizationOf :my-work ;\n            frbr:embodiment :my-digital-manifestation ;\n            dcterms:description 'The intellectual content of a work.'@en .\n    " .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b149 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b144 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:n6180652088774126a964ddb1b76a8d19b143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6180652088774126a964ddb1b76a8d19b145 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b143 .
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+_:n6180652088774126a964ddb1b76a8d19b145 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:n6180652088774126a964ddb1b76a8d19b146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b147 .
+_:n6180652088774126a964ddb1b76a8d19b144 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2004/02/skos/core#note> "For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.\n    \nA `fabio:Expression` can only have part or be part of another `fabio:Expression`. Moreover, it can be a representation only of a `fabio:Work`, and it can be embodied only in instances of `fabio:Manifestation`."@en .
+_:n6180652088774126a964ddb1b76a8d19b143 <http://www.w3.org/2002/07/owl#intersectionOf> _:n6180652088774126a964ddb1b76a8d19b146 .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b148 .
+_:n6180652088774126a964ddb1b76a8d19b149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en .
 <http://purl.org/spar/fabio/Expression> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b148 .
+_:n6180652088774126a964ddb1b76a8d19b144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6180652088774126a964ddb1b76a8d19b148 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
+_:n6180652088774126a964ddb1b76a8d19b148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b149 .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
+_:n6180652088774126a964ddb1b76a8d19b149 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Work> .
+_:n6180652088774126a964ddb1b76a8d19b147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/Expression> <http://purl.org/vocab/vann/example> "\n        :my-expression a fabio:Expression ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:realizationOf :my-work ;\n            frbr:embodiment :my-digital-manifestation ;\n            dcterms:description 'The intellectual content of a work.'@en .\n    " .
+_:n6180652088774126a964ddb1b76a8d19b148 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
+_:n6180652088774126a964ddb1b76a8d19b146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b144 .
+_:n6180652088774126a964ddb1b76a8d19b147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b145 .
+_:n6180652088774126a964ddb1b76a8d19b149 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .

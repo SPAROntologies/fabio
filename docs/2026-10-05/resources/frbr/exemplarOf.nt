@@ -1,9 +1,9 @@
-<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
-<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Manifestation> .
-<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#exemplar> .
-<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The manifestation that is exemplified by an item."@en .
-<http://purl.org/vocab/frbr/core#exemplarOf> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            frbr:exemplarOf :my-manifestation .\n    " .
-<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
 <http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The manifestation that is exemplified by an item."@en .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
 <http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#label> "is exemplar of"@en .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#exemplar> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            frbr:exemplarOf :my-manifestation .\n    " .

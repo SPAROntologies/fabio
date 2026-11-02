@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/InstructionManual">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vann:example>
+        :my-instruction-manual a fabio:InstructionManual ;
+            dcterms:title 'User Manual for Digital Camera Model X100'@en ;
+            frbr:realizationOf :my-instructional-work ;
+            dcterms:description 'A document providing detailed information on how to use, install, or maintain a particular product or system.'@en .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">instruction manual</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An instructional document typically supplied with a technologically advanced consumer product, such as a car or a computer application, or with an item of complex equipment such as a microscope.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b22">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/InstructionalWork"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

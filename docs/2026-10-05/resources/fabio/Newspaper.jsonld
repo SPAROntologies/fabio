@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b74"
+        "@id": "http://purl.org/spar/fabio/Periodical"
       },
       {
-        "@id": "http://purl.org/spar/fabio/Periodical"
+        "@id": "_:n6180652088774126a964ddb1b76a8d19b74"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:ncae38abf83ba4d328dfdd9c9da48eef6b74",
+    "@id": "_:n6180652088774126a964ddb1b76a8d19b74",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

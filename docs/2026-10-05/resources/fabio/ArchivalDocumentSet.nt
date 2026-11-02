@@ -1,15 +1,15 @@
-<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ExpressionCollection> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of archival documents."@en .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b64 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b65 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalDocument> .
 <http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#label> "archival document set"@en .
-<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://purl.org/vocab/vann/example> "\n        :my-archival-document-set a fabio:ArchivalDocumentSet ;\n            dcterms:title 'Collection of documents related to Alan Turing's correspondence'@en ;\n            frbr:part :my-archival-document, :my-another-archival-document ;\n            frbr:realizationOf :my-archival-record-set ;\n            dcterms:description 'A collection of various archival documents.'@en .\n    " .
-<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b64 .
-<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ncae38abf83ba4d328dfdd9c9da48eef6b65 .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:ncae38abf83ba4d328dfdd9c9da48eef6b64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ArchivalDocument> .
+<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b64 .
+_:n6180652088774126a964ddb1b76a8d19b64 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:n6180652088774126a964ddb1b76a8d19b64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ArchivalDocument> .
+<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b65 .
+_:n6180652088774126a964ddb1b76a8d19b65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalDocument> .
+_:n6180652088774126a964ddb1b76a8d19b65 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ExpressionCollection> .
+_:n6180652088774126a964ddb1b76a8d19b64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of archival documents."@en .
+<http://purl.org/spar/fabio/ArchivalDocumentSet> <http://purl.org/vocab/vann/example> "\n        :my-archival-document-set a fabio:ArchivalDocumentSet ;\n            dcterms:title 'Collection of documents related to Alan Turing's correspondence'@en ;\n            frbr:part :my-archival-document, :my-another-archival-document ;\n            frbr:realizationOf :my-archival-record-set ;\n            dcterms:description 'A collection of various archival documents.'@en .\n    " .
+_:n6180652088774126a964ddb1b76a8d19b65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
