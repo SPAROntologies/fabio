@@ -16,6 +16,70 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+dc:contributor a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+bibo:doi a owl:AnnotationProperty .
+
+vann:example a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vaem:rationale a owl:AnnotationProperty .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+rdfs:seeAlso a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
+skos:editorialNote a owl:AnnotationProperty .
+
+skos:note a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+dc:language a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+vann:changes a owl:AnnotationProperty .
+
+schema:image a owl:AnnotationProperty .
+
+schema:keywords a owl:AnnotationProperty .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+owl:backwardCompatibleWith a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
 prism:alternateTitle a owl:DatatypeProperty ;
     rdfs:label "has alternate title"@en ;
     vann:example """
@@ -234,18 +298,6 @@ prism:wordCount a owl:DatatypeProperty,
     rdfs:subPropertyOf owl:topDataProperty ;
     vs:term_status reg:statusStable .
 
-dc:contributor a owl:AnnotationProperty .
-
-dc:creator a owl:AnnotationProperty .
-
-dc:date a owl:AnnotationProperty .
-
-dc:description a owl:AnnotationProperty .
-
-dc:rights a owl:AnnotationProperty .
-
-dc:title a owl:AnnotationProperty .
-
 dcterms:abstract a owl:DatatypeProperty ;
     rdfs:label "has abstract"@en ;
     vann:example """
@@ -255,8 +307,6 @@ dcterms:abstract a owl:DatatypeProperty ;
     rdfs:comment "The summary of a resource."@en ;
     rdfs:isDefinedBy dcterms: ;
     vs:term_status reg:statusStable .
-
-dcterms:bibliographicCitation a owl:AnnotationProperty .
 
 dcterms:created a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -327,8 +377,6 @@ dcterms:dateSubmitted a owl:DatatypeProperty ;
     rdfs:subPropertyOf dcterms:date ;
     vs:term_status reg:statusStable ;
     skos:note "Examples of resources to which a date submitted may be relevant are a thesis (submitted to a university department), a grant application (submitted to a funding agency) or an article (submitted to a journal)."@en .
-
-dcterms:description a owl:AnnotationProperty .
 
 dcterms:format a owl:ObjectProperty ;
     rdfs:label "has format"@en ;
@@ -413,8 +461,6 @@ dcterms:rights a owl:ObjectProperty ;
     vs:term_status reg:statusStable ;
     skos:note "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en .
 
-dcterms:source a owl:AnnotationProperty .
-
 dcterms:valid a owl:DatatypeProperty ;
     rdfs:label "has validity date"@en ;
     vann:example """
@@ -426,8 +472,6 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:range xsd:dateTime ;
     rdfs:subPropertyOf dcterms:date ;
     vs:term_status reg:statusStable .
-
-bibo:doi a owl:AnnotationProperty .
 
 <http://purl.org/spar/fabio> a owl:Ontology ;
     rdfs:label "FRBR-aligned Bibliographic Ontology (FaBiO)"@en ;
@@ -3470,34 +3514,6 @@ fabio:web a fabio:DigitalStorageMedium,
     rdfs:comment "A system of interlinked hypertext documents written in HTML and accessed using the HTTP protocol via the Internet."@en ;
     rdfs:isDefinedBy fabio: ;
     vs:term_status reg:statusStable .
-
-vann:example a owl:AnnotationProperty .
-
-vann:preferredNamespacePrefix a owl:AnnotationProperty .
-
-vann:preferredNamespaceUri a owl:AnnotationProperty .
-
-vaem:rationale a owl:AnnotationProperty .
-
-rdfs:comment a owl:AnnotationProperty .
-
-rdfs:label a owl:AnnotationProperty .
-
-rdfs:seeAlso a owl:AnnotationProperty .
-
-owl:versionInfo a owl:AnnotationProperty .
-
-vs:term_status a owl:AnnotationProperty .
-
-skos:editorialNote a owl:AnnotationProperty .
-
-skos:note a owl:AnnotationProperty .
-
-foaf:logo a owl:AnnotationProperty .
-
-schema:codeRepository a owl:AnnotationProperty .
-
-schema:includedInDataCatalog a owl:AnnotationProperty .
 
 fabio:Abstract a owl:Class ;
     rdfs:label "abstract"@en ;
