@@ -1,6 +1,6 @@
-<http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/2000/01/rdf-schema#label> "storage medium"@en .
-<http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/StorageMedium> <http://purl.org/vocab/vann/example> "\n        :my-storage-medium a fabio:StorageMedium ;\n            dcterms:title 'A storage medium'@en ;\n            dcterms:description 'A physical medium on which data can be stored, such as a magnetic disk, optical disc, or flash drive.'@en .\n    " .
 <http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/2000/01/rdf-schema#label> "storage medium"@en .
 <http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "A device for recording information or storing data."@en .
+<http://purl.org/spar/fabio/StorageMedium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

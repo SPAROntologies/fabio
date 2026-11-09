@@ -6,24 +6,24 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b114">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb114">
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/NewsReport"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/NewsItem">
-    <rdfs:label xml:lang="en">news item</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb114"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b114"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:comment xml:lang="en">A published news report.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-news-item a fabio:NewsItem ;
             dcterms:title 'New archeological site found in Rome'@en ;
             frbr:realizationOf :my-news-report ;
             dcterms:description 'A report of a recent event or a piece of new information, typically published in a newspaper or broadcast.'@en .
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">news item</rdfs:label>
+    <rdfs:comment xml:lang="en">A published news report.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

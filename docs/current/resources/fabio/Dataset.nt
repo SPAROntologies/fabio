@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "dataset"@en .
-<http://purl.org/spar/fabio/Dataset> <http://purl.org/vocab/vann/example> "\n        :my-dataset a fabio:Dataset ;\n            dcterms:title 'Global Temperature Anomalies Dataset 2026'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A collection of related data records, with a specific focus on monthly temperature variations recorded globally.'@en .\n    " .
-<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of related facts, often expressed in numerical form and encoded in a defined structure."@en .
 <http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
-<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of related facts, often expressed in numerical form and encoded in a defined structure."@en .
+<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "dataset"@en .
 <http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Dataset> <http://purl.org/vocab/vann/example> "\n        :my-dataset a fabio:Dataset ;\n            dcterms:title 'Global Temperature Anomalies Dataset 2026'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A collection of related data records, with a specific focus on monthly temperature variations recorded globally.'@en .\n    " .

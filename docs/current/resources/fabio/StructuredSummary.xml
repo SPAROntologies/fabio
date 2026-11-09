@@ -8,28 +8,28 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/StructuredSummary">
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb98"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/SpecificationDocument"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard.</rdfs:comment>
+    <rdfs:label xml:lang="en">structured summary</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/spar/fabio/Abstract"/>
     <vann:example>
         :my-structured-summary a fabio:StructuredSummary ;
             dcterms:title 'Structured summary of Project X'@en ;
             frbr:realizationOf :my-minimal-information-standard ;
             dcterms:description 'A summary of a document that is structured into formal sections, such as Background, Methods, Results, and Conclusions.'@en .
     </vann:example>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b98"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/SpecificationDocument"/>
     <skos:note xml:lang="en">
 Such a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF. 
 It differs from the abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.
                                                </skos:note>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">structured summary</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:seeAlso rdf:resource="http://purl.org/spar/fabio/Abstract"/>
-    <rdfs:comment xml:lang="en">A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b98">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb98">
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/MinimalInformationStandard"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

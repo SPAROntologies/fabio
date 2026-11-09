@@ -1,9 +1,9 @@
-<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fabio/SubjectTerm> .
-<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/spar/fabio/hasSubjectTerm> <http://purl.org/vocab/vann/example> "\n        :my-research-paper a fabio:ResearchPaper ;\n            fabio:hasSubjectTerm\n                :air-and-space-law ,\n                :computational-linguistics ,\n                :philosophy-of-law ,\n                :legal-aspects-of-computing ,\n                :artificial-intelligence-incl-robotics .\n    " .
-<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#comment> "A term in a particular classification system, related to an endeavour."@en .
-<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#label> "has subject term"@en .
+<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#comment> "A term in a particular classification system, related to an endeavour."@en .
+<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fabio/SubjectTerm> .
+<http://purl.org/spar/fabio/hasSubjectTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

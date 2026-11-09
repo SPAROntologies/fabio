@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Workflow> <http://purl.org/vocab/vann/example> "\n        :my-workflow a fabio:Workflow ;\n            dcterms:title 'Genomics data analysis workflow'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A sequence of connected steps, which may be automated, that are used to achieve a particular goal.'@en .\n    " .
+<http://purl.org/spar/fabio/Workflow> <http://www.w3.org/2000/01/rdf-schema#label> "workflow"@en .
 <http://purl.org/spar/fabio/Workflow> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Workflow> <http://purl.org/vocab/vann/example> "\n        :my-workflow a fabio:Workflow ;\n            dcterms:title 'Genomics data analysis workflow'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A sequence of connected steps, which may be automated, that are used to achieve a particular goal.'@en .\n    " .
 <http://purl.org/spar/fabio/Workflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Specification> .
 <http://purl.org/spar/fabio/Workflow> <http://www.w3.org/2000/01/rdf-schema#comment> "A recorded sequence of connected steps, which may be automated, specifying a reliably repeatable sequence of operations to be undertaken when conducting a particular job, for example an in silico investigation that extracts and processes information from a number of bioinformatics databases."@en .
-<http://purl.org/spar/fabio/Workflow> <http://www.w3.org/2000/01/rdf-schema#label> "workflow"@en .
-<http://purl.org/spar/fabio/Workflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Workflow> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Workflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

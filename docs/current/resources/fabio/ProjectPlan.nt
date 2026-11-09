@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/ProjectPlan> <http://purl.org/vocab/vann/example> "\n        :my-project-plan a fabio:ProjectPlan ;\n            dcterms:title 'Plan for Smart City v1.0 project'@en ;\n            dcterms:description 'A document describing the objectives, activities and schedules of a project.'@en .\n    " .
-<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#label> "project plan"@en .
 <http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "A document used to guide project planning, execution and control, specifying the project's goal and objectives and the activities and resources required to achieve these, setting out the project schedule, and identifying the major workpackages, milestones and deliverables. A project plan will typically contain a Gantt chart."@en .
+<http://purl.org/spar/fabio/ProjectPlan> <http://purl.org/vocab/vann/example> "\n        :my-project-plan a fabio:ProjectPlan ;\n            dcterms:title 'Plan for Smart City v1.0 project'@en ;\n            dcterms:description 'A document describing the objectives, activities and schedules of a project.'@en .\n    " .
+<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#label> "project plan"@en .
+<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .

@@ -1,9 +1,9 @@
-<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
-<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The page range of a resource."@en .
+<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            prism:pageRange '145-162' .\n    " .
 <http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+<http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://prismstandard.org/namespaces/basic/2.0/pageRange> <http://www.w3.org/2000/01/rdf-schema#label> "has page range"@en .

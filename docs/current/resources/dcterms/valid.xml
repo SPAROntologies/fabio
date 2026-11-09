@@ -6,16 +6,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/valid">
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <vann:example>
         :my-dataset a fabio:Dataset ;
             dcterms:valid '2026-04-28T20:00:00/2036-04-28T23:59:59'^^xsd:dateTime .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <rdfs:comment xml:lang="en">The date (often a range) of validity of a resource.</rdfs:comment>
     <rdfs:label xml:lang="en">has validity date</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:comment xml:lang="en">The date (often a range) of validity of a resource.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
   </rdf:Description>
 </rdf:RDF>

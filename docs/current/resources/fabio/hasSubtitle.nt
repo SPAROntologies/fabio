@@ -1,9 +1,9 @@
-<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
+<http://purl.org/spar/fabio/hasSubtitle> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasSubtitle 'Practical Guide to Ontologies and Linked Data'@en .\n    " .
+<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#comment> "A secondary title that follows the main title of a work."@en .
+<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#label> "has subtitle"@en .
 <http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
-<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#comment> "A secondary title that follows the main title of a work."@en .
 <http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
-<http://purl.org/spar/fabio/hasSubtitle> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasSubtitle 'Practical Guide to Ontologies and Linked Data'@en .\n    " .
-<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/fabio/hasSubtitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

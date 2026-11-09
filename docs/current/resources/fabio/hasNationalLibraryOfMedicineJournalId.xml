@@ -8,31 +8,31 @@
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:range rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb56"/>
+    <rdfs:comment xml:lang="en">An internal identifier for journals available from the National Library of Medicine repository.</rdfs:comment>
     <vann:example>
         :my-journal a fabio:Journal ;
             fabio:hasNationalLibraryOfMedicineJournalId '9604648' .
     </vann:example>
-    <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:comment xml:lang="en">An internal identifier for journals available from the National Library of Medicine repository.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/"/>
     <rdfs:label xml:lang="en">has National Library of Medicine journal identifier</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-    <rdfs:range rdf:nodeID="n6180652088774126a964ddb1b76a8d19b56"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b56">
-    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:withRestrictions rdf:nodeID="n6180652088774126a964ddb1b76a8d19b58"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb56">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:withRestrictions rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb58"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b58">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="n6180652088774126a964ddb1b76a8d19b57"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b57">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb57">
     <xsd:pattern>[0-9]+</xsd:pattern>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb58">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb57"/>
   </rdf:Description>
 </rdf:RDF>

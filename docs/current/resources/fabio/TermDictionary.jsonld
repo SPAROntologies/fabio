@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb112"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b112"
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b112",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb112",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

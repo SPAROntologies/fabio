@@ -9,8 +9,6 @@
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Proof">
     <rdfs:comment xml:lang="en">The preliminary version of a publication, after the inclusion of any author corrections following review, and after copy editing and formatting to bring the manuscript into the house style, intended for final checking prior to publication to detect and eliminate typographical errors, omissions or transpositions of text, incorrect layout or placement of illustrations and tables, or other formatting errors.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manuscript"/>
     <vann:example>
         :my-proof a fabio:Proof ;
             dcterms:title 'Proof copy for Book X'@en ;
@@ -20,7 +18,9 @@
 Those who check proofs include the editor, possibly the peer-reviewers (to ensure that their requested modifications have been included to their satisfaction), possibly an in-house professional proof-reader, and / or the author, who is ultimately responsible for ensuring the published work says what (s)he means it to say. 
 Substantive changes to the text are not permitted once the manuscript has reached proof stage.
                                    </skos:note>
-    <rdfs:label xml:lang="en">proof</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manuscript"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">proof</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -6,32 +6,32 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b78">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb78">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b79"/>
+    <owl:unionOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb79"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/isDisciplineOf">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <vann:example>
         :my-concept a skos:Concept ;
             skos:prefLabel 'Ontology Engineering'@en ;
             fabio:isDisciplineOf :my-research-paper .
     </vann:example>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <rdfs:label xml:lang="en">is discipline of</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:range rdf:nodeID="n6180652088774126a964ddb1b76a8d19b78"/>
-    <rdfs:comment xml:lang="en">The discipline belonging to a certain subject vocabulary.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb78"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/fabio/SubjectDiscipline"/>
+    <rdfs:comment xml:lang="en">The discipline belonging to a certain subject vocabulary.</rdfs:comment>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">is discipline of</rdfs:label>
+    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <rdfs:domain rdf:resource="http://purl.org/spar/fabio/SubjectDiscipline"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b79">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb79">
     <rdf:first rdf:resource="http://purl.org/spar/fabio/TermDictionary"/>
-    <rdf:rest rdf:nodeID="n6180652088774126a964ddb1b76a8d19b80"/>
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb80"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b80">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb80">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
   </rdf:Description>
 </rdf:RDF>

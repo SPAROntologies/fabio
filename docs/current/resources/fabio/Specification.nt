@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Specification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/Specification> <http://www.w3.org/2000/01/rdf-schema#comment> "An explicit description of, or set of requirements to be satisfied by, a material, product, resource, service or standard."@en .
-<http://purl.org/spar/fabio/Specification> <http://purl.org/vocab/vann/example> "\n        :my-specification a fabio:Specification ;\n            dcterms:title 'Hypertext Transfer Protocol -- HTTP/1.1'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A detailed description of the criteria for an item, such as a software system or a technical standard.'@en .\n    " .
-<http://purl.org/spar/fabio/Specification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Specification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Specification> <http://www.w3.org/2000/01/rdf-schema#label> "specification"@en .
 <http://purl.org/spar/fabio/Specification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Specification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/Specification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Specification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Specification> <http://www.w3.org/2000/01/rdf-schema#label> "specification"@en .
+<http://purl.org/spar/fabio/Specification> <http://purl.org/vocab/vann/example> "\n        :my-specification a fabio:Specification ;\n            dcterms:title 'Hypertext Transfer Protocol -- HTTP/1.1'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A detailed description of the criteria for an item, such as a software system or a technical standard.'@en .\n    " .

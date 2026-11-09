@@ -1,8 +1,8 @@
-<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#comment> "A Web manifestation usually identified by a Uniform Resource Identifier (URI), and made accessible to a user by means of the Hypertext Transport Protocol (HTTP) in a Web browser window. Several interlinked web pages hosted together on a Web server and accessed through a single domain name or IP address constitute a web site."@en .
-<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Page> .
 <http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/WebManifestation> .
-<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/WebPage> <http://purl.org/vocab/vann/example> "\n        :my-web-page a fabio:WebPage ;\n            dcterms:title 'SPUK's index page'@en ;\n            dcterms:publisher :github ;\n            frbr:embodimentOf :my-web-content ;\n            dcterms:description 'A document that is suitable for the World Wide Web and can be accessed through a web browser.'@en .\n    " .
-<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#label> "web page"@en .
 <http://purl.org/spar/fabio/WebPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Page> .
+<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#comment> "A Web manifestation usually identified by a Uniform Resource Identifier (URI), and made accessible to a user by means of the Hypertext Transport Protocol (HTTP) in a Web browser window. Several interlinked web pages hosted together on a Web server and accessed through a single domain name or IP address constitute a web site."@en .
+<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#label> "web page"@en .
+<http://purl.org/spar/fabio/WebPage> <http://purl.org/vocab/vann/example> "\n        :my-web-page a fabio:WebPage ;\n            dcterms:title 'SPUK's index page'@en ;\n            dcterms:publisher :github ;\n            frbr:embodimentOf :my-web-content ;\n            dcterms:description 'A document that is suitable for the World Wide Web and can be accessed through a web browser.'@en .\n    " .
+<http://purl.org/spar/fabio/WebPage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

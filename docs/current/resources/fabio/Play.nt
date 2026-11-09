@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Play> <http://purl.org/vocab/vann/example> "\n        :my-play a fabio:Play ;\n            dcterms:title 'Six Characters in Search of an Author'@en ;\n            dcterms:creator :luigi-pirandello ;\n            dcterms:description 'A dramatic work intended for performance by actors on a stage.'@en .\n    " .
 <http://purl.org/spar/fabio/Play> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Play> <http://purl.org/vocab/vann/example> "\n        :my-play a fabio:Play ;\n            dcterms:title 'Six Characters in Search of an Author'@en ;\n            dcterms:creator :luigi-pirandello ;\n            dcterms:description 'A dramatic work intended for performance by actors on a stage.'@en .\n    " .
+<http://purl.org/spar/fabio/Play> <http://www.w3.org/2000/01/rdf-schema#label> "play"@en .
 <http://purl.org/spar/fabio/Play> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Play> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/LiteraryArtisticWork> .
-<http://purl.org/spar/fabio/Play> <http://www.w3.org/2000/01/rdf-schema#label> "play"@en .
 <http://purl.org/spar/fabio/Play> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Play> <http://www.w3.org/2000/01/rdf-schema#comment> "A form of literature written by a playwright, usually consisting of scripted dialogue between characters, intended for theatrical performance rather than reading."@en .

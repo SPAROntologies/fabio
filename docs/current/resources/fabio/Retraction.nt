@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Retraction> <http://purl.org/vocab/vann/example> "\n        :my-retraction a fabio:Retraction ;\n            dcterms:title 'Retraction of 'Statistical analysis of environmental data 2024''@en ;\n            dcterms:creation :john-doe ;\n            dcterms:description 'A statement issued by authors, editors or other authorized officials to withdraw a previously published work or part thereof.'@en .\n    " .
 <http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2000/01/rdf-schema#comment> "A public statement made about an earlier statement that withdraws, cancels, refutes, diametrically reverses the original statement or ceases and desists from publishing the original statement."@en .
-<http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2000/01/rdf-schema#label> "retraction"@en .
-<http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Retraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2000/01/rdf-schema#label> "retraction"@en .
+<http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Announcement> .
+<http://purl.org/spar/fabio/Retraction> <http://purl.org/vocab/vann/example> "\n        :my-retraction a fabio:Retraction ;\n            dcterms:title 'Retraction of 'Statistical analysis of environmental data 2024''@en ;\n            dcterms:creation :john-doe ;\n            dcterms:description 'A statement issued by authors, editors or other authorized officials to withdraw a previously published work or part thereof.'@en .\n    " .
+<http://purl.org/spar/fabio/Retraction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

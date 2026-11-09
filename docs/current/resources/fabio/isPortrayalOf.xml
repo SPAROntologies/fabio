@@ -7,32 +7,32 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b83">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
-    <rdf:rest rdf:nodeID="n6180652088774126a964ddb1b76a8d19b84"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb84">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb85"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b85">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb85">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/isPortrayalOf">
-    <rdfs:comment xml:lang="en">The work of an item.</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
     <vann:example>
         :my-item a fabio:Item;
             fabio:isPortrayalOf :my-work .
     </vann:example>
-    <owl:propertyChainAxiom rdf:nodeID="n6180652088774126a964ddb1b76a8d19b83"/>
-    <skos:note xml:lang="en">This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.</skos:note>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:label xml:lang="en">is portrayal of</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <owl:propertyChainAxiom rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb83"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:note xml:lang="en">This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.</skos:note>
+    <rdfs:comment xml:lang="en">The work of an item.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b84">
-    <rdf:rest rdf:nodeID="n6180652088774126a964ddb1b76a8d19b85"/>
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb83">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb84"/>
   </rdf:Description>
 </rdf:RDF>

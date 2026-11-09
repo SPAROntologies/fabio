@@ -1,9 +1,9 @@
 <http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
-<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#label> "has copyright date"@en .
-<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource has been copyrighted."@en .
-<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
 <http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#label> "has copyright date"@en .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource has been copyrighted."@en .
 <http://purl.org/dc/terms/dateCopyrighted> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:dateCopyrighted '2026-04-28'^^xsd:date .\n    " .

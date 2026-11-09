@@ -2,8 +2,8 @@
   {
     "@id": "http://prismstandard.org/namespaces/basic/2.0/publicationDate",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -34,7 +34,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b1"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb1"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b1",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb1",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Datatype"
     ],

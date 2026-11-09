@@ -6,15 +6,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/paper">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/fabio/AnalogStorageMedium"/>
     <vann:example>
         :my-item a fabio:Item ;
             fabio:isStoredOn fabio:paper .
     </vann:example>
-    <rdf:type rdf:resource="http://purl.org/spar/fabio/AnalogStorageMedium"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:comment xml:lang="en">A thin flat material, typically made from wood pulp, mainly used for writing upon, for printing upon or for packaging.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:label>paper</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:comment xml:lang="en">A thin flat material, typically made from wood pulp, mainly used for writing upon, for printing upon or for packaging.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

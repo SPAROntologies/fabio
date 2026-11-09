@@ -1,8 +1,8 @@
-<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#label> "position paper"@en .
-<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/PositionPaper> <http://purl.org/vocab/vann/example> "\n        :my-position-paper a fabio:PositionPaper ;\n            dcterms:title 'The use of generative AI in research'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A report or essay that presents an arguable opinion about an issue.'@en .\n    " .
 <http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A scholarly work that reports a particular intellectual position or viewpoint regarding a particular scholarly topic. Usually, these papers are dependent on the author's opinion or interpretation, do not have an evaluation, and need to present relevant and novel discussion points in a thorough manner."@en .
-<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Opinion> .
-<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ScholarlyWork> .
+<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#label> "position paper"@en .
+<http://purl.org/spar/fabio/PositionPaper> <http://purl.org/vocab/vann/example> "\n        :my-position-paper a fabio:PositionPaper ;\n            dcterms:title 'The use of generative AI in research'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A report or essay that presents an arguable opinion about an issue.'@en .\n    " .
 <http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Opinion> .
+<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/PositionPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ScholarlyWork> .

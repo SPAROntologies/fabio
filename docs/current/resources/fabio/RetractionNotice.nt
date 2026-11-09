@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b46 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Retraction> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb46 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n6180652088774126a964ddb1b76a8d19b46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Retraction> .
-_:n6180652088774126a964ddb1b76a8d19b46 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal document which publicly withdraws, cancels, refutes, reverses an earlier statement or publication or announces the act of desisting from publishing the original statement."@en .
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#label> "retraction notice"@en .
-<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Comment> .
 <http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal document which publicly withdraws, cancels, refutes, reverses an earlier statement or publication or announces the act of desisting from publishing the original statement."@en .
-_:n6180652088774126a964ddb1b76a8d19b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Comment> .
 <http://purl.org/spar/fabio/RetractionNotice> <http://purl.org/vocab/vann/example> "\n        :my-retraction-notice a fabio:RetractionNotice ;\n            dcterms:title 'Notice of retraction for article ID-456'@en ;\n            frbr:realizationOf :my-retraction ;\n            dcterms:description 'A formal public notice about a retraction.'@en .\n    " .
+<http://purl.org/spar/fabio/RetractionNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb46 .

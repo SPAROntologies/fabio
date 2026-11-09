@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b26 .
-<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6180652088774126a964ddb1b76a8d19b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article published in a magazine issue."@en .
-_:n6180652088774126a964ddb1b76a8d19b26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
-<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
-<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n6180652088774126a964ddb1b76a8d19b26 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb26 .
 <http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#label> "magazine article"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MagazineIssue> .
+<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
+<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/MagazineArticle> <http://purl.org/vocab/vann/example> "\n        :my-magazine-article a fabio:MagazineArticle ;\n            dcterms:title 'The Future of Arctic Ice: A 2026 Perspective'@en ;\n            frbr:partOf :my-magazine-issue ;\n            dcterms:description 'An article published in a magazine, typically written for a general audience.'@en .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb26 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article published in a magazine issue."@en .
+<http://purl.org/spar/fabio/MagazineArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

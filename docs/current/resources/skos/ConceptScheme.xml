@@ -8,9 +8,13 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <rdfs:comment xml:lang="en">A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">concept scheme</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <vaem:rationale xml:lang="en">The notion of a concept scheme is useful when dealing with data from an unknown source, and when dealing with data that describes two or more different knowledge organization systems.</vaem:rationale>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <skos:note xml:lang="en">Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme. This definition is, however, meant to be suggestive rather than restrictive, and there is some flexibility in the formal data model.</skos:note>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
         :my-concept-scheme a skos:ConceptScheme ;
             dcterms:title 'Semantic Web Technologies'@en ;
@@ -18,9 +22,5 @@
             skos:hasTopConcept :semantic-web ;
             dcterms:description 'An organized set of concepts.'@en .
     </vann:example>
-    <vaem:rationale xml:lang="en">The notion of a concept scheme is useful when dealing with data from an unknown source, and when dealing with data that describes two or more different knowledge organization systems.</vaem:rationale>
-    <rdfs:label xml:lang="en">concept scheme</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
-    <rdfs:comment xml:lang="en">A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

@@ -7,15 +7,15 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/LibraryCatalog">
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Catalog"/>
+    <rdfs:label xml:lang="en">library catalog</rdfs:label>
     <vann:example>
     :my-library-catalog a fabio:LibraryCatalog ;
         dcterms:title 'Online Public Access Catalog (OPAC) - City Library'@en ;
         dcterms:description 'A register of all bibliographic items found in a library or group of libraries.'@en .
     </vann:example>
-    <rdfs:label xml:lang="en">library catalog</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Catalog"/>
     <rdfs:comment xml:lang="en">The catalog of the holdings of a library, for example that of the Library of Congress (http://catalog.loc.gov/).</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

@@ -7,23 +7,23 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/NewspaperArticle">
-    <rdfs:label xml:lang="en">newspaper article</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb30"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Article"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:comment xml:lang="en">An article written by a journalist and published in a newspaper.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b30"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Article"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">newspaper article</rdfs:label>
     <vann:example>
         :my-newspaper-article a fabio:NewspaperArticle ;
             dcterms:title 'Results from administrative elections 2026'@en ;
             frbr:partOf :my-newspaper-issue ;
             dcterms:description 'An article published in a newspaper.'@en .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b30">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/NewspaperIssue"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb30">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/NewspaperIssue"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
   </rdf:Description>
 </rdf:RDF>

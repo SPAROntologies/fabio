@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the case for support for a particular project, usually contained within a grant application document but sometimes distributed separately, without the financial and organizational information that the grant application document also contains."@en .
-_:n6180652088774126a964ddb1b76a8d19b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6180652088774126a964ddb1b76a8d19b12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/CaseForSupport> .
-<http://purl.org/spar/fabio/CaseForSupportDocument> <http://purl.org/vocab/vann/example> "\n        :my-case-for-support-document a fabio:CaseForSupportDocument ;\n            dcterms:title 'Case for Support: Neural Network Optimization Project'@en ;\n            frbr:realizationOf :my-case-for-support ;\n            frbr:embodiment :my-digital-manifestation ;\n            dcterms:language <http://lexvo.org/id/iso639-3/eng> .\n    " .
-<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb12 .
 <http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#label> "case for support document"@en .
 <http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the case for support for a particular project, usually contained within a grant application document but sometimes distributed separately, without the financial and organizational information that the grant application document also contains."@en .
 <http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b12 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/CaseForSupportDocument> <http://purl.org/vocab/vann/example> "\n        :my-case-for-support-document a fabio:CaseForSupportDocument ;\n            dcterms:title 'Case for Support: Neural Network Optimization Project'@en ;\n            frbr:realizationOf :my-case-for-support ;\n            frbr:embodiment :my-digital-manifestation ;\n            dcterms:language <http://lexvo.org/id/iso639-3/eng> .\n    " .
+<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/CaseForSupport> .
+<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

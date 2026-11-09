@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b10"
+        "@id": "http://purl.org/spar/fabio/Series"
       },
       {
-        "@id": "http://purl.org/spar/fabio/Series"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb10"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b10",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb10",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

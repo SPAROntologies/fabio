@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ArtisticWork> .
-<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2000/01/rdf-schema#comment> "A literary creative work, such as a novel, play, poem or song."@en .
-<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://purl.org/vocab/vann/example> "\n        :my-literary-artistic-work a fabio:LiteraryArtisticWork ;\n            dcterms:title 'The Great Gatsby'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-book ;\n            dcterms:description 'A work of a literary or artistic nature, including books, poems, plays, musical compositions, and paintings.'@en .\n    " .
 <http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2000/01/rdf-schema#label> "literary artistic work"@en .
+<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://purl.org/vocab/vann/example> "\n        :my-literary-artistic-work a fabio:LiteraryArtisticWork ;\n            dcterms:title 'The Great Gatsby'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-book ;\n            dcterms:description 'A work of a literary or artistic nature, including books, poems, plays, musical compositions, and paintings.'@en .\n    " .
+<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ArtisticWork> .
+<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/LiteraryArtisticWork> <http://www.w3.org/2000/01/rdf-schema#comment> "A literary creative work, such as a novel, play, poem or song."@en .

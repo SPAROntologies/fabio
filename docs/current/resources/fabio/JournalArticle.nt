@@ -1,11 +1,11 @@
-_:n6180652088774126a964ddb1b76a8d19b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
-<http://purl.org/spar/fabio/JournalArticle> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'OPJK and DILIGENT: ontology modeling in a distributed environment' ;\n            prism:doi '10.1007/s10506-007-9036-2' ;\n            frbr:embodiment :my-analog-manifestation , :my-digital-manifestation ;\n            frbr:partOf :my-journal-issue .\n    " .
-_:n6180652088774126a964ddb1b76a8d19b24 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
-<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."@en .
-<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b24 .
-<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#label> "journal article"@en .
+<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb24 .
 <http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Article> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/JournalArticle> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'OPJK and DILIGENT: ontology modeling in a distributed environment' ;\n            prism:doi '10.1007/s10506-007-9036-2' ;\n            frbr:embodiment :my-analog-manifestation , :my-digital-manifestation ;\n            frbr:partOf :my-journal-issue .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/JournalIssue> .
+<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb24 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2000/01/rdf-schema#label> "journal article"@en .
+<http://purl.org/spar/fabio/JournalArticle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

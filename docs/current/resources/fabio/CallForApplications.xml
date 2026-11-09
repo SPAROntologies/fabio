@@ -6,10 +6,16 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb11">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Proposition"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/CallForApplications">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b11"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb11"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:comment xml:lang="en">A document published by a funding agency requesting submission of applications for financial grants to fund projects, for example to enable research investigations in areas specified in the call.</rdfs:comment>
     <vann:example>
         :my-call-for-applications a fabio:CallForApplications ;
@@ -19,12 +25,6 @@
             dcterms:description 'Formal request for research proposals from early-career scientists to provide long-term funding.'@en .
     </vann:example>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:label>call for applications</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b11">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Proposition"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
   </rdf:Description>
 </rdf:RDF>

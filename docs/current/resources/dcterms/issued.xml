@@ -6,15 +6,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    <rdfs:label xml:lang="en">has issue date</rdfs:label>
     <rdfs:comment xml:lang="en">The date of formal issuance of a resource (e.g. a publication or a patent).</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">has issue date</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <vann:example>
         :my-journal-article a fabio:JournalArticle ;
             dcterms:issued '2026-04-29'^^xsd:date .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
   </rdf:Description>
 </rdf:RDF>

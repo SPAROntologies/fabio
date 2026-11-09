@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#label> "review"@en .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "A review of others' work."@en .
 <http://purl.org/spar/fabio/Review> <http://purl.org/vocab/vann/example> "\n        :my-review a fabio:Review ;\n            dcterms:title 'Review of the book 'Intelligent Agents 101''@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A critical evaluation of a work, typically published in a journal or newspaper.'@en .\n    " .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "A review of others' work."@en .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#label> "review"@en .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

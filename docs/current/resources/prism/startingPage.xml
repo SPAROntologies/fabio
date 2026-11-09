@@ -9,14 +9,14 @@
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     <rdfs:comment xml:lang="en">The first page of a resource.</rdfs:comment>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
+    <rdfs:label xml:lang="en">has starting page</rdfs:label>
     <vann:example>
         :my-print-object a fabio:PrintObject ;
             prism:startingPage '171' .
     </vann:example>
-    <rdfs:label xml:lang="en">has starting page</rdfs:label>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,8 +1,8 @@
-<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#label> "has National Library of Medicine journal title abbreviation"@en .
 <http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://purl.org/vocab/vann/example> "\n        :my-journal a fabio:Journal ;\n            fabio:hasNLMJournalTitleAbbreviation 'J Biomed Inform' .\n    " .
-<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#comment> "An internal identifier for the abbreviation of the title of journals available from the National Library of Medicine repository."@en .
-<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/fabio/hasShortTitle> .
-<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#label> "has National Library of Medicine journal title abbreviation"@en .
+<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/fabio/hasShortTitle> .
+<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#comment> "An internal identifier for the abbreviation of the title of journals available from the National Library of Medicine repository."@en .
+<http://purl.org/spar/fabio/hasNLMJournalTitleAbbreviation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

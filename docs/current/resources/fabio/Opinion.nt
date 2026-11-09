@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Opinion> <http://purl.org/vocab/vann/example> "\n        :my-opinion-2026 a fabio:Opinion ;\n            dcterms:title 'Legal opinion on GDPR v2'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A document containing a judgment, view, or statement of professional advice given by an expert.'@en .\n    " .
 <http://purl.org/spar/fabio/Opinion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
-<http://purl.org/spar/fabio/Opinion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Opinion> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression of a personal or professional opinion on an issue or topic."@en .
 <http://purl.org/spar/fabio/Opinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Opinion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Opinion> <http://purl.org/vocab/vann/example> "\n        :my-opinion-2026 a fabio:Opinion ;\n            dcterms:title 'Legal opinion on GDPR v2'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A document containing a judgment, view, or statement of professional advice given by an expert.'@en .\n    " .
 <http://purl.org/spar/fabio/Opinion> <http://www.w3.org/2000/01/rdf-schema#label> "opinion"@en .
+<http://purl.org/spar/fabio/Opinion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

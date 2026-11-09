@@ -1,15 +1,15 @@
+_:na015ac9d06cd4cb1a3cee73cd225cdebb150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Taxonomy> <http://purl.org/vocab/vann/example> "\n        :my-taxonomy a fabio:Taxonomy ;\n            dcterms:title 'Taxonomy for scholarly research activities'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .\n    " .
 <http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ControlledVocabulary> .
-_:n6180652088774126a964ddb1b76a8d19b153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Thesaurus> .
-<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "taxonomy"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb153 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb152 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Taxonomy> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb150 <http://www.w3.org/2002/07/owl#members> _:na015ac9d06cd4cb1a3cee73cd225cdebb151 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/AuthorityFile> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Thesaurus> .
 <http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#comment> "A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships."@en .
-_:n6180652088774126a964ddb1b76a8d19b150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:n6180652088774126a964ddb1b76a8d19b152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b153 .
-_:n6180652088774126a964ddb1b76a8d19b151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/AuthorityFile> .
-_:n6180652088774126a964ddb1b76a8d19b150 <http://www.w3.org/2002/07/owl#members> _:n6180652088774126a964ddb1b76a8d19b151 .
-_:n6180652088774126a964ddb1b76a8d19b152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Taxonomy> .
 <http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6180652088774126a964ddb1b76a8d19b151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b152 .
-<http://purl.org/spar/fabio/Taxonomy> <http://purl.org/vocab/vann/example> "\n        :my-taxonomy a fabio:Taxonomy ;\n            dcterms:title 'Taxonomy for scholarly research activities'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .\n    " .
-_:n6180652088774126a964ddb1b76a8d19b153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "taxonomy"@en .

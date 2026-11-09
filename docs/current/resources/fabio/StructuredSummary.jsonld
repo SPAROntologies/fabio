@@ -33,7 +33,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b98"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb98"
       },
       {
         "@id": "http://purl.org/spar/fabio/SpecificationDocument"
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b98",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb98",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

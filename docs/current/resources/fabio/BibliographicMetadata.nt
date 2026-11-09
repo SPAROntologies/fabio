@@ -1,8 +1,8 @@
-<http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic metadata"@en .
 <http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Metadata> .
-<http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/BibliographicMetadata> <http://purl.org/vocab/vann/example> "\n        :my-bibliographic-metadata a fabio:BibliographicMetadata ;\n            dcterms:title 'Bibliographic record for 'The Semantic Web''@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'Standard descriptive metadata including author, title, and publication date.'@en .\n    " .
+<http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic metadata"@en .
 <http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2004/02/skos/core#note> "To take the example of a journal article, bibliographic metadata typically include the authors' names, the date of publication, the title of the article, the journal name and volume number, the first and last page numbers, and the Digital Object Identifier (DOI)."@en .
-<http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "Standard bibliographic metadata describing an expression of a work."@en .
 <http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/BibliographicMetadata> <http://purl.org/vocab/vann/example> "\n        :my-bibliographic-metadata a fabio:BibliographicMetadata ;\n            dcterms:title 'Bibliographic record for 'The Semantic Web''@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'Standard descriptive metadata including author, title, and publication date.'@en .\n    " .
+<http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "Standard bibliographic metadata describing an expression of a work."@en .
+<http://purl.org/spar/fabio/BibliographicMetadata> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

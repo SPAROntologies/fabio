@@ -6,16 +6,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/WorkshopPaper">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">workshop paper</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ProceedingsPaper"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A paper, typically the realization of a research paper reporting original research findings, usually presented at a workshop and published within a workshop proceedings volume.</rdfs:comment>
     <vann:example>
         :my-workshop-paper a fabio:WorkshopPaper ;
             dcterms:title 'New perspectives for Linked Data analysis'@en ;
             dcterms:description 'A paper presented at a workshop and potentially published in the workshop proceedings.'@en .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ProceedingsPaper"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A paper, typically the realization of a research paper reporting original research findings, usually presented at a workshop and published within a workshop proceedings volume.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">workshop paper</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
 </rdf:RDF>

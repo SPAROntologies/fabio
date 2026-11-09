@@ -6,15 +6,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/solid-state-memory">
+    <rdfs:comment xml:lang="en">A digital storage device built entirely from solid electronic materials with no moving parts, e.g. a USB flash drive.</rdfs:comment>
     <rdf:type rdf:resource="http://purl.org/spar/fabio/DigitalStorageMedium"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label xml:lang="en">solid state memory</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:comment xml:lang="en">A digital storage device built entirely from solid electronic materials with no moving parts, e.g. a USB flash drive.</rdfs:comment>
     <vann:example>
         :my-item a fabio:Item ;
             fabio:isStoredOn fabio:solid-state-memory .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">solid state memory</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

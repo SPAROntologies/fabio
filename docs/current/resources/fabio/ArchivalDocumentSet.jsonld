@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b64"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb64"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b65"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb65"
       },
       {
         "@id": "http://purl.org/spar/fabio/ExpressionCollection"
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b64",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb64",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b65",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb65",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

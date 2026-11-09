@@ -1,8 +1,8 @@
-<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ScholarlyWork> .
-<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#label> "review paper"@en .
-<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A scholarly work that surveys the state of the art of topics central to a particular subject or relating to a specific domain (e.g. the scope of a certain journal or conference). Papers of this kind may contain a selective bibliography listing key papers related to the subject or providing advice on information sources, or they may strive to be comprehensive, covering all contributions to the development of a topic and exploring their different findings or views."@en .
-<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Review> .
-<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/ReviewPaper> <http://purl.org/vocab/vann/example> "\n        :my-review-paper a fabio:ReviewPaper ;\n            dcterms:title 'New developments in Deep Learning'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A paper that summarizes the current state of understanding on a topic, by surveying and summarizing previously published studies.'@en .\n    " .
+<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#label> "review paper"@en .
+<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Review> .
+<http://purl.org/spar/fabio/ReviewPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ScholarlyWork> .

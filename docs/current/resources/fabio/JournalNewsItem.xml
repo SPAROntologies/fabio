@@ -6,23 +6,23 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b70">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/JournalIssue"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/JournalNewsItem">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">journal news item</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A news report published in a journal issue.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/NewsItem"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b70"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb70"/>
+    <rdfs:comment xml:lang="en">A news report published in a journal issue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-algorithm a fabio:Algorithm ;
             dcterms:title 'Distance Calculator'@en ;
             dcterms:description 'Algorithm for calculating the distance between to geo locations.'@en .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">journal news item</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb70">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/JournalIssue"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

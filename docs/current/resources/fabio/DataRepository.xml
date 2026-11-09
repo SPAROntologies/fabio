@@ -6,16 +6,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/DataRepository">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:comment xml:lang="en">A repository for storing data.</rdfs:comment>
-    <rdfs:label xml:lang="en">data repository</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Repository"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-data-repository a fabio:DataRepository ;
             dcterms:title 'Zenodo'@en ;
             dcterms:description 'A multi-disciplinary shared research data repository, helping researchers receive credit for making their research results available.'@en .
     </vann:example>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Repository"/>
+    <rdfs:comment xml:lang="en">A repository for storing data.</rdfs:comment>
+    <rdfs:label xml:lang="en">data repository</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

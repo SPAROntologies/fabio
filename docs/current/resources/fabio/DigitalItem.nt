@@ -1,16 +1,16 @@
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2004/02/skos/core#note> "A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web."@en .
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6180652088774126a964ddb1b76a8d19b107 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalManifestation> .
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#label> "digital item"@en .
-_:n6180652088774126a964ddb1b76a8d19b106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n6180652088774126a964ddb1b76a8d19b107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/DigitalItem> <http://purl.org/vocab/vann/example> "\n        :my-digital-item a fabio:DigitalItem ;\n            frbr:exemplarOf :my-digital-manifestation ;\n            fabio:hasURL 'https://example.org/download/paper.epub' ;\n            fabio:isStoredOn fabio:floppy-disk .\n    " .
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A digital object, such as a computer file."@en .
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Item> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb107 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalManifestation> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb107 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
 <http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n6180652088774126a964ddb1b76a8d19b106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalStorageMedium> .
-_:n6180652088774126a964ddb1b76a8d19b107 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb106 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isStoredOn> .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb107 .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#label> "digital item"@en .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Item> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalStorageMedium> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b107 .
-<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b106 .
-_:n6180652088774126a964ddb1b76a8d19b106 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/isStoredOn> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A digital object, such as a computer file."@en .
+<http://purl.org/spar/fabio/DigitalItem> <http://purl.org/vocab/vann/example> "\n        :my-digital-item a fabio:DigitalItem ;\n            frbr:exemplarOf :my-digital-manifestation ;\n            fabio:hasURL 'https://example.org/download/paper.epub' ;\n            fabio:isStoredOn fabio:floppy-disk .\n    " .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2004/02/skos/core#note> "A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web."@en .
+<http://purl.org/spar/fabio/DigitalItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb106 .

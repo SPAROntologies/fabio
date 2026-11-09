@@ -1,8 +1,8 @@
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
-<http://purl.org/vocab/frbr/core#realization> <http://purl.org/vocab/vann/example> "\n        :my-research-paper a fabio:ResearchPaper ;\n            frbr:realization :my-journal-article .\n    " .
 <http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#comment> "The expression that is a realization of a work."@en .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
 <http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#realization> <http://purl.org/vocab/vann/example> "\n        :my-research-paper a fabio:ResearchPaper ;\n            frbr:realization :my-journal-article .\n    " .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en .
 <http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
