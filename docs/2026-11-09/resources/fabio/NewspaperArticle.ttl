@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:NewspaperArticle a owl:Class ;
+    rdfs:label "newspaper article"@en ;
+    vann:example """
+        :my-newspaper-article a fabio:NewspaperArticle ;
+            dcterms:title 'Results from administrative elections 2026'@en ;
+            frbr:partOf :my-newspaper-issue ;
+            dcterms:description 'An article published in a newspaper.'@en .
+    """ ;
+    rdfs:comment "An article written by a journalist and published in a newspaper."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:partOf ;
+            owl:someValuesFrom fabio:NewspaperIssue ],
+        fabio:Article ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,18 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:analog-magnetic-tape a fabio:AnalogStorageMedium,
+        owl:NamedIndividual ;
+    rdfs:label "analog magnetic tape"@en ;
+    vann:example """
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:analog-magnetic-tape .
+    """ ;
+    rdfs:comment "An analog medium for magnetic recording of audio and video information, made of a thin magnetizable coating on a long, narrow plastic tape, typically wound on a spool."@en ;
+    rdfs:isDefinedBy fabio: ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:UncontrolledVocabulary a owl:Class ;
+    rdfs:label "uncontrolled vocabulary"@en ;
+    vann:example """
+        :my-uncontrolled-vocabulary a fabio:UncontrolledVocabulary ;
+            dcterms:title 'User folksonomy'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A collection of terms that are not part of a controlled vocabulary, such as a set of keywords chosen by a service's user community.'@en .
+    """ ;
+    rdfs:comment "A non-defined collection of words and phrases relating to a particular domain of knowledge, usually added freely by a community, in which homonyms, synonyms and similar ambiguities of meaning present in natural language are not formally disambiguated."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Vocabulary ;
+    vs:term_status reg:statusStable .
+

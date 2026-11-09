@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ApplicationProgrammingInterface a owl:Class ;
+    rdfs:label "API"@en,
+        "application programming interface"@en ;
+    vann:example """
+        :my-api a fabio:ApplicationProgrammingInterface ;
+            dcterms:title 'OpenCitations Meta REST API' ;
+            dcterms:description 'The REST API for OpenCitations Meta, the OpenCitations dataset containing bibliographic metadata associated with the documents involved in the citations stored in the OpenCitations Indexes.'@en .
+    """ ;
+    rdfs:comment "A computer program, commonly abbreviated as 'API', that enables a separate computer to interact programmatically with the computer running it."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ComputerProgram ;
+    vs:term_status reg:statusStable .
+

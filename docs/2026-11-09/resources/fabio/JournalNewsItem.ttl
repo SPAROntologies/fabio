@@ -1,0 +1,23 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:JournalNewsItem a owl:Class ;
+    rdfs:label "journal news item"@en ;
+    vann:example """
+        :my-algorithm a fabio:Algorithm ;
+            dcterms:title 'Distance Calculator'@en ;
+            dcterms:description 'Algorithm for calculating the distance between to geo locations.'@en .
+    """ ;
+    rdfs:comment "A news report published in a journal issue."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:partOf ;
+            owl:someValuesFrom fabio:JournalIssue ],
+        fabio:NewsItem ;
+    vs:term_status reg:statusStable .
+

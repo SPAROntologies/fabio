@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Email a owl:Class ;
+    rdfs:label "e-mail"@en ;
+    vann:example """
+        :my-email a fabio:Email ;
+            dcterms:title 'Update on laboratory results - Feb 2026'@en ;
+            dcterms:description 'A message distributed by electronic means from one computer user to one or more recipients via a network.'@en .
+    """ ;
+    rdfs:comment "A message transmitted over the internet as an item of electronic mail, typically based on the Simple Mail Transfer Protocol (SMTP). Emails can have computer files containing documents, dataset and images attached to them or embedded within them."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ReviewPaper a owl:Class ;
+    rdfs:label "review paper"@en ;
+    vann:example """
+        :my-review-paper a fabio:ReviewPaper ;
+            dcterms:title 'New developments in Deep Learning'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A paper that summarizes the current state of understanding on a topic, by surveying and summarizing previously published studies.'@en .
+    """ ;
+    rdfs:comment "A scholarly work that surveys the state of the art of topics central to a particular subject or relating to a specific domain (e.g. the scope of a certain journal or conference). Papers of this kind may contain a selective bibliography listing key papers related to the subject or providing advice on information sources, or they may strive to be comprehensive, covering all contributions to the development of a topic and exploring their different findings or views."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Review,
+        fabio:ScholarlyWork ;
+    vs:term_status reg:statusStable .
+

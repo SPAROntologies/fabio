@@ -1,0 +1,39 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Manifestation a owl:Class ;
+    rdfs:label "manifestation"@en ;
+    vann:example """
+        :my-manifestation a fabio:Manifestation ;
+            dcterms:title 'Towards a new Semantic Web'@en ;
+            frbr:embodimentOf :my-article ;
+            frbr:exemplar :my-digital-item ;
+            dcterms:description 'The digital or physical instantiation of an expression.'@en .
+    """ ;
+    rdfs:comment "A subclass of FRBR Manifestation, restricted to manifestations of `fabio:Expression`. `fabio:Manifestation` specifically applies to electronic (digital) as well as to physical manifestations of expressions."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom fabio:Expression ;
+            owl:onProperty frbr:embodimentOf ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fabio:Item ;
+            owl:onProperty frbr:exemplar ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Manifestation ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Manifestation ;
+                        owl:onProperty frbr:partOf ] ) ],
+        frbr:Manifestation ;
+    vs:term_status reg:statusStable ;
+    skos:note """A `fabio:Manifestation` can only have part or be part of another `fabio:Manifestation`. Moreover, it can be an embodiment only of a `fabio:Expression` and it can be exemplified only by instances of `fabio:Item`.
+    
+Examples of different manifestations of a single 'version of record' expression of a scholarly work include an article in a print journal or the on-line version of that article as a web page."""@en .
+

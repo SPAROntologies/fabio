@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Wiki a owl:Class ;
+    rdfs:label "wiki"@en ;
+    vann:example """
+        :my-wiki a fabio:Wiki ;
+            dcterms:title 'Collaborative Wiki for Project X'@en ;
+            frbr:embodimentOf :my-web-content ;
+            dcterms:description 'A website that allows collaborative editing of its content and structure by its users.'@en .
+    """ ;
+    rdfs:comment "A collaborative Web manifestation, usually maintained by a project team or group, providing easy-to-edit pages that can be used to accumulate related information for shared use by the group and/or publication."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:WebManifestation ;
+    vs:term_status reg:statusStable .
+

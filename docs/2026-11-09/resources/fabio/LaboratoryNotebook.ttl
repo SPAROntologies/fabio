@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:LaboratoryNotebook a owl:Class ;
+    rdfs:label "laboratory notebook"@en ;
+    vann:example """
+        :my-laboratory-notebook a fabio:LaboratoryNotebook ;
+            dcterms:title 'Laboratory Notebook: Protein Folding Project 2026'@en ;
+            dcterms:description 'A primary record of research, containing detailed notes on hypotheses, experiments, and initial analysis.'@en .
+        """ ;
+    rdfs:comment "A notebook used by an individual research scientist as the primary record of his or her research activities. A researcher may use a laboratory notebook to document hypotheses, to describe experiments and to record data in various formats, to provide details of data analysis and interpretation, or to record the validation or invalidation of the original hypotheses. The laboratory notebook serves as an organizational tool and a memory aid. It may also have a role in recording and protecting any intellectual property created during the research, and may be used in evidence when establishing priority of discoveries, for example in patent applications. Electronic versions of laboratory notebooks are increasingly being employed by researchers, particularly in chemistry and the pharmaceutical industry."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Notebook ;
+    vs:term_status reg:statusStable .
+

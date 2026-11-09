@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Spreadsheet a owl:Class ;
+    rdfs:label "spreadsheet"@en ;
+    vann:example """
+        :my-spreadsheet a fabio:Spreadsheet ;
+            dcterms:title 'Budget analysis for research 2026'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A document that presents data in a grid of rows and columns, often used for calculations and data analysis.'@en .
+    """ ;
+    rdfs:comment "An electronic form of data storage that displays a grid of rows and columns, in which each editable cell can contain alphanumeric text, a numeric value, or a formula that defines how the content of that cell is to be calculated from the content of another cell or cells."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

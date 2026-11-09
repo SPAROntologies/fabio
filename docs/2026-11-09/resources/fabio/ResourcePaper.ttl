@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ResourcePaper a owl:Class ;
+    rdfs:label "resource paper"@en ;
+    vann:example """
+        :my-resource-paper a fabio:ResourcePaper ;
+            dcterms:title 'A new semantic dataset for library science'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A paper describing a resource (e.g. a dataset, an ontology, a software tool) and its value to the research community.'@en .
+    """ ;
+    rdfs:comment "A scholarly work that describes resources developed to provide experimental materials or facilities, support a research hypothesis, to provide answers to a research question, or that have contributed to the generation of novel scientific work."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ScholarlyWork ;
+    vs:term_status reg:statusStable ;
+    skos:note "Examples of such resources include, for experimental sciences, mouse mutant lines and large communally used X-ray or neutron sources, and, for computer sciences, datasets, ontologies, vocabularies, ontology design patterns, evaluation benchmarks or methods, services, APIs and software frameworks, workflows, crowdsourcing task designs, protocols and metrics."@en .
+

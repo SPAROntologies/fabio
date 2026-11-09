@@ -1,0 +1,25 @@
+_:na015ac9d06cd4cb1a3cee73cd225cdebb136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:na015ac9d06cd4cb1a3cee73cd225cdebb134 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb132 <http://www.w3.org/2002/07/owl#intersectionOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb135 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb137 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb137 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+<http://purl.org/spar/fabio/Work> <http://purl.org/vocab/vann/example> "\n        :my-work a fabio:Work ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:realization :my-expression ;\n            dcterms:description 'A conceptual endeavor as imagined by its creator.'@en .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb134 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb136 .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb133 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#label> "work"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb132 .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2004/02/skos/core#note> "FaBiO works, and their expressions and manifestations, are primarily textual publications such as books, magazines, newspapers and journals, and items of their content. However, they also include datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also bibliographies, reference lists, library catalogues and similar collections. For this reason, `fabio:Work` is not an equivalent class to `frbr:ScholarlyWork`. An example of a `fabio:Work` is your latest research paper. \n    \nA `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, it can be realized only by instances of `fabio:Expression`."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb134 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb137 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb133 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:na015ac9d06cd4cb1a3cee73cd225cdebb133 .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

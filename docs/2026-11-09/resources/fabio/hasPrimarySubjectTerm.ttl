@@ -1,0 +1,18 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasPrimarySubjectTerm a owl:ObjectProperty ;
+    rdfs:label "has primary subject term"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPrimarySubjectTerm <http://id.nlm.nih.gov/mesh/D005806> .
+    """ ;
+    rdfs:comment "A term in a particular classification system, considered one of the main topics for an endeavour."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subPropertyOf fabio:hasSubjectTerm ;
+    vs:term_status reg:statusStable .
+

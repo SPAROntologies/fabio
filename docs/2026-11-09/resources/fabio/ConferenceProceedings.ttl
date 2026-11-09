@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ConferenceProceedings a owl:Class ;
+    rdfs:label "conference proceedings"@en ;
+    vann:example """
+        :my-conference-proceedings a fabio:ConferenceProceedings ;
+            dcterms:title 'Proceedings of the 25th International Semantic Web Conference'@en ;
+            frbr:part :my-conference-paper, :my-another-conference-paper ;
+            dcterms:description 'The formal record of a conference, containing the collection of papers and abstracts presented.'@en .
+    """ ;
+    rdfs:comment "A document containing the programme and collected conference papers, or their abstracts, presented at a conference, seminar, symposium or similar event."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:ConferencePaper ],
+        fabio:AcademicProceedings ;
+    vs:term_status reg:statusStable .
+

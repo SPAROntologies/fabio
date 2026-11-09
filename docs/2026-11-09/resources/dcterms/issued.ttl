@@ -1,0 +1,18 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+dcterms:issued a owl:DatatypeProperty ;
+    rdfs:label "has issue date"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            dcterms:issued '2026-04-29'^^xsd:date .
+    """ ;
+    rdfs:comment "The date of formal issuance of a resource (e.g. a publication or a patent)."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:subPropertyOf dcterms:date ;
+    vs:term_status reg:statusStable .
+

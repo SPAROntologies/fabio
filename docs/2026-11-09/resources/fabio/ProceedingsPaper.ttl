@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ProceedingsPaper a owl:Class ;
+    rdfs:label "proceedings paper"@en ;
+    vann:example """
+        :my-proceedings-paper a fabio:ProceedingsPaper ;
+            dcterms:title 'Deep Learning applied to Knowledge Graphs'@en ;
+            dcterms:description 'A paper published in the proceedings of a conference, workshop or similar event.'@en .
+    """ ;
+    rdfs:comment "A paper, typically the realization of a research paper reporting original research findings, usually published within an academic proceedings volume."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

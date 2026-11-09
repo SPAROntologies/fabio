@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:TableOfContents a owl:Class ;
+    rdfs:label "table of contents"@en ;
+    vann:example """
+        :my-table-of-contents a fabio:TableOfContents ;
+            dcterms:title 'Table of contents for User Manual v1'@en ;
+            dcterms:description 'A list of the parts of a document, such as chapters or sections, organized in the order in which they appear.'@en .
+    """ ;
+    rdfs:comment "A table listing the parts of publication such as a book or technical specification, and the pages on which these content elements start (if the publication is printed or otherwise organized into pages), usually listed in order of appearance."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Table ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+A table of contents typically includes first-level headers, such as the chapter titles of a book, and may also include second- and even third-level headers. 
+In electronic works, the table of contents entries are often internally hyperlinked to the content items, so that clicking on the entry takes the reader to that item.
+                                             """@en .
+

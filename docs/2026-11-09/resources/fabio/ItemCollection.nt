@@ -1,0 +1,11 @@
+_:na015ac9d06cd4cb1a3cee73cd225cdebb23 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb23 .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Item> .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#label> "item collection"@en .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Item> .
+<http://purl.org/spar/fabio/ItemCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of items."@en .
+<http://purl.org/spar/fabio/ItemCollection> <http://purl.org/vocab/vann/example> "\n        :my-item-collection a fabio:ItemCollection ;\n            dcterms:title 'Collection of historical items'@en ;\n            frbr:part :my-item, :my-another-item ;\n            dcterms:description 'A collection of items, such as a physical library collection or a set of digital files.'@en .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

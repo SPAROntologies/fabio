@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ScholarlyWork a owl:Class ;
+    rdfs:label "scholarly work"@en ;
+    vann:example """
+        :my-scholarly-work a fabio:ScholarlyWork ;
+            dcterms:title 'Theory of General Relativity'@en ;
+            dcterms:creator :albert-einstein ;
+            dcterms:description 'A work created for the purpose of promoting or recording academic or scholarly research.'@en .
+    """ ;
+    rdfs:comment "A work that reports scholarly activity on a particular topic, either published in written form, or delivered orally at a meeting."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

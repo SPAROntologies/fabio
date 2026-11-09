@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Excerpt">
+    <rdfs:comment xml:lang="en">A segment or passage selected from a larger expression for use in another expression, usually with specific attribution to its original source.</rdfs:comment>
+    <skos:note xml:lang="en">An excerpt is more general than a quotation, and is generally used to indicate a re-published extract from a book, instruction manual, film, radio programme, etc, that need not be what someone said.  
+
+For example:
+    
+    Oxford    01865
+    Oxshott   01372
+    Oxted      01883
+    Oxton      01578
+
+is an excerpt from the UK Dialling Codes section of the Oxford Telephone Directory.  
+
+Similarly, the following concluding passage from William Wordsworth's poem Lines written a Few Miles above Tintern Abbey is an excerpt rather than a quotation:
+    
+    Nor wilt thou then forget,    
+    That after many wanderings, many years    
+    Of absence, these steep woods and lofty cliffs,    
+    And this green pastoral landscape, were to me    
+    More dear, both for themselves and for thy sake.
+    
+Note: Use fabio:Excerpt to indicate a segment or passage selected from another expression that is not a passage of speech, and fabio:Quotation to indicate a segment or passage selected from another expression that is a passage of speech.</skos:note>
+    <rdfs:seeAlso rdf:resource="http://purl.org/spar/fabio/Quotation"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">excerpt</rdfs:label>
+    <vann:example>
+        :my-excerpt a fabio:Excerpt ;
+            dcterms:title 'Excerpt from Chapter 1: The Beginning'@en ;
+            frbr:partOf :my-book ;
+            dcterms:description 'A short extract from a film, broadcast, or piece of music or writing.'@en .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+</rdf:RDF>

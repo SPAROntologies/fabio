@@ -1,0 +1,29 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Journal a owl:Class ;
+    rdfs:label "journal"@en ;
+    vann:example """
+        :my-journal a fabio:Journal ;
+            dcterms:title 'Journal of Semantic Web Research'@en ;
+            frbr:part :my-journal-issue , :my-journal-volume ;
+            dcterms:description 'A scholarly periodical maintaining high standards of research and typically published at regular intervals.'@en .
+    """ ;
+    rdfs:comment "A scholarly periodical primarily devoted to the publication of original research papers."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:JournalIssue ],
+        [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:JournalVolume ],
+        fabio:Periodical ;
+    vs:term_status reg:statusStable ;
+    skos:note "Printed and electronic manifestations of the same journal are usually identified by separate print and electronic International Standard Serial Numbers (ISSN or eISSN, respectively), that identifies the journal as a whole, not to individual issues of it."@en .
+

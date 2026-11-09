@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Corrigendum">
+    <rdfs:comment xml:lang="en">A formal correction to an error introduced by the author into a previously published document.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">corrigendum</rdfs:label>
+    <vann:example>
+        :my-corrigendum a fabio:Corrigendum ;
+            dcterms:title 'Corrigendum to: 'New Insights into Quantum Gravity''@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A notification of errors made by the authors in the original publication, issued as a formal correction.'@en .
+    </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Correction"/>
+  </rdf:Description>
+</rdf:RDF>

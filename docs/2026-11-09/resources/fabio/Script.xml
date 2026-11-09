@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Script">
+    <rdfs:comment xml:lang="en">A small computer program written in a scripting language such as JavaScript, PHP or Perl that allows control of one or more software applications.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">script</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ComputerProgram"/>
+    <vann:example>
+        :my-script a fabio:Script ;
+            dcterms:title 'Python script for bibliographic data cleaning'@en ;
+            dcterms:description 'A program or sequence of instructions that is interpreted or carried out by another program.'@en .
+    </vann:example>
+  </rdf:Description>
+</rdf:RDF>

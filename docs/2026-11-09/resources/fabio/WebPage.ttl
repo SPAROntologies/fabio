@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WebPage a owl:Class ;
+    rdfs:label "web page"@en ;
+    vann:example """
+        :my-web-page a fabio:WebPage ;
+            dcterms:title 'SPUK's index page'@en ;
+            dcterms:publisher :github ;
+            frbr:embodimentOf :my-web-content ;
+            dcterms:description 'A document that is suitable for the World Wide Web and can be accessed through a web browser.'@en .
+    """ ;
+    rdfs:comment "A Web manifestation usually identified by a Uniform Resource Identifier (URI), and made accessible to a user by means of the Hypertext Transport Protocol (HTTP) in a Web browser window. Several interlinked web pages hosted together on a Web server and accessed through a single domain name or IP address constitute a web site."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Page,
+        fabio:WebManifestation ;
+    vs:term_status reg:statusStable .
+

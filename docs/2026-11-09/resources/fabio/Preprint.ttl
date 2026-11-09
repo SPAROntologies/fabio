@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Preprint a owl:Class ;
+    rdfs:label "preprint"@en ;
+    vann:example """
+        :my-preprint a fabio:Preprint ;
+            dcterms:title 'Advanced analysis of bibliographic metadata'@en ;
+            dcterms:description 'A version of a scholarly paper that precedes formal peer review and publication in a peer-reviewed scholarly journal.'@en .
+    """ ;
+    rdfs:comment "The version of an author's original scholarly work, such as a research paper or a review, first submitted to publisher for publication."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Manuscript ;
+    vs:term_status reg:statusStable ;
+    skos:note "Note: For that version resubmitted after peer-review and revision, use fabio:Postprint. For the final published version use fabio:DefinitiveVersion."@en .
+

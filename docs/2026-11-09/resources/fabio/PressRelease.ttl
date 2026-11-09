@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PressRelease a owl:Class ;
+    rdfs:label "press release"@en ;
+    vann:example """
+        :my-presentation a fabio:Presentation ;
+            dcterms:title 'Introduction to Semantic Web technologies'@en ;
+            dcterms:description 'A realization of a lecture, speech or other informative discourse, typically accompanied by visual aids such as slides.'@en .
+    """ ;
+    rdfs:comment "A news report published by an organization to provide information to journalists."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:NewsItem ;
+    vs:term_status reg:statusStable .
+

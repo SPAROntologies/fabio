@@ -1,0 +1,15 @@
+<http://purl.org/spar/fabio/BachelorsThesis> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb156 .
+<http://purl.org/spar/fabio/BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Thesis> .
+<http://purl.org/spar/fabio/BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#comment> "A thesis reporting a research project undertaken as part of an undergraduate course of education leading to a bachelor's degree."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb157 .
+<http://purl.org/spar/fabio/BachelorsThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/BachelorsThesis> <http://purl.org/vocab/vann/example> "\n        :my-bachelors-thesis a fabio:BachelorsThesis ;\n            dcterms:title 'Sorting Algorithms Performance Analysis in Python'@en ;\n            dcterms:description 'A thesis submitted for the degree of Bachelor of Science in Computer Science.'@en .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb154 <http://www.w3.org/2002/07/owl#members> _:na015ac9d06cd4cb1a3cee73cd225cdebb155 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/DoctoralThesis> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#label> "bachelor's thesis"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MastersThesis> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/BachelorsThesis> .

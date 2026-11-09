@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:NotificationOfReceipt a owl:Class ;
+    rdfs:label "notification of receipt"@en ;
+    vann:example """
+        :my-notification-or-receipt a fabio:NotificationOfReceipt ;
+            dcterms:title 'Received manuscript 402'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A formal notice confirming that something has been received.'@en .
+    """ ;
+    rdfs:comment "A notification of receipt of something, for example of receipt of a book that will later be the subject of a book review."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Announcement ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ClinicalTrialReport a owl:Class ;
+    rdfs:label "clinical trial report"@en ;
+    vann:example """
+        :my-clinical-trial-report a fabio:ClinicalTrialReport ;
+            dcterms:title 'Final Report on Phase III Efficacy of mRNA-1273 Vaccine'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A comprehensive document reporting the methodology, data, and clinical outcomes of a completed clinical trial.'@en .
+    """ ;
+    rdfs:comment "The report of a pre-planned medical or veterinary clinical study of the safety, efficacy, or optimum dosage schedule of one or more diagnostic, therapeutic or prophylactic drugs, or of devices, treatments or techniques, involving a randomized controlled trial for evidence-based assessment in humans or animals selected according to predetermined criteria of eligibility and observed for evidence of favourable and unfavourable effects."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:TrialReport ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,11 @@
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#label> "work collection"@en .
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb77 .
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of works."@en .
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/WorkCollection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb77 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/WorkCollection> <http://purl.org/vocab/vann/example> "\n        :my-work-collection a fabio:WorkCollection ;\n            dcterms:title 'John Doe's works'@en ;\n            dcterms:creator :john-doe ;\n            frbr:part :my-work, :my-another-work ;\n            dcterms:description 'A collection of works, for example the 'complete works' of an author.'@en .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Work> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

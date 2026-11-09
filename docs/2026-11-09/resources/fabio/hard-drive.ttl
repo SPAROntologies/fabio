@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hard-drive a fabio:DigitalStorageMedium,
+        owl:NamedIndividual ;
+    rdfs:label "HD"@en,
+        "hard drive"@en ;
+    vann:example """
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:hard-drive .
+    """ ;
+    rdfs:comment "A non-volatile storage device for digital data, composed of one or more rigid discs (platters) mounted side by side on a motor-driven spindle within a metal case. Data are encoded magnetically by read/write heads that float on cushions of air in close proximity to the surfaces of the rotated platters."@en ;
+    rdfs:isDefinedBy fabio: ;
+    vs:term_status reg:statusStable .
+

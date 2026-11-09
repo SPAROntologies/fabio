@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Film a owl:Class ;
+    rdfs:label "film"@en ;
+    vann:example """
+        :my-film a fabio:Film ;
+            dcterms:title 'Interstellar'@en ;
+            dcterms:creator :christopher-nolan ;
+            frbr:realizationOf :my-moving-image ;
+            dcterms:description 'A motion picture or movie, consisting of a sequence of images that give the illusion of continuous movement.'@en .
+    """ ;
+    rdfs:comment "A movie with an accompanying soundtrack, typically created by a professional film studio, designed to communicate a fictional story, record an artistic event, or impart information that is scientific or documentary in nature."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Movie ;
+    vs:term_status reg:statusStable .
+

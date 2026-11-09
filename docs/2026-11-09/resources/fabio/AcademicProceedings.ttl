@@ -1,0 +1,23 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:AcademicProceedings a owl:Class ;
+    rdfs:label "academic proceedings"@en ;
+    vann:example """
+        :my-academic-proceedings a fabio:AcademicProceedings ;
+            dcterms:title 'Patent Infringement Proceedings'@en ;
+            frbr:part :my-proceedings-paper .
+    """ ;
+    rdfs:comment "A document containing the programme and collected papers, or their abstracts, presented at an academic meeting."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:ProceedingsPaper ],
+        fabio:ExpressionCollection ;
+    vs:term_status reg:statusStable .
+

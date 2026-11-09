@@ -1,0 +1,11 @@
+_:na015ac9d06cd4cb1a3cee73cd225cdebb114 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/NewsReport> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb114 .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A published news report."@en .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb114 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/NewsItem> <http://purl.org/vocab/vann/example> "\n        :my-news-item a fabio:NewsItem ;\n            dcterms:title 'New archeological site found in Rome'@en ;\n            frbr:realizationOf :my-news-report ;\n            dcterms:description 'A report of a recent event or a piece of new information, typically published in a newspaper or broadcast.'@en .\n    " .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#label> "news item"@en .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

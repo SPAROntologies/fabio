@@ -1,0 +1,18 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:floppy-disk a fabio:DigitalStorageMedium,
+        owl:NamedIndividual ;
+    rdfs:label "floppy disk"@en ;
+    vann:example """
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:floppy-disk .
+    """ ;
+    rdfs:comment "A rewritable data storage medium that is composed of a disk of thin, flexible (floppy) magnetic storage medium encased in a square or rectangular plastic shell. Data are encoded magnetically by a read/write head that float on a cushion of air in close proximity to the surface of the rotated disk."@en ;
+    rdfs:isDefinedBy fabio: ;
+    vs:term_status reg:statusStable .
+

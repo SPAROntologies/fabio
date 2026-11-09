@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Questionnaire a owl:Class ;
+    rdfs:label "questionnaire"@en ;
+    vann:example """
+        :my-questionnaire a fabio:Questionnaire ;
+            dcterms:title 'Questionnaire for Open Data users'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A set of printed or written questions with a choice of answers, devised for the purposes of a survey or statistical study.'@en .
+    """ ;
+    rdfs:comment "A set of questions on a particular topic, usually in the form of multiple choice questions requiring the respondent to select the correct answer, or providing the ability to indicate support for or against a proposal on a numerical scale, designed for rapid numerical analysis of responses and often used in surveying public opinion."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

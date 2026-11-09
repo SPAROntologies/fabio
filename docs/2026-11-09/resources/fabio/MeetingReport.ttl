@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:MeetingReport a owl:Class ;
+    rdfs:label "meeting report"@en ;
+    vann:example """
+        :my-meeting-report a fabio:MeetingReport ;
+            dcterms:title 'Meeting report for Project X - 2026'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A report of the proceedings of a meeting or conference.'@en .
+    """ ;
+    rdfs:comment "A report of a meeting of some kind."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Report ;
+    vs:term_status reg:statusStable .
+

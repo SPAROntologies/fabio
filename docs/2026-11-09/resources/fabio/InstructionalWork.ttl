@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:InstructionalWork a owl:Class ;
+    rdfs:label "instructional work"@en ;
+    vann:example """
+        :my-instructional-work a fabio:InstructionalWork ;
+            dcterms:title 'User Manual for Digital Camera Model X100'@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-instruction-manual ;
+            dcterms:description 'A work whose primary purpose is to provide instruction or training in a particular subject or skill.'@en .
+    """ ;
+    rdfs:comment "A work created for the purpose of education or instruction, that may be expressed as a text book, a lecture, a tutorial or an instruction manual."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

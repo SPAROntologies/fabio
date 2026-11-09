@@ -1,0 +1,26 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Magazine a owl:Class ;
+    rdfs:label "magazine"@en ;
+    vann:example """
+        :my-magazine a fabio:Magazine ;
+            dcterms:title 'National Geographic Magazine'@en ;
+            frbr:part :my-magazine-issue ;
+            dcterms:description 'A periodical publication containing articles and illustrations, typically of popular interest and current events.'@en .
+    """ ;
+    rdfs:comment "A periodical, usually devoted to a particular topic or domain of interest, and usually published weekly or monthly, consisting primarily of non-peer reviewed editorials, journalistic news items and more substantive articles, reviews, book reviews and discussions concerning current or recent events and publications, and matters of interest to the domain served by the magazine."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:MagazineIssue ],
+        fabio:Periodical ;
+    vs:term_status reg:statusStable ;
+    skos:note "Some scientific journals, notably Science and Nature, also secondarily serve as science magazines by containing substantive editorials and news items on vital or controversial issues."@en .
+

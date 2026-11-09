@@ -1,0 +1,20 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasPII a owl:DatatypeProperty ;
+    rdfs:label "has PII"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasPII 'S0169-7161(26)00123-4' .
+    """ ;
+    rdfs:comment "A unique identifier used by several scientific journal publishers to identify resources."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Publisher_Item_Identifier> ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    vs:term_status reg:statusStable .
+

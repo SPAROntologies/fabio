@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Notebook a owl:Class ;
+    rdfs:label "notebook"@en ;
+    vann:example """
+        :my-notebook a fabio:Notebook ;
+            dcterms:title 'Experimental Physics Notebook'@en ;
+            dcterms:description 'A book with blank or ruled pages for writing notes in, or a scholarly publication consisting of a sequence of notes or records.'@en .
+    """ ;
+    rdfs:comment "A book containing personal notes, typically created by writing into a physical book with blank pages."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Book ;
+    vs:term_status reg:statusStable .
+

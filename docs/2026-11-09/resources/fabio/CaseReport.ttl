@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:CaseReport a owl:Class ;
+    rdfs:label "case report"@en ;
+    vann:example """
+        :my-case-report a fabio:CaseReport ;
+            dcterms:title 'Rare neurological manifestations in a 45-year-old patient'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:subject <http://purl.bioontology.org/ontology/MESH/D009422> ;
+            dcterms:description 'A detailed report of the symptoms, diagnosis, and treatment of an individual clinical case.'@en .
+    """ ;
+    rdfs:comment "A report about a particular case or situation."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Report ;
+    vs:term_status reg:statusStable .
+

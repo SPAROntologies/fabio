@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ExperimentalProtocol a owl:Class ;
+    rdfs:label "experimental protocol"@en ;
+    vann:example """
+        :my-experimental-protocol a fabio:ExperimentalProtocol ;
+            dcterms:title 'Standard Protocol for PCR Optimization v4'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A detailed plan of a scientific experiment or medical treatment, outlining the precise steps to be followed.'@en .
+    """ ;
+    rdfs:comment "A predefined written procedural method, designed to ensure successful replication of results by others in the same or other laboratories, that describes the overall objectives, organization and implementation of a scientific experiment, and specifies the experimental design, experimental methods, reagents, instrumentation, sampling schedules, data collection parameters, statistical analyses, image processing procedures, safety precautions, reporting standards, etc. employed in undertaking the experiment."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

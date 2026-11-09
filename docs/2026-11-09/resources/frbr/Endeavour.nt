@@ -1,0 +1,16 @@
+_:na015ac9d06cd4cb1a3cee73cd225cdebb141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb142 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb140 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of different aspects of user interests in the products of intellectual or artistic artifact."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb138 <http://www.w3.org/2002/07/owl#unionOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb139 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb141 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2002/07/owl#equivalentClass> _:na015ac9d06cd4cb1a3cee73cd225cdebb138 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://purl.org/vocab/vann/example> "\n        :my-resource a frbr:Endeavour .\n        " .

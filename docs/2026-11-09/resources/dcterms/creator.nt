@@ -1,0 +1,8 @@
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://purl.org/vocab/vann/example> "\n        :my-report a fabio:Report ;\n            dcterms:creator :john-doe .\n\n        :john-doe a foaf:Agent ;\n            foaf:name 'John Doe' .\n    " .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2004/02/skos/core#note> "\nExamples of a Creator include a person, an organization, or a service. \nTypically, the name of a creator should be used to indicate the entity.\n                                    "@en .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator"@en .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity primarily responsible for making the resource."@en .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .

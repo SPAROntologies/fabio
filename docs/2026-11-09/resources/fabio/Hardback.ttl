@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Hardback a owl:Class ;
+    rdfs:label "hardback"@en ;
+    vann:example """
+        :my-hardback a fabio:Hardback ;
+            dcterms:title 'The Divine Comedy'@en ;
+            frbr:embodimentOf :my-book ;
+            dcterms:publisher :my-publisher ;
+            dcterms:description 'A book bound with rigid protective covers, typically covered with cloth, heavy paper, or leather.'@en .
+    """ ;
+    rdfs:comment "A print object bound with rigid protective covers (typically of cardboard covered with cloth, heavy paper, or sometimes leather)."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:PrintObject ;
+    vs:term_status reg:statusStable .
+

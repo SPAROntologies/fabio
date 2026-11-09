@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Cover a owl:Class ;
+    rdfs:label "cover"@en ;
+    vann:example """
+        :my-cover a fabio:Cover ;
+            dcterms:title 'Front Cover of Nature, Volume 600'@en ;
+            dcterms:description 'The outer protective layer of a publication, often containing the title, author, and illustrative artwork.'@en .
+    """ ;
+    rdfs:comment "A protective covering used to bind together the pages of a document or the first, informative, page of a digital document."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

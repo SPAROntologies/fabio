@@ -1,0 +1,19 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasPatentNumber a owl:DatatypeProperty ;
+    rdfs:label "has patent number"@en ;
+    vann:example """
+        :my-patent a fabio:Patent ;
+            fabio:hasPatentNumber 'US1234567B2' .
+    """ ;
+    rdfs:comment "A unique identifying number issued by a patent authority to identify a patent, displayed at the beginning of the patent document."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    vs:term_status reg:statusStable .
+

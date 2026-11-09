@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:BriefReport a owl:Class ;
+    rdfs:label "brief report"@en ;
+    vann:example """
+        :my-brief-report a fabio:BriefReport ;
+            dcterms:title 'Preliminary Observations on the New Omicron Subvariant'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A short report providing early data and rapid updates on ongoing clinical observations.'@en ;
+            dcterms:subject <http://purl.uniprot.org/keywords/949> .
+    """ ;
+    rdfs:comment "A brief report document. This term may also be used synonymously with Rapid Communication to mean 'A short rapidly published research article or conference paper, typically reporting significant research results that have been recently discovered, or a brief news item reporting such discoveries.'"@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( fabio:RapidCommunication fabio:ReportDocument ) ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,30 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:StructuredSummary a owl:Class ;
+    rdfs:label "structured summary"@en ;
+    vann:example """
+        :my-structured-summary a fabio:StructuredSummary ;
+            dcterms:title 'Structured summary of Project X'@en ;
+            frbr:realizationOf :my-minimal-information-standard ;
+            dcterms:description 'A summary of a document that is structured into formal sections, such as Background, Methods, Results, and Conclusions.'@en .
+    """ ;
+    rdfs:comment "A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:Abstract ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:MinimalInformationStandard ],
+        fabio:SpecificationDocument ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+Such a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF. 
+It differs from the abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.
+                                               """@en .
+

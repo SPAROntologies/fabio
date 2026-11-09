@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DigitalManifestation a owl:Class ;
+    rdfs:label "digital manifestation"@en ;
+    vann:example """
+        :my-digital-manifestation a fabio:DigitalManifestation ;
+            dcterms:publisher :my-publisher ;
+            frbr:exemplar :my-digital-item ;
+            dcterms:format application:epub ;
+            prism:publicationDate '2007-05-31'^^xsd:date .
+    """ ;
+    rdfs:comment "A manifestation that represents data in binary form, encoding the data as a series of 0s and 1s."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:exemplar ;
+            owl:someValuesFrom fabio:DigitalItem ],
+        fabio:Manifestation ;
+    vs:term_status reg:statusStable .
+

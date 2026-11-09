@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Textbook a owl:Class ;
+    rdfs:label "textbook"@en ;
+    vann:example """
+        :my-text-book a fabio:TextBook ;
+            dcterms:title 'Introduction to Meta-ontologies'@en ;
+            frbr:realizationOf :my-instructional-work ;
+            dcterms:description 'A book used as a standard source of information for the formal study of a particular subject.'@en .
+    """ ;
+    rdfs:comment "A book containing instructional material relating to a particular topic of academic study, designed to be read by students."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:InstructionalWork ],
+        fabio:Book ;
+    vs:term_status reg:statusStable .
+

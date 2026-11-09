@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ItemCollection a owl:Class ;
+    rdfs:label "item collection"@en ;
+    vann:example """
+        :my-item-collection a fabio:ItemCollection ;
+            dcterms:title 'Collection of historical items'@en ;
+            frbr:part :my-item, :my-another-item ;
+            dcterms:description 'A collection of items, such as a physical library collection or a set of digital files.'@en .
+    """ ;
+    rdfs:comment "A collection of items."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:Item ],
+        fabio:Item ;
+    vs:term_status reg:statusStable .
+

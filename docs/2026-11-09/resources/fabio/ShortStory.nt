@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/2000/01/rdf-schema#comment> "A work of fiction that is usually written in prose, often in narrative format. This format tends to be more focused and less elaborate than longer works of fiction such as novels."@en .
+<http://purl.org/spar/fabio/ShortStory> <http://purl.org/vocab/vann/example> "\n        :my-short-story a fabio:ShortStory ;\n            dcterms:title 'Exhalation'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A brief work of fiction, usually written in prose.'@en .\n    " .
+<http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/2000/01/rdf-schema#label> "short story"@en .
+<http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/LiteraryArtisticWork> .
+<http://purl.org/spar/fabio/ShortStory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

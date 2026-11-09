@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:SupplementaryInformationFile a owl:Class ;
+    rdfs:label "supplementary information file"@en ;
+    vann:example """
+        :my-supplementary-information a fabio:SupplementaryInformationFile ;
+            dcterms:title 'Extended tables'@en ;
+            dcterms:description 'Information that is relevant to a work but is not essential to its understanding and is usually published separately.'@en .
+    """ ;
+    rdfs:comment "A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

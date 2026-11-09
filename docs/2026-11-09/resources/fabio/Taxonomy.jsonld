@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb150",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/AuthorityFile"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Taxonomy"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Thesaurus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/Taxonomy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-taxonomy a fabio:Taxonomy ;\n            dcterms:title 'Taxonomy for scholarly research activities'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "taxonomy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/ControlledVocabulary"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

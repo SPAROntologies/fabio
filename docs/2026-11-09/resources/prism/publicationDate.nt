@@ -1,0 +1,19 @@
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gYear> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/issued> .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2004/02/skos/core#note> "\nThe date can be expressed in three different formats:\n- yyyy-mm-dd (i.e., xsd:date)\n- yyyy-mm (i.e., xsd:gYearMonth)\n- yyyy (i.e., xsd:gYear)"@en .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource is published or disclosed."@en .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2000/01/rdf-schema#range> _:na015ac9d06cd4cb1a3cee73cd225cdebb1 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb1 <http://www.w3.org/2002/07/owl#unionOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb2 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#date> .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2000/01/rdf-schema#label> "has publication date"@en .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://purl.org/vocab/vann/example> "\n        :my-paperback a fabio:Paperback ;\n            prism:publicationDate '2007-06'^^xsd:gYearMonth .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb4 .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gYearMonth> .
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb3 .

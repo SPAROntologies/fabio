@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:MinimalInformationStandard a owl:Class ;
+    rdfs:label "minimal information standard"@en ;
+    vann:example """
+        :my-minimal-information-standard a fabio:MinimalInformationStandard ;
+            dcterms:title 'MIAME: Minimum Information About a Microarray Experiment'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A standard specifying the minimum information required to report a particular type of scientific experiment.'@en .
+    """ ;
+    rdfs:comment "A metadata standard specifying items to be included when creating metadata describing a dataset of a particular type, or when creating a structured summary of the main findings of an article or report in a particular domain of interest, thereby ensuring adequate descriptive information is recorded for subsequent resource discovery and/or interpretation of the information described." ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:ReportingStandard ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

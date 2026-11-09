@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/WebPage">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Page"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A Web manifestation usually identified by a Uniform Resource Identifier (URI), and made accessible to a user by means of the Hypertext Transport Protocol (HTTP) in a Web browser window. Several interlinked web pages hosted together on a Web server and accessed through a single domain name or IP address constitute a web site.</rdfs:comment>
+    <rdfs:label xml:lang="en">web page</rdfs:label>
+    <vann:example>
+        :my-web-page a fabio:WebPage ;
+            dcterms:title 'SPUK's index page'@en ;
+            dcterms:publisher :github ;
+            frbr:embodimentOf :my-web-content ;
+            dcterms:description 'A document that is suitable for the World Wide Web and can be accessed through a web browser.'@en .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+  </rdf:Description>
+</rdf:RDF>

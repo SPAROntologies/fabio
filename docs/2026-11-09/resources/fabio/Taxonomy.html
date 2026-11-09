@@ -1,0 +1,640 @@
+<!doctype html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0" name=viewport><title>LODE 2.0 - Semantic Artefact Viewer</title><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel=stylesheet><link href=../../static/style.css rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css rel=stylesheet><body><div class="container-fluid px-3 px-md-4 py-4"><details class=metadata-accordion><summary class=metadata-accordion-summary><div class=resource-frontmatter><h1 class=resource-title>taxonomy</h1><div class=resource-meta-line><span class="resource-meta-uri font-monospace">http://purl.org/spar/fabio/Taxonomy</span><a title="Go to Resource" class=resource-meta-link href=http://purl.org/spar/fabio/Taxonomy target=_blank> <i class="bi bi-box-arrow-up-right"></i> </a></div><p class=resource-subtitle>as defined in <span class=resource-subtitle-ontology> The FRBR-aligned Bibliographic Ontology (FaBiO) </span> <button title="Show/hide ontology metadata" class=metadata-accordion-toggle onclick=toggleMetadataAccordion(event) type=button><i class="bi bi-chevron-down"></i></button></div></summary> <div class=p-3><section class=metadata-block><dl class="row mb-0 lead fs-6"><dt class="text-capitalize fs-7 fw-bold">version info<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2.3.3</div></div></div><dt class="text-capitalize fs-7 fw-bold">version<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/fabio/2026-11-09 target=_blank>http://purl.org/spar/fabio/2026-11-09</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">prior version<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/fabio/2026-10-05 target=_blank>http://purl.org/spar/fabio/2026-10-05</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">imports<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/frbr target=_blank>http://purl.org/spar/frbr</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">changes<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/fabio/blob/master/CHANGELOG.md target=_blank>https://github.com/SPAROntologies/fabio/blob/master/CHANGELOG.md</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">title<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">The FRBR-aligned Bibliographic Ontology (FaBiO)</div></div></div><dt class="text-capitalize fs-7 fw-bold">description<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">
+The **_FRBR-aligned Bibliographic Ontology (FaBiO)_** is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. 
+FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials. 
+However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections.
+
+FaBiO already imports several entities from existing standards for bibliographic entity descriptions, i.e., [FRBR](http://purl.org/vocab/frbr/core#), [DC Terms](http://purl.org/dc/terms/), [PRISM](http://prismstandard.org/namespaces/basic/2.0/) and [SKOS](http://www.w3.org/2004/02/skos/core#). 
+In addition, FaBiO has been developed so to limit any restriction to its classes as well as the domains and ranges of its properties. 
+This flexibility has the great advantage of allowing FaBiO to be used together with other models.
+
+In particular, FaBiO classes are structured according to the FRBR schema of _Works_, _Expressions_, _Manifestations_ and _Items_. 
+FaBiO add more properties to extend the FRBR data model by linking Works and Manifestations (`fabio:hasManifestation` and `fabio:isManifestationOf`), Works and Items (`fabio:hasPortrayal` and `fabio:isPortrayedBy`), and Expressions and Items (`fabio:hasRepresentation` and `fabio:isRepresentedBy`).
+
+![The architecture of FaBiO.](fabio.png)
+
+With FaBiO, it thus becomes possible:
+
+* to write semantic descriptions of a wide variety of bibliographic objects, including conference papers (`fabio:ConferencePaper`), journal articles (`fabio:JournalArticle`), journal issues and volumes (`fabio:JournalIssue` and `fabio:JournalVolume`), using terms that closely resemble the language used in everyday speech by academics and publishers;
+* to employ FRBR categories (i.e., `fabio:Work`, `fabio:Expression`, `fabio:Manifestation` and `fabio:Item`, all subclasses of the related FRBR classes) to define clear separations between each part of the publishing process, which involves different people (authors, publishers, readers), depending on which aspect of the bibliographic entity we are considering: the high-level conceptualisation of the research paper, the version of record of that paper forming a journal article, the publication of the article in various formats, and the individual physical or electronic exemplars of the published article that people may read and own;
+* to include with ease elements from other vocabularies which describe particular entities involved in the publishing process that are not specified by FaBiO itself, such as those from FOAF for persons and organisations.
+
+## Examples of use
+
+In the following subsections, we introduce some examples to showcase how to use FaBiO. 
+
+The prefixes that are used in all the examples provided below are defined as follows:
+
+    @prefix : &lt;http://www.sparontologies.net/example/&gt; .
+    @prefix application: &lt;http://purl.org/NET/mediatypes/application/&gt; .
+    @prefix co: &lt;http://purl.org/co/&gt; .
+    @prefix dbpedia: &lt;http://dbpedia.org/resource/&gt; .
+    @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+    @prefix fabio: &lt;http://purl.org/spar/fabio/&gt; .
+    @prefix facet: &lt;http://link.springer.com/facet/&gt; .
+    @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+    @prefix frbr: &lt;http://purl.org/vocab/frbr/core#&gt; .
+    @prefix prism: &lt;http://prismstandard.org/namespaces/basic/2.0/&gt; .
+    @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+    @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+    @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+### Describing a bibliographic entity
+
+FaBiO allows one to describe information related to a bibliographic entity such as the following one:
+
+    Pompeu Casanovas, Núria Casellas, Christoph Tempich, Denny Vrandečić, Richard Benjamins (2007). 
+    OPJK and DILIGENT: ontology modeling in a distributed environment. Artificial Intelligence and 
+    Law, 15 (2): 171-186. June 2007. Springer. DOI: 10.1007/s10506-007-9036-2. Print ISSN 0924-8463. 
+    Online ISSN 1572-8382. Published online (PDF) May 31, 2007.
+
+From the previous reference we can extract the following information:
+
+1. the document is an _academic research article_ – deducible from the journal in which it is published;
+2. _Pompeu Casanovas_, _Núria Casellas_, _Christoph Tempich_, _Denny Vrandečić_, and _Richard Benjamins_ are the authors of the article;
+3. the article was published in _2007_;
+4. the article is titled _OPJK and DILIGENT: ontology modeling in a distributed environment_;
+5. it was published in the _2nd issue_ of the _15th volume_ of _Artificial Intelligence and Law_;
+6. the DOI of the article is _10.1007/s10506-007-9036-2_;
+7. the Print ISSN of the journal is _0924-8463_;
+8. the Online ISSN of the journal is _1572-8382_;
+9. the PDF version of the article was published online on _May 31, 2007_;
+10. the journal issue within which the printed version of the article was published bears the publication date _June 2007_;
+11. the page range of the article within the printed version is _171-186_;
+12. the publisher of the journal is _Springer_.
+
+By using FaBiO entities, which also include part of the [FRBR](http://purl.org/vocab/frbr/core#), [DC Terms](http://purl.org/dc/terms/) and [PRISM](http://prismstandard.org/namespaces/basic/2.0/) vocabularies, it is possible to create a full description of all the aspects introduced by the aforementioned twelve points.
+
+    :opjk-and-diligent a fabio:ResearchPaper ;
+        dcterms:creator :casanovas , :casellas,
+            :tempich, :vrandecic, :benjamins ;
+        frbr:realization :version-of-record .
+
+    :version-of-record a fabio:JournalArticle ;
+        dcterms:title &#39;OPJK and DILIGENT: ontology
+            modeling in a distributed environment&#39; ;
+        fabio:hasPublicationYear &#39;2007&#39;^^xsd:gYear ;
+        prism:doi &#39;10.1007/s10506-007-9036-2&#39; ;
+        frbr:embodiment :printed , :pdf ;
+        frbr:partOf :ai-and-law-15-2 .
+
+    :ai-and-law-15-2 a fabio:JournalIssue ;
+        prism:issueIdentifier &#39;2&#39; ;
+        frbr:embodiment :printed-issue ;
+        frbr:partOf :ai-and-law-15 .
+
+    :ai-and-law-15 a fabio:JournalVolume ;
+        prism:volume &#39;15&#39; ;
+        frbr:partOf :ai-and-law .
+
+    :ai-and-law a fabio:Journal ;
+        dcterms:title &#39;Artificial Intelligence and Law&#39; .
+
+    :printed-issue a fabio:Paperback ;
+        dcterms:publisher :springer ;
+        prism:publicationDate &#39;2007-06&#39;^^xsd:gYearMonth ;
+        frbr:part :printed .
+
+    :printed a fabio:PrintObject ;
+        dcterms:publisher :springer ;
+        prism:publicationDate &#39;2007-06&#39;^^xsd:gYearMonth ;
+        prism:startingPage &#39;171&#39; ;
+        prism:endingPage &#39;186&#39; .
+
+    :pdf a fabio:DigitalManifestation ;
+        dcterms:publisher :springer ;
+        dcterms:format application:pdf ;
+        prism:publicationDate &#39;2007-05-31&#39;^^xsd:date .
+
+    :casanovas a foaf:Person ;
+        foaf:givenName &#39;Pompeu&#39; ;
+        foaf:familyName &#39;Casanovas&#39; .
+
+    :casellas a foaf:Person ;
+        foaf:givenName &#39;Nuria&#39; ;
+        foaf:familyName &#39;Casellas&#39; .
+
+    :tempich a foaf:Person ;
+        foaf:givenName &#39;Christoph&#39; ;
+        foaf:familyName &#39;Tempich&#39; .
+
+    :vrandecic a foaf:Person ;
+        foaf:givenName &#39;Denny&#39; ;
+        foaf:familyName &#39;Vrandečić&#39; .
+
+    :benjamins a foaf:Person ;
+        foaf:givenName &#39;Richard&#39; ;
+        foaf:familyName &#39;Benjamins&#39; .
+
+    :springer a foaf:Organization ;
+        foaf:name &#39;Springer&#39; .
+
+### Specifying ordered lists of authors
+
+Sometimes, it is important to keep track of the actual order the authors of a paper as they appear in the author list. 
+The usual approach is to use RDF collections for handling it. 
+However, this choice can have several drawbacks, first of all that it is not a fully OWL 2 DL compliant way of modelling ordered items – and this could result in having reasoners running with unexpected behaviour or not running at all.
+
+Even if FaBiO does not handle author ordering directly, it is possible to use it in combination with other pure OWL 2 DL compliant ontologies, such as the [Collections Ontology (CO)](http://purl.org/co/) – that is fully described in the paper &#39;The Collections Ontology: creating and handling collections in OWL 2 DL frameworks&#39; by Ciccarese and Peroni – which was specifically designed for defining orders among items. 
+This ontology allows us to link a `co:List` of authors through the `dcterms:creator` property.
+
+    :opjk-and-diligent a fabio:ResearchPaper ;
+        dcterms:creator :author-list .
+
+    :author-list a co:List , foaf:Group ;
+        co:firstItem :author-item-1 ;
+        co:item
+            :author-item-1 ,
+            :author-item-2 ,
+            :author-item-3 ,
+            :author-item-4 ,
+            :author-item-5 ;
+        co:lastItem :author-item-5 ;
+        co:size &#39;5&#39;^^xsd:nonNegativeInteger .
+
+    :author-item-1 a co:ListItem ;
+        co:index &#39;1&#39;^^xsd:positiveInteger ;
+        co:itemContent :casanovas ;
+        co:nextItem :author-item-2 .
+
+    :author-item-2 a co:ListItem ;
+        co:index &#39;2&#39;^^xsd:positiveInteger ;
+        co:itemContent :casellas ;
+        co:nextItem :author-item-3 .
+
+    :author-item-3 a co:ListItem ;
+        co:index &#39;3&#39;^^xsd:positiveInteger ;
+        co:itemContent :tempich ;
+        co:nextItem :author-item-4 .
+
+    :author-item-4 a co:ListItem ;
+        co:index &#39;4&#39;^^xsd:positiveInteger ;
+        co:itemContent :vrandecic ;
+        co:nextItem :author-item-5 .
+
+    :author-item-5 a co:ListItem ;
+        co:index &#39;5&#39;^^xsd:positiveInteger ;
+        co:itemContent :benjamins .
+
+    :casanovas a foaf:Person ;
+        foaf:givenName &#39;Pompeu&#39; ;
+        foaf:familyName &#39;Casanovas&#39; .
+
+    :casellas a foaf:Person ;
+        foaf:givenName &#39;Nuria&#39; ;
+        foaf:familyName &#39;Casellas&#39; .
+
+    :tempich a foaf:Person ;
+        foaf:givenName &#39;Christoph&#39; ;
+        foaf:familyName &#39;Tempich&#39; .
+
+    :vrandecic a foaf:Person ;
+        foaf:givenName &#39;Denny&#39; ;
+        foaf:familyName &#39;Vrandečić&#39; .
+
+    :benjamins a foaf:Person ;
+        foaf:givenName &#39;Richard&#39; ;
+        foaf:familyName &#39;Benjamins&#39; .
+
+### Associating keywords, subject terms and disciplines to a paper
+
+One of the most important needs for a publisher is to categorise each bibliographic entity it produces by adding free-text keywords and/or specific terms structured according to recognised classification systems and/or thesauri developed for specific academic disciplines. 
+While through FaBiO the definition of keywords is possible using the [PRISM](http://prismstandard.org/namespaces/basic/2.0/) property `prism:keyword`, terms from thesauri, structured vocabularies and classification systems are described using SKOS.
+
+To this end, FaBiO extends some classes and properties of [SKOS](http://www.w3.org/2004/02/skos/core#). 
+First of all any FRBR endeavour can be associated (`fabio:hasSubjectTerm`) with one or more descriptive terms (`fabio:SubjectTerm`, a sub-class of `skos:Concept`) found in a specific dictionary (`fabio:TermDictionary`, a sub-class of `skos:ConceptScheme`) that is relevant to (`fabio:hasDiscipline`) particular disciplines (`fabio:SubjectDiscipline`, also a sub-class of `skos:Concept`) describing a field of knowledge or human activity such as computer science, biology, economics, cookery or swimming. 
+At the same time, the subject disciplines can be grouped by an opportune vocabulary (i.e., `fabio:DisciplineDictionary`).
+
+    :opjk-and-diligent a fabio:ResearchPaper ;
+        fabio:hasSubjectTerm
+            facet:air-and-space-law ,
+            facet:computational-linguistics ,
+            facet:philosophy-of-law ,
+            facet:legal-aspects-of-computing ,
+            facet:artificial-intelligence-incl-robotics ;
+        prism:keywords
+            &#39;legal ontologies&#39; ,
+            &#39;methodology&#39; ,
+            &#39;ontology modeling&#39; ,
+            &#39;professional knowledge&#39; ,
+            &#39;rhetorical structure theory&#39; .
+
+    &lt;http://link.springer.com/facet&gt; a fabio:TermDictionary ;
+        skos:prefLabel &#39;Facet dictionary used in Springer library&#39; ;
+        fabio:hasDiscipline
+            dbpedia:Computer_science ,
+            dbpedia:Law .
+
+    facet:air-and-space-law a fabio:SubjectTerm ;
+        skos:prefLabel &#39;Air and Space Law&#39; ;
+        skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+    facet:computational-linguistics a fabio:SubjectTerm ;
+        skos:prefLabel &#39;Computational Linguistics&#39; ;
+        skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+    facet:philosophy-of-law a fabio:SubjectTerm ;
+        skos:prefLabel &#39;Philosophy of Law&#39; ;
+        skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+    facet:legal-aspects-of-computing a fabio:SubjectTerm ;
+        skos:prefLabel &#39;Legal Aspects of Computing&#39; ;
+        skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+    facet:artificial-intelligence-incl-robotics a fabio:SubjectTerm ;
+        skos:prefLabel &#39;Artificial Intelligence (incl. Robotics)&#39; ;
+        skos:inScheme &lt;http://link.springer.com/facet&gt; .
+
+## Competency Questions
+
+FaBiO can be used for answering several questions related to bibliographic objects and other entities involved in the publishing process.
+
+In the following subsections, some of them are introduced together with their respective SPARQL queries. 
+
+The prefixes that are used in all the SPARQL queries provided below are defined as follows:
+
+    PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+    PREFIX fabio: &lt;http://purl.org/spar/fabio/&gt;
+    PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+    PREFIX frbr: &lt;http://purl.org/vocab/frbr/core#&gt;
+    PREFIX prism: &lt;http://prismstandard.org/namespaces/basic/2.0/&gt;
+    PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+
+### CQ1
+
+What are the titles and publication years of all available journal articles?
+
+    SELECT ?title ?year
+    WHERE {
+    ?article a fabio:JournalArticle ;
+            dcterms:title ?title ;
+            fabio:hasPublicationYear ?year .
+    }
+
+### CQ2
+
+Who are the authors (first and last names) of the article with the DOI &#39;10.1007/s10506-007-9036-2&#39;?
+
+    SELECT ?givenName ?familyName
+    WHERE {
+    ?article a fabio:JournalArticle ;
+            prism:doi &#39;10.1007/s10506-007-9036-2&#39; .
+    
+    ?paper a fabio:ResearchPaper ;
+            frbr:realization ?article ;
+            dcterms:creator ?author .
+    
+    ?author foaf:givenName ?givenName ;
+            foaf:familyName ?familyName .
+    }
+
+### CQ3
+
+In which journal, volume, and issue was the article with the DOI &#39;10.1007/s10506-007-9036-2&#39;?
+
+    SELECT ?journalTitle ?volume ?issue
+    WHERE {
+    ?article a fabio:JournalArticle ;
+            prism:doi &#39;10.1007/s10506-007-9036-2&#39; ;
+            frbr:partOf ?journalIssue .
+    
+    ?journalIssue a fabio:JournalIssue ;
+            prism:issueIdentifier ?issue ;
+            frbr:partOf ?journalVolume .
+    
+    ?journalVolume a fabio:JournalVolume ;
+            prism:volume ?volume ;
+            frbr:partOf ?journal .
+    
+    ?journal a fabio:Journal ;
+            dcterms:title ?journalTitle .
+    }
+
+### CQ4
+
+What are the keywords associated with the article with the DOI &#39;10.1007/s10506-007-9036-2&#39;?
+
+    SELECT ?keyword
+    WHERE {
+    ?article a fabio:JournalArticle ;
+            prism:doi &#39;10.1007/s10506-007-9036-2&#39; .
+    
+    ?paper a fabio:ResearchPaper ;
+            prism:keywords ?keyword .
+    }
+
+### CQ5
+
+What are the preferred labels of all subject terms assigned to the article with the DOI &#39;10.1007/s10506-007-9036-2&#39;?
+
+    SELECT ?keyword
+    WHERE {
+    ?article a fabio:JournalArticle ;
+            prism:doi &#39;10.1007/s10506-007-9036-2&#39; .
+    
+    ?paper a fabio:ResearchPaper ;
+            fabio:hasSubjectTerm ?subjectTerm .
+
+    ?subjectTerm a fabio:SubjectTerm ;
+            skos:prefLabel ?subjectLabel .
+    }
+
+</div></div></div><dt class="text-capitalize fs-7 fw-bold">keywords<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">bibliography</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">bibliometrics</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">FRBR</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">OWL ontology</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scholarly communication</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scientometrics</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">semantic publishing</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">SPAR Ontologies</div></div></div><dt class="text-capitalize fs-7 fw-bold">creator<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">David Shotton (https://orcid.org/0000-0001-5506-523X)</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</div></div></div><dt class="text-capitalize fs-7 fw-bold">contributor<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Paolo Ciccarese (https://orcid.org/0000-0002-5156-2703)</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Tim Clark</div></div></div><dt class="text-capitalize fs-7 fw-bold">date<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2026-11-09</div></div></div><dt class="text-capitalize fs-7 fw-bold">source<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/fabio/docs/cq.md target=_blank>https://github.com/SPAROntologies/fabio/docs/cq.md</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">see also<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://www.sparontologies.net/ontologies/fabio target=_blank>http://www.sparontologies.net/ontologies/fabio</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">bibliographic citation<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: https://doi.org/10.2139/ssrn.3198992</div></div></div><dt class="text-capitalize fs-7 fw-bold">code repository<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/fabio target=_blank>https://github.com/SPAROntologies/fabio</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">doi<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">https://doi.org/10.25504/FAIRsharing.2f3180</div></div></div><dt class="text-capitalize fs-7 fw-bold">has creation date<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2017-05-29</div></div></div><dt class="text-capitalize fs-7 fw-bold">has issue date<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2017-05-29</div></div></div><dt class="text-capitalize fs-7 fw-bold">has license<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://creativecommons.org/licenses/by/4.0/legalcode target=_blank>https://creativecommons.org/licenses/by/4.0/legalcode</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">has modification date<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2026-11-09</div></div></div><dt class="text-capitalize fs-7 fw-bold">has publisher<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://ror.org/00wb4mk85 target=_blank>https://ror.org/00wb4mk85</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">image<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/fabio/blob/master/docs/current/fabio.png target=_blank>https://github.com/SPAROntologies/fabio/blob/master/docs/current/fabio.png</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">included in data catalog<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://fairsharing.org/ target=_blank>https://fairsharing.org/</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">is backward compatible with<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/fabio/2026-10-05 target=_blank>http://purl.org/spar/fabio/2026-10-05</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">language<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://id.loc.gov/vocabulary/iso639-2/eng target=_blank>http://id.loc.gov/vocabulary/iso639-2/eng</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">logo<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png target=_blank>https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">preferred namespace prefix<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">fabio</div></div></div><dt class="text-capitalize fs-7 fw-bold">preferred namespace uri<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">http://purl.org/spar/fabio/</div></div></div><dt class="text-capitalize fs-7 fw-bold">status<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/ontology/bibo/status/published target=_blank>http://purl.org/ontology/bibo/status/published</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">Other visualisation<dd class=ms-5><a class="btn btn-sm btn-outline-dark me-2" href="https://service.tib.eu/webvowl/#iri=http://purl.org/spar/fabio" target=_blank><i class="bi bi-share"></i> WebVOWL</a> <a class="btn btn-sm btn-outline-dark" href=http://purl.org/spar/fabio target=_blank><i class="bi bi-file-code"></i> Source</a></dl></section></div></details><section class="metadata-block export-block"><dl class="mb-0 pb-3"><dt class="fs-7 fw-bold mb-1">Export<dd class=ms-5><a class="btn btn-sm btn-outline-dark me-2" href=Taxonomy.ttl> <i class="bi bi-filetype-raw"></i> Turtle </a> <a class="btn btn-sm btn-outline-dark me-2" href=Taxonomy.xml> <i class="bi bi-file-code"></i> RDF/XML </a> <a class="btn btn-sm btn-outline-dark me-2" href=Taxonomy.jsonld> <i class="bi bi-filetype-json"></i> JSON-LD </a> <a class="btn btn-sm btn-outline-dark me-2" href=Taxonomy.nt> <i class="bi bi-file-text"></i> N-Triples </a></dl></section><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_ee9c939643cf0f8a54dc97b362e12b60_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>taxonomy</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fabio/Taxonomy <a title="Go to resource documentation" class=ms-2 href=../fabio/Taxonomy.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
+                                            data-md="A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships.">A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships.
+                                        </div> <sup class="badge text-secondary lan" title=English>en</sup></div></div></div></div><div class="attribute p-3 border-top border-bottom bg-light-subtle"><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">is disjoint with</h6><div class=ms-2><div class=d-inline-block><a href=../fabio/AuthorityFile.html title=http://purl.org/spar/fabio/AuthorityFile>authority file</a><sup class="badge text-secondary c" title=Class>c</sup><span class="text-dark me-1">,</span></div><div class=d-inline-block><a href=../fabio/Thesaurus.html title=http://purl.org/spar/fabio/Thesaurus>thesaurus</a><sup class="badge text-secondary c" title=Class>c</sup></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">is defined by</h6><div class=ms-2><div class=d-inline-block><a class=external-ref href=http://purl.org/spar/fabio/ target=_blank title=http://purl.org/spar/fabio/>http://purl.org/spar/fabio/</a></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">is sub class of</h6><div class=ms-2><div class=d-inline-block><a href=../fabio/ControlledVocabulary.html title=http://purl.org/spar/fabio/ControlledVocabulary>controlled vocabulary</a><sup class="badge text-secondary c" title=Class>c</sup></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">label</h6><div class=ms-2><div class="markdown-with-badge text-dark mb-0 render-markdown inline-markdown "
+                                            data-md="taxonomy">taxonomy</div> <sup class="badge text-secondary lan" title=English>en</sup></div></div></div><div class="p-3 statement"><div><h6 class="fw-bold text-dark pb-0 mb-0">example</h6><div class=ms-2><div class="d-flex flex-column gap-1"><div><div><div class="markdown-with-badge  render-markdown inline-markdown"
+                title="None"
+                data-md="
+        :my-taxonomy a fabio:Taxonomy ;
+            dcterms:title &#39;Taxonomy for scholarly research activities&#39;@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description &#39;A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.&#39;@en .
+    ">
+                    
+        :my-taxonomy a fabio:Taxonomy ;
+            dcterms:title &#39;Taxonomy for scholarly research activities&#39;@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description &#39;A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.&#39;@en .
+    
+                </div></div></div></div></div></div><div><h6 class="fw-bold text-dark pb-0 mb-0">term status</h6><div class=ms-2><div class="d-flex flex-column gap-1"><div><a class=external-ref href=http://purl.org/linked-data/registry#statusStable rel=noopener target=_blank title=http://purl.org/linked-data/registry#statusStable>status stable</a></div></div></div></div></div><div class="card-footer bg-white py-0"><div class="accordion accordion-flush prov-accordion" id=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_acc><div class=accordion-item><h2 class="accordion-header d-flex justify-content-end" id=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_head><button class="accordion-button collapsed py-1 px-2 small fw-bold text-uppercase text-primary w-auto" title="RDF provenance" aria-controls=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov aria-expanded=false data-bs-target=#id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov data-bs-toggle=collapse type=button><span>RDF provenance</span> <i class="bi bi-code"></i></button></h2><div class="accordion-collapse collapse" aria-labelledby=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_head data-bs-parent=#id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_acc id=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov><div class="accordion-body p-2"><ul class="nav nav-tabs nav-tabs-sm justify-content-end small mb-0" role=tablist><li class=nav-item role=presentation><button class="nav-link active py-1 px-2" data-bs-target=#id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_1 data-bs-toggle=tab role=tab type=button>TriG</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_2 data-bs-toggle=tab role=tab type=button>JSON-LD</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_3 data-bs-toggle=tab role=tab type=button>N-Quads</button></ul><div class=tab-content><div class="tab-pane fade show active" id=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_1 role=tabpanel><pre class="mb-0 small"><code>@prefix fabio: &lt;http://purl.org/spar/fabio/> .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#> .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: &lt;http://purl.org/linked-data/registry#> .
+@prefix vann: &lt;http://purl.org/vocab/vann/> .
+@prefix vs: &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+&lt;http://purl.org/spar/fabio> {
+    fabio:Taxonomy a owl:Class ;
+        rdfs:label "taxonomy"@en ;
+        vann:example """
+        :my-taxonomy a fabio:Taxonomy ;
+            dcterms:title 'Taxonomy for scholarly research activities'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .
+    """ ;
+        rdfs:comment "A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships."@en ;
+        rdfs:isDefinedBy fabio: ;
+        rdfs:subClassOf fabio:ControlledVocabulary ;
+        vs:term_status reg:statusStable .
+
+    _:na015ac9d06cd4cb1a3cee73cd225cdebb150 a owl:AllDisjointClasses ;
+        owl:members _:na015ac9d06cd4cb1a3cee73cd225cdebb151 .
+
+    _:na015ac9d06cd4cb1a3cee73cd225cdebb151 rdf:first fabio:AuthorityFile ;
+        rdf:rest _:na015ac9d06cd4cb1a3cee73cd225cdebb152 .
+
+    _:na015ac9d06cd4cb1a3cee73cd225cdebb152 rdf:first fabio:Taxonomy ;
+        rdf:rest _:na015ac9d06cd4cb1a3cee73cd225cdebb153 .
+
+    _:na015ac9d06cd4cb1a3cee73cd225cdebb153 rdf:first fabio:Thesaurus ;
+        rdf:rest () .
+}
+
+</code></pre></div><div class="tab-pane fade" id=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
+  {
+    "@graph": [
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb150",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+        ],
+        "http://www.w3.org/2002/07/owl#members": [
+          {
+            "@list": [
+              {
+                "@id": "http://purl.org/spar/fabio/AuthorityFile"
+              },
+              {
+                "@id": "http://purl.org/spar/fabio/Taxonomy"
+              },
+              {
+                "@id": "http://purl.org/spar/fabio/Thesaurus"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/Taxonomy",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://purl.org/vocab/vann/example": [
+          {
+            "@value": "\n        :my-taxonomy a fabio:Taxonomy ;\n            dcterms:title 'Taxonomy for scholarly research activities'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .\n    "
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+          {
+            "@language": "en",
+            "@value": "A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships."
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+          {
+            "@id": "http://purl.org/spar/fabio/"
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@language": "en",
+            "@value": "taxonomy"
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "http://purl.org/spar/fabio/ControlledVocabulary"
+          }
+        ],
+        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+          {
+            "@id": "http://purl.org/linked-data/registry#statusStable"
+          }
+        ]
+      }
+    ],
+    "@id": "http://purl.org/spar/fabio"
+  }
+]</code></pre></div><div class="tab-pane fade" id=id_ee9c939643cf0f8a54dc97b362e12b60_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:na015ac9d06cd4cb1a3cee73cd225cdebb150 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#AllDisjointClasses> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://purl.org/vocab/vann/example> "\n        :my-taxonomy a fabio:Taxonomy ;\n            dcterms:title 'Taxonomy for scholarly research activities'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .\n    " &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/ControlledVocabulary> &lt;http://purl.org/spar/fabio> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb153 &lt;http://purl.org/spar/fabio> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb152 &lt;http://purl.org/spar/fabio> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://purl.org/spar/fabio> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/fabio> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb150 &lt;http://www.w3.org/2002/07/owl#members> _:na015ac9d06cd4cb1a3cee73cd225cdebb151 &lt;http://purl.org/spar/fabio> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/fabio/AuthorityFile> &lt;http://purl.org/spar/fabio> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/fabio/Thesaurus> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships."@en &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Taxonomy> &lt;http://www.w3.org/2000/01/rdf-schema#label> "taxonomy"@en &lt;http://purl.org/spar/fabio> .
+
+</code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
+
+                // Security hooks
+                DOMPurify.addHook('afterSanitizeAttributes', function(node) {
+                    if (node.tagName === 'A') {
+                        node.setAttribute('target', '_blank');
+                        node.setAttribute('rel', 'noopener noreferrer');
+                    }
+                    if (node.tagName === 'IMG') {
+                        node.setAttribute('class', 'img-fluid border rounded mt-2 mb-2');
+                    }
+                });
+
+                marked.use({
+                    gfm: true,
+                    breaks: false // So line breaks not be added
+                });
+
+                const mdElements = document.querySelectorAll('.render-markdown');
+
+                mdElements.forEach(function(el) {
+                    try {
+                        let rawText = el.dataset.md ?? el.textContent;
+
+                        // Rimuove solo righe vuote iniziali/finali, preserva l'indentazione delle righe
+                        rawText = rawText.replace(/^([ \t]*\n)+/, '').replace(/(\n[ \t]*)+$/, '');
+                        // 2. Strip ANY XML namespace prefix (Turns <html:div> into <div>, </xhtml:p> into </p>)
+                        let cleanText = rawText.replace(/<(\/?)[a-zA-Z0-9_-]+:([a-zA-Z0-9]+)/gi, '<$1$2');
+
+                        // 3. Strip xmlns attributes
+                        cleanText = cleanText.replace(/ xmlns(:[a-zA-Z0-9_-]+)?="[^"]*"/gi, '');
+
+                        let rawHTML = "";
+
+                        // 4. Smart Routing
+                        if (el.tagName === 'SPAN' || el.tagName === 'A') {
+                            rawHTML = marked.parseInline(cleanText);
+                        } else {
+                            rawHTML = marked.parse(cleanText);
+                        }
+
+                        // 5. Sanitize
+                        const cleanHTML = DOMPurify.sanitize(rawHTML, {
+                            ADD_TAGS: ['img'],
+                            ADD_ATTR: ['target', 'src', 'alt', 'title', 'class']
+                        });
+
+                        el.innerHTML = cleanHTML;
+                    } catch (e) {
+                        console.error("Error rendering markdown/html:", e);
+                    }
+                });
+            });
+
+            function exportGraph(mime, ext, navQs, resource) {
+                let qs = navQs;
+                if (resource) qs += "&resource=" + encodeURIComponent(resource);
+                fetch(`/extract?${qs}`, { headers: { "Accept": mime } })
+                    .then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+                    .then(blob => {
+                        const a = document.createElement("a");
+                        const slug = resource ? resource.split(/[#/]/).pop() : "ontology";
+                        a.href = URL.createObjectURL(blob);
+                        a.download = `${slug}.${ext}`;
+                        a.click();
+                        URL.revokeObjectURL(a.href);
+                    })
+                    .catch(e => alert("Export failed: " + e.message));
+            }
+
+            function toggleMetadataAccordion(event) {
+                event.preventDefault();   // blocca il comportamento nativo/bubbling incoerente
+                event.stopPropagation();  // evita il doppio-toggle se il summary lo cattura comunque
+                const details = event.currentTarget.closest('details.metadata-accordion');
+                if (details) details.open = !details.open;
+            }
+            
+            /* SEARCHBAR */
+            (function () {
+                const wrap = document.getElementById('toc-float-search');
+                const toggle = document.getElementById('toc-float-search-toggle');
+                const input = document.getElementById('toc-float-search-input');
+                const countEl = document.getElementById('toc-float-search-count');
+                const prevBtn = document.getElementById('toc-float-search-prev');
+                const nextBtn = document.getElementById('toc-float-search-next');
+                if (!wrap || !toggle || !input) return;
+
+                const cards = Array.from(document.querySelectorAll('.container-fluid .card[id]'));
+                let matches = [];
+                let current = -1;
+
+                function updateCount() {
+                    countEl.textContent = matches.length ? `${current + 1}/${matches.length}` : (input.value ? '0/0' : '');
+                }
+
+                function clearHighlight() {
+                    cards.forEach(c => c.classList.remove('toc-search-current'));
+                }
+
+                function goTo(index) {
+                    if (!matches.length) return;
+                    current = (index + matches.length) % matches.length;
+                    clearHighlight();
+                    const card = matches[current];
+                    card.classList.add('toc-search-current');
+                    card.scrollIntoView({ block: 'start' });
+                    updateCount();
+                }
+
+                function runSearch() {
+                    const q = input.value.trim().toLowerCase();
+                    clearHighlight();
+
+                    // Sidebar: dim + disable non-matching
+                    const sidebar = document.getElementById('toc-sidebar');
+                    if (sidebar) {
+                        sidebar.querySelectorAll('.toc-sidebar-section').forEach(section => {
+                            let anyMatch = false;
+                            section.querySelectorAll('.toc-sidebar-list li').forEach(li => {
+                                const match = !q || li.textContent.toLowerCase().includes(q);
+                                li.classList.toggle('toc-search-dim', !match);
+                                if (match) anyMatch = true;
+                            });
+                            section.classList.toggle('toc-search-dim', q.length > 0 && !anyMatch);
+                            if (q && anyMatch) section.open = true;
+                        });
+                    }
+
+                    if (!q) {
+                        matches = [];
+                        current = -1;
+                        updateCount();
+                        return;
+                    }
+                    matches = cards.filter(card => {
+                        const label = card.querySelector('.card-header h4')?.textContent.toLowerCase() || '';
+                        return label.includes(q);
+                    });
+                    current = -1;
+                    updateCount();
+                    if (matches.length) goTo(0);
+                }
+
+                toggle.addEventListener('click', function () {
+                    const open = wrap.classList.toggle('open');
+                    if (open) {
+                        input.focus();
+                    } else {
+                        input.value = '';
+                        runSearch();
+                    }
+                });
+
+                input.addEventListener('input', runSearch);
+
+                input.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        if (e.shiftKey) goTo(current - 1);
+                        else goTo(current + 1);
+                    }
+                });
+
+                prevBtn.addEventListener('click', () => goTo(current - 1));
+                nextBtn.addEventListener('click', () => goTo(current + 1));
+            })();</script></div><footer class=site-footer><strong>LODE 2.0</strong> · Maintained by <a href=https://opencitations.net rel=noopener target=_blank>OpenCitations</a> · <a href=https://github.com/opencitations/lode rel=noopener target=_blank>GitHub</a> · <a href=https://github.com/opencitations/lode/blob/main/LICENSE.md rel=noopener target=_blank>ISC License</a></footer>

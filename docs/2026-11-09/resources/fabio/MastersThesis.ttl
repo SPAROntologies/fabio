@@ -1,0 +1,23 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:MastersThesis a owl:Class ;
+    rdfs:label "master's thesis"@en ;
+    vann:example """
+        :my-master-thesis a fabio:MastersThesis ;
+            dcterms:title 'Linked Data analysis in the library science domain'@en ;
+            dcterms:description 'A thesis reporting the results of a period of study, submitted in partial fulfillment of the requirements for a master's degree.'@en .
+    """ ;
+    rdfs:comment "A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Thesis ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( fabio:BachelorsThesis fabio:DoctoralThesis fabio:MastersThesis ) .
+

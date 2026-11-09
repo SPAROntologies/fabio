@@ -1,0 +1,8 @@
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#comment> "A keyword associated with a resource, that is likely to be used in search queries."@en .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://purl.org/vocab/vann/example> "\n        :my-research-paper a fabio:ResearchPaper ;\n            prism:keyword\n                'legal ontologies' ,\n                'methodology' ,\n                'ontology modeling' ,\n                'professional knowledge' ,\n                'rhetorical structure theory' .\n    " .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#label> "has keyword"@en .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .

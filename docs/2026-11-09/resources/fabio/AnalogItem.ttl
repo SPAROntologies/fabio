@@ -1,0 +1,30 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:AnalogItem a owl:Class ;
+    rdfs:label "analog item"@en ;
+    vann:example """
+        :my-analog-item a fabio:AnalogItem ;
+            dcterms:title 'On the Origin of Species by Means of Natural Selection'@en ;
+            fabio:isStoredOn fabio:paper ;
+            frbr:exemplarOf :my-analog-manifestation  .
+    """ ;
+    rdfs:comment "A real object that is an exemplar of a manifestation, such as a particular copy of the book 'Alice's adventures in Wonderland', that a person may own."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fabio:isStoredOn ;
+            owl:someValuesFrom fabio:AnalogStorageMedium ],
+        [ a owl:Restriction ;
+            owl:onProperty frbr:exemplarOf ;
+            owl:someValuesFrom fabio:AnalogManifestation ],
+        fabio:Item ;
+    owl:disjointWith fabio:DigitalItem ;
+    vs:term_status reg:statusStable ;
+    skos:note "An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films."@en .
+

@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WorkshopPaper a owl:Class ;
+    rdfs:label "workshop paper"@en ;
+    vann:example """
+        :my-workshop-paper a fabio:WorkshopPaper ;
+            dcterms:title 'New perspectives for Linked Data analysis'@en ;
+            dcterms:description 'A paper presented at a workshop and potentially published in the workshop proceedings.'@en .
+    """ ;
+    rdfs:comment "A paper, typically the realization of a research paper reporting original research findings, usually presented at a workshop and published within a workshop proceedings volume."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ProceedingsPaper ;
+    vs:term_status reg:statusStable .
+

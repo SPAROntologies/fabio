@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/MastersThesis",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-master-thesis a fabio:MastersThesis ;\n            dcterms:title 'Linked Data analysis in the library science domain'@en ;\n            dcterms:description 'A thesis reporting the results of a period of study, submitted in partial fulfillment of the requirements for a master's degree.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "master's thesis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Thesis"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb154",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/BachelorsThesis"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/DoctoralThesis"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/MastersThesis"
+          }
+        ]
+      }
+    ]
+  }
+]

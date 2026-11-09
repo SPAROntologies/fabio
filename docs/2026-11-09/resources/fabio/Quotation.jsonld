@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/Quotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-quotation a fabio:Quotation ;\n            dcterms:title 'Quotation from The Thing'@en ;\n            dcterms:description 'A passage os speech selected from a larger expression.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A passage of speech selected from a larger verbal or written expression for use in another expression, with specific attribution to its original source, and usually demarcated by quotation marks and / or by placing it in a separate indented paragraph."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "quotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/spar/fabio/Excerpt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Expression"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nA quotation is a repetition of what someone has said, and is presented 'within quotation marks', for example:\n\n    On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words:\n        ' . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . .'\n\nSimilarly, the words 'but Brutus is an honourable man' from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play.\n\nNote: Use `fabio:Quotation` to indicate a segment or passage selected from another expression that is a passage of speech, and `fabio:Excerpt` to indicate a segment or passage selected from another expression that is not a passage of speech.\n"
+      }
+    ]
+  }
+]

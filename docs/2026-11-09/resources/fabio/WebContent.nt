@@ -1,0 +1,11 @@
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb104 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/WebManifestation> .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#label> "web content"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb104 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/WebContent> <http://purl.org/vocab/vann/example> "\n        :my-web-content a fabio:WebContent ;\n            dcterms:title 'Content of SPUK's home page'@en ;\n            frbr:embodiment :my-web-manifestation ;\n            dcterms:description 'A document or other resource that is delivered to a user over the World Wide Web.'@en .\n    " .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb104 .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#comment> "Information prepared specifically and primarily for manifestation in a web page, comprising text, images, datasets and/or other works."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

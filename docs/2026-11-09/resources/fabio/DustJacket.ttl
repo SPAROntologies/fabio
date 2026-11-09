@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DustJacket a owl:Class ;
+    rdfs:label "dust jacket"@en ;
+    vann:example """
+        :my-dust-jacket a fabio:DustJacket ;
+            dcterms:title 'Dust jacket for The Hobbit, First Edition'@en ;
+            dcterms:creator :j-r-r-tolkien ;
+            dcterms:description 'The detachable outer paper cover of a book, often with decorative illustrations and a summary of the work.'@en .
+    """ ;
+    rdfs:comment "A detachable outer cover, usually made of paper and printed with text and illustrations. This outer cover has folded flaps that hold it to the cover of a document."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

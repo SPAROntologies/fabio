@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Metadata a owl:Class ;
+    rdfs:label "metadata"@en ;
+    vann:example """
+        :my-metadata a fabio:Metadata ;
+            dcterms:title 'Metadata record for 'The Fellowship of the Ring''@en ;
+            frbr:realization :my-metadata-document ;
+            dcterms:description 'A document containing data about other data, such as a library catalog record or an RDF description.'@en .
+    """ ;
+    rdfs:comment "A separate work that provides information describing one or more characteristics of a resource or entity."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

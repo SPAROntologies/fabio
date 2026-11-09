@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Policy a owl:Class ;
+    rdfs:label "policy"@en ;
+    vann:example """
+        :my-policy a fabio:Policy ;
+            dcterms:title 'University Open Access Policy'@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-policy-document ;
+            dcterms:description 'A formal statement of intent or set of rules adopted by an organization to guide decisions and achieve rational outcomes.'@en .
+    """ ;
+    rdfs:comment "A description and definition of how something should be done. Ideally, a policy should be both effective in achieving its goals and acceptable to those who have to abide by it."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

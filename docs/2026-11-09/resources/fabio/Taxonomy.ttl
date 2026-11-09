@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Taxonomy a owl:Class ;
+    rdfs:label "taxonomy"@en ;
+    vann:example """
+        :my-taxonomy a fabio:Taxonomy ;
+            dcterms:title 'Taxonomy for scholarly research activities'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .
+    """ ;
+    rdfs:comment "A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ControlledVocabulary ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( fabio:AuthorityFile fabio:Taxonomy fabio:Thesaurus ) .
+

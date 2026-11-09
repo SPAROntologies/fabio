@@ -1,0 +1,21 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+prism:endingPage a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has ending page"@en ;
+    vann:example """
+        :my-print-object a fabio:PrintObject ;
+            prism:endingPage '186' .
+    """ ;
+    rdfs:comment "The last page of a resource."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy prism: ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    vs:term_status reg:statusStable .
+

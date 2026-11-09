@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+dcterms:title a owl:DatatypeProperty ;
+    rdfs:label "has title"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            dcterms:title 'OPJK and DILIGENT: ontology modeling in a distributed environment'@en .
+    """ ;
+    rdfs:comment "A name given to a resource. Typically, the title will be the name by which the resource is formally known."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:NewspaperNewsItem a owl:Class ;
+    rdfs:label "newspaper news item"@en ;
+    vann:example """
+        :my-newspaper-news-item a fabio:NewspaperNewsItem ;
+            dcterms:title 'Roadworks in Bubble Avenue'@en ;
+            frbr:partOf :my-newspaper-issue ;
+            dcterms:description 'A short news report published in a newspaper, typically concerning current events or social announcements.'@en .
+    """ ;
+    rdfs:comment "A news report published in a newspaper issue."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:partOf ;
+            owl:someValuesFrom fabio:NewspaperIssue ],
+        fabio:NewsItem ;
+    vs:term_status reg:statusStable .
+

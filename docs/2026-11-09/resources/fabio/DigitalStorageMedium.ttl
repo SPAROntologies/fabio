@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DigitalStorageMedium a owl:Class ;
+    rdfs:label "digital storage medium"@en ;
+    vann:example """
+        fabio:floppy-disk a fabio:DigitalStorageMedium .
+    """ ;
+    rdfs:comment "A means of storing information in digital form, involving binary encoding of data in 0s and 1s, e.g. a computer random access memory, hard disc, USB stick, CD, DVD or digital magnetic tape."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom fabio:DigitalItem ;
+            owl:onProperty fabio:stores ],
+        fabio:StorageMedium ;
+    vs:term_status reg:statusStable .
+

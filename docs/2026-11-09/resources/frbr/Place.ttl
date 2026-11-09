@@ -1,0 +1,11 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+frbr:Place a owl:Class ;
+    rdfs:label "place"@en ;
+    rdfs:comment """
+A location.
+"""@en ;
+    rdfs:isDefinedBy frbr: .
+

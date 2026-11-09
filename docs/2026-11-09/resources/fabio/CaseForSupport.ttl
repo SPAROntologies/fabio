@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:CaseForSupport a owl:Class ;
+    rdfs:label "case for support"@en ;
+    vann:example """
+        :my-case-for-support a fabio:CaseForSupport ;
+            dcterms:title 'Scientific Rationale for Neural Network Optimization Project'@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-case-for-support-document ;
+            dcterms:description 'The conceptual work providing the intellectual justification and research plan for a grant application.'@en .
+    """ ;
+    rdfs:comment "A part of a grant application that provides a description of a proposed project and gives reasons why it is worthy of funding."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:GrantApplication ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WebManifestation a owl:Class ;
+    rdfs:label "web manifestation"@en ;
+    vann:example """
+        :my-web-manifestation a fabio:WebManifestation ;
+            dcterms:format 'text/html' ;
+            frbr:embodimentOf :my-web-content ;
+            dcterms:description 'A manifestation of an expression that is delivered over the World Wide Web.'@en .
+    """ ;
+    rdfs:comment "A digital manifestation on the Web, such as a wiki, a web site, a web page or a blog."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:DigitalManifestation ;
+    vs:term_status reg:statusStable .
+

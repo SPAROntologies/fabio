@@ -27,8 +27,8 @@ keywords:
 - FRBR
 - semantic publishing
 license: CC-BY-4.0
-version: 2.3.2
-date-released: '2026-10-05'
+version: 2.3.3
+date-released: '2026-11-09'
 preferred-citation:
     type: article
     authors:

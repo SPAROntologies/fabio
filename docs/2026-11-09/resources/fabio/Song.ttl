@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Song a owl:Class ;
+    rdfs:label "song"@en ;
+    vann:example """
+        :my-song a fabio:Song ;
+            dcterms:title 'Your song'@en ;
+            dcterms:creator :john-lennon ;
+            dcterms:description 'A short musical composition with words.'@en .
+    """ ;
+    rdfs:comment "A musical composition that contains vocal parts ('lyrics') that are performed ('sung')."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:MusicalComposition ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Chapter">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">chapter</rdfs:label>
+    <rdfs:comment xml:lang="en">A defined document section, forming part of or intended for inclusion within a larger document, usually with its own title or chapter number. Different chapters within a document such as a book or a report may each be independently authored, or may all be authored by a single individual or group of authors.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vann:example>
+        :my-chapter a fabio:Chapter ;
+            dcterms:title 'Introduction to SPARQL Query Language'@en ;
+            frbr:partOf :my-book ;
+            fabio:hasSequenceIdentifier '1' ;
+            dcterms:description 'The introductory chapter of a technical handbook.'@en .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+</rdf:RDF>

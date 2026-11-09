@@ -1,0 +1,17 @@
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb56 <http://www.w3.org/2002/07/owl#withRestrictions> _:na015ac9d06cd4cb1a3cee73cd225cdebb58 .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2000/01/rdf-schema#range> _:na015ac9d06cd4cb1a3cee73cd225cdebb56 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb57 <http://www.w3.org/2001/XMLSchema#pattern> "[0-9]+" .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2000/01/rdf-schema#comment> "An internal identifier for journals available from the National Library of Medicine repository."@en .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://purl.org/vocab/vann/example> "\n        :my-journal a fabio:Journal ;\n            fabio:hasNationalLibraryOfMedicineJournalId '9604648' .\n    " .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.nlm.nih.gov/> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:na015ac9d06cd4cb1a3cee73cd225cdebb57 .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/2000/01/rdf-schema#label> "has National Library of Medicine journal identifier"@en .
+<http://purl.org/spar/fabio/hasNationalLibraryOfMedicineJournalId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb56 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DataManagementPolicy a owl:Class ;
+    rdfs:label "data management policy"@en ;
+    vann:example """
+        :my-data-management-policy a fabio:DataManagementPolicy ;
+            dcterms:title 'Institutional Policy on Research Data Management'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A policy specifically addressing the principles and requirements for managing, storing, and sharing research data.'@en .
+    """ ;
+    rdfs:comment "A policy that describes and defines how data should be managed, preserved and shared."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Policy ;
+    vs:term_status reg:statusStable .
+

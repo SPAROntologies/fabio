@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PositionPaper a owl:Class ;
+    rdfs:label "position paper"@en ;
+    vann:example """
+        :my-position-paper a fabio:PositionPaper ;
+            dcterms:title 'The use of generative AI in research'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A report or essay that presents an arguable opinion about an issue.'@en .
+    """ ;
+    rdfs:comment "A scholarly work that reports a particular intellectual position or viewpoint regarding a particular scholarly topic. Usually, these papers are dependent on the author's opinion or interpretation, do not have an evaluation, and need to present relevant and novel discussion points in a thorough manner."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Opinion,
+        fabio:ScholarlyWork ;
+    vs:term_status reg:statusStable .
+
