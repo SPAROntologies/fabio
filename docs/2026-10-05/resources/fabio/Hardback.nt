@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/PrintObject> .
-<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2000/01/rdf-schema#label> "hardback"@en .
-<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2000/01/rdf-schema#comment> "A print object bound with rigid protective covers (typically of cardboard covered with cloth, heavy paper, or sometimes leather)."@en .
+<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2000/01/rdf-schema#label> "hardback"@en .
+<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/PrintObject> .
+<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Hardback> <http://purl.org/vocab/vann/example> "\n        :my-hardback a fabio:Hardback ;\n            dcterms:title 'The Divine Comedy'@en ;\n            frbr:embodimentOf :my-book ;\n            dcterms:publisher :my-publisher ;\n            dcterms:description 'A book bound with rigid protective covers, typically covered with cloth, heavy paper, or leather.'@en .\n    " .
+<http://purl.org/spar/fabio/Hardback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

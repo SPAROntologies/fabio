@@ -28,7 +28,7 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b36"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b36"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b36",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b36",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -49,14 +49,14 @@
             "@id": "http://purl.org/spar/fabio/Expression"
           },
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b37"
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b37"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b37",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b37",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -67,12 +67,12 @@
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b38"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b38"
       }
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b38",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b38",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

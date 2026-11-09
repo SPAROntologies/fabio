@@ -1,15 +1,15 @@
-<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
-_:n6180652088774126a964ddb1b76a8d19b87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodimentOf> .
-_:n6180652088774126a964ddb1b76a8d19b86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#exemplarOf> .
-<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is representation of"@en .
-<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6180652088774126a964ddb1b76a8d19b87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
-<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The expression of an item."@en .
+<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is representation of"@en .
 <http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2004/02/skos/core#note> "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
-<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:n6180652088774126a964ddb1b76a8d19b86 .
+<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
-_:n6180652088774126a964ddb1b76a8d19b86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b87 .
+<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The expression of an item."@en .
+<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#exemplarOf> .
+<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:nbd59893e8a4144f9864e0ea78c01ebc3b86 .
+<http://purl.org/spar/fabio/isRepresentationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b87 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodimentOf> .
 <http://purl.org/spar/fabio/isRepresentationOf> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            fabio:isRepresentationOf :my-expression .\n    " .

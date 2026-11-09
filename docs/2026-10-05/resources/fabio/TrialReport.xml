@@ -6,9 +6,7 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/TrialReport">
-    <rdfs:label xml:lang="en">trial report</rdfs:label>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:comment xml:lang="en">The report of a trial, for example an experimental trial or a legal trial.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Report"/>
     <vann:example>
         :my-trial-report a fabio:TrialReport ;
@@ -16,7 +14,9 @@
             dcterms:creator :john-doe ;
             dcterms:description 'A report of a trial, typically a clinical trial of a drug or a medical procedure.'@en .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">trial report</rdfs:label>
+    <rdfs:comment xml:lang="en">The report of a trial, for example an experimental trial or a legal trial.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
 </rdf:RDF>

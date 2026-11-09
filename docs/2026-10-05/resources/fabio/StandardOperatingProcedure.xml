@@ -7,8 +7,7 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/StandardOperatingProcedure">
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">standard operating procedure</rdfs:label>
     <rdfs:comment xml:lang="en">Clear and detailed written instructions of a prescribed step-by-step procedure to be routinely followed, and decisions to be made when undertaking a specific task, process or function, to achieve consistent performance, ensure safety and/or assure data quality.</rdfs:comment>
     <vann:example>
         :my-standard-operating-procedure a fabio:StandardOperatingProcedure ;
@@ -17,6 +16,7 @@
             dcterms:description 'A set of step-by-step instructions compiled by an organization to help workers carry out complex routine operations.'@en .
     </vann:example>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
-    <rdfs:label xml:lang="en">standard operating procedure</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
 </rdf:RDF>

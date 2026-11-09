@@ -1,14 +1,14 @@
-<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b19 .
-_:n6180652088774126a964ddb1b76a8d19b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalNewsItem> .
-<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#comment> "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."@en .
-<http://purl.org/spar/fabio/InBrief> <http://purl.org/vocab/vann/example> "\n        :my-in-brief a fabio:InBrief ;\n            dcterms:title 'Science In Brief - March 2026'@en ;\n            dcterms:description 'A short summary or a collection of brief news items or notes.'@en .\n    " .
-<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b21 .
-<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
-_:n6180652088774126a964ddb1b76a8d19b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MagazineNewsItem> .
-_:n6180652088774126a964ddb1b76a8d19b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MagazineNewsItem> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b19 <http://www.w3.org/2002/07/owl#unionOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b20 .
+<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/InBrief> <http://purl.org/vocab/vann/example> "\n        :my-in-brief a fabio:InBrief ;\n            dcterms:title 'Science In Brief - March 2026'@en ;\n            dcterms:description 'A short summary or a collection of brief news items or notes.'@en .\n    " .
+<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#comment> "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."@en .
+<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalNewsItem> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b19 .
 <http://purl.org/spar/fabio/InBrief> <http://www.w3.org/2000/01/rdf-schema#label> "in brief"@en .
-_:n6180652088774126a964ddb1b76a8d19b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n6180652088774126a964ddb1b76a8d19b19 <http://www.w3.org/2002/07/owl#unionOf> _:n6180652088774126a964ddb1b76a8d19b20 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b21 .

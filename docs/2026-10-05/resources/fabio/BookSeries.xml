@@ -7,16 +7,13 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Book"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/BookSeries">
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b10"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Series"/>
-    <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/BookSet"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <skos:note xml:lang="en">Examples include the books in the Law, Governance and Technology Series published by Springer.</skos:note>
-    <rdfs:label xml:lang="en">book series</rdfs:label>
-    <rdfs:comment xml:lang="en">A sequence of books having certain characteristics in common that are formally identified together as a group.</rdfs:comment>
     <vann:example>
         :my-book-series a fabio:BookSeries ;
             dcterms:title 'Lecture Notes in Computer Science'@en ;
@@ -24,10 +21,13 @@
             frbr:part :my-book, :my-another-book ;
             dcterms:description 'A theoretical and professional book series focused on computer science research and development.'@en .
     </vann:example>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b10">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Book"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <rdfs:comment xml:lang="en">A sequence of books having certain characteristics in common that are formally identified together as a group.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/BookSet"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <skos:note xml:lang="en">Examples include the books in the Law, Governance and Technology Series published by Springer.</skos:note>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b10"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Series"/>
+    <rdfs:label xml:lang="en">book series</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

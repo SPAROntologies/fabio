@@ -1,9 +1,9 @@
-<http://purl.org/dc/terms/created> <http://purl.org/vocab/vann/example> "\n        :my-report a fabio:Report ;\n            dcterms:created '2026-04-28'^^xsd:date .\n    " .
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "has creation date"@en .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource has been created."@en .
 <http://purl.org/dc/terms/created> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource has been created."@en .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/dc/terms/created> <http://purl.org/vocab/vann/example> "\n        :my-report a fabio:Report ;\n            dcterms:created '2026-04-28'^^xsd:date .\n    " .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "has creation date"@en .

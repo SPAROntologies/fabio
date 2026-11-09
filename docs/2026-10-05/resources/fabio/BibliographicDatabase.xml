@@ -7,17 +7,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/BibliographicDatabase">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">bibliographic database</rdfs:label>
+    <skos:note xml:lang="en">Examples include PubMed (http://www.ncbi.nlm.nih.gov/pubmed), CrossRef Metadata Search (http://search.crossref.org/) and PubMed Central (http://www.ncbi.nlm.nih.gov/pmc/).</skos:note>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Database"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-bibliographic-database a fabio:BibliographicDatabase ;
             dcterms:title 'Scopus'@en ;
             dcterms:description 'A large abstract and citation database of peer-reviewed literature.'@en .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Database"/>
+    <rdfs:label xml:lang="en">bibliographic database</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <skos:note xml:lang="en">Examples include PubMed (http://www.ncbi.nlm.nih.gov/pubmed), CrossRef Metadata Search (http://search.crossref.org/) and PubMed Central (http://www.ncbi.nlm.nih.gov/pmc/).</skos:note>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:comment xml:lang="en">A database providing an authoritative source of bibliographic information.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

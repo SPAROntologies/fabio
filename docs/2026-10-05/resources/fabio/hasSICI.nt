@@ -1,12 +1,12 @@
-<http://purl.org/spar/fabio/hasSICI> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasSICI '0015-6914(199612)18:12<12:SIAI>2.0.TX;2-B' .\n    " .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#label> "has SICI"@en .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#comment> "A code used to uniquely identify specific volumes, articles or other identifiable parts of a periodical. It is intended primarily for use by those members of the bibliographic community involved in the use or management of serial titles and their contributions."@en .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#comment> "A code used to uniquely identify specific volumes, articles or other identifiable parts of a periodical. It is intended primarily for use by those members of the bibliographic community involved in the use or management of serial titles and their contributions."@en .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.niso.org/apps/group_public/project/details.php?project_id=75> .
-<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#label> "has SICI"@en .
 <http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#label> "has Serial Item and Contribution Identifier"@en .
+<http://purl.org/spar/fabio/hasSICI> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasSICI '0015-6914(199612)18:12<12:SIAI>2.0.TX;2-B' .\n    " .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fabio/hasSICI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .

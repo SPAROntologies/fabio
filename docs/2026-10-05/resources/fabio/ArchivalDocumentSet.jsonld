@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b64"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b65"
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b65"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b64"
       },
       {
         "@id": "http://purl.org/spar/fabio/ExpressionCollection"
@@ -44,23 +44,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b64",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#part"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/fabio/ArchivalDocument"
-      }
-    ]
-  },
-  {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b65",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b65",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -72,6 +56,22 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b64",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/ArchivalDocument"
       }
     ]
   }

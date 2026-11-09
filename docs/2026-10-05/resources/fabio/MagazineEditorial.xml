@@ -6,24 +6,24 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b27">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/MagazineIssue"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/MagazineEditorial">
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b27"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Editorial"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b27"/>
+    <rdfs:comment xml:lang="en">An editorial published in an issue of a magazine.</rdfs:comment>
     <vann:example>
         :my-magazine-editorial a fabio:MagazineEditorial ;
             dcterms:title 'A New Era for Digital Media'@en ;
             frbr:partOf :my-magazine-issue ;
             dcterms:description 'An editorial article published in a magazine, typically expressing the views of the editor or the publisher.'@en .
     </vann:example>
-    <rdfs:comment xml:lang="en">An editorial published in an issue of a magazine.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:label xml:lang="en">magazine editorial</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b27">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/MagazineIssue"/>
   </rdf:Description>
 </rdf:RDF>

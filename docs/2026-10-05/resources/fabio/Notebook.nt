@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Book> .
+<http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2000/01/rdf-schema#comment> "A book containing personal notes, typically created by writing into a physical book with blank pages."@en .
 <http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Notebook> <http://purl.org/vocab/vann/example> "\n        :my-notebook a fabio:Notebook ;\n            dcterms:title 'Experimental Physics Notebook'@en ;\n            dcterms:description 'A book with blank or ruled pages for writing notes in, or a scholarly publication consisting of a sequence of notes or records.'@en .\n    " .
-<http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2000/01/rdf-schema#comment> "A book containing personal notes, typically created by writing into a physical book with blank pages."@en .
 <http://purl.org/spar/fabio/Notebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2000/01/rdf-schema#label> "notebook"@en .
+<http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Book> .
+<http://purl.org/spar/fabio/Notebook> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

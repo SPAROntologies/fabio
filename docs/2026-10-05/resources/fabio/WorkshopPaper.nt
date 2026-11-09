@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/WorkshopPaper> <http://purl.org/vocab/vann/example> "\n        :my-workshop-paper a fabio:WorkshopPaper ;\n            dcterms:title 'New perspectives for Linked Data analysis'@en ;\n            dcterms:description 'A paper presented at a workshop and potentially published in the workshop proceedings.'@en .\n    " .
-<http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#label> "workshop paper"@en .
-<http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ProceedingsPaper> .
 <http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "A paper, typically the realization of a research paper reporting original research findings, usually presented at a workshop and published within a workshop proceedings volume."@en .
-<http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ProceedingsPaper> .
+<http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#label> "workshop paper"@en .
+<http://purl.org/spar/fabio/WorkshopPaper> <http://purl.org/vocab/vann/example> "\n        :my-workshop-paper a fabio:WorkshopPaper ;\n            dcterms:title 'New perspectives for Linked Data analysis'@en ;\n            dcterms:description 'A paper presented at a workshop and potentially published in the workshop proceedings.'@en .\n    " .

@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/fabio/film",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/fabio/AnalogStorageMedium"
+      "http://purl.org/spar/fabio/AnalogStorageMedium",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {

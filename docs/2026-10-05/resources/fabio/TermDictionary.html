@@ -379,12 +379,12 @@ What are the preferred labels of all subject terms assigned to the article with 
     """ ;
         rdfs:comment "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."@en ;
         rdfs:isDefinedBy fabio: ;
-        rdfs:subClassOf _:n6180652088774126a964ddb1b76a8d19b112,
+        rdfs:subClassOf _:nbd59893e8a4144f9864e0ea78c01ebc3b112,
             skos:ConceptScheme ;
         vs:term_status reg:statusStable ;
         skos:note "A term dictionary is a collection of subject terms."@en .
 
-    _:n6180652088774126a964ddb1b76a8d19b112 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b112 a owl:Restriction ;
         owl:allValuesFrom fabio:SubjectTerm ;
         owl:onProperty fabio:isSchemeOf .
 }
@@ -421,10 +421,10 @@ What are the preferred labels of all subject terms assigned to the article with 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b112"
           },
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b112"
+            "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -440,7 +440,7 @@ What are the preferred labels of all subject terms assigned to the article with 
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b112",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b112",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -458,18 +458,18 @@ What are the preferred labels of all subject terms assigned to the article with 
     ],
     "@id": "http://purl.org/spar/fabio"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_e8c067cbe46b13b3409be5bc53d91a74_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2004/02/skos/core#note> "A term dictionary is a collection of subject terms."@en &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b112 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+]</code></pre></div><div class="tab-pane fade" id=id_e8c067cbe46b13b3409be5bc53d91a74_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b112 &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.w3.org/2004/02/skos/core#ConceptScheme> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b112 &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b112 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/fabio/isSchemeOf> &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://purl.org/vocab/vann/example> "\n        :my-term-dictionary a fabio:TermDictionary ;\n            dcterms:title 'Artificial Intelligence Glossary'@en ;\n            skos:isSchemeOf :my-subject-term ;\n            dcterms:description 'A collection of terms and their definitions, often specific to a particular subject or field.'@en .\n    " &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b112 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/fabio/SubjectTerm> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b112 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/fabio/isSchemeOf> &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2004/02/skos/core#note> "A term dictionary is a collection of subject terms."@en &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2000/01/rdf-schema#label> "term dictionary"@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b112 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/TermDictionary> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b112 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/fabio/SubjectTerm> &lt;http://purl.org/spar/fabio> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

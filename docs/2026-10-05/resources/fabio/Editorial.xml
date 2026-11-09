@@ -6,24 +6,24 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b101">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Opinion"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Editorial">
+    <rdfs:comment xml:lang="en">The realization of an opinion written by an editor.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b101"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
     <vann:example>
         :my-editorial a fabio:Editorial ;
             dcterms:title 'The Future of Open Science in 2026'@en ;
             frbr:realizationOf :my-opinion ;
             dcterms:description 'An article expressing the opinion or policy of the editors or publishers of a publication.'@en .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:subClassOf rdf:nodeID="n6180652088774126a964ddb1b76a8d19b101"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:label xml:lang="en">editorial</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">The realization of an opinion written by an editor.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6180652088774126a964ddb1b76a8d19b101">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Opinion"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
   </rdf:Description>
 </rdf:RDF>

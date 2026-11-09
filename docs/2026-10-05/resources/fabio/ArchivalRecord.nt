@@ -1,11 +1,11 @@
-_:n6180652088774126a964ddb1b76a8d19b92 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalDocument> .
 <http://purl.org/spar/fabio/ArchivalRecord> <http://purl.org/vocab/vann/example> "\n        :my-archival-record a fabio:ArchivalRecord ;\n            dcterms:title 'Correspondence of Alan Turing regarding Enigma decryption'@en ;\n            dcterms:creator :alan-turing ;\n            frbr:realization :my-archival-document ;\n            dcterms:description 'The conceptual archival entity representing the correspondence created by Alan Turing during his research.'@en .\n    " .
-<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#label> "archival record"@en .
-<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A material created or received by a person, family, or organization, public or private, in the conduct of their affairs that is preserved because of the enduring value contained in the information it contains or as evidence of the function and the responsibilities of its creator."@en .
-_:n6180652088774126a964ddb1b76a8d19b92 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
-<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b92 .
-<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n6180652088774126a964ddb1b76a8d19b92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b92 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/ArchivalDocument> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b92 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A material created or received by a person, family, or organization, public or private, in the conduct of their affairs that is preserved because of the enduring value contained in the information it contains or as evidence of the function and the responsibilities of its creator."@en .
+<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#label> "archival record"@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b92 .
+<http://purl.org/spar/fabio/ArchivalRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

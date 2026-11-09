@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-_:n6180652088774126a964ddb1b76a8d19b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "grant application document"@en .
-_:n6180652088774126a964ddb1b76a8d19b18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/GrantApplication> .
-<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b18 .
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/GrantApplicationDocument> <http://purl.org/vocab/vann/example> "\n        :my-grant-application-document a fabio:GrantApplicationDocument ;\n            dcterms:title 'Project Proposal: Neural Networks for Climate v1.0'@en ;\n            frbr:realizationOf :my-grant-application ;\n            dcterms:description 'A document representing a grant application, such as a PDF or a printed form.'@en .\n    " .
-_:n6180652088774126a964ddb1b76a8d19b18 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a grant application, usually containing a case for support document."@en .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "grant application document"@en .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://purl.org/vocab/vann/example> "\n        :my-grant-application-document a fabio:GrantApplicationDocument ;\n            dcterms:title 'Project Proposal: Neural Networks for Climate v1.0'@en ;\n            frbr:realizationOf :my-grant-application ;\n            dcterms:description 'A document representing a grant application, such as a PDF or a printed form.'@en .\n    " .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b18 .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a grant application, usually containing a case for support document."@en .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/GrantApplication> .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b18 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .

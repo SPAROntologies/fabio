@@ -29,11 +29,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has electronic International Standard Serial Number"
+        "@value": "has eISSN"
       },
       {
         "@language": "en",
-        "@value": "has eISSN"
+        "@value": "has electronic International Standard Serial Number"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [

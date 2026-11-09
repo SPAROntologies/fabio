@@ -7,21 +7,21 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasEmbargoDate">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <vann:example>
         :my-journal-article a fabio:JournalArticle ;
             fabio:hasEmbargoDate '2026-04-28T00:00:00'^^xsd:dateTime .
     </vann:example>
-    <rdfs:label xml:lang="en">has embargo date</rdfs:label>
-    <rdfs:comment xml:lang="en">The date before which a resource should not be published, or before which a press release should not be reported on.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <skos:note xml:lang="en">
 For open-access journal articles, the embargo date is the date before which availability of the open-access version of the article is restricted by the publisher, following subscription-access availability of the published work. 
 The duration of the embargo period can be specified by `fabio:hasEmbargoDuration`.
                                             </skos:note>
+    <rdfs:label xml:lang="en">has embargo date</rdfs:label>
+    <rdfs:comment xml:lang="en">The date before which a resource should not be published, or before which a press release should not be reported on.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
   </rdf:Description>
 </rdf:RDF>

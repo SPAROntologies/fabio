@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Blog> <http://purl.org/vocab/vann/example> "\n        :my-blog a fabio:Blog ;\n            dcterms:title 'The Semantic Web Insights Blog'@en ;\n            frbr:part :my-blog-post, :my-another-blog-post ;\n            fabio:hasURL 'https://blog.example.org/semantic-web'^^xsd:anyURI ;\n            dcterms:description 'A web manifestation used for publishing periodic entries about linked data technologies.'@en .\n    " .
 <http://purl.org/spar/fabio/Blog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/WebManifestation> .
-<http://purl.org/spar/fabio/Blog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Blog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Blog> <http://purl.org/vocab/vann/example> "\n        :my-blog a fabio:Blog ;\n            dcterms:title 'The Semantic Web Insights Blog'@en ;\n            frbr:part :my-blog-post, :my-another-blog-post ;\n            fabio:hasURL 'https://blog.example.org/semantic-web'^^xsd:anyURI ;\n            dcterms:description 'A web manifestation used for publishing periodic entries about linked data technologies.'@en .\n    " .
 <http://purl.org/spar/fabio/Blog> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Blog> <http://www.w3.org/2000/01/rdf-schema#label> "blog"@en .
 <http://purl.org/spar/fabio/Blog> <http://www.w3.org/2000/01/rdf-schema#comment> "A Web publication medium containing blog posts."@en .
+<http://purl.org/spar/fabio/Blog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

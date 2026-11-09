@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#comment> "A computer system in which information may be stored."@en .
-<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/Repository> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#label> "repository"@en .
 <http://purl.org/spar/fabio/Repository> <http://purl.org/vocab/vann/example> "\n        :my-repository a fabio:Repository ;\n            dcterms:title 'Zenodo Open Repository'@en ;\n            dcterms:description 'A facility or system for the deposit, storage, and maintenance of digital or physical items.'@en .\n    " .
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

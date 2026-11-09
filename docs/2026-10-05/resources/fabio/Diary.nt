@@ -1,11 +1,11 @@
-_:n6180652088774126a964ddb1b76a8d19b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Entry> .
+<http://purl.org/spar/fabio/Diary> <http://purl.org/vocab/vann/example> "\n        :my-diary a fabio:Diary ;\n            dcterms:title 'John's personal diary'@en ;\n            dcterms:creator :john-doe ;\n            frbr:part :my-entry ;\n            dcterms:description 'A record of personal experiences, thoughts, and daily events, kept regularly by an individual.'@en .\n    " .
+<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b16 .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Notebook> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#label> "diary"@en .
+<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Diary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#comment> "A personal record, in a form of book, with discrete entries (often handwritten) arranged by date, reporting what has happened over the course of a day or other period of time."@en .
-_:n6180652088774126a964ddb1b76a8d19b16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Entry> .
-<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#label> "diary"@en .
-<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b16 .
-<http://purl.org/spar/fabio/Diary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Diary> <http://purl.org/vocab/vann/example> "\n        :my-diary a fabio:Diary ;\n            dcterms:title 'John's personal diary'@en ;\n            dcterms:creator :john-doe ;\n            frbr:part :my-entry ;\n            dcterms:description 'A record of personal experiences, thoughts, and daily events, kept regularly by an individual.'@en .\n    " .
-_:n6180652088774126a964ddb1b76a8d19b16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-<http://purl.org/spar/fabio/Diary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/PersonalCommunication> <http://purl.org/vocab/vann/example> "\n        :my-personal-communication a fabio:PersonalCommunication ;\n            dcterms:title 'Technical discussion on data architecture'@en ;\n            dcterms:description 'A communication between specific individuals, such as a letter, an email, or a private conversation, not intended for public dissemination.'@en .\n    " .
-<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Information communicated personally by verbal or written means from one individual to one or more another persons or organizations."@en .
 <http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "personal communication"@en .
+<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/PersonalCommunication> <http://purl.org/vocab/vann/example> "\n        :my-personal-communication a fabio:PersonalCommunication ;\n            dcterms:title 'Technical discussion on data architecture'@en ;\n            dcterms:description 'A communication between specific individuals, such as a letter, an email, or a private conversation, not intended for public dissemination.'@en .\n    " .
+<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

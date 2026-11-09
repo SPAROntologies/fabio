@@ -388,37 +388,37 @@ A `fabio:Expression` can only have part or be part of another `fabio:Expression`
     """ ;
         rdfs:comment "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en ;
         rdfs:isDefinedBy fabio: ;
-        rdfs:subClassOf _:n6180652088774126a964ddb1b76a8d19b143,
-            _:n6180652088774126a964ddb1b76a8d19b148,
-            _:n6180652088774126a964ddb1b76a8d19b149,
+        rdfs:subClassOf _:nbd59893e8a4144f9864e0ea78c01ebc3b143,
+            _:nbd59893e8a4144f9864e0ea78c01ebc3b148,
+            _:nbd59893e8a4144f9864e0ea78c01ebc3b149,
             frbr:Expression ;
         vs:term_status reg:statusStable ;
         skos:note """For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.
     
 A `fabio:Expression` can only have part or be part of another `fabio:Expression`. Moreover, it can be a representation only of a `fabio:Work`, and it can be embodied only in instances of `fabio:Manifestation`."""@en .
 
-    _:n6180652088774126a964ddb1b76a8d19b143 a owl:Class ;
-        owl:intersectionOf _:n6180652088774126a964ddb1b76a8d19b146 .
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b143 a owl:Class ;
+        owl:intersectionOf _:nbd59893e8a4144f9864e0ea78c01ebc3b146 .
 
-    _:n6180652088774126a964ddb1b76a8d19b144 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b144 a owl:Restriction ;
         owl:allValuesFrom frbr:Expression ;
         owl:onProperty frbr:part .
 
-    _:n6180652088774126a964ddb1b76a8d19b145 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b145 a owl:Restriction ;
         owl:allValuesFrom frbr:Expression ;
         owl:onProperty frbr:partOf .
 
-    _:n6180652088774126a964ddb1b76a8d19b146 rdf:first _:n6180652088774126a964ddb1b76a8d19b144 ;
-        rdf:rest _:n6180652088774126a964ddb1b76a8d19b147 .
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b146 rdf:first _:nbd59893e8a4144f9864e0ea78c01ebc3b144 ;
+        rdf:rest _:nbd59893e8a4144f9864e0ea78c01ebc3b147 .
 
-    _:n6180652088774126a964ddb1b76a8d19b147 rdf:first _:n6180652088774126a964ddb1b76a8d19b145 ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b147 rdf:first _:nbd59893e8a4144f9864e0ea78c01ebc3b145 ;
         rdf:rest () .
 
-    _:n6180652088774126a964ddb1b76a8d19b148 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b148 a owl:Restriction ;
         owl:allValuesFrom fabio:Manifestation ;
         owl:onProperty frbr:embodiment .
 
-    _:n6180652088774126a964ddb1b76a8d19b149 a owl:Restriction ;
+    _:nbd59893e8a4144f9864e0ea78c01ebc3b149 a owl:Restriction ;
         owl:allValuesFrom fabio:Work ;
         owl:onProperty frbr:realizationOf .
 }
@@ -455,16 +455,16 @@ A `fabio:Expression` can only have part or be part of another `fabio:Expression`
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b143"
-          },
-          {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b148"
-          },
-          {
-            "@id": "_:n6180652088774126a964ddb1b76a8d19b149"
-          },
-          {
             "@id": "http://purl.org/vocab/frbr/core#Expression"
+          },
+          {
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b148"
+          },
+          {
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b149"
+          },
+          {
+            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b143"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -480,57 +480,7 @@ A `fabio:Expression` can only have part or be part of another `fabio:Expression`
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b143",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2002/07/owl#intersectionOf": [
-          {
-            "@list": [
-              {
-                "@id": "_:n6180652088774126a964ddb1b76a8d19b144"
-              },
-              {
-                "@id": "_:n6180652088774126a964ddb1b76a8d19b145"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b144",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#Expression"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#part"
-          }
-        ]
-      },
-      {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b145",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#Expression"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#partOf"
-          }
-        ]
-      },
-      {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b148",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b148",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -546,7 +496,7 @@ A `fabio:Expression` can only have part or be part of another `fabio:Expression`
         ]
       },
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b149",
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b149",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -560,39 +510,89 @@ A `fabio:Expression` can only have part or be part of another `fabio:Expression`
             "@id": "http://purl.org/vocab/frbr/core#realizationOf"
           }
         ]
+      },
+      {
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b143",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#intersectionOf": [
+          {
+            "@list": [
+              {
+                "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b144"
+              },
+              {
+                "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b145"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b144",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#part"
+          }
+        ]
+      },
+      {
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b145",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#partOf"
+          }
+        ]
       }
     ],
     "@id": "http://purl.org/spar/fabio"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_3adfae5d2955ade34f4d7130507888df_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n6180652088774126a964ddb1b76a8d19b144 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b143 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b145 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#partOf> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b143 &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#label> "expression"@en &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b145 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b146 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6180652088774126a964ddb1b76a8d19b147 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b144 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#part> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2004/02/skos/core#note> "For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.\n    \nA `fabio:Expression` can only have part or be part of another `fabio:Expression`. Moreover, it can be a representation only of a `fabio:Work`, and it can be embodied only in instances of `fabio:Manifestation`."@en &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b143 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n6180652088774126a964ddb1b76a8d19b146 &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b148 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b149 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b144 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b145 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b148 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#embodiment> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b148 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6180652088774126a964ddb1b76a8d19b149 &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+]</code></pre></div><div class="tab-pane fade" id=id_3adfae5d2955ade34f4d7130507888df_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nbd59893e8a4144f9864e0ea78c01ebc3b144 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#part> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b143 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b146 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nbd59893e8a4144f9864e0ea78c01ebc3b144 &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b149 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/fabio/Work> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b147 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b149 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b147 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b145 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#partOf> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b143 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b146 &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b148 &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b149 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b148 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#embodiment> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b149 &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2004/02/skos/core#note> "For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.\n    \nA `fabio:Expression` can only have part or be part of another `fabio:Expression`. Moreover, it can be a representation only of a `fabio:Work`, and it can be embodied only in instances of `fabio:Manifestation`."@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b149 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/fabio/Work> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#label> "expression"@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b145 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b144 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b148 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b148 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/fabio/Manifestation> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b146 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b147 &lt;http://purl.org/spar/fabio> .
 &lt;http://purl.org/spar/fabio/Expression> &lt;http://purl.org/vocab/vann/example> "\n        :my-expression a fabio:Expression ;\n            dcterms:title 'Towards a new Semantic Web'@en ;\n            frbr:realizationOf :my-work ;\n            frbr:embodiment :my-digital-manifestation ;\n            dcterms:description 'The intellectual content of a work.'@en .\n    " &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b148 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/fabio/Manifestation> &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b146 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b144 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b147 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6180652088774126a964ddb1b76a8d19b145 &lt;http://purl.org/spar/fabio> .
-_:n6180652088774126a964ddb1b76a8d19b149 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b143 &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fabio> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b145 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b147 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nbd59893e8a4144f9864e0ea78c01ebc3b145 &lt;http://purl.org/spar/fabio> .
+_:nbd59893e8a4144f9864e0ea78c01ebc3b144 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fabio> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../fabio.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

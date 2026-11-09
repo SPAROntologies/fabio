@@ -33,10 +33,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n6180652088774126a964ddb1b76a8d19b98"
+        "@id": "http://purl.org/spar/fabio/SpecificationDocument"
       },
       {
-        "@id": "http://purl.org/spar/fabio/SpecificationDocument"
+        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b98"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "@id": "_:n6180652088774126a964ddb1b76a8d19b98",
+    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b98",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
