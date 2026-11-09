@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ArchivalRecord a owl:Class ;
+    rdfs:label "archival record"@en ;
+    vann:example """
+        :my-archival-record a fabio:ArchivalRecord ;
+            dcterms:title 'Correspondence of Alan Turing regarding Enigma decryption'@en ;
+            dcterms:creator :alan-turing ;
+            frbr:realization :my-archival-document ;
+            dcterms:description 'The conceptual archival entity representing the correspondence created by Alan Turing during his research.'@en .
+    """ ;
+    rdfs:comment "A material created or received by a person, family, or organization, public or private, in the conduct of their affairs that is preserved because of the enduring value contained in the information it contains or as evidence of the function and the responsibilities of its creator."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom fabio:ArchivalDocument ;
+            owl:onProperty frbr:realization ],
+        fabio:Work ;
+    vs:term_status reg:statusStable .
+

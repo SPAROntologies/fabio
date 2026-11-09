@@ -1,0 +1,65 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/Magazine",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-magazine a fabio:Magazine ;\n            dcterms:title 'National Geographic Magazine'@en ;\n            frbr:part :my-magazine-issue ;\n            dcterms:description 'A periodical publication containing articles and illustrations, typically of popular interest and current events.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A periodical, usually devoted to a particular topic or domain of interest, and usually published weekly or monthly, consisting primarily of non-peer reviewed editorials, journalistic news items and more substantive articles, reviews, book reviews and discussions concerning current or recent events and publications, and matters of interest to the domain served by the magazine."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "magazine"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Periodical"
+      },
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb71"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "Some scientific journals, notably Science and Nature, also secondarily serve as science magazines by containing substantive editorials and news items on vital or controversial issues."
+      }
+    ]
+  },
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb71",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/MagazineIssue"
+      }
+    ]
+  }
+]

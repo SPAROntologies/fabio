@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:BibliographicMetadata a owl:Class ;
+    rdfs:label "bibliographic metadata"@en ;
+    vann:example """
+        :my-bibliographic-metadata a fabio:BibliographicMetadata ;
+            dcterms:title 'Bibliographic record for 'The Semantic Web''@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'Standard descriptive metadata including author, title, and publication date.'@en .
+    """ ;
+    rdfs:comment "Standard bibliographic metadata describing an expression of a work."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Metadata ;
+    vs:term_status reg:statusStable ;
+    skos:note "To take the example of a journal article, bibliographic metadata typically include the authors' names, the date of publication, the title of the article, the journal name and volume number, the first and last page numbers, and the Digital Object Identifier (DOI)."@en .
+

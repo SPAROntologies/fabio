@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Policy> <http://purl.org/vocab/vann/example> "\n        :my-policy a fabio:Policy ;\n            dcterms:title 'University Open Access Policy'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-policy-document ;\n            dcterms:description 'A formal statement of intent or set of rules adopted by an organization to guide decisions and achieve rational outcomes.'@en .\n    " .
 <http://purl.org/spar/fabio/Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "A description and definition of how something should be done. Ideally, a policy should be both effective in achieving its goals and acceptable to those who have to abide by it."@en .
-<http://purl.org/spar/fabio/Policy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/Policy> <http://purl.org/vocab/vann/example> "\n        :my-policy a fabio:Policy ;\n            dcterms:title 'University Open Access Policy'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-policy-document ;\n            dcterms:description 'A formal statement of intent or set of rules adopted by an organization to guide decisions and achieve rational outcomes.'@en .\n    " .
+<http://purl.org/spar/fabio/Policy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/Policy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "policy"@en .
+<http://purl.org/spar/fabio/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

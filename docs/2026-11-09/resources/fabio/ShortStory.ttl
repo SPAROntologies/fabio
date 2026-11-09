@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ShortStory a owl:Class ;
+    rdfs:label "short story"@en ;
+    vann:example """
+        :my-short-story a fabio:ShortStory ;
+            dcterms:title 'Exhalation'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A brief work of fiction, usually written in prose.'@en .
+    """ ;
+    rdfs:comment "A work of fiction that is usually written in prose, often in narrative format. This format tends to be more focused and less elaborate than longer works of fiction such as novels."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:LiteraryArtisticWork ;
+    vs:term_status reg:statusStable .
+

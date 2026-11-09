@@ -1,0 +1,20 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasIssnL a owl:DatatypeProperty ;
+    rdfs:label "has ISSN-L"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            fabio:hasIssnL '1234-5678' .
+    """ ;
+    rdfs:comment "A linking International Standard Serial Number."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso <http://www.issn.org/> ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    vs:term_status reg:statusStable .
+

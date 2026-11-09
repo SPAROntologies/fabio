@@ -1,0 +1,26 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DisciplineDictionary a owl:Class ;
+    rdfs:label "discipline dictionary"@en ;
+    vann:example """
+        :my-discipline-dictionary a fabio:DisciplineDictionary ;
+            dcterms:title 'Dictionary of Clinical Medicine'@en ;
+            dcterms:creator :medical-society ;
+            fabio:isSchemeOf <http://purl.bioontology.org/ontology/MESH/D008511> ;
+            dcterms:description 'A dictionary containing the specialized vocabulary and terminology used in the field of medicine.'@en .
+    """ ;
+    rdfs:comment "A discipline dictionary is a collection of subject disciplines."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom fabio:SubjectDiscipline ;
+            owl:onProperty fabio:isSchemeOf ],
+        skos:ConceptScheme ;
+    owl:disjointWith fabio:TermDictionary ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PatentApplication a owl:Class ;
+    rdfs:label "patent application"@en ;
+    vann:example """
+        :my-patent-application a fabio:PatentApplication ;
+            dcterms:title 'Application for patenting an AI-based ice cream generator'@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-patent-application-document ;
+            dcterms:description 'A formal request for the grant of a patent for an invention.'@en .
+    """ ;
+    rdfs:comment "A formal disclosure of a new invention, made in application for a patent."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

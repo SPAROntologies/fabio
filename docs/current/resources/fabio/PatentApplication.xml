@@ -6,7 +6,8 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/PatentApplication">
-    <rdfs:comment xml:lang="en">A formal disclosure of a new invention, made in application for a patent.</rdfs:comment>
+    <rdfs:label xml:lang="en">patent application</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
     <vann:example>
         :my-patent-application a fabio:PatentApplication ;
             dcterms:title 'Application for patenting an AI-based ice cream generator'@en ;
@@ -14,10 +15,9 @@
             frbr:realization :my-patent-application-document ;
             dcterms:description 'A formal request for the grant of a patent for an invention.'@en .
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">patent application</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A formal disclosure of a new invention, made in application for a patent.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

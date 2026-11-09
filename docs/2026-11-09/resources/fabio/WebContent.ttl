@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WebContent a owl:Class ;
+    rdfs:label "web content"@en ;
+    vann:example """
+        :my-web-content a fabio:WebContent ;
+            dcterms:title 'Content of SPUK's home page'@en ;
+            frbr:embodiment :my-web-manifestation ;
+            dcterms:description 'A document or other resource that is delivered to a user over the World Wide Web.'@en .
+    """ ;
+    rdfs:comment "Information prepared specifically and primarily for manifestation in a web page, comprising text, images, datasets and/or other works."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:embodiment ;
+            owl:someValuesFrom fabio:WebManifestation ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

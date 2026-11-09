@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:isRepresentationOf a owl:ObjectProperty ;
+    rdfs:label "is representation of"@en ;
+    vann:example """
+        :my-item a fabio:Item ;
+            fabio:isRepresentationOf :my-expression .
+    """ ;
+    rdfs:comment "The expression of an item."@en ;
+    rdfs:domain frbr:Item ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:propertyChainAxiom ( frbr:exemplarOf frbr:embodimentOf ) ;
+    vs:term_status reg:statusStable ;
+    skos:note "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
+

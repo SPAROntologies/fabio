@@ -1,11 +1,11 @@
-_:nbd59893e8a4144f9864e0ea78c01ebc3b45 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Entry> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb45 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb45 .
 <http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/ReferenceEntry> <http://purl.org/vocab/vann/example> "\n        :my-reference-entry a fabio:ReferenceEntry ;\n            dcterms:title 'Definition of 'Ontology''@en ;\n            frbr:realizationOf :my-reference-work ;\n            dcterms:description 'A discrete item of information in a reference book, such as a dictionary entry or an encyclopedia article.'@en .\n    " .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
-<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular reference entry containing authoritative factual information on a certain topic, usually contained in a larger expression."@en .
-<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b45 .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#label> "reference entry"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
 <http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ReferenceEntry> <http://purl.org/vocab/vann/example> "\n        :my-reference-entry a fabio:ReferenceEntry ;\n            dcterms:title 'Definition of 'Ontology''@en ;\n            frbr:realizationOf :my-reference-work ;\n            dcterms:description 'A discrete item of information in a reference book, such as a dictionary entry or an encyclopedia article.'@en .\n    " .
+<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#label> "reference entry"@en .
+<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular reference entry containing authoritative factual information on a certain topic, usually contained in a larger expression."@en .
+<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ReferenceEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Entry> .

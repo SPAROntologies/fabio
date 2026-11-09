@@ -1,8 +1,8 @@
-<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://purl.org/dc/terms/modified> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#label> "has modification date"@en .
 <http://purl.org/dc/terms/modified> <http://purl.org/vocab/vann/example> "\n        :my-dataset a fabio:Dataset ;\n            dcterms:modified '2026-04-28T20:00:00'^^xsd:dateTime .\n    " .
 <http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#label> "has modification date"@en .
 <http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource has been modified."@en .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

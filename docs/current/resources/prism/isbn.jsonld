@@ -29,11 +29,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has ISBN"
+        "@value": "has International Standard Book Number"
       },
       {
         "@language": "en",
-        "@value": "has International Standard Book Number"
+        "@value": "has ISBN"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [

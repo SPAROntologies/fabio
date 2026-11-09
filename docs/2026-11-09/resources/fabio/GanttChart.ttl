@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:GanttChart a owl:Class ;
+    rdfs:label "Gantt chart"@en ;
+    vann:example """
+        :my-gantt-chart a fabio:GanttChart ;
+            dcterms:title 'Gantt Chart for Research Project 2026'@en ;
+            dcterms:description 'A chart in which a series of horizontal lines shows the amount of work done or production completed in certain periods of time in relation to the amount planned for those periods.'@en .
+    """ ;
+    rdfs:comment "A horizontal bar chart used to guide project planning, execution and control, illustrating the project schedule, with a separate line indicating the start and end dates of each of the key project activities or workpackages, and optionally showing the dependencies between these items. A Gantt chart is typically part of a project plan."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

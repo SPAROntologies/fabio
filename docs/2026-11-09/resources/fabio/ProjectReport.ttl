@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ProjectReport a owl:Class ;
+    rdfs:label "deliverable report"@en ;
+    vann:example """
+        :my-project-report a fabio:ProjectReport ;
+            dcterms:title 'Report on first semester 2026'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A report on the progress, results or status of a project.'@en .
+    """ ;
+    rdfs:comment "A report describing the outcomes of specific project, typically listing 'deliverables' created or 'milestones' achieved during the project."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Report ;
+    vs:term_status reg:statusStable .
+

@@ -16,6 +16,70 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+dc:contributor a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+bibo:doi a owl:AnnotationProperty .
+
+vann:example a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vaem:rationale a owl:AnnotationProperty .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+rdfs:seeAlso a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
+skos:editorialNote a owl:AnnotationProperty .
+
+skos:note a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+dc:language a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+vann:changes a owl:AnnotationProperty .
+
+schema:image a owl:AnnotationProperty .
+
+schema:keywords a owl:AnnotationProperty .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+owl:backwardCompatibleWith a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
 prism:alternateTitle a owl:DatatypeProperty ;
     rdfs:label "has alternate title"@en ;
     vann:example """
@@ -234,18 +298,6 @@ prism:wordCount a owl:DatatypeProperty,
     rdfs:subPropertyOf owl:topDataProperty ;
     vs:term_status reg:statusStable .
 
-dc:contributor a owl:AnnotationProperty .
-
-dc:creator a owl:AnnotationProperty .
-
-dc:date a owl:AnnotationProperty .
-
-dc:description a owl:AnnotationProperty .
-
-dc:rights a owl:AnnotationProperty .
-
-dc:title a owl:AnnotationProperty .
-
 dcterms:abstract a owl:DatatypeProperty ;
     rdfs:label "has abstract"@en ;
     vann:example """
@@ -255,8 +307,6 @@ dcterms:abstract a owl:DatatypeProperty ;
     rdfs:comment "The summary of a resource."@en ;
     rdfs:isDefinedBy dcterms: ;
     vs:term_status reg:statusStable .
-
-dcterms:bibliographicCitation a owl:AnnotationProperty .
 
 dcterms:created a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -327,8 +377,6 @@ dcterms:dateSubmitted a owl:DatatypeProperty ;
     rdfs:subPropertyOf dcterms:date ;
     vs:term_status reg:statusStable ;
     skos:note "Examples of resources to which a date submitted may be relevant are a thesis (submitted to a university department), a grant application (submitted to a funding agency) or an article (submitted to a journal)."@en .
-
-dcterms:description a owl:AnnotationProperty .
 
 dcterms:format a owl:ObjectProperty ;
     rdfs:label "has format"@en ;
@@ -413,8 +461,6 @@ dcterms:rights a owl:ObjectProperty ;
     vs:term_status reg:statusStable ;
     skos:note "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en .
 
-dcterms:source a owl:AnnotationProperty .
-
 dcterms:valid a owl:DatatypeProperty ;
     rdfs:label "has validity date"@en ;
     vann:example """
@@ -427,8 +473,6 @@ dcterms:valid a owl:DatatypeProperty ;
     rdfs:subPropertyOf dcterms:date ;
     vs:term_status reg:statusStable .
 
-bibo:doi a owl:AnnotationProperty .
-
 <http://purl.org/spar/fabio> a owl:Ontology ;
     rdfs:label "FRBR-aligned Bibliographic Ontology (FaBiO)"@en ;
     dc:contributor "Paolo Ciccarese (https://orcid.org/0000-0002-5156-2703)",
@@ -436,7 +480,7 @@ bibo:doi a owl:AnnotationProperty .
         "Tim Clark" ;
     dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)",
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)" ;
-    dc:date "2026-05-18" ;
+    dc:date "2026-11-09" ;
     dc:title "The FRBR-aligned Bibliographic Ontology (FaBiO)" ;
     dcterms:bibliographicCitation "Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: https://doi.org/10.2139/ssrn.3198992"@en ;
     dcterms:created "2017-05-29" ;
@@ -784,7 +828,7 @@ What are the preferred labels of all subject terms assigned to the article with 
 """ ;
     dcterms:issued "2017-05-29" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-    dcterms:modified "2026-10-05" ;
+    dcterms:modified "2026-11-09" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/fabio/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.2f3180" ;
@@ -792,11 +836,11 @@ What are the preferred labels of all subject terms assigned to the article with 
     vann:preferredNamespacePrefix "fabio" ;
     vann:preferredNamespaceUri "http://purl.org/spar/fabio/"^^xsd:anyURI ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/fabio> ;
-    owl:backwardCompatibleWith fabio:2026-09-03 ;
+    owl:backwardCompatibleWith fabio:2026-10-05 ;
     owl:imports <http://purl.org/spar/frbr> ;
-    owl:priorVersion fabio:2026-09-03 ;
-    owl:versionIRI fabio:2026-10-05 ;
-    owl:versionInfo "2.3.2" ;
+    owl:priorVersion fabio:2026-10-05 ;
+    owl:versionIRI fabio:2026-11-09 ;
+    owl:versionInfo "2.3.3" ;
     vann:changes <https://github.com/SPAROntologies/fabio/blob/master/CHANGELOG.md> ;
     foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/fabio> ;
@@ -805,11 +849,12 @@ What are the preferred labels of all subject terms assigned to the article with 
     dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:keywords 
         "SPAR Ontologies"@en ,
-        "Semantic Publishing and Referencing Ontologies"@en ,
-        "bibliography"@en,
-        "bibliometrics"@en,
-        "scholarly publishing"@en,
-        "scientometrics"@en,
+        "OWL ontology"@en ,
+        "bibliography"@en ,
+        "bibliometrics"@en ,
+        "scholarly communication"@en ,
+        "scientometrics"@en ,
+        "FRBR"@en ,
         "semantic publishing"@en .
 
 fabio:Addendum a owl:Class ;
@@ -3470,34 +3515,6 @@ fabio:web a fabio:DigitalStorageMedium,
     rdfs:comment "A system of interlinked hypertext documents written in HTML and accessed using the HTTP protocol via the Internet."@en ;
     rdfs:isDefinedBy fabio: ;
     vs:term_status reg:statusStable .
-
-vann:example a owl:AnnotationProperty .
-
-vann:preferredNamespacePrefix a owl:AnnotationProperty .
-
-vann:preferredNamespaceUri a owl:AnnotationProperty .
-
-vaem:rationale a owl:AnnotationProperty .
-
-rdfs:comment a owl:AnnotationProperty .
-
-rdfs:label a owl:AnnotationProperty .
-
-rdfs:seeAlso a owl:AnnotationProperty .
-
-owl:versionInfo a owl:AnnotationProperty .
-
-vs:term_status a owl:AnnotationProperty .
-
-skos:editorialNote a owl:AnnotationProperty .
-
-skos:note a owl:AnnotationProperty .
-
-foaf:logo a owl:AnnotationProperty .
-
-schema:codeRepository a owl:AnnotationProperty .
-
-schema:includedInDataCatalog a owl:AnnotationProperty .
 
 fabio:Abstract a owl:Class ;
     rdfs:label "abstract"@en ;

@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:CallForApplications a owl:Class ;
+    rdfs:label "call for applications" ;
+    vann:example """
+        :my-call-for-applications a fabio:CallForApplications ;
+            dcterms:title 'ERC Starting Grants 2026 Call'@en ;
+            fabio:hasDeadline '2025-10-15T17:00:00Z'^^xsd:dateTime ;
+            frbr:realizationOf :my-proposition ;
+            dcterms:description 'Formal request for research proposals from early-career scientists to provide long-term funding.'@en .
+    """ ;
+    rdfs:comment "A document published by a funding agency requesting submission of applications for financial grants to fund projects, for example to enable research investigations in areas specified in the call."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:Proposition ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

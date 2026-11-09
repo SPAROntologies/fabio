@@ -1,0 +1,59 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/JournalArticle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'OPJK and DILIGENT: ontology modeling in a distributed environment' ;\n            prism:doi '10.1007/s10506-007-9036-2' ;\n            frbr:embodiment :my-analog-manifestation , :my-digital-manifestation ;\n            frbr:partOf :my-journal-issue .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "journal article"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb24"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/Article"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb24",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/JournalIssue"
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Abstract a owl:Class ;
+    rdfs:label "abstract"@en ;
+    vann:example """
+        :my-abstract a fabio:Abstract ;
+            c4o:hasContent 'In the legal domain, ontologies enjoy quite some reputation as a way to model normative knowledge about laws and jurisprudence.'@en .
+    """ ;
+    rdfs:comment "A brief summary of a work on a particular subject, designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents. The abstract may be an integral part of the work itself, written by the same author(s) and appearing at the beginning of a work such as a research paper, report, review or thesis. Alternatively it may be separate from the published work itself, and written by someone other than the author(s) of the published work, for example by a member of a professional abstracting service such as CAB Abstracts."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:StructuredSummary ;
+    rdfs:subClassOf fabio:Expression ;
+    owl:disjointWith fabio:StructuredSummary ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,36 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/floppy-disk",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/fabio/DigitalStorageMedium"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-fabio-item a fabio:Item ;\n            fabio:isStoredOn fabio:floppy-disk .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A rewritable data storage medium that is composed of a disk of thin, flexible (floppy) magnetic storage medium encased in a square or rectangular plastic shell. Data are encoded magnetically by a read/write head that float on a cushion of air in close proximity to the surface of the rotated disk."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "floppy disk"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

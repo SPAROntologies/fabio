@@ -1,0 +1,18 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+dcterms:license a owl:ObjectProperty ;
+    rdfs:label "has license"@en ;
+    vann:example """
+        :my-dataset a fabio:Dataset ;
+            dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+    """ ;
+    rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    vs:term_status reg:statusStable .
+

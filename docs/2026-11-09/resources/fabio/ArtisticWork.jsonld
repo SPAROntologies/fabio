@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/ArtisticWork",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-artistic-work a fabio:ArtisticWork ;\n            dcterms:title 'The Starry Night'@en ;\n            dcterms:creator :vincent-van-gogh ;\n            dcterms:description 'The conceptual artistic creation representing Van Gogh's vision of the night sky from Saint-Rémy-de-Provence.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A work regarded as art in its widest sense, including works from literature and music, visual art, etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "artistic work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Work"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

@@ -7,8 +7,14 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
-    <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:note xml:lang="en">
+Examples of a publisher include a person, an organization, or a service. 
+Typically, the name of a publisher should be used to indicate the entity.
+</skos:note>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     <vann:example>
         :my-paperback a fabio:Paperback ;
             dcterms:publisher :springer .
@@ -16,13 +22,7 @@
         :springer a foaf:Organization ;
             foaf:name 'Springer' .
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <skos:note xml:lang="en">
-Examples of a publisher include a person, an organization, or a service. 
-Typically, the name of a publisher should be used to indicate the entity.
-</skos:note>
+    <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
     <rdfs:label xml:lang="en">has publisher</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

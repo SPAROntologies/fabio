@@ -1,0 +1,17 @@
+_:na015ac9d06cd4cb1a3cee73cd225cdebb52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb53 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/spar/fabio/isSchemeOf> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/TermDictionary> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#comment> "The discipline to which a subject vocabulary belongs."@en .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#label> "has discipline"@en .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#domain> _:na015ac9d06cd4cb1a3cee73cd225cdebb51 .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fabio/SubjectDiscipline> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb51 <http://www.w3.org/2002/07/owl#unionOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb52 .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasDiscipline> <http://purl.org/vocab/vann/example> "\n        :my-term-dictionary a fabio:TermDictionary ;\n            fabio:hasDiscipline\n                dbpedia:Computer_science ,\n                dbpedia:Law .\n    " .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fabio/hasDiscipline> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/fabio/isDisciplineOf> .

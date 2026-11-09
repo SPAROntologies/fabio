@@ -1,0 +1,19 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+prism:edition a owl:DatatypeProperty ;
+    rdfs:label "has edition"@en ;
+    vann:example """
+        :my-book-2026 a fabio:Book ;
+            prism:edition '3rd Revised Edition' .
+    """ ;
+    rdfs:comment "An identifier for one of several alternative issues of a magazine, a book or other resource."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy prism: ;
+    vs:term_status reg:statusStable .
+

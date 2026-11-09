@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/BlogPost">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebContent"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Entry"/>
+    <rdfs:comment xml:lang="en">Information manifested in a blog, one of a set of periodic sequential entries containing commentary, descriptions of events, or other material such as images or videos, usually displayed in reverse-chronological order and usually maintained by an individual, or comments on such a post.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-blog-post a fabio:BlogPost ;
             dcterms:title 'The Future of Linked Open Data in 2026'@en ;
             dcterms:description 'An individual entry published on a blog discussing the evolution of LOD standards.'@en .
     </vann:example>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Entry"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebContent"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:label xml:lang="en">blog post</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:comment xml:lang="en">Information manifested in a blog, one of a set of periodic sequential entries containing commentary, descriptions of events, or other material such as images or videos, usually displayed in reverse-chronological order and usually maintained by an individual, or comments on such a post.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

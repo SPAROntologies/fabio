@@ -1,0 +1,59 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/NewspaperIssue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-newspaper-issue a fabio:NewspaperIssue ;\n            dcterms:title 'The New York Times - Edition of April 28, 2026'@en ;\n            frbr:partOf :my-newspaper ;\n            dcterms:description 'A particular issue of a newspaper.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A particular published issue of a newspaper, identified by date, and sometimes also by place or time (e.g. 'Late London Edition')."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "newspaper issue"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/PeriodicalIssue"
+      },
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb110"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb110",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/Newspaper"
+      }
+    ]
+  }
+]

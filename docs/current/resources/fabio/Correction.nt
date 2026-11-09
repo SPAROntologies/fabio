@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Correction> <http://purl.org/vocab/vann/example> "\n        :my-correction a fabio:Correction ;\n            dcterms:title 'Correction to: Analysis of Climate Data Trends (2024)'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A formal statement identifying and correcting errors in a previously published document.'@en .\n    " .
-<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2000/01/rdf-schema#label> "correction"@en .
-<http://purl.org/spar/fabio/Correction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
 <http://purl.org/spar/fabio/Correction> <http://www.w3.org/2000/01/rdf-schema#comment> "A correction to an error in a previously published document."@en .
+<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2000/01/rdf-schema#label> "correction"@en .
+<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Correction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Correction> <http://purl.org/vocab/vann/example> "\n        :my-correction a fabio:Correction ;\n            dcterms:title 'Correction to: Analysis of Climate Data Trends (2024)'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A formal statement identifying and correcting errors in a previously published document.'@en .\n    " .
+<http://purl.org/spar/fabio/Correction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

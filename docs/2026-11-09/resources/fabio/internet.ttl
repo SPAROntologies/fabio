@@ -1,0 +1,18 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:internet a fabio:DigitalStorageMedium,
+        owl:NamedIndividual ;
+    rdfs:label "internet"@en ;
+    vann:example """
+        :my-item a fabio:Item ;
+            fabio:isStoredOn fabio:internet .
+    """ ;
+    rdfs:comment "A global system of interconnected computer networks that uses the standard Internet Protocol Suite (TCP/IP) to serve billions of users worldwide. The internet connects millions of private, public, academic, business and governmental computers, that are individually attached to local networks linked together by a broad array of electronic, radio and optical networking technologies to form the internet."@en ;
+    rdfs:isDefinedBy fabio: ;
+    vs:term_status reg:statusStable .
+

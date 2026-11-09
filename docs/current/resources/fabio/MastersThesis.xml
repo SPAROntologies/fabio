@@ -6,11 +6,8 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b155">
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b156"/>
-    <rdf:first rdf:resource="http://purl.org/spar/fabio/BachelorsThesis"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/MastersThesis">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Thesis"/>
     <rdfs:label xml:lang="en">master's thesis</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
@@ -20,18 +17,21 @@
     </vann:example>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Thesis"/>
     <rdfs:comment xml:lang="en">A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b156">
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b157"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb154">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb155"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb155">
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb156"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/BachelorsThesis"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb156">
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb157"/>
     <rdf:first rdf:resource="http://purl.org/spar/fabio/DoctoralThesis"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b154">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b155"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b157">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb157">
     <rdf:first rdf:resource="http://purl.org/spar/fabio/MastersThesis"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>

@@ -7,16 +7,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <skos:note xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</skos:note>
-    <rdfs:label xml:lang="en">has rights</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:note xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</skos:note>
     <vann:example>
         :my-dataset a fabio:Dataset ;
             dcterms:rights &lt;https://creativecommons.org/publicdomain/zero/1.0/&gt; .
     </vann:example>
-    <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">has rights</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

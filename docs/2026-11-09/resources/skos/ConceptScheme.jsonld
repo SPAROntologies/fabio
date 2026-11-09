@@ -1,0 +1,47 @@
+[
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-concept-scheme a skos:ConceptScheme ;\n            dcterms:title 'Semantic Web Technologies'@en ;\n            dcterms:creator :john-doe ;\n            skos:hasTopConcept :semantic-web ;\n            dcterms:description 'An organized set of concepts.'@en .\n    "
+      }
+    ],
+    "http://www.linkedmodel.org/schema/vaem#rationale": [
+      {
+        "@language": "en",
+        "@value": "The notion of a concept scheme is useful when dealing with data from an unknown source, and when dealing with data that describes two or more different knowledge organization systems."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "concept scheme"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme. This definition is, however, meant to be suggestive rather than restrictive, and there is some flexibility in the formal data model."
+      }
+    ]
+  }
+]

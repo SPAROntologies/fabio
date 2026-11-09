@@ -31,7 +31,7 @@
         "@id": "http://purl.org/spar/fabio/NewsItem"
       },
       {
-        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b32"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb32"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b32",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb32",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

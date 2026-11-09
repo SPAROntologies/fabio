@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:CaseForSupportDocument a owl:Class ;
+    rdfs:label "case for support document"@en ;
+    vann:example """
+        :my-case-for-support-document a fabio:CaseForSupportDocument ;
+            dcterms:title 'Case for Support: Neural Network Optimization Project'@en ;
+            frbr:realizationOf :my-case-for-support ;
+            frbr:embodiment :my-digital-manifestation ;
+            dcterms:language <http://lexvo.org/id/iso639-3/eng> .
+    """ ;
+    rdfs:comment "A document containing the case for support for a particular project, usually contained within a grant application document but sometimes distributed separately, without the financial and organizational information that the grant application document also contains."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:CaseForSupport ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

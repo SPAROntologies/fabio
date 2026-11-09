@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ClinicalTrialDesign a owl:Class ;
+    rdfs:label "clinical trial design"@en ;
+    vann:example """
+        :my-clinical-trial-design a fabio:ClinicalTrialDesign ;
+            dcterms:title 'Double-blind, Randomized, Placebo-controlled Phase III Study Design'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'The conceptual framework and methodological plan for conducting a specific clinical trial.'@en .
+    """ ;
+    rdfs:comment "A predefined written procedural method, designed to ensure reliability of findings, for undertaking a medical or veterinary clinical study of the safety, efficacy, or optimum dosage schedule of one or more diagnostic, therapeutic or prophylactic drugs or treatments, or of devices or techniques, involving a randomized controlled trial for evidence-based assessment in humans or animals, specifying criteria of eligibility, nature of controls, sampling schedules, data collection parameters, statistical analyses, reporting standards, etc. to be employed in undertaking the clinical trial." ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable .
+

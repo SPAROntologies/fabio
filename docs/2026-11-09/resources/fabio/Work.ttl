@@ -1,0 +1,35 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Work a owl:Class ;
+    rdfs:label "work"@en ;
+    vann:example """
+        :my-work a fabio:Work ;
+            dcterms:title 'Towards a new Semantic Web'@en ;
+            frbr:realization :my-expression ;
+            dcterms:description 'A conceptual endeavor as imagined by its creator.'@en .
+    """ ;
+    rdfs:comment "A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Work ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Work ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fabio:Expression ;
+            owl:onProperty frbr:realization ],
+        frbr:Work ;
+    vs:term_status reg:statusStable ;
+    skos:note """FaBiO works, and their expressions and manifestations, are primarily textual publications such as books, magazines, newspapers and journals, and items of their content. However, they also include datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also bibliographies, reference lists, library catalogues and similar collections. For this reason, `fabio:Work` is not an equivalent class to `frbr:ScholarlyWork`. An example of a `fabio:Work` is your latest research paper. 
+    
+A `fabio:Work` can only have part or be part of another `fabio:Work`. Moreover, it can be realized only by instances of `fabio:Expression`."""@en .
+

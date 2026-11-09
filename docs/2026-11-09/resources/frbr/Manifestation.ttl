@@ -1,0 +1,13 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+frbr:Manifestation a owl:Class ;
+    rdfs:label "manifestation"@en ;
+    rdfs:comment """
+The physical embodiment of an expression of a work.
+
+The entity defined as manifestation encompasses a wide range of materials and formats. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form.
+        """@en ;
+    rdfs:isDefinedBy frbr: .
+

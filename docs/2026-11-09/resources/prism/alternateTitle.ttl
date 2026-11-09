@@ -1,0 +1,20 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+prism:alternateTitle a owl:DatatypeProperty ;
+    rdfs:label "has alternate title"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            dcterms:title 'Advanced Semantic Mapping in 2026'@en ;
+            prism:alternateTitle 'ASM 2026 Project Report'@en .
+    """ ;
+    rdfs:comment "An alternative title for a resource."@en ;
+    rdfs:isDefinedBy prism: ;
+    rdfs:subPropertyOf dcterms:title ;
+    vs:term_status reg:statusStable .
+

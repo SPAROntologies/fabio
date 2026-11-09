@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Entry a owl:Class ;
+    rdfs:label "entry"@en ;
+    vann:example """
+        :my-entry a fabio:Entry ;
+            dcterms:title 'Entry for 'Semantic Web''@en ;
+            dcterms:description 'A self-contained section of a reference work, such as a dictionary, encyclopedia, or index.'@en .
+    """ ;
+    rdfs:comment "An item written or printed in a diary, list, account book, reference book, or database."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

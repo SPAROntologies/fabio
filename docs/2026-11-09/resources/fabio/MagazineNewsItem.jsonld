@@ -1,0 +1,59 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/MagazineNewsItem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-magazine-news-item a fabio:MagazineNewsItem ;\n            dcterms:title 'New AI Regulations Announced in Brussels'@en ;\n            frbr:partOf :my-magazine-issue ;\n            dcterms:description 'A short news report published in a magazine, typically concerning current events or social announcements.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A news report published in a magazine issue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "magazine news item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/NewsItem"
+      },
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb72"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb72",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/MagazineIssue"
+      }
+    ]
+  }
+]

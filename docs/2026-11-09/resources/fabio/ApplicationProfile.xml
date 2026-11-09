@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/ApplicationProfile">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vann:example>
+        :my-application-profile a fabio:ApplicationProfile ;
+            dcterms:title 'The Cultural Heritage Acquisition and Digitisation Application Profile (CHAD-AP)' ;
+            dcterms:description 'CHAD-AP is a CIDOC CRM application profile implemented as an OWL ontology for describing the acquisition and digitisation processes of cultural heritage objects.'@en .    
+    </vann:example>
+    <rdfs:label xml:lang="en">application profile</rdfs:label>
+    <skos:note xml:lang="en">The metadata elements used in the application profile may be drawn from more than one element sets, including locally defined sets.</skos:note>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Metadata"/>
+    <rdfs:comment xml:lang="en">A set of metadata elements, policies and guidelines defined for a particular application.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

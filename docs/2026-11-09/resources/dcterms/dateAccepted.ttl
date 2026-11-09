@@ -1,0 +1,22 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:dateAccepted a owl:DatatypeProperty ;
+    rdfs:label "has acceptance date"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            dcterms:dateAccepted '2026-04-28'^^xsd:date .
+    """ ;
+    rdfs:comment "The date of acceptance of a resource."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf dcterms:date ;
+    vs:term_status reg:statusStable ;
+    skos:note "Examples of entities to which a date accepted may be relevant are a thesis (accepted by a university examination board) or an article (accepted by a journal editor)."@en .
+

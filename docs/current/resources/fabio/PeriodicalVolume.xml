@@ -6,7 +6,19 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb97">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Periodical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalVolume">
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb97"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A particular published volume of a periodical.</rdfs:comment>
+    <rdfs:label xml:lang="en">periodical volume</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-periodical-volume a fabio:PeriodicalVolume ;
             dcterms:title 'Nature Volume 600'@en ;
@@ -14,17 +26,5 @@
             frbr:partOf :my-periodical ;
             dcterms:description 'A single volume of a periodical publication, usually collecting several issues.'@en .
     </vann:example>
-    <rdfs:label xml:lang="en">periodical volume</rdfs:label>
-    <rdfs:comment xml:lang="en">A particular published volume of a periodical.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b97"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b97">
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Periodical"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

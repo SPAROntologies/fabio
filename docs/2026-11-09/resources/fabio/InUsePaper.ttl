@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:InUsePaper a owl:Class ;
+    rdfs:label "in-use paper"@en ;
+    vann:example """
+        :my-in-use-paper a fabio:InUsePaper ;
+            dcterms:title 'Implementing Semantic Web Technologies in Healthcare Systems'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A paper describing the practical application or implementation of a particular technology, tool, or method in a real-world setting.'@en .
+    """ ;
+    rdfs:comment "A scholarly work that describes applied and validated solutions such as software tools, systems or architectures that benefit from the use of the technology of a particular scholarly domain. Usually, papers of this kind should also provide convincing evidence that there is use of the proposed application or tool by the target user group, preferably outside the institution that conducted its development."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ScholarlyWork ;
+    vs:term_status reg:statusStable .
+

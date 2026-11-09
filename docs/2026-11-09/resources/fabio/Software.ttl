@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Software a owl:Class ;
+    rdfs:label "software"@en ;
+    vann:example """
+        :my-software a fabio:Software ;
+            dcterms:title 'Data Parser Tool'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A set of instructions that a computer can use to perform a specific task.'@en .
+            """ ;
+    rdfs:comment "The distinct intellectual creation of a computer program or software application. It represents the abstract concept, logic, and intended functionality of the software, independent of any specific source code implementation, programming language, or compiled version."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

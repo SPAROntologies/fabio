@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+skos:ConceptScheme a owl:Class ;
+    rdfs:label "concept scheme"@en ;
+    vann:example """
+        :my-concept-scheme a skos:ConceptScheme ;
+            dcterms:title 'Semantic Web Technologies'@en ;
+            dcterms:creator :john-doe ;
+            skos:hasTopConcept :semantic-web ;
+            dcterms:description 'An organized set of concepts.'@en .
+    """ ;
+    vaem:rationale "The notion of a concept scheme is useful when dealing with data from an unknown source, and when dealing with data that describes two or more different knowledge organization systems."@en ;
+    rdfs:comment "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."@en ;
+    rdfs:isDefinedBy skos: ;
+    vs:term_status reg:statusStable ;
+    skos:note "Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme. This definition is, however, meant to be suggestive rather than restrictive, and there is some flexibility in the formal data model."@en .
+

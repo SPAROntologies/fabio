@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
+<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2000/01/rdf-schema#comment> "A news report published by an organization to provide information to journalists."@en .
+<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2000/01/rdf-schema#label> "press release"@en .
 <http://purl.org/spar/fabio/PressRelease> <http://purl.org/vocab/vann/example> "\n        :my-presentation a fabio:Presentation ;\n            dcterms:title 'Introduction to Semantic Web technologies'@en ;\n            dcterms:description 'A realization of a lecture, speech or other informative discourse, typically accompanied by visual aids such as slides.'@en .\n    " .
 <http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2000/01/rdf-schema#comment> "A news report published by an organization to provide information to journalists."@en .
+<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/NewsItem> .
 <http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/PressRelease> <http://www.w3.org/2000/01/rdf-schema#label> "press release"@en .

@@ -1,0 +1,22 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+dcterms:date a owl:DatatypeProperty ;
+    rdfs:label "has date"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            dcterms:date '2026-04-29'^^xsd:date .
+    """ ;
+    rdfs:comment "A point or period of time associated with an event in the lifecycle of a resource."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+Date may be used to express temporal information at any level of granularity. 
+Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 (http://www.w3.org/TR/NOTE-datetime).
+"""@en .
+

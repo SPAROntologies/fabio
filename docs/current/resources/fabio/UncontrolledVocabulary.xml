@@ -14,9 +14,9 @@
             dcterms:creator :john-doe ;
             dcterms:description 'A collection of terms that are not part of a controlled vocabulary, such as a set of keywords chosen by a service's user community.'@en .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Vocabulary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Vocabulary"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

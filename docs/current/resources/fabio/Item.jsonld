@@ -28,13 +28,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b125"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb125"
       },
       {
         "@id": "http://purl.org/vocab/frbr/core#Item"
       },
       {
-        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b130"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb130"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b125",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb125",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -58,17 +58,17 @@
       {
         "@list": [
           {
-            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b126"
+            "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb126"
           },
           {
-            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b127"
+            "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb127"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b126",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb126",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -84,7 +84,7 @@
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b127",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb127",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b130",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb130",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

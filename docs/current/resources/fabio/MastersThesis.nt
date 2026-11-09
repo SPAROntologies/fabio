@@ -1,15 +1,15 @@
-_:nbd59893e8a4144f9864e0ea78c01ebc3b155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b156 .
+<http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Thesis> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb156 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb157 .
 <http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "master's thesis"@en .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b157 .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/BachelorsThesis> .
+<http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/2000/01/rdf-schema#comment> "A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree."@en .
 <http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/fabio/MastersThesis> <http://purl.org/vocab/vann/example> "\n        :my-master-thesis a fabio:MastersThesis ;\n            dcterms:title 'Linked Data analysis in the library science domain'@en ;\n            dcterms:description 'A thesis reporting the results of a period of study, submitted in partial fulfillment of the requirements for a master's degree.'@en .\n    " .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b154 <http://www.w3.org/2002/07/owl#members> _:nbd59893e8a4144f9864e0ea78c01ebc3b155 .
 <http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/DoctoralThesis> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MastersThesis> .
 <http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Thesis> .
-<http://purl.org/spar/fabio/MastersThesis> <http://www.w3.org/2000/01/rdf-schema#comment> "A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb154 <http://www.w3.org/2002/07/owl#members> _:na015ac9d06cd4cb1a3cee73cd225cdebb155 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/DoctoralThesis> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/BachelorsThesis> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/MastersThesis> .

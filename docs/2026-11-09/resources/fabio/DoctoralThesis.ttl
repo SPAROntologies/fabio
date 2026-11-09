@@ -1,0 +1,23 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DoctoralThesis a owl:Class ;
+    rdfs:label "doctoral thesis"@en ;
+    vann:example """
+        :my-doctoral-thesis a fabio:DoctoralThesis ;
+            dcterms:title 'Scalable Error Correction in Quantum Computing Architecture'@en ;
+            dcterms:description 'A thesis presented for the degree of Doctor of Philosophy.'@en .
+    """ ;
+    rdfs:comment "A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Thesis ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( fabio:BachelorsThesis fabio:DoctoralThesis fabio:MastersThesis ) .
+

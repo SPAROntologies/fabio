@@ -1,0 +1,9 @@
+<http://purl.org/dc/terms/dateSubmitted> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:dateSubmitted '2026-04-28T00:00:00'^^xsd:dateTime .\n    " .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2004/02/skos/core#note> "Examples of resources to which a date submitted may be relevant are a thesis (submitted to a university department), a grant application (submitted to a funding agency) or an article (submitted to a journal)."@en .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#label> "has submission date"@en .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which a resource has been submitted."@en .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .

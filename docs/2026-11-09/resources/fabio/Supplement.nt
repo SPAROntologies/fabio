@@ -1,0 +1,8 @@
+<http://purl.org/spar/fabio/Supplement> <http://purl.org/vocab/vann/example> "\n        :my-supplement a fabio:Supplement ;\n            dcterms:title 'Dataset and appendices'@en ;\n            dcterms:description 'An expression that updates or adds to another endeavor, and is usually published separately.'@en .\n    " .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2004/02/skos/core#note> "For example, a colour supplement to a sunday newspaper, or a special supplementary issue of a journal or a journal volume containing invited articles on a special topic, or abstracts or papers presented at a scientific conference."@en .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2000/01/rdf-schema#label> "supplement"@en .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2000/01/rdf-schema#comment> "A supplement to a publication such as a book, journal, magazine or newspaper, additional to the main publication."@en .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .

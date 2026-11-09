@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Page a owl:Class ;
+    rdfs:label "page"@en ;
+    vann:example """
+        :my-page a fabio:Page ;
+            dcterms:title 'Page 42'@en ;
+            dcterms:description 'One side of a leaf of something printed or written, such as a book, manuscript or letter.'@en .
+    """ ;
+    rdfs:comment "A manifestation that represents pages either in physical (e.g., one side of a sheet of paper) or in digital form (e.g., a page in a PDF, or a web page)."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Manifestation ;
+    vs:term_status reg:statusStable .
+

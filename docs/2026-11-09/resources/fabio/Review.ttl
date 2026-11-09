@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Review a owl:Class ;
+    rdfs:label "review"@en ;
+    vann:example """
+        :my-review a fabio:Review ;
+            dcterms:title 'Review of the book 'Intelligent Agents 101''@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A critical evaluation of a work, typically published in a journal or newspaper.'@en .
+    """ ;
+    rdfs:comment "A review of others' work."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

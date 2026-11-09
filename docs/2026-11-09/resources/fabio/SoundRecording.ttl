@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:SoundRecording a owl:Class ;
+    rdfs:label "sound recording"@en ;
+    vann:example """
+        :my-sound-recording a fabio:SoundRecording ;
+            dcterms:title 'Audio recording of lesson 01'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A recording of sound, such as music, speech, or other sounds.'@en .
+    """ ;
+    rdfs:comment "The creative work of making an electrical or mechanical recording of sounds, such as the spoken voice, singing, instrumental music, animal vocalizations or sound effects. "@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

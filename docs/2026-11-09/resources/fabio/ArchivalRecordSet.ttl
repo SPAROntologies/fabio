@@ -1,0 +1,31 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ArchivalRecordSet a owl:Class ;
+    rdfs:label "archival record set"@en ;
+    vann:example """
+        :my-archival-record-set a fabio:ArchivalRecordSet ;
+            dcterms:title 'The Alan Turing War-time Correspondence Collection'@en ;
+            frbr:part :my-archival-record, :my-another-archival-record ;
+            frbr:realization :my-archival-document-set ;
+            dcterms:description 'The conceptual collection of all archival records created by Turing during the conflict.'@en .
+    """ ;
+    rdfs:comment "A collection of archival records."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:ArchivalRecord ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fabio:ArchivalRecord ;
+            owl:onProperty frbr:part ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fabio:ArchivalDocumentSet ;
+            owl:onProperty frbr:realization ],
+        fabio:WorkCollection ;
+    vs:term_status reg:statusStable .
+

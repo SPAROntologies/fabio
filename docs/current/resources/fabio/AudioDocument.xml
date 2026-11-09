@@ -7,22 +7,22 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/AudioDocument">
-    <rdfs:comment xml:lang="en">The realization of a sound recording.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b8"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">audio document</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-audio-document a fabio:AudioDocument ;
             dcterms:title 'Audio recording of the interview with Tim Berners-Lee'@en ;
             frbr:realizationOf :my-sound-recording .
     </vann:example>
+    <rdfs:comment xml:lang="en">The realization of a sound recording.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">audio document</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b8">
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/SoundRecording"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb8">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/SoundRecording"/>
   </rdf:Description>
 </rdf:RDF>

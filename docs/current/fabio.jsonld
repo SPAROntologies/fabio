@@ -15,12 +15,12 @@
         "@value": "The date (often a range) of validity of a resource."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
         "@id": "http://purl.org/dc/terms/"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@language": "en",
         "@value": "has validity date"
@@ -36,9 +36,9 @@
         "@id": "http://purl.org/dc/terms/date"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://www.issn.org/"
       }
     ]
   },
@@ -377,9 +377,9 @@
         "@id": "http://purl.org/spar/fabio/PolicyDocument"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/spar/fabio/JournalIssue"
       }
     ]
   },
@@ -602,7 +602,7 @@
         "@value": "Ph.D. symposium paper"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
@@ -618,7 +618,7 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
       {
         "@value": "\n        :my-minimal-information-standard a fabio:MinimalInformationStandard ;\n            dcterms:title 'MIAME: Minimum Information About a Microarray Experiment'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A standard specifying the minimum information required to report a particular type of scientific experiment.'@en .\n    "
       }
@@ -628,12 +628,12 @@
         "@value": "A metadata standard specifying items to be included when creating metadata describing a dataset of a particular type, or when creating a structured summary of the main findings of an article or report in a particular domain of interest, thereby ensuring adequate descriptive information is recorded for subsequent resource discovery and/or interpretation of the information described."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@language": "en",
         "@value": "minimal information standard"
@@ -644,21 +644,24 @@
         "@id": "http://purl.org/spar/fabio/ReportingStandard"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#unionOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Specification"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/fabio/PeriodicalIssue"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/PeriodicalVolume"
+          }
+        ]
       }
     ]
   },
   {
     "@id": "http://purl.org/spar/fabio/Journal",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://purl.org/spar/fabio/AnalogStorageMedium",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -1392,7 +1395,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1459,7 +1462,8 @@
   {
     "@id": "http://purl.org/spar/fabio/DigitalManifestation",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -1483,7 +1487,7 @@
         "@value": "digital manifestation"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b100"
       },
@@ -1500,14 +1504,14 @@
   {
     "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b100",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2002/07/owl#onDatatype": [
       {
         "@id": "http://purl.org/vocab/frbr/core#exemplar"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2002/07/owl#withRestrictions": [
       {
         "@id": "http://purl.org/spar/fabio/DigitalItem"
       }
@@ -1536,7 +1540,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1619,6 +1623,12 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "Examples include the project name, the names of those who conducted the project, the name of the institution in which the project was conducted, and the project funding information."
       }
     ]
   },
@@ -1955,7 +1965,8 @@
   {
     "@id": "http://purl.org/spar/fabio/WebContent",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://purl.org/spar/fabio/DigitalStorageMedium",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -2166,6 +2177,12 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
       }
     ]
   },
@@ -2505,12 +2522,18 @@
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "For example, a colour supplement to a sunday newspaper, or a special supplementary issue of a journal or a journal volume containing invited articles on a special topic, or abstracts or papers presented at a scientific conference."
+      }
     ]
   },
   {
     "@id": "http://purl.org/spar/fabio/VocabularyDocument",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -2525,7 +2548,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2534,7 +2557,7 @@
         "@value": "vocabulary document"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b76"
       },
@@ -2735,7 +2758,7 @@
         "@value": "has PubMed identifier"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
@@ -2750,9 +2773,10 @@
         "@id": "http://purl.org/dc/terms/identifier"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@language": "en",
+        "@value": "Typically for a journal article, the Definitive Version results from revision of an earlier submitted version of the work following peer review, and is then published in print and/or digital form after the publisher has assigned it a DOI. The Definitive Version is also known as the Version of Record, although according to the CrossRef Glossary (http://crossref.org/02publishers/glossary.html) that term can also refer to the author's final version of a work that is not formally published."
       }
     ]
   },
@@ -2825,7 +2849,7 @@
         "@id": "http://purl.org/spar/fabio/"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
         "@language": "en",
         "@value": "critical edition"
@@ -2836,9 +2860,9 @@
         "@id": "http://purl.org/spar/fabio/Work"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/vocab/frbr/core#exemplar"
       }
     ]
   },
@@ -2847,7 +2871,7 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
       {
         "@value": "\n        :my-comment a fabio:Comment ;\n            dcterms:title 'Clarification on the methodology section'@en ;\n            dcterms:description 'A brief note or remark providing clarification or personal opinion on a specific part of a document.'@en .\n    "
       }
@@ -2858,25 +2882,25 @@
         "@value": "A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@language": "en",
         "@value": "comment"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
       }
     ]
   },
@@ -3016,12 +3040,12 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@value": "\n        :my-application-profile a fabio:ApplicationProfile ;\n            dcterms:title 'The Cultural Heritage Acquisition and Digitisation Application Profile (CHAD-AP)' ;\n            dcterms:description 'CHAD-AP is a CIDOC CRM application profile implemented as an OWL ontology for describing the acquisition and digitisation processes of cultural heritage objects.'@en .    \n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
         "@language": "en",
         "@value": "A set of metadata elements, policies and guidelines defined for a particular application."
@@ -3259,7 +3283,7 @@
   {
     "@id": "http://purl.org/dc/terms/abstract",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -3417,7 +3441,7 @@
   {
     "@id": "http://purl.org/spar/fabio/RetractionNotice",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -3432,7 +3456,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3441,7 +3465,7 @@
         "@value": "retraction notice"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b46"
       },
@@ -3540,7 +3564,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Work"
+        "@id": "http://purl.org/spar/fabio/Expression"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -3596,8 +3620,7 @@
   {
     "@id": "http://prismstandard.org/namespaces/basic/2.0/endingPage",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -3626,9 +3649,9 @@
         "@value": "has ending page"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+        "@id": "http://purl.org/spar/fabio/Work"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -3672,9 +3695,9 @@
         "@id": "http://purl.org/spar/fabio/SpecificationDocument"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/spar/fabio/ScholarlyWork"
       }
     ]
   },
@@ -3721,7 +3744,7 @@
         "@value": "has language"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
       }
@@ -3739,20 +3762,19 @@
     ]
   },
   {
-    "@id": "http://prismstandard.org/namespaces/basic/2.0/publicationDate",
+    "@id": "http://purl.org/spar/fabio/hasHandle",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n        :my-paperback a fabio:Paperback ;\n            prism:publicationDate '2007-06'^^xsd:gYearMonth .\n    "
+        "@value": "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasHandle '20.500.12345/6789' .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The date on which a resource is published or disclosed."
+        "@value": "A persistent identifier of the Handle system for digital objects and other resources on the Internet."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
@@ -3762,13 +3784,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
+        "@id": "http://purl.org/spar/fabio/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has publication date"
+        "@value": "has handle"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -3778,18 +3800,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://purl.org/dc/terms/issued"
+        "@id": "http://purl.org/dc/terms/identifier"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#note": [
-      {
-        "@language": "en",
-        "@value": "\nThe date can be expressed in three different formats:\n- yyyy-mm-dd (i.e., xsd:date)\n- yyyy-mm (i.e., xsd:gYearMonth)\n- yyyy (i.e., xsd:gYear)"
       }
     ]
   },
@@ -4037,7 +4053,7 @@
   {
     "@id": "http://purl.org/spar/fabio/JournalIssue",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -4061,7 +4077,7 @@
         "@value": "journal issue"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b108"
       },
@@ -4172,6 +4188,12 @@
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nA quotation is a repetition of what someone has said, and is presented 'within quotation marks', for example:\n\n    On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words:\n        ' . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . .'\n\nSimilarly, the words 'but Brutus is an honourable man' from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play.\n\nNote: Use `fabio:Quotation` to indicate a segment or passage selected from another expression that is a passage of speech, and `fabio:Excerpt` to indicate a segment or passage selected from another expression that is not a passage of speech.\n"
+      }
     ]
   },
   {
@@ -4215,7 +4237,7 @@
   {
     "@id": "http://purl.org/spar/fabio/BookSeries",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -4239,7 +4261,7 @@
         "@value": "book series"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b10"
       },
@@ -4247,7 +4269,7 @@
         "@id": "http://purl.org/spar/fabio/Series"
       }
     ],
-    "http://www.w3.org/2002/07/owl#disjointWith": [
+    "http://www.w3.org/2002/07/owl#propertyDisjointWith": [
       {
         "@id": "http://purl.org/spar/fabio/BookSet"
       }
@@ -4267,7 +4289,7 @@
   {
     "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b10",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
@@ -4523,7 +4545,7 @@
   {
     "@id": "http://purl.org/spar/fabio/NewspaperEditorial",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -4547,7 +4569,7 @@
         "@value": "newspaper editorial"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b31"
       },
@@ -4736,7 +4758,13 @@
         "@id": "http://purl.org/spar/fabio/StorageMedium"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb64"
+      },
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb65"
+      },
       {
         "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
       }
@@ -4873,7 +4901,7 @@
         "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
       }
@@ -4935,9 +4963,20 @@
   {
     "@id": "http://purl.org/spar/fabio/ExaminationPaper",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Ontology"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://purl.org/dc/elements/1.1/contributor": [
+      {
+        "@value": "Paolo Ciccarese (https://orcid.org/0000-0002-5156-2703)"
+      },
+      {
+        "@value": "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"
+      },
+      {
+        "@value": "Tim Clark"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
       {
         "@value": "\n        :my-examination-paper a fabio:ExaminationPaper ;\n            dcterms:title 'Final Exam: Ontology Engineering and Semantic Web'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A formal document containing a set of questions or exercises used to evaluate a student's knowledge or skills in a specific subject.'@en .\n    "
       }
@@ -5018,15 +5057,31 @@
         "@value": "\n        :my-film a fabio:Film ;\n            dcterms:title 'Interstellar'@en ;\n            dcterms:creator :christopher-nolan ;\n            frbr:realizationOf :my-moving-image ;\n            dcterms:description 'A motion picture or movie, consisting of a sequence of images that give the illusion of continuous movement.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@value": "2017-05-29"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
       {
         "@language": "en",
         "@value": "A movie with an accompanying soundtrack, typically created by a professional film studio, designed to communicate a fictional story, record an artistic event, or impart information that is scientific or documentary in nature."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@value": "fabio"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://purl.org/spar/fabio/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -5040,7 +5095,7 @@
         "@id": "http://purl.org/spar/fabio/Movie"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#backwardCompatibleWith": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
@@ -5056,7 +5111,7 @@
         "@value": "\n        :my-proceedings-paper a fabio:ProceedingsPaper ;\n            dcterms:title 'Deep Learning applied to Knowledge Graphs'@en ;\n            dcterms:description 'A paper published in the proceedings of a conference, workshop or similar event.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "https://schema.org/keywords": [
       {
         "@language": "en",
         "@value": "A paper, typically the realization of a research paper reporting original research findings, usually published within an academic proceedings volume."
@@ -5080,7 +5135,8 @@
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@language": "en",
+        "@value": "semantic publishing"
       }
     ]
   },
@@ -5235,7 +5291,7 @@
         "@value": "has date collected"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
       }
@@ -5375,7 +5431,7 @@
         "@value": "has Serial Item and Contribution Identifier"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
@@ -5511,6 +5567,12 @@
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "The minimal components of a nanopublication are as follows:\n* the factual assertion itself, in the form subject, predicate and object (e.g. malaria is_a disease);\n* provenance information about the nanopublication, defining its authorship and creation date;\n* supporting information (optional), providing context for the assertion;\n* a unique identifier for the nanopublication, in the form of a URI;\n* an integrity key that ensures that the nanopublication is in its original form and has not been altered."
+      }
     ]
   },
   {
@@ -5557,6 +5619,9 @@
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb114"
+      },
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
@@ -5608,7 +5673,7 @@
   {
     "@id": "http://purl.org/spar/fabio/hasTranslatedTitle",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -5632,9 +5697,9 @@
         "@value": "has translated title"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/dc/terms/title"
+        "@id": "http://purl.org/spar/fabio/Specification"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -5762,7 +5827,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/vocab/frbr/core#"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -5771,7 +5836,7 @@
         "@value": "specification"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
         "@id": "http://purl.org/spar/fabio/Work"
       }
@@ -5787,7 +5852,7 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2002/07/owl#unionOf": [
       {
         "@value": "\n        :my-web-page a fabio:WebPage ;\n            dcterms:title 'SPUK's index page'@en ;\n            dcterms:publisher :github ;\n            frbr:embodimentOf :my-web-content ;\n            dcterms:description 'A document that is suitable for the World Wide Web and can be accessed through a web browser.'@en .\n    "
       }
@@ -5883,7 +5948,8 @@
   {
     "@id": "http://purl.org/spar/fabio/Supplement",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -5907,7 +5973,7 @@
         "@value": "supplement"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
@@ -5927,7 +5993,8 @@
   {
     "@id": "http://purl.org/spar/fabio/Figure",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -5951,7 +6018,7 @@
         "@value": "figure"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b17"
       },
@@ -6319,7 +6386,7 @@
   {
     "@id": "http://purl.org/spar/fabio/ApplicationProgrammingInterface",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -6347,7 +6414,7 @@
         "@value": "application programming interface"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/ComputerProgram"
       }
@@ -6451,9 +6518,9 @@
         "@value": "has season"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+        "@id": "http://purl.org/spar/fabio/Expression"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -6580,7 +6647,7 @@
   {
     "@id": "http://purl.org/spar/fabio/ExpressionCollection",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -6609,12 +6676,30 @@
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b117"
       },
       {
-        "@id": "http://purl.org/spar/fabio/Expression"
+        "@id": "http://purl.org/vocab/frbr/core#relatedEndeavour"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#exemplarOf"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#embodimentOf"
+          }
+        ]
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
       }
     ]
   },
@@ -6671,7 +6756,7 @@
         "@id": "http://purl.org/spar/fabio/SubjectTerm"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
       }
@@ -6760,9 +6845,9 @@
   {
     "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b110",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2002/07/owl#members": [
       {
         "@id": "http://purl.org/vocab/frbr/core#partOf"
       }
@@ -6851,6 +6936,12 @@
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nSuch a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF. \nIt differs from the abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.\n                                               "
+      }
     ]
   },
   {
@@ -6924,7 +7015,7 @@
         "@value": "magazine"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b71"
       },
@@ -7019,7 +7110,7 @@
   {
     "@id": "http://purl.org/spar/fabio/hasRepresentation",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -7053,7 +7144,7 @@
         "@id": "http://purl.org/vocab/frbr/core#Item"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/vocab/frbr/core#relatedEndeavour"
       }
@@ -7167,7 +7258,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/vocab/frbr/core#"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -7195,7 +7286,7 @@
   {
     "@id": "http://purl.org/spar/fabio/PeriodicalVolume",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -7210,7 +7301,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -7219,7 +7310,7 @@
         "@value": "periodical volume"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b97"
       },
@@ -7553,7 +7644,13 @@
   {
     "@id": "http://purl.org/spar/fabio/PosterPaper",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/hasTranslatedTitle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -7577,7 +7674,7 @@
         "@value": "poster paper"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
@@ -7686,7 +7783,13 @@
   {
     "@id": "http://purl.org/spar/fabio/CompleteWorks",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/hasShortTitle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -7710,7 +7813,7 @@
         "@value": "complete works"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/CollectedWorks"
       }
@@ -7762,7 +7865,7 @@
   {
     "@id": "http://purl.org/spar/fabio/PolicyDocument",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -7805,12 +7908,12 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/vocab/frbr/core#realizationOf"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
         "@id": "http://purl.org/spar/fabio/Policy"
       }
@@ -7872,6 +7975,12 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "Examples include PubMed (http://www.ncbi.nlm.nih.gov/pubmed), CrossRef Metadata Search (http://search.crossref.org/) and PubMed Central (http://www.ncbi.nlm.nih.gov/pmc/)."
       }
     ]
   },
@@ -7954,7 +8063,7 @@
   {
     "@id": "http://purl.org/spar/fabio/ClinicalGuideline",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -8439,12 +8548,12 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/spar/fabio/SubjectTerm"
       }
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/spar/fabio/isSchemeOf"
       }
@@ -8494,25 +8603,36 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/fabio/hasCopyrightYear",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb26",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/MagazineIssue"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/intranet",
+    "@type": [
+      "http://purl.org/spar/fabio/DigitalStorageMedium",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n        :my-preprint a fabio:Preprint ;\n            fabio:hasCopyrightYear '2026'^^xsd:gYear .\n    "
+        "@value": "\n        :my-item a fabio:Item ;\n            fabio:isStoredOn fabio:intranet .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The year in which a resource has been copyrighted."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+        "@value": "A private computer network, unconnected to the internet or separated from it by a firewall, that uses a network operating system and Internet Protocol technologies to permit an organization's information to be shared securely within that organization."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -8522,18 +8642,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "en",
-        "@value": "has copyright year"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#gYear"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://purl.org/dc/terms/date"
+        "@value": "intranet"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -8722,7 +8831,7 @@
   {
     "@id": "http://purl.org/spar/fabio/ClinicalTrialDesign",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -8745,7 +8854,7 @@
         "@value": "clinical trial design"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/Specification"
       }
@@ -8835,7 +8944,7 @@
   {
     "@id": "http://purl.org/spar/fabio/AnalogManifestation",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -8850,7 +8959,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/vocab/frbr/core#"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -8859,7 +8968,7 @@
         "@value": "analog manifestation"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b91"
       },
@@ -8872,9 +8981,9 @@
         "@id": "http://purl.org/spar/fabio/DigitalManifestation"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#inverseOf": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/vocab/frbr/core#exemplar"
       }
     ]
   },
@@ -9180,9 +9289,9 @@
         "@id": "http://purl.org/spar/fabio/Repository"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#disjointWith": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/spar/fabio/DigitalManifestation"
       }
     ]
   },
@@ -9196,13 +9305,13 @@
         "@value": "\n        :my-micropost a fabio:Micropost ;\n            frbr:partOf :my-microblog ;\n            dcterms:description 'A very short post on a microblog, typically limited to a few hundred characters.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@language": "en",
         "@value": "A content item that is published in a Microblog, typically containing just a short sentence, a single image, or a URL."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://purl.org/spar/fabio/"
       }
@@ -9433,7 +9542,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#part"
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -9584,7 +9693,8 @@
   {
     "@id": "http://purl.org/spar/fabio/ControlledVocabulary",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -9599,7 +9709,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -9608,7 +9718,7 @@
         "@value": "controlled vocabulary"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/Vocabulary"
       }
@@ -9685,7 +9795,7 @@
         "@value": "has copyright date"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#date"
       }
@@ -9807,7 +9917,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Expression"
+        "@id": "http://purl.org/spar/fabio/Entry"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/WebContent"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -10017,33 +10130,33 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/fabio/InBrief",
+    "@id": "http://prismstandard.org/namespaces/basic/2.0/alternateTitle",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n        :my-in-brief a fabio:InBrief ;\n            dcterms:title 'Science In Brief - March 2026'@en ;\n            dcterms:description 'A short summary or a collection of brief news items or notes.'@en .\n    "
+        "@value": "\n        :my-journal-article a fabio:JournalArticle ;\n            dcterms:title 'Advanced Semantic Mapping in 2026'@en ;\n            prism:alternateTitle 'ASM 2026 Project Report'@en .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "An 'In Brief' is a journal or magazine news item that describes all the articles (or all the important articles) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue."
+        "@value": "An alternative title for a resource."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "in brief"
+        "@value": "has alternate title"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b19"
       },
@@ -10062,16 +10175,36 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
+    "http://purl.org/vocab/vann/example": [
       {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/fabio/JournalNewsItem"
-          },
-          {
-            "@id": "http://purl.org/spar/fabio/MagazineNewsItem"
-          }
-        ]
+        "@value": "\n        :my-metadata a fabio:Metadata ;\n            dcterms:title 'Metadata record for 'The Fellowship of the Ring''@en ;\n            frbr:realization :my-metadata-document ;\n            dcterms:description 'A document containing data about other data, such as a library catalog record or an RDF description.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A separate work that provides information describing one or more characteristics of a resource or entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "metadata"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Work"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
       }
     ]
   },
@@ -10110,6 +10243,12 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "Some scientific journals, notably Science and Nature, also secondarily serve as science magazines by containing substantive editorials and news items on vital or controversial issues."
       }
     ]
   },
@@ -10425,7 +10564,7 @@
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b88"
       },
       {
-        "@id": "http://purl.org/spar/fabio/ExpressionCollection"
+        "@id": "http://purl.org/spar/fabio/Book"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -10441,7 +10580,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#part"
+        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -10559,7 +10698,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -10612,7 +10751,7 @@
         "@value": "vocabulary"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#unionOf": [
       {
         "@id": "http://purl.org/spar/fabio/Work"
       }
@@ -10752,7 +10891,7 @@
         "@id": "http://arxiv.org/"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/dc/terms/identifier"
       }
@@ -10811,18 +10950,18 @@
         "@value": "\n        :my-dataset a fabio:Dataset ;\n            dcterms:title 'Global Temperature Anomalies Dataset 2026'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A collection of related data records, with a specific focus on monthly temperature variations recorded globally.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@language": "en",
         "@value": "A collection of related facts, often expressed in numerical form and encoded in a defined structure."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2002/07/owl#inverseOf": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/spar/fabio/isManifestationOf"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
       {
         "@language": "en",
         "@value": "dataset"
@@ -11014,7 +11153,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -11052,7 +11191,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Work"
+        "@id": "http://purl.org/spar/fabio/Repository"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -11102,7 +11241,23 @@
   {
     "@id": "http://purl.org/spar/fabio/Letter",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/InstructionalWork"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/hasCODEN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -11126,9 +11281,9 @@
         "@value": "letter"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Expression"
+        "@id": "http://purl.org/dc/terms/identifier"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -11543,8 +11698,7 @@
   {
     "@id": "http://purl.org/spar/fabio/floppy-disk",
     "@type": [
-      "http://purl.org/spar/fabio/DigitalStorageMedium",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -11577,7 +11731,7 @@
   {
     "@id": "http://purl.org/spar/fabio/MusicalComposition",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -11601,7 +11755,12 @@
         "@value": "musical composition"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/fabio/LiteraryArtisticWork"
       }
@@ -11708,14 +11867,14 @@
   {
     "@id": "http://purl.org/spar/fabio/SystematicReview",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@value": "\n        :my-systematic-review a fabio:SystematicReview ;\n            dcterms:title 'Bibliographic Data Science: a literature review'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A review of a clearly formulated question that uses systematic and explicit methods to identify, select, and critically appraise relevant research.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@language": "en",
         "@value": "A literature review focused on a single question that tries to identify, appraise, select and synthesize all high quality research evidence relevant to that question."
@@ -11732,12 +11891,12 @@
         "@value": "systematic review"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://purl.org/spar/fabio/Review"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
@@ -11857,16 +12016,17 @@
         "@id": "http://purl.org/spar/fabio/Catalog"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@language": "en",
+        "@value": "Note: For the version before peer review, use fabio:Preprint. For the final published version, use fabio:DefinitiveVersion."
       }
     ]
   },
   {
     "@id": "http://purl.org/spar/fabio/Folksonomy",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -11890,7 +12050,7 @@
         "@value": "folksonomy"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://purl.org/spar/fabio/UncontrolledVocabulary"
       }
@@ -12259,7 +12419,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -12550,23 +12710,24 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@value": "\n        :my-reporting-standard a fabio:ReportingStandard ;\n            dcterms:title 'CONSORT 2010 Statement'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A set of guidelines or a formal agreement that specifies how information should be reported in a document.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@language": "en",
         "@value": "A set of recommendations for the minimum reporting requirements to be employed when reporting a particular type of investigation or project, for example a randomized clinical trial. A reporting standard may involve a checklist and a flow diagram, offers a standard way for authors to prepare a complete and transparent report of their findings, and aids their critical appraisal and interpretation of their data."
       }
+    ]
+  },
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb69",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/fabio/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@language": "en",
         "@value": "reporting standard"
@@ -12582,9 +12743,9 @@
         "@id": "http://purl.org/spar/fabio/Specification"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/spar/fabio/JournalVolume"
       }
     ]
   },
@@ -12626,9 +12787,10 @@
         "@id": "http://purl.org/spar/fabio/TrialReport"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@language": "en",
+        "@value": "To take the example of a journal article, bibliographic metadata typically include the authors' names, the date of publication, the title of the article, the journal name and volume number, the first and last page numbers, and the Digital Object Identifier (DOI)."
       }
     ]
   },
@@ -12718,7 +12880,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#partOf"
+        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -12859,7 +13021,7 @@
   {
     "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -12888,19 +13050,19 @@
         "@value": "is in scheme"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/spar/fabio/"
       }
     ]
   },
@@ -12933,7 +13095,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Expression"
+        "@id": "http://purl.org/spar/fabio/Report"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -13119,7 +13281,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#partOf"
+        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -13528,7 +13690,7 @@
         "@id": "http://purl.org/spar/fabio/StructuredSummary"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
@@ -13562,7 +13724,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -13600,7 +13762,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://www.w3.org/2004/02/skos/core#"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -13822,7 +13984,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://purl.org/dc/terms/identifier"
+        "@id": "http://purl.org/spar/fabio/DigitalItem"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -14084,7 +14246,7 @@
   {
     "@id": "http://purl.org/spar/fabio/Ontology",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -14099,7 +14261,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -14113,14 +14275,15 @@
         "@id": "http://purl.org/spar/fabio/Folksonomy"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/spar/fabio/ControlledVocabulary"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@language": "en",
+        "@value": "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
       }
     ]
   },
@@ -14165,7 +14328,7 @@
   {
     "@id": "http://purl.org/spar/fabio/Screenplay",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -14189,14 +14352,14 @@
         "@value": "screenplay"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://purl.org/spar/fabio/LiteraryArtisticWork"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/dc/terms/date"
       }
     ]
   },
@@ -14260,7 +14423,7 @@
   {
     "@id": "http://purl.org/spar/fabio/isManifestationOf",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -14319,7 +14482,7 @@
     "http://www.w3.org/2004/02/skos/core#note": [
       {
         "@language": "en",
-        "@value": "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
+        "@value": "\nThe language may be specified using the object property `dcterms:language`.\n                                                   "
       }
     ]
   },
@@ -14364,7 +14527,7 @@
   {
     "@id": "http://purl.org/spar/fabio/LegalOpinion",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -14388,7 +14551,7 @@
         "@value": "legal opinion"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/Opinion"
       }
@@ -14608,7 +14771,7 @@
   {
     "@id": "http://purl.org/spar/fabio/Report",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -14632,7 +14795,7 @@
         "@value": "report"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://purl.org/spar/fabio/Work"
       }
@@ -14722,7 +14885,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/spar/fabio/DigitalItem"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -14949,7 +15112,8 @@
   {
     "@id": "http://purl.org/spar/fabio/isDisciplineOf",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -15065,7 +15229,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -15122,7 +15286,13 @@
   {
     "@id": "http://purl.org/spar/fabio/DustJacket",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/isManifestationOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -15146,14 +15316,14 @@
         "@value": "dust jacket"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/vocab/frbr/core#relatedEndeavour"
       }
     ]
   },
@@ -15173,12 +15343,12 @@
         "@value": "The report of a trial, for example an experimental trial or a legal trial."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/linked-data/registry#statusStable"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
         "@language": "en",
         "@value": "trial report"
@@ -15227,7 +15397,7 @@
         "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b73"
       },
       {
-        "@id": "http://purl.org/spar/fabio/Expression"
+        "@id": "http://purl.org/spar/fabio/ExpressionCollection"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -15243,7 +15413,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
+        "@id": "http://purl.org/vocab/frbr/core#part"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -15287,6 +15457,12 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "Note: `fabio:Manuscript` is not intended to describe a handwritten historical document on paper or parchment, for which the FRBR distinctions between work, expression, manifestation and item (individual copy) becomes blurred."
       }
     ]
   },
@@ -15401,13 +15577,13 @@
         "@value": "\n        :my-conference-poster a fabio:ConferencePoster ;\n            dcterms:title 'Visualizing Neural-Symbolic Integration: A Case Study'@en ;\n            dcterms:description 'A large printed or digital sheet presenting research data and findings at a conference poster session.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@language": "en",
         "@value": "A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://purl.org/spar/fabio/"
       }
@@ -15423,9 +15599,9 @@
         "@id": "http://purl.org/spar/fabio/Expression"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/vocab/frbr/core#realization"
       }
     ]
   },
@@ -15489,7 +15665,7 @@
   {
     "@id": "http://purl.org/spar/fabio/hasDepositDate",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -15523,7 +15699,7 @@
         "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/dc/terms/date"
       }
@@ -15582,7 +15758,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#part"
+        "@id": "http://purl.org/spar/fabio/isStoredOn"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -15643,7 +15819,8 @@
   {
     "@id": "http://purl.org/spar/fabio/RapidCommunication",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -15658,7 +15835,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -15752,6 +15929,12 @@
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nExamples of a publisher include a person, an organization, or a service. \nTypically, the name of a publisher should be used to indicate the entity.\n"
+      }
     ]
   },
   {
@@ -15772,7 +15955,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -16056,7 +16239,7 @@
         "@value": "timetable"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://purl.org/spar/fabio/Dataset"
       }
@@ -16076,7 +16259,8 @@
   {
     "@id": "http://purl.org/spar/fabio/Anthology",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -16100,7 +16284,7 @@
         "@value": "anthology"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/ExpressionCollection"
       }
@@ -16143,7 +16327,7 @@
         "@id": "http://purl.org/spar/fabio/Specification"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
@@ -16167,30 +16351,37 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/linked-data/registry#statusStable"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
         "@language": "en",
         "@value": "corrigendum"
       }
+    ]
+  },
+  {
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb10",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://purl.org/spar/fabio/Correction"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/spar/fabio/Book"
       }
     ]
   },
   {
     "@id": "http://purl.org/spar/fabio/PeriodicalItem",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -16354,7 +16545,7 @@
   {
     "@id": "http://purl.org/spar/fabio/ComputerApplication",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -16378,7 +16569,7 @@
         "@value": "computer application"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://purl.org/spar/fabio/ComputerProgram"
       }
@@ -17010,12 +17201,18 @@
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nA `fabio:Item` can only have part or be part of another `fabio:Item`. Moreover, it can be an exemplar only of a `fabio:Manifestation`.\n\nAn example of a `fabio:Item` is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.\n"
+      }
     ]
   },
   {
     "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b131",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
@@ -17031,38 +17228,38 @@
   {
     "@id": "http://purl.org/spar/fabio/LiteraryArtisticWork",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
         "@value": "\n        :my-literary-artistic-work a fabio:LiteraryArtisticWork ;\n            dcterms:title 'The Great Gatsby'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-book ;\n            dcterms:description 'A work of a literary or artistic nature, including books, poems, plays, musical compositions, and paintings.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@language": "en",
         "@value": "A literary creative work, such as a novel, play, poem or song."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://purl.org/vocab/frbr/core#Item"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@language": "en",
         "@value": "literary artistic work"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
         "@id": "http://purl.org/spar/fabio/ArtisticWork"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@id": "http://purl.org/vocab/frbr/core#exemplarOf"
       }
     ]
   },
@@ -17124,19 +17321,19 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/fabio/GrantApplication",
+    "@id": "http://purl.org/spar/fabio/Patent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n        :my-grant-application a fabio:GrantApplication ;\n            dcterms:title 'Advanced AI for Climate Resilience Proposal'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-grant-application-document ;\n            dcterms:description 'A formal request for financial assistance to support a specific research project or initiative.'@en .\n    "
+        "@value": "\n        :my-patent a fabio:Patent ;\n            dcterms:title 'AI-based ice cream generator'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:identifier 'US123456789' ;\n            dcterms:description 'A government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.'@en .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A formal written request for financial support from a grant-giving body in support of a project, for example an academic research project."
+        "@value": "A formal disclosure of a new invention approved by a governmental patent agency, made to register intellectual property rights, and to give exclusive rights to the inventor or assignee to manufacture, use, license or sell the invention for a certain number of years."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -17147,17 +17344,12 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "grant application"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "http://purl.org/spar/fabio/CaseForSupport"
+        "@value": "patent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Work"
+        "@id": "http://purl.org/spar/fabio/Specification"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -17250,6 +17442,12 @@
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.\n    \nA `fabio:Expression` can only have part or be part of another `fabio:Expression`. Moreover, it can be a representation only of a `fabio:Work`, and it can be embodied only in instances of `fabio:Manifestation`."
+      }
     ]
   },
   {
@@ -17257,7 +17455,7 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
         "@value": "\n        :my-product-review a fabio:ProductReview ;\n            dcterms:title 'Technical review of Smartphone XYZ 2026'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A critical review of a product, such as a software application, a piece of hardware, or a commercial tool.'@en .\n    "
       }
@@ -17267,13 +17465,19 @@
         "@language": "en",
         "@value": "A written review and critical analysis of the purpose, features, performance and other qualities of a product."
       }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/Reply",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://purl.org/vocab/vann/example": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@value": "\n        :my-reply a fabio:Reply ;\n            dcterms:title 'Reply to Professor X's comment'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A written or spoken statement or document given in answer to another such statement or document.'@en .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
         "@value": "product review"
@@ -17404,9 +17608,10 @@
         "@id": "http://purl.org/spar/fabio/Report"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@language": "en",
+        "@value": "A computer application will typically save its output files in one or more specific formats, conforming either to proprietary or open standards."
       }
     ]
   },
@@ -17428,7 +17633,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://www.w3.org/2004/02/skos/core#"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -17437,14 +17642,15 @@
         "@value": "index"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/spar/fabio/Expression"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2004/02/skos/core#note": [
       {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
+        "@language": "en",
+        "@value": "Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme. This definition is, however, meant to be suggestive rather than restrictive, and there is some flexibility in the formal data model."
       }
     ]
   },
@@ -17492,14 +17698,14 @@
   {
     "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b45",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://purl.org/vocab/vann/example": [
       {
         "@id": "http://purl.org/vocab/frbr/core#realizationOf"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@id": "http://purl.org/spar/fabio/ReferenceWork"
       }
@@ -17510,23 +17716,23 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/vocab/vann/example": [
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@value": "\n        :my-paperback a fabio:Paperback ;\n            dcterms:publisher :springer ;\n            prism:publicationDate '2007-06'^^xsd:gYearMonth ;\n            frbr:part :my-analog-manifestation .\n    "
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
         "@value": "A print object with a flexible cover, usually made of paper or paperboard."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://purl.org/spar/fabio/"
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@language": "en",
         "@value": "paperback"

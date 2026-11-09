@@ -1,0 +1,11 @@
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb131 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/DigitalItem> .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb131 .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "A means of storing information in digital form, involving binary encoding of data in 0s and 1s, e.g. a computer random access memory, hard disc, USB stick, CD, DVD or digital magnetic tape."@en .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://purl.org/vocab/vann/example> "\n        fabio:floppy-disk a fabio:DigitalStorageMedium .\n    " .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/StorageMedium> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#label> "digital storage medium"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb131 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/fabio/stores> .
+<http://purl.org/spar/fabio/DigitalStorageMedium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

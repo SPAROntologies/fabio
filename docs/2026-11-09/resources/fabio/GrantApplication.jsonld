@@ -1,0 +1,45 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/GrantApplication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-grant-application a fabio:GrantApplication ;\n            dcterms:title 'Advanced AI for Climate Resilience Proposal'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realization :my-grant-application-document ;\n            dcterms:description 'A formal request for financial assistance to support a specific research project or initiative.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A formal written request for financial support from a grant-giving body in support of a project, for example an academic research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "grant application"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/spar/fabio/CaseForSupport"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Work"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

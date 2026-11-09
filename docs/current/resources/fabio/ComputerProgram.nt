@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of computer code in source or compiled form, employing one or more algorithms to be executed by a digital computer to undertake a particular task. Computer programs are collectively called 'software' to distinguish them from the equipment ('hardware') upon which they run."@en .
-<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b105 .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b105 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#label> "computer program"@en .
 <http://purl.org/spar/fabio/ComputerProgram> <http://purl.org/vocab/vann/example> "\n        :my-computer-program a fabio:ComputerProgram ;\n            dcterms:title 'Statistical Analysis Script in Python'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realizationOf :my-software ;\n            dcterms:language <http://purl.org/NET/marccodes/languages/python> ;\n            dcterms:description 'A set of instructions written in Python to automate data cleaning and visualization.'@en .\n    " .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b105 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Software> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb105 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb105 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb105 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Software> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of computer code in source or compiled form, employing one or more algorithms to be executed by a digital computer to undertake a particular task. Computer programs are collectively called 'software' to distinguish them from the equipment ('hardware') upon which they run."@en .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#label> "computer program"@en .

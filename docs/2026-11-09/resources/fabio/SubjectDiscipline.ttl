@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:SubjectDiscipline a owl:Class ;
+    rdfs:label "subject discipline"@en ;
+    vann:example """
+        :my-subject-discipline a fabio:SubjectDiscipline ;
+            dcterms:title 'Computational Linguistics'@en ;
+            skos:isScheme :my-discipline-dictionary ;
+            dcterms:description 'A branch of knowledge or field of study, such as physics, history, or linguistics.'@en .
+    """ ;
+    rdfs:comment "A concept that identifies a field of knowledge or human activity defined in a controlled vocabulary, such as Computer Science, Biology, Economics, Cookery or Swimming."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty skos:inScheme ;
+            owl:someValuesFrom fabio:DisciplineDictionary ],
+        skos:Concept ;
+    vs:term_status reg:statusStable .
+

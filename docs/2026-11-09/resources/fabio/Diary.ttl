@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Diary a owl:Class ;
+    rdfs:label "diary"@en ;
+    vann:example """
+        :my-diary a fabio:Diary ;
+            dcterms:title 'John's personal diary'@en ;
+            dcterms:creator :john-doe ;
+            frbr:part :my-entry ;
+            dcterms:description 'A record of personal experiences, thoughts, and daily events, kept regularly by an individual.'@en .
+    """ ;
+    rdfs:comment "A personal record, in a form of book, with discrete entries (often handwritten) arranged by date, reporting what has happened over the course of a day or other period of time."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:Entry ],
+        fabio:Notebook ;
+    vs:term_status reg:statusStable .
+

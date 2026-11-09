@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:TermDictionary a owl:Class ;
+    rdfs:label "term dictionary"@en ;
+    vann:example """
+        :my-term-dictionary a fabio:TermDictionary ;
+            dcterms:title 'Artificial Intelligence Glossary'@en ;
+            skos:isSchemeOf :my-subject-term ;
+            dcterms:description 'A collection of terms and their definitions, often specific to a particular subject or field.'@en .
+    """ ;
+    rdfs:comment "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom fabio:SubjectTerm ;
+            owl:onProperty fabio:isSchemeOf ],
+        skos:ConceptScheme ;
+    vs:term_status reg:statusStable ;
+    skos:note "A term dictionary is a collection of subject terms."@en .
+

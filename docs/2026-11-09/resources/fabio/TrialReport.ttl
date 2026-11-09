@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:TrialReport a owl:Class ;
+    rdfs:label "trial report"@en ;
+    vann:example """
+        :my-trial-report a fabio:TrialReport ;
+            dcterms:title 'Report on Phase 3 experiments' results'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A report of a trial, typically a clinical trial of a drug or a medical procedure.'@en .
+    """ ;
+    rdfs:comment "The report of a trial, for example an experimental trial or a legal trial."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Report ;
+    vs:term_status reg:statusStable .
+

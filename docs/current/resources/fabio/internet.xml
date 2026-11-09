@@ -8,13 +8,13 @@
   <rdf:Description rdf:about="http://purl.org/spar/fabio/internet">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://purl.org/spar/fabio/DigitalStorageMedium"/>
+    <rdfs:comment xml:lang="en">A global system of interconnected computer networks that uses the standard Internet Protocol Suite (TCP/IP) to serve billions of users worldwide. The internet connects millions of private, public, academic, business and governmental computers, that are individually attached to local networks linked together by a broad array of electronic, radio and optical networking technologies to form the internet.</rdfs:comment>
+    <rdfs:label xml:lang="en">internet</rdfs:label>
     <vann:example>
         :my-item a fabio:Item ;
             fabio:isStoredOn fabio:internet .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">internet</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:comment xml:lang="en">A global system of interconnected computer networks that uses the standard Internet Protocol Suite (TCP/IP) to serve billions of users worldwide. The internet connects millions of private, public, academic, business and governmental computers, that are individually attached to local networks linked together by a broad array of electronic, radio and optical networking technologies to form the internet.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

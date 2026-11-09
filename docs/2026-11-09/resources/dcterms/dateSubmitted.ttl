@@ -1,0 +1,22 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:dateSubmitted a owl:DatatypeProperty ;
+    rdfs:label "has submission date"@en ;
+    vann:example """
+        :my-journal-article a fabio:JournalArticle ;
+            dcterms:dateSubmitted '2026-04-28T00:00:00'^^xsd:dateTime .
+    """ ;
+    rdfs:comment "The date on which a resource has been submitted."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf dcterms:date ;
+    vs:term_status reg:statusStable ;
+    skos:note "Examples of resources to which a date submitted may be relevant are a thesis (submitted to a university department), a grant application (submitted to a funding agency) or an article (submitted to a journal)."@en .
+

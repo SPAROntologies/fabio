@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ArchivalDocument a owl:Class ;
+    rdfs:label "archival document"@en ;
+    vann:example """
+        :my-archival-document a fabio:ArchivalDocument ;
+            dcterms:title 'Letter from Alan Turing to the Editor of Nature, 1945'@en ;
+            dcterms:identifier 'MS-TUR-01-A' ;
+            frbr:realizationOf :my-archival-record ;
+            dcterms:description 'A handwritten letter preserved in the university archives.'@en .
+    """ ;
+    rdfs:comment "A realization of the content related to an archival record. It can be exemplified as a book, a document, a letter, a database, etc."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

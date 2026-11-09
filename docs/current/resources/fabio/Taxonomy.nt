@@ -1,15 +1,15 @@
-<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ControlledVocabulary> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Thesaurus> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b150 <http://www.w3.org/2002/07/owl#members> _:nbd59893e8a4144f9864e0ea78c01ebc3b151 .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b153 .
-<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 <http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Taxonomy> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://purl.org/spar/fabio/Taxonomy> <http://purl.org/vocab/vann/example> "\n        :my-taxonomy a fabio:Taxonomy ;\n            dcterms:title 'Taxonomy for scholarly research activities'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A scheme of classification, especially a hierarchical classification, in which things are organized into groups or types.'@en .\n    " .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ControlledVocabulary> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb153 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb152 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Taxonomy> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb150 <http://www.w3.org/2002/07/owl#members> _:na015ac9d06cd4cb1a3cee73cd225cdebb151 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/AuthorityFile> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Thesaurus> .
 <http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#comment> "A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child `isA`, `broader_than`, or `narrower_than` relationships."@en .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/AuthorityFile> .
-<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "taxonomy"@en .
 <http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b152 .
+<http://purl.org/spar/fabio/Taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "taxonomy"@en .

@@ -1,0 +1,16 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+frbr:Endeavour a owl:Class ;
+    rdfs:label "endeavour"@en ;
+    vann:example """
+        :my-resource a frbr:Endeavour .
+        """ ;
+    rdfs:comment "The set of different aspects of user interests in the products of intellectual or artistic artifact."@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Item frbr:Manifestation frbr:Work ) ] .
+

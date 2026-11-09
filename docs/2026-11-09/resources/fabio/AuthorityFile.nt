@@ -1,0 +1,15 @@
+<http://purl.org/spar/fabio/AuthorityFile> <http://www.w3.org/2000/01/rdf-schema#label> "authority file"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb153 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb152 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Taxonomy> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/fabio/AuthorityFile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/AuthorityFile> <http://www.w3.org/2000/01/rdf-schema#comment> "A controlled vocabulary or official list that establishes, for consistency, the authoritative forms of headings, and the preferred terms or proper names to be used, when creating a catalogue or when indexing and searching a set of entities within a defined domain."@en .
+<http://purl.org/spar/fabio/AuthorityFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/AuthorityFile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb150 <http://www.w3.org/2002/07/owl#members> _:na015ac9d06cd4cb1a3cee73cd225cdebb151 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/AuthorityFile> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Thesaurus> .
+<http://purl.org/spar/fabio/AuthorityFile> <http://purl.org/vocab/vann/example> "\n        :my-authority-file a fabio:AuthorityFile ;\n            dcterms:title 'Virtual International Authority File (VIAF)'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A controlled vocabulary that clusters different forms of a name into a single authoritative record.'@en .\n    " .
+<http://purl.org/spar/fabio/AuthorityFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ControlledVocabulary> .

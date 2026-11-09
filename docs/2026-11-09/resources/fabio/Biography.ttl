@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Biography a owl:Class ;
+    rdfs:label "biography"@en ;
+    vann:example """
+        :my-biography a fabio:Biography ;
+            dcterms:title 'Einstein: His Life and Universe'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:subject <https://orcid.org/0000-0001-5109-3700> ; 
+            dcterms:description 'A comprehensive scholarly work detailing the life history and scientific contributions of Albert Einstein.'@en .
+    """ ;
+    rdfs:comment "An account of the events, works and achievements, both personal and professional, of a person, either living or dead."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

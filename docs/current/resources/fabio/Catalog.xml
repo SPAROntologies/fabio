@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Catalog">
-    <rdfs:label xml:lang="en">catalog</rdfs:label>
-    <rdfs:comment xml:lang="en">A list of items describing the content of a resource, for example items in an exhibition, items offered for sale by a vendor, or entities contained within a library or collection. Ideally, catalogs are created according to specific and uniform principles of construction and are under the control of an authority file.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-catalog a fabio:Catalog ;
             dcterms:title 'Online Public Access Catalog (OPAC) - University Library'@en ;
             dcterms:creator :john-doe ;
             dcterms:description 'A systematic list of items, such as books or manuscripts, arranged in a specific order to facilitate discovery.'@en .
     </vann:example>
+    <rdfs:comment xml:lang="en">A list of items describing the content of a resource, for example items in an exhibition, items offered for sale by a vendor, or entities contained within a library or collection. Ideally, catalogs are created according to specific and uniform principles of construction and are under the control of an authority file.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">catalog</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
   </rdf:Description>
 </rdf:RDF>

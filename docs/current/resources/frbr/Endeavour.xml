@@ -5,34 +5,34 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb141">
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb142"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb142">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb140">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb141"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:comment xml:lang="en">The set of different aspects of user interests in the products of intellectual or artistic artifact.</rdfs:comment>
+    <rdfs:label xml:lang="en">endeavour</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb138"/>
     <vann:example>
         :my-resource a frbr:Endeavour .
         </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b138"/>
-    <rdfs:label xml:lang="en">endeavour</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <rdfs:comment xml:lang="en">The set of different aspects of user interests in the products of intellectual or artistic artifact.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b139">
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b140"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb139">
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb140"/>
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b140">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b141"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b142">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b141">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b142"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b138">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb138">
+    <owl:unionOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb139"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b139"/>
   </rdf:Description>
 </rdf:RDF>

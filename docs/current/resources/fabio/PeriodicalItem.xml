@@ -6,7 +6,32 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb38">
+    <owl:unionOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb39"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb37">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <owl:someValuesFrom rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb38"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb40">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/PeriodicalVolume"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb36">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb42">
+    <rdf:first rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb37"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalItem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb36"/>
+    <rdfs:label xml:lang="en">periodical item</rdfs:label>
+    <rdfs:comment xml:lang="en">A piece of writing published in a periodical issue, typically accompanied by other items by different authors.</rdfs:comment>
     <vann:example>
         :my-periodical-item a fabio:PeriodicalItem ;
             dcterms:title 'The future of open science'@en ;
@@ -14,39 +39,14 @@
             dcterms:description 'An item published within an issue of a periodical.'@en .
     </vann:example>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">periodical item</rdfs:label>
-    <rdfs:comment xml:lang="en">A piece of writing published in a periodical issue, typically accompanied by other items by different authors.</rdfs:comment>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <owl:equivalentClass rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b36"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b40">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://purl.org/spar/fabio/PeriodicalVolume"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b42">
-    <rdf:first rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b37"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b37">
-    <owl:someValuesFrom rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b38"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b36">
-    <owl:intersectionOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b41"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b39">
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b40"/>
-    <rdf:first rdf:resource="http://purl.org/spar/fabio/PeriodicalIssue"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b38">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b39"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b41">
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b42"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb41">
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb42"/>
     <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb39">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/PeriodicalIssue"/>
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb40"/>
   </rdf:Description>
 </rdf:RDF>

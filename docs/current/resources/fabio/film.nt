@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/film> <http://www.w3.org/2000/01/rdf-schema#label> "film"@en .
-<http://purl.org/spar/fabio/film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/AnalogStorageMedium> .
-<http://purl.org/spar/fabio/film> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/film> <http://purl.org/vocab/vann/example> "\n        :my-fabio-item a fabio:Item ;\n            fabio:isStoredOn fabio:film .\n    " .
 <http://purl.org/spar/fabio/film> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/film> <http://www.w3.org/2000/01/rdf-schema#comment> "A thin flexible strip of plastic or other material coated with light-sensitive emulsion upon which images can be recorded, typically using a camera, usually used to record photographic images or motion pictures."@en .
+<http://purl.org/spar/fabio/film> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/film> <http://www.w3.org/2000/01/rdf-schema#label> "film"@en .
 <http://purl.org/spar/fabio/film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/fabio/film> <http://www.w3.org/2000/01/rdf-schema#comment> "A thin flexible strip of plastic or other material coated with light-sensitive emulsion upon which images can be recorded, typically using a camera, usually used to record photographic images or motion pictures."@en .
+<http://purl.org/spar/fabio/film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/AnalogStorageMedium> .

@@ -7,21 +7,21 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/SubjectTerm">
-    <rdfs:comment xml:lang="en">A concept that defines a term within the controlled vocabulary of a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, used as an annotation to describe the subject, meaning or content of a resource.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b99"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="en">subject term</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb99"/>
+    <rdfs:label xml:lang="en">subject term</rdfs:label>
     <vann:example>
         :my-subject-term a fabio:SubjectTerm ;
             dcterms:title 'Semantic Web'@en ;
             skos:inScheme :my-term-dictionary ;
             dcterms:description 'A word or phrase used to describe the subject matter of a work.'@en .
     </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A concept that defines a term within the controlled vocabulary of a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, used as an annotation to describe the subject, meaning or content of a resource.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b99">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb99">
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/TermDictionary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>

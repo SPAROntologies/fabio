@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/VocabularyMapping">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <skos:note xml:lang="en">For controlled vocabularies, such mappings may be expressed using SKOS (http://www.w3.org/2004/02/skos/).</skos:note>
+    <rdfs:comment xml:lang="en">A mapping of correspondences between two vocabularies.</rdfs:comment>
+    <rdfs:label xml:lang="en">vocabulary mapping</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Specification"/>
+    <vann:example>
+        :my-vocabulary-mapping a fabio:VocabularyMapping ;
+            dcterms:title 'Semantic mapping between MeSH and LCSH'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A document describing the mapping between two vocabularies.'@en .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

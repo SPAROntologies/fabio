@@ -1,0 +1,27 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasDiscipline a owl:ObjectProperty ;
+    rdfs:label "has discipline"@en ;
+    vann:example """
+        :my-term-dictionary a fabio:TermDictionary ;
+            fabio:hasDiscipline
+                dbpedia:Computer_science ,
+                dbpedia:Law .
+    """ ;
+    rdfs:comment "The discipline to which a subject vocabulary belongs."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( fabio:TermDictionary frbr:Endeavour ) ] ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range fabio:SubjectDiscipline ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:inverseOf fabio:isDisciplineOf ;
+    owl:propertyDisjointWith fabio:isSchemeOf ;
+    vs:term_status reg:statusStable .
+

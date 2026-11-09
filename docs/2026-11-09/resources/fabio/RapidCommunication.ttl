@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:RapidCommunication a owl:Class ;
+    rdfs:label "rapid communication"@en ;
+    vann:example """
+        :my-rapid-communication a fabio:RapidCommunication ;
+            dcterms:title 'Preliminary results for new vaccine'@en ;
+            dcterms:description 'A short paper reporting a piece of research that is particularly timely and relevant, published more quickly than a full research paper.'@en .
+    """ ;
+    rdfs:comment "A short rapidly published research article or conference paper, typically reporting significant research results that have been recently discovered, or a brief news item reporting such discoveries."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:seeAlso fabio:BriefReport ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

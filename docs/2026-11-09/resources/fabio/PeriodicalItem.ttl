@@ -1,0 +1,26 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PeriodicalItem a owl:Class ;
+    rdfs:label "periodical item"@en ;
+    vann:example """
+        :my-periodical-item a fabio:PeriodicalItem ;
+            dcterms:title 'The future of open science'@en ;
+            frbr:partOf :my-periodical-issue , :my-periodical-volume ;
+            dcterms:description 'An item published within an issue of a periodical.'@en .
+    """ ;
+    rdfs:comment "A piece of writing published in a periodical issue, typically accompanied by other items by different authors."@en ;
+    rdfs:isDefinedBy fabio: ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( fabio:Expression [ a owl:Restriction ;
+                        owl:onProperty frbr:partOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( fabio:PeriodicalIssue fabio:PeriodicalVolume ) ] ] ) ] ;
+    vs:term_status reg:statusStable .
+

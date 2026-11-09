@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Corrigendum a owl:Class ;
+    rdfs:label "corrigendum"@en ;
+    vann:example """
+        :my-corrigendum a fabio:Corrigendum ;
+            dcterms:title 'Corrigendum to: 'New Insights into Quantum Gravity''@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A notification of errors made by the authors in the original publication, issued as a formal correction.'@en .
+    """ ;
+    rdfs:comment "A formal correction to an error introduced by the author into a previously published document."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Correction ;
+    vs:term_status reg:statusStable .
+

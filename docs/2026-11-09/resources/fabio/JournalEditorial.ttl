@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:JournalEditorial a owl:Class ;
+    rdfs:label "journal editorial"@en ;
+    vann:example """
+        :my-journal-editorial a fabio:JournalEditorial ;
+            dcterms:title 'The Future of Open Access in 2026'@en ;
+            frbr:partOf :my-journal-issue ;
+            dcterms:description 'An article in a journal or other periodical that presents the opinion of the editor, publisher, or editorial board.'@en .
+    """ ;
+    rdfs:comment "An editorial published in an issue of a journal."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:partOf ;
+            owl:someValuesFrom fabio:JournalIssue ],
+        fabio:Editorial ;
+    vs:term_status reg:statusStable .
+

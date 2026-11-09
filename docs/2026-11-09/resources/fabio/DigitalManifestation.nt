@@ -1,0 +1,11 @@
+_:na015ac9d06cd4cb1a3cee73cd225cdebb100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/DigitalItem> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation that represents data in binary form, encoding the data as a series of 0s and 1s."@en .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Manifestation> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb100 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb100 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://purl.org/vocab/vann/example> "\n        :my-digital-manifestation a fabio:DigitalManifestation ;\n            dcterms:publisher :my-publisher ;\n            frbr:exemplar :my-digital-item ;\n            dcterms:format application:epub ;\n            prism:publicationDate '2007-05-31'^^xsd:date .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/DigitalManifestation> <http://www.w3.org/2000/01/rdf-schema#label> "digital manifestation"@en .

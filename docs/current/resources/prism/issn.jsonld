@@ -29,11 +29,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has International Standard Serial Number"
+        "@value": "has ISSN"
       },
       {
         "@language": "en",
-        "@value": "has ISSN"
+        "@value": "has International Standard Serial Number"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [

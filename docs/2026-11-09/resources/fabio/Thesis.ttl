@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Thesis a owl:Class ;
+    rdfs:label "thesis"@en ;
+    vann:example """
+        :my-thesis a fabio:Thesis ;
+            dcterms:title 'Developing intelligent LLM-based agents'@en ;
+            dcterms:description 'A document presenting the author's research and findings, submitted in support of candidature for a degree or professional qualification.'@en .
+    """ ;
+    rdfs:comment "A book authored by a student containing a formal presentations of research outputs submitted for examination in completion of a course of study at an institution of higher education, to fulfil the requirements for an academic degree. Also know as a dissertation."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Book ;
+    vs:term_status reg:statusStable ;
+    skos:note "For the alternative meaning of the word 'thesis', namely the formulation of a concept, hypothesis, idea, point of view or theory presented for review and/or discussion, use fabio:Proposition."@en .
+

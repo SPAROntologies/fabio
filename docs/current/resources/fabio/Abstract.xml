@@ -7,17 +7,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Abstract">
+    <rdfs:comment xml:lang="en">A brief summary of a work on a particular subject, designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents. The abstract may be an integral part of the work itself, written by the same author(s) and appearing at the beginning of a work such as a research paper, report, review or thesis. Alternatively it may be separate from the published work itself, and written by someone other than the author(s) of the published work, for example by a member of a professional abstracting service such as CAB Abstracts.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/StructuredSummary"/>
     <vann:example>
         :my-abstract a fabio:Abstract ;
             c4o:hasContent 'In the legal domain, ontologies enjoy quite some reputation as a way to model normative knowledge about laws and jurisprudence.'@en .
     </vann:example>
-    <rdfs:label xml:lang="en">abstract</rdfs:label>
     <rdfs:seeAlso rdf:resource="http://purl.org/spar/fabio/StructuredSummary"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/StructuredSummary"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:comment xml:lang="en">A brief summary of a work on a particular subject, designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents. The abstract may be an integral part of the work itself, written by the same author(s) and appearing at the beginning of a work such as a research paper, report, review or thesis. Alternatively it may be separate from the published work itself, and written by someone other than the author(s) of the published work, for example by a member of a professional abstracting service such as CAB Abstracts.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">abstract</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

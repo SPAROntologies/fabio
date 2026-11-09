@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:CompleteWorks a owl:Class ;
+    rdfs:label "complete works"@en ;
+    vann:example """
+        :my-complete-works a fabio:CompleteWorks ;
+            dcterms:title 'Dante Alighieri: the complete works'@en ;
+            frbr:part :my-work, :my-another-work, :my-even-another-work ;
+            dcterms:description 'The complete set of all the intellectual works of Dante Alighieri, published as a comprehensive collection.'@en .
+    """ ;
+    rdfs:comment "A collection of all the literary or scholastic works of a single person."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:CollectedWorks ;
+    vs:term_status reg:statusStable .
+

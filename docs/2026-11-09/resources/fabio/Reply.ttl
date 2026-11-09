@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Reply a owl:Class ;
+    rdfs:label "reply"@en ;
+    vann:example """
+        :my-reply a fabio:Reply ;
+            dcterms:title 'Reply to Professor X's comment'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A written or spoken statement or document given in answer to another such statement or document.'@en .
+    """ ;
+    rdfs:comment "A work that is a reply, either to a letter or other direct communication, or to feedback or comments about a piece of submitted writing. The latter is typically written by the author of a journal article submitted for publication, or by an applicant making a grant application, in response to reviews of the work from peer reviewers prior to publication (for the journal article) or prior to funding decision (for the grant application). Alternatively, it can be written in response to post-publication peer-review of a published journal article, or comments about it."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

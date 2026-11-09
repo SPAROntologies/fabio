@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb67"
       },
       {
-        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b67"
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b67",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb67",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

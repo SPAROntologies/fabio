@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Newspaper a owl:Class ;
+    rdfs:label "newspaper"@en ;
+    vann:example """
+        :my-newspaper a fabio:Newspaper ;
+            dcterms:title 'Corriere della Sera'@en ;
+            frbr:part :my-newspaper-issue ;
+            dcterms:description 'A periodical publication containing news, other informative articles, and advertising.'@en .
+    """ ;
+    rdfs:comment "A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:NewspaperIssue ],
+        fabio:Periodical ;
+    vs:term_status reg:statusStable .
+

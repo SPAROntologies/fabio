@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/floppy-disk">
+    <rdfs:label xml:lang="en">floppy disk</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/fabio/DigitalStorageMedium"/>
+    <rdfs:comment xml:lang="en">A rewritable data storage medium that is composed of a disk of thin, flexible (floppy) magnetic storage medium encased in a square or rectangular plastic shell. Data are encoded magnetically by a read/write head that float on a cushion of air in close proximity to the surface of the rotated disk.</rdfs:comment>
+    <vann:example>
+        :my-fabio-item a fabio:Item ;
+            fabio:isStoredOn fabio:floppy-disk .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+</rdf:RDF>

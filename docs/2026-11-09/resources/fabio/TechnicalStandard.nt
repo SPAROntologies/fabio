@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/TechnicalStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "An official or public specification of, or requirement for, a technical method, practice, process or protocol that is involved in, for example, manufacturing, computation, electronic communication, or digital media."@en .
+<http://purl.org/spar/fabio/TechnicalStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Specification> .
+<http://purl.org/spar/fabio/TechnicalStandard> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/TechnicalStandard> <http://purl.org/vocab/vann/example> "\n        :my-technical-standard a fabio:TechnicalStandard ;\n            dcterms:title 'ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection'@en ;\n            dcterms:creator :john-doe ;\n            dcterms:description 'A formal document that establishes uniform engineering or technical criteria, methods, processes and practices.'@en .\n    " .
+<http://purl.org/spar/fabio/TechnicalStandard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/TechnicalStandard> <http://www.w3.org/2000/01/rdf-schema#label> "technical standard"@en .
+<http://purl.org/spar/fabio/TechnicalStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

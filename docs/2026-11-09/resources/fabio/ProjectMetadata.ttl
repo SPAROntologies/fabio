@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ProjectMetadata a owl:Class ;
+    rdfs:label "project metadata"@en ;
+    vann:example """
+        :my-project-metadata a fabio:ProjectMetadata ;
+            dcterms:title 'Technical metadata of the Horizon Europe 2026 project'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A document containing metadata about a project.'@en .
+    """ ;
+    rdfs:comment "Metadata describing a project."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Metadata ;
+    vs:term_status reg:statusStable ;
+    skos:note "Examples include the project name, the names of those who conducted the project, the name of the institution in which the project was conducted, and the project funding information."@en .
+

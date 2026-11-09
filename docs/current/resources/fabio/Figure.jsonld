@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/fabio/Expression"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb17"
       },
       {
-        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b17"
+        "@id": "http://purl.org/spar/fabio/Expression"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b17",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb17",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

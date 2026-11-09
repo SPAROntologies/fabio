@@ -1,9 +1,9 @@
-<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that includes another entity."@en .
 <http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#part> .
 <http://purl.org/vocab/frbr/core#partOf> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            frbr:partOf :my-journal-issue .\n    " .
-<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
-<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that includes another entity."@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

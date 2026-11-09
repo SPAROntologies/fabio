@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:VocabularyMapping a owl:Class ;
+    rdfs:label "vocabulary mapping"@en ;
+    vann:example """
+        :my-vocabulary-mapping a fabio:VocabularyMapping ;
+            dcterms:title 'Semantic mapping between MeSH and LCSH'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A document describing the mapping between two vocabularies.'@en .
+    """ ;
+    rdfs:comment "A mapping of correspondences between two vocabularies."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Specification ;
+    vs:term_status reg:statusStable ;
+    skos:note "For controlled vocabularies, such mappings may be expressed using SKOS (http://www.w3.org/2004/02/skos/)."@en .
+

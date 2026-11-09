@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ComputerFile a owl:Class ;
+    rdfs:label "computer file"@en ;
+    vann:example """
+        :my-computer-file a fabio:ComputerFile ;
+            dcterms:title 'research_data_results_2026'@en ;
+            dcterms:description 'An exemplar of a digital manifestation, stored as a discrete file on a computer system.'@en .
+    """ ;
+    rdfs:comment "A digital item containing information in computer-readable form encoded in a particular format."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:DigitalItem ;
+    vs:term_status reg:statusStable .
+

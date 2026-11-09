@@ -8,22 +8,22 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ReportDocument">
     <rdfs:label xml:lang="en">report document</rdfs:label>
-    <rdfs:comment xml:lang="en">The realization of a report, usually in printed form.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb102"/>
     <vann:example>
         :my-report-document a fabio:ReportDocument ;
             dcterms:title 'Yearly report on scientific research'@en ;
             frbr:realizationOf :my-report ;
             dcterms:description 'A document containing a report.'@en .
     </vann:example>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b102"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">The realization of a report, usually in printed form.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b102">
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb102">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Report"/>
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Report"/>
   </rdf:Description>
 </rdf:RDF>

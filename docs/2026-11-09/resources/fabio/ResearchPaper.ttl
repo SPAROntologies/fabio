@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ResearchPaper a owl:Class ;
+    rdfs:label "research paper"@en ;
+    vann:example """
+        :my-research-paper a fabio:ResearchPaper ;
+            dcterms:creator :john-doe ;
+            dcterms:title 'Towards a new conceptualization of Symbolic Artificial Intelligence'@en ;
+            dcterms:description 'A scholarly work reporting original research contributions.'@en .
+    """ ;
+    rdfs:comment "A scholarly work that reports original research contributions addressing theoretical, analytical or experimental aspects of a particular scholarly domain."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ScholarlyWork ;
+    vs:term_status reg:statusStable .
+

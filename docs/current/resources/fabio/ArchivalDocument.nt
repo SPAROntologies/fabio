@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/ArchivalDocument> <http://purl.org/vocab/vann/example> "\n        :my-archival-document a fabio:ArchivalDocument ;\n            dcterms:title 'Letter from Alan Turing to the Editor of Nature, 1945'@en ;\n            dcterms:identifier 'MS-TUR-01-A' ;\n            frbr:realizationOf :my-archival-record ;\n            dcterms:description 'A handwritten letter preserved in the university archives.'@en .\n    " .
-<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A realization of the content related to an archival record. It can be exemplified as a book, a document, a letter, a database, etc."@en .
-<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 <http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "archival document"@en .
+<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A realization of the content related to an archival record. It can be exemplified as a book, a document, a letter, a database, etc."@en .
+<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ArchivalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

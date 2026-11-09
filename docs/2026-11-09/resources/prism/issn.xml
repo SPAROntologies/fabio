@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/issn">
+    <rdfs:seeAlso rdf:resource="http://www.issn.org/"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdfs:label xml:lang="en">has ISSN</rdfs:label>
+    <rdfs:label xml:lang="en">has International Standard Serial Number</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">The International Standard Serial Number, ISSN, an identifier for serial publications.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
+    <vann:example>
+        :my-journal a fabio:Journal ;
+            prism:issn '1570-8268' .
+    </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+  </rdf:Description>
+</rdf:RDF>

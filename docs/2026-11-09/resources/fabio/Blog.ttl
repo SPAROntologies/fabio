@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Blog a owl:Class ;
+    rdfs:label "blog"@en ;
+    vann:example """
+        :my-blog a fabio:Blog ;
+            dcterms:title 'The Semantic Web Insights Blog'@en ;
+            frbr:part :my-blog-post, :my-another-blog-post ;
+            fabio:hasURL 'https://blog.example.org/semantic-web'^^xsd:anyURI ;
+            dcterms:description 'A web manifestation used for publishing periodic entries about linked data technologies.'@en .
+    """ ;
+    rdfs:comment "A Web publication medium containing blog posts."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:WebManifestation ;
+    vs:term_status reg:statusStable .
+

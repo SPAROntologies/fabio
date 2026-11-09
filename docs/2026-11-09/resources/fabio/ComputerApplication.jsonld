@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/ComputerApplication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-computer-application a fabio:ComputerApplication ;\n            dcterms:title 'OpenRefine'@en ;\n            dcterms:creator :john-doe ;\n            frbr:realizationOf :my-software ;\n            dcterms:description 'A powerful tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A computer program designed to assist a human user to perform one or more goal-oriented tasks such as word processing or image processing."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "computer application"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/ComputerProgram"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "A computer application will typically save its output files in one or more specific formats, conforming either to proprietary or open standards."
+      }
+    ]
+  }
+]

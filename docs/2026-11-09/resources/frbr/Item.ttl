@@ -1,0 +1,14 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+frbr:Item a owl:Class ;
+    rdfs:label "item"@en ;
+    rdfs:comment """
+A single exemplar of a manifestation.
+
+The entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). 
+There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).
+        """@en ;
+    rdfs:isDefinedBy frbr: .
+

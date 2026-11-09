@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ExecutiveSummary a owl:Class ;
+    rdfs:label "executive summary"@en ;
+    vann:example """
+        :my-executive-summary a fabio:ExecutiveSummary ;
+            dcterms:title 'Executive Summary: Annual Research Impact 2025'@en ;
+            dcterms:description 'A short section of a document that summarizes a longer report or proposal in such a way that readers can rapidly become acquainted with a large body of material.'@en .
+    """ ;
+    rdfs:comment "An executive summary is a brief report summarizing a longer formal report, designed to present the key points, conclusions and recommendations arising from the study being reported, for readers too busy to take the time to read the complete report."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:BriefReport ;
+    vs:term_status reg:statusStable .
+

@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ApplicationProgrammingInterface">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A computer program, commonly abbreviated as 'API', that enables a separate computer to interact programmatically with the computer running it.</rdfs:comment>
-    <rdfs:label xml:lang="en">API</rdfs:label>
-    <rdfs:label xml:lang="en">application programming interface</rdfs:label>
     <vann:example>
         :my-api a fabio:ApplicationProgrammingInterface ;
             dcterms:title 'OpenCitations Meta REST API' ;
             dcterms:description 'The REST API for OpenCitations Meta, the OpenCitations dataset containing bibliographic metadata associated with the documents involved in the citations stored in the OpenCitations Indexes.'@en .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">application programming interface</rdfs:label>
+    <rdfs:label xml:lang="en">API</rdfs:label>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ComputerProgram"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:comment xml:lang="en">A computer program, commonly abbreviated as 'API', that enables a separate computer to interact programmatically with the computer running it.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

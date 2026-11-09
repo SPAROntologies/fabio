@@ -7,23 +7,23 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ManifestationCollection">
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb28"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A collection of manifestations.</rdfs:comment>
     <vann:example>
         :my-manifestation-collection a fabio:ManifestationCollection ;
             dcterms:title 'The Complete Works of Shakespeare - Hardback Collection'@en ;
             frbr:part :my-analog-manifestation, :my-digital-manifestation ;
             dcterms:description 'A collection of manifestations, such as a set of books or a digital archive of files.'@en .
     </vann:example>
-    <rdfs:comment xml:lang="en">A collection of manifestations.</rdfs:comment>
     <rdfs:label xml:lang="en">manifestation collection</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b28"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b28">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb28">
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

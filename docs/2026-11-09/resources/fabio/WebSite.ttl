@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:WebSite a owl:Class ;
+    rdfs:label "web site"@en ;
+    vann:example """
+        :my-web-site a fabio:WebSite ;
+            dcterms:title 'Semantic Web Italian Portal'@en ;
+            frbr:embodimentOf :my-web-content ;
+            dcterms:description 'A collection of related web pages, images, videos or other digital assets that are addressed with a common domain name or IP address.'@en .
+    """ ;
+    rdfs:comment "A collection of related web pages containing text, images, videos and/or other digital assets that are addressed relative to a common Uniform Resource Locator (URL). A web site is hosted on at least one web server, accessible via a network such as the Internet or a private local area network."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:WebManifestation ;
+    vs:term_status reg:statusStable .
+

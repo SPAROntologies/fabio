@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/Nanopublication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-nanopublication a fabio:Nanopublication ;\n            dcterms:title 'Interaction protein-gene NP-721'@en ;\n            dcterms:description 'The smallest unit of publishable information, an assertion that can be uniquely identified and attributed.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A single, attributable and machine-readable factual assertion - the smallest unit of publishable information that can be uniquely identified and attributed to its author - typically expressed in RDF."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "nanopublication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/fabio/Expression"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "The minimal components of a nanopublication are as follows:\n* the factual assertion itself, in the form subject, predicate and object (e.g. malaria is_a disease);\n* provenance information about the nanopublication, defining its authorship and creation date;\n* supporting information (optional), providing context for the assertion;\n* a unique identifier for the nanopublication, in the form of a URI;\n* an integrity key that ensures that the nanopublication is in its original form and has not been altered."
+      }
+    ]
+  }
+]

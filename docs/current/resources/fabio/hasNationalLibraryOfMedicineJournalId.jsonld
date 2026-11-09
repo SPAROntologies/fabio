@@ -34,7 +34,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b56"
+        "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb56"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b56",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb56",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Datatype"
     ],
@@ -67,14 +67,14 @@
       {
         "@list": [
           {
-            "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b57"
+            "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb57"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:nbd59893e8a4144f9864e0ea78c01ebc3b57",
+    "@id": "_:na015ac9d06cd4cb1a3cee73cd225cdebb57",
     "http://www.w3.org/2001/XMLSchema#pattern": [
       {
         "@value": "[0-9]+"

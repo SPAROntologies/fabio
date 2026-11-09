@@ -9,19 +9,19 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">concept</rdfs:label>
+    <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:note xml:lang="en">Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class.</skos:note>
+    <vaem:rationale xml:lang="en">The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.</vaem:rationale>
     <vann:example>
         :my-concept a skos:Concept ;
             skos:prefLabel 'Semantic Web'@en ;
             skos:definition 'An extension of the World Wide Web that enables computers to interpret the meaning of data.'@en ;
             skos:inScheme :my-concept-scheme .
     </vann:example>
-    <vaem:rationale xml:lang="en">The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.</vaem:rationale>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
-    <rdfs:label xml:lang="en">concept</rdfs:label>
-    <skos:note xml:lang="en">Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class.</skos:note>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,8 +1,8 @@
+<http://purl.org/spar/fabio/ram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/fabio/ram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/ram> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/ram> <http://www.w3.org/2000/01/rdf-schema#label> "RAM"@en .
 <http://purl.org/spar/fabio/ram> <http://www.w3.org/2000/01/rdf-schema#comment> "Abbreviation of Random Access Memory. A form of rewritable computer data storage that takes the form of integrated circuits that allow data to be stored and accessed in any order (i.e. at random), thereby achieving greater speed than for access of data stored in linear form on digital magnetic tape."@en .
 <http://purl.org/spar/fabio/ram> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            fabio:isStoredOn fabio:ram .\n    " .
 <http://purl.org/spar/fabio/ram> <http://www.w3.org/2000/01/rdf-schema#label> "random access memory"@en .
-<http://purl.org/spar/fabio/ram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/fabio/ram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/DigitalStorageMedium> .
-<http://purl.org/spar/fabio/ram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

@@ -7,15 +7,15 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Table">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">table</rdfs:label>
-    <rdfs:comment xml:lang="en">A graphical means of presenting data in a grid of rows and columns, within which the cells usually contain alphanumeric text or numeric values. If included within a publication, a table typically appearing unaligned with the main body of text, with its own descriptive title.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-table a fabio:Table ;
             dcterms:title 'Table 1: Comparative analysis of results'@en ;
             dcterms:description 'A set of data arranged in rows and columns.'@en .
     </vann:example>
+    <rdfs:comment xml:lang="en">A graphical means of presenting data in a grid of rows and columns, within which the cells usually contain alphanumeric text or numeric values. If included within a publication, a table typically appearing unaligned with the main body of text, with its own descriptive title.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">table</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

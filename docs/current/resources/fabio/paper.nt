@@ -1,7 +1,7 @@
-<http://purl.org/spar/fabio/paper> <http://www.w3.org/2000/01/rdf-schema#comment> "A thin flat material, typically made from wood pulp, mainly used for writing upon, for printing upon or for packaging."@en .
 <http://purl.org/spar/fabio/paper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/paper> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            fabio:isStoredOn fabio:paper .\n    " .
 <http://purl.org/spar/fabio/paper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/paper> <http://www.w3.org/2000/01/rdf-schema#label> "paper" .
-<http://purl.org/spar/fabio/paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/AnalogStorageMedium> .
 <http://purl.org/spar/fabio/paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/fabio/paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/fabio/AnalogStorageMedium> .
+<http://purl.org/spar/fabio/paper> <http://purl.org/vocab/vann/example> "\n        :my-item a fabio:Item ;\n            fabio:isStoredOn fabio:paper .\n    " .
+<http://purl.org/spar/fabio/paper> <http://www.w3.org/2000/01/rdf-schema#label> "paper" .
+<http://purl.org/spar/fabio/paper> <http://www.w3.org/2000/01/rdf-schema#comment> "A thin flat material, typically made from wood pulp, mainly used for writing upon, for printing upon or for packaging."@en .

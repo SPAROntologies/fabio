@@ -1,9 +1,9 @@
 <http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
-<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://purl.org/vocab/vann/example> "\n        :my-print-object a fabio:PrintObject ;\n            prism:startingPage '171' .\n    " .
-<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#comment> "The first page of a resource."@en .
 <http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#label> "has starting page"@en .
-<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#comment> "The first page of a resource."@en .
+<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://purl.org/vocab/vann/example> "\n        :my-print-object a fabio:PrintObject ;\n            prism:startingPage '171' .\n    " .
+<http://prismstandard.org/namespaces/basic/2.0/startingPage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .

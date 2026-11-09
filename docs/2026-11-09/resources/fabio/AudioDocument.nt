@@ -1,0 +1,11 @@
+<http://purl.org/spar/fabio/AudioDocument> <http://purl.org/vocab/vann/example> "\n        :my-audio-document a fabio:AudioDocument ;\n            dcterms:title 'Audio recording of the interview with Tim Berners-Lee'@en ;\n            frbr:realizationOf :my-sound-recording .\n    " .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of a sound recording."@en .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/2000/01/rdf-schema#label> "audio document"@en .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb8 .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/SoundRecording> .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

@@ -1,18 +1,18 @@
-_:nbd59893e8a4144f9864e0ea78c01ebc3b60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodiment> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b61 .
-<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:nbd59893e8a4144f9864e0ea78c01ebc3b59 .
-<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/fabio/isPortrayalOf> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#realization> .
 <http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#comment> "The item of a work."@en .
-<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#label> "has portrayal"@en .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbd59893e8a4144f9864e0ea78c01ebc3b60 .
-<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:na015ac9d06cd4cb1a3cee73cd225cdebb59 .
+<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/fabio/isPortrayalOf> .
+<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb61 .
 <http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#exemplar> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#realization> .
+<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#exemplar> .
+<http://purl.org/spar/fabio/hasPortrayal> <http://purl.org/vocab/vann/example> "\n        :my-research-paper a fabio:ResearchPaper;\n            fabio:hasPortrayal :my-digital-item .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#embodiment> .
+<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#label> "has portrayal"@en .
 <http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2004/02/skos/core#note> "This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."@en .
 <http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
-<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/hasPortrayal> <http://purl.org/vocab/vann/example> "\n        :my-research-paper a fabio:ResearchPaper;\n            fabio:hasPortrayal :my-digital-item .\n    " .
+<http://purl.org/spar/fabio/hasPortrayal> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Item> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na015ac9d06cd4cb1a3cee73cd225cdebb60 .

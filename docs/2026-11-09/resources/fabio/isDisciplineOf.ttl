@@ -1,0 +1,26 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:isDisciplineOf a owl:ObjectProperty ;
+    rdfs:label "is discipline of"@en ;
+    vann:example """
+        :my-concept a skos:Concept ;
+            skos:prefLabel 'Ontology Engineering'@en ;
+            fabio:isDisciplineOf :my-research-paper .
+    """ ;
+    rdfs:comment "The discipline belonging to a certain subject vocabulary."@en ;
+    rdfs:domain fabio:SubjectDiscipline ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( fabio:TermDictionary frbr:Endeavour ) ] ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:propertyDisjointWith skos:inScheme ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:MagazineEditorial a owl:Class ;
+    rdfs:label "magazine editorial"@en ;
+    vann:example """
+        :my-magazine-editorial a fabio:MagazineEditorial ;
+            dcterms:title 'A New Era for Digital Media'@en ;
+            frbr:partOf :my-magazine-issue ;
+            dcterms:description 'An editorial article published in a magazine, typically expressing the views of the editor or the publisher.'@en .
+    """ ;
+    rdfs:comment "An editorial published in an issue of a magazine."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:partOf ;
+            owl:someValuesFrom fabio:MagazineIssue ],
+        fabio:Editorial ;
+    vs:term_status reg:statusStable .
+

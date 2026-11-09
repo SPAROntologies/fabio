@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Proposition a owl:Class ;
+    rdfs:label "proposition"@en ;
+    vann:example """
+        :my-proposition a fabio:Proposition ;
+            dcterms:title 'P == NP'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A statement or assertion that expresses a new conceptualisation.'@en .
+    """ ;
+    rdfs:comment "A proposal or proposition of a new conceptualisation, hypothesis, idea, theory, activity or organisation."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

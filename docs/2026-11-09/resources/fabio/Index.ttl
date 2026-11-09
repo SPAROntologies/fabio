@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Index a owl:Class ;
+    rdfs:label "index"@en ;
+    vann:example """
+        :my-index a fabio:Index ;
+            dcterms:title 'Analytical Index of 'Semantic Web Primer''@en ;
+            frbr:partOf :my-book ;
+            dcterms:description 'An alphabetical list of names, subjects, etc., with references to the places where they occur in a document.'@en .
+    """ ;
+    rdfs:comment "An alphabetically-ordered list of words and phrases ('headings') and associated pointers ('locators') to where useful material relating to that heading can be found in a document."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

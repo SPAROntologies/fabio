@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Dataset a owl:Class ;
+    rdfs:label "dataset"@en ;
+    vann:example """
+        :my-dataset a fabio:Dataset ;
+            dcterms:title 'Global Temperature Anomalies Dataset 2026'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A collection of related data records, with a specific focus on monthly temperature variations recorded globally.'@en .
+    """ ;
+    rdfs:comment "A collection of related facts, often expressed in numerical form and encoded in a defined structure."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Work ;
+    vs:term_status reg:statusStable .
+

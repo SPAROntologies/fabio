@@ -18,14 +18,17 @@ repository-code: 'https://github.com/SPAROntologies/fabio'
 url: 'http://www.sparontologies.net/ontologies/fabio'
 abstract: The FRBR-aligned Bibliographic Ontology (FaBiO) is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references.
 keywords:
+- SPAR Ontologies
+- OWL ontology
 - bibliography
 - bibliometrics
-- scholarly publishing
+- scholarly communication
 - scientometrics
+- FRBR
 - semantic publishing
 license: CC-BY-4.0
-version: 2.3.2
-date-released: '2026-10-05'
+version: 2.3.3
+date-released: '2026-11-09'
 preferred-citation:
     type: article
     authors:

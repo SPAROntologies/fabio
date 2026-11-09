@@ -7,16 +7,16 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/MethodsPaper">
     <rdfs:comment xml:lang="en">A scholarly work detailing a method, procedure or experimental protocol employed in a particular scholarly domain.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
-    <rdfs:label xml:lang="en">methods paper</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
         :my-methods-paper a fabio:MethodsPaper ;
             dcterms:title 'A Novel Method for Rapid DNA Sequencing'@en ;
             dcterms:creator :john-doe ;
             dcterms:description 'A scholarly paper whose primary purpose is to describe a new method or a significant improvement to an existing method.'@en .
     </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">methods paper</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ScholarlyWork"/>
   </rdf:Description>
 </rdf:RDF>

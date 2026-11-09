@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Novel">
+    <rdfs:label xml:lang="en">novel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/LiteraryArtisticWork"/>
+    <rdfs:comment xml:lang="en">A long fictitious narrative written in literary prose.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-novel a fabio:Novel ;
             dcterms:title 'Three Body Problem'@en ;
             dcterms:creator :john-doe ;
             dcterms:description 'A long narrative in literary prose.'@en .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/LiteraryArtisticWork"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">novel</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:comment xml:lang="en">A long fictitious narrative written in literary prose.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

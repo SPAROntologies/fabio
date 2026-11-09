@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Micropost a owl:Class ;
+    rdfs:label "micropost"@en ;
+    vann:example """
+        :my-micropost a fabio:Micropost ;
+            frbr:partOf :my-microblog ;
+            dcterms:description 'A very short post on a microblog, typically limited to a few hundred characters.'@en .
+    """ ;
+    rdfs:comment "A content item that is published in a Microblog, typically containing just a short sentence, a single image, or a URL."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Entry,
+        fabio:WebContent ;
+    vs:term_status reg:statusStable .
+

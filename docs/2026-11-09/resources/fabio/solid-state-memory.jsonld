@@ -1,0 +1,36 @@
+[
+  {
+    "@id": "http://purl.org/spar/fabio/solid-state-memory",
+    "@type": [
+      "http://purl.org/spar/fabio/DigitalStorageMedium",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n        :my-item a fabio:Item ;\n            fabio:isStoredOn fabio:solid-state-memory .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A digital storage device built entirely from solid electronic materials with no moving parts, e.g. a USB flash drive."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "solid state memory"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

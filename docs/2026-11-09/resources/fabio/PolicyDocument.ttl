@@ -1,0 +1,24 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:PolicyDocument a owl:Class ;
+    rdfs:label "policy document"@en ;
+    vann:example """
+        :my-policy-document a fabio:PolicyDocument ;
+            dcterms:title 'University Policy for Open Access v3.0'@en ;
+            frbr:realizationOf :my-policy ;
+            dcterms:description 'A document that describes a set of principles or rules agreed upon by an organization or government.'@en .
+    """ ;
+    rdfs:comment "A document embodying a policy that describes and defines how something should be done."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:realizationOf ;
+            owl:someValuesFrom fabio:Policy ],
+        fabio:Expression ;
+    vs:term_status reg:statusStable .
+

@@ -6,16 +6,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/SupplementaryInformationFile">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:label xml:lang="en">supplementary information file</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself.</rdfs:comment>
     <vann:example>
         :my-supplementary-information a fabio:SupplementaryInformationFile ;
             dcterms:title 'Extended tables'@en ;
             dcterms:description 'Information that is relevant to a work but is not essential to its understanding and is usually published separately.'@en .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

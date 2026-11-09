@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/NewsReport">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Report"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">news report</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A report of an item of news.</rdfs:comment>
+    <vann:example>
+        :my-news-report a fabio:NewsReport ;
+            dcterms:title 'Social and climate emergency'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A detailed account of a news event, often providing context and background information.'@en .
+    </vann:example>
+  </rdf:Description>
+</rdf:RDF>

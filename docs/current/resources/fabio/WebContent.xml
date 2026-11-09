@@ -7,23 +7,23 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/WebContent">
-    <rdfs:comment xml:lang="en">Information prepared specifically and primarily for manifestation in a web page, comprising text, images, datasets and/or other works.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">web content</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb104"/>
     <vann:example>
         :my-web-content a fabio:WebContent ;
             dcterms:title 'Content of SPUK's home page'@en ;
             frbr:embodiment :my-web-manifestation ;
             dcterms:description 'A document or other resource that is delivered to a user over the World Wide Web.'@en .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b104"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:label xml:lang="en">web content</rdfs:label>
+    <rdfs:comment xml:lang="en">Information prepared specifically and primarily for manifestation in a web page, comprising text, images, datasets and/or other works.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b104">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb104">
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Supplement a owl:Class ;
+    rdfs:label "supplement"@en ;
+    vann:example """
+        :my-supplement a fabio:Supplement ;
+            dcterms:title 'Dataset and appendices'@en ;
+            dcterms:description 'An expression that updates or adds to another endeavor, and is usually published separately.'@en .
+    """ ;
+    rdfs:comment "A supplement to a publication such as a book, journal, magazine or newspaper, additional to the main publication."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable ;
+    skos:note "For example, a colour supplement to a sunday newspaper, or a special supplementary issue of a journal or a journal volume containing invited articles on a special topic, or abstracts or papers presented at a scientific conference."@en .
+

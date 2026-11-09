@@ -7,18 +7,18 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ProjectMetadata">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">project metadata</rdfs:label>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Metadata"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-project-metadata a fabio:ProjectMetadata ;
             dcterms:title 'Technical metadata of the Horizon Europe 2026 project'@en ;
             dcterms:creator :john-doe ;
             dcterms:description 'A document containing metadata about a project.'@en .
     </vann:example>
-    <skos:note xml:lang="en">Examples include the project name, the names of those who conducted the project, the name of the institution in which the project was conducted, and the project funding information.</skos:note>
     <rdfs:comment xml:lang="en">Metadata describing a project.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Metadata"/>
-    <rdfs:label xml:lang="en">project metadata</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:note xml:lang="en">Examples include the project name, the names of those who conducted the project, the name of the institution in which the project was conducted, and the project funding information.</skos:note>
   </rdf:Description>
 </rdf:RDF>

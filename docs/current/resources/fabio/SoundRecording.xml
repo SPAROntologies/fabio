@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/SoundRecording">
+    <rdfs:label xml:lang="en">sound recording</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-sound-recording a fabio:SoundRecording ;
             dcterms:title 'Audio recording of lesson 01'@en ;
             dcterms:creator :john-doe ;
             dcterms:description 'A recording of sound, such as music, speech, or other sounds.'@en .
     </vann:example>
-    <rdfs:label xml:lang="en">sound recording</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:comment xml:lang="en">The creative work of making an electrical or mechanical recording of sounds, such as the spoken voice, singing, instrumental music, animal vocalizations or sound effects. </rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
   </rdf:Description>
 </rdf:RDF>

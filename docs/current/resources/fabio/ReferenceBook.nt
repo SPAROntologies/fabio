@@ -1,11 +1,11 @@
-_:nbd59893e8a4144f9864e0ea78c01ebc3b44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
-<http://purl.org/spar/fabio/ReferenceBook> <http://purl.org/vocab/vann/example> "\n        :my-reference-book a fabio:ReferenceBook ;\n            dcterms:title 'Oxford English Dictionary, 12th Edition'@en ;\n            frbr:realizationOf :my-reference-work ;\n            dcterms:description 'A book intended to be consulted for information rather than read from beginning to end.'@en .\n    " .
-<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#label> "reference book"@en .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b44 .
+<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb44 .
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Book> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b44 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ReferenceWork> .
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#comment> "A book containing authoritative factual information, such as a dictionary, encyclopaedia, handbook or field guide, which is a realisation of a certain reference work and may contain several reference entries."@en .
-<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#label> "reference book"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb44 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/ReferenceBook> <http://purl.org/vocab/vann/example> "\n        :my-reference-book a fabio:ReferenceBook ;\n            dcterms:title 'Oxford English Dictionary, 12th Edition'@en ;\n            frbr:realizationOf :my-reference-work ;\n            dcterms:description 'A book intended to be consulted for information rather than read from beginning to end.'@en .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/ReferenceBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

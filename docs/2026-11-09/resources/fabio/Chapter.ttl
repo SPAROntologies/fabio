@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Chapter a owl:Class ;
+    rdfs:label "chapter"@en ;
+    vann:example """
+        :my-chapter a fabio:Chapter ;
+            dcterms:title 'Introduction to SPARQL Query Language'@en ;
+            frbr:partOf :my-book ;
+            fabio:hasSequenceIdentifier '1' ;
+            dcterms:description 'The introductory chapter of a technical handbook.'@en .
+    """ ;
+    rdfs:comment "A defined document section, forming part of or intended for inclusion within a larger document, usually with its own title or chapter number. Different chapters within a document such as a book or a report may each be independently authored, or may all be authored by a single individual or group of authors."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Expression ;
+    vs:term_status reg:statusStable .
+

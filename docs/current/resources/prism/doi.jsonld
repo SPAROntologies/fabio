@@ -29,11 +29,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has Digital Object Identifier"
+        "@value": "has DOI"
       },
       {
         "@language": "en",
-        "@value": "has DOI"
+        "@value": "has Digital Object Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [

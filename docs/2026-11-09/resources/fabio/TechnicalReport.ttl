@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:TechnicalReport a owl:Class ;
+    rdfs:label "technical report"@en ;
+    vann:example """
+        :my-technical-report a fabio:TechnicalReport ;
+            dcterms:title 'Technical report on genAI security'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A document that describes the process, progress, or results of technical or scientific research.'@en .
+    """ ;
+    rdfs:comment "A report of a technical nature."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Report ;
+    vs:term_status reg:statusStable .
+

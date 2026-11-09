@@ -7,16 +7,16 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/DataManagementPolicy">
     <rdfs:comment xml:lang="en">A policy that describes and defines how data should be managed, preserved and shared.</rdfs:comment>
+    <rdfs:label xml:lang="en">data management policy</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Policy"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-data-management-policy a fabio:DataManagementPolicy ;
             dcterms:title 'Institutional Policy on Research Data Management'@en ;
             dcterms:creator :john-doe ;
             dcterms:description 'A policy specifically addressing the principles and requirements for managing, storing, and sharing research data.'@en .
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">data management policy</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Policy"/>
   </rdf:Description>
 </rdf:RDF>

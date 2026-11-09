@@ -1,11 +1,11 @@
-_:nbd59893e8a4144f9864e0ea78c01ebc3b49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/VocabularyMapping> .
-<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
-<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b49 .
-<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/VocabularyMapping> .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://purl.org/vocab/vann/example> "\n        :my-vocabulary-mapping-document a fabio:VocabularyMappingDocument ;\n            dcterms:title 'Technical documentation on MeSH-LCSH mapping'@en ;\n            frbr:realizationOf :my-vocabulary-mapping ;\n            dcterms:description 'A document that describes a vocabulary mapping, such as a formal specification or a user guide.'@en .\n    " .
-<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b49 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#label> "vocabulary mapping document"@en .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb49 .
 <http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing a vocabulary mapping."@en .
+<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
+<http://purl.org/spar/fabio/VocabularyMappingDocument> <http://www.w3.org/2000/01/rdf-schema#label> "vocabulary mapping document"@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb49 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .

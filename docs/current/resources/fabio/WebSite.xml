@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/WebSite">
-    <rdfs:label xml:lang="en">web site</rdfs:label>
+    <rdfs:comment xml:lang="en">A collection of related web pages containing text, images, videos and/or other digital assets that are addressed relative to a common Uniform Resource Locator (URL). A web site is hosted on at least one web server, accessible via a network such as the Internet or a private local area network.</rdfs:comment>
     <vann:example>
         :my-web-site a fabio:WebSite ;
             dcterms:title 'Semantic Web Italian Portal'@en ;
             frbr:embodimentOf :my-web-content ;
             dcterms:description 'A collection of related web pages, images, videos or other digital assets that are addressed with a common domain name or IP address.'@en .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
-    <rdfs:comment xml:lang="en">A collection of related web pages containing text, images, videos and/or other digital assets that are addressed relative to a common Uniform Resource Locator (URL). A web site is hosted on at least one web server, accessible via a network such as the Internet or a private local area network.</rdfs:comment>
+    <rdfs:label xml:lang="en">web site</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/UncontrolledVocabulary">
+    <rdfs:label xml:lang="en">uncontrolled vocabulary</rdfs:label>
+    <rdfs:comment xml:lang="en">A non-defined collection of words and phrases relating to a particular domain of knowledge, usually added freely by a community, in which homonyms, synonyms and similar ambiguities of meaning present in natural language are not formally disambiguated.</rdfs:comment>
+    <vann:example>
+        :my-uncontrolled-vocabulary a fabio:UncontrolledVocabulary ;
+            dcterms:title 'User folksonomy'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:description 'A collection of terms that are not part of a controlled vocabulary, such as a set of keywords chosen by a service's user community.'@en .
+    </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Vocabulary"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+</rdf:RDF>

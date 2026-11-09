@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Oration">
+    <rdfs:comment xml:lang="en">A formal speech, for example one delivered at a ceremonial occasion, or the written transcript of such a speech.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vann:example>
+        :my-oration a fabio:Oration ;
+            dcterms:title 'Oration for Open Day 2026'@en ;
+            dcterms:description 'A formal speech, especially one given on a ceremonial occasion.'@en .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">oration</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+</rdf:RDF>

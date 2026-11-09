@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ApplicationProfile a owl:Class ;
+    rdfs:label "application profile"@en ;
+    vann:example """
+        :my-application-profile a fabio:ApplicationProfile ;
+            dcterms:title 'The Cultural Heritage Acquisition and Digitisation Application Profile (CHAD-AP)' ;
+            dcterms:description 'CHAD-AP is a CIDOC CRM application profile implemented as an OWL ontology for describing the acquisition and digitisation processes of cultural heritage objects.'@en .    
+    """ ;
+    rdfs:comment "A set of metadata elements, policies and guidelines defined for a particular application."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Metadata ;
+    vs:term_status reg:statusStable ;
+    skos:note "The metadata elements used in the application profile may be drawn from more than one element sets, including locally defined sets."@en .
+

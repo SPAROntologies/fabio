@@ -1,0 +1,19 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:Tweet a owl:Class ;
+    rdfs:label "tweet"@en ;
+    vann:example """
+        :my-tweet a fabio:Tweet ;
+            dcterms:title 'Post about AI'@en ;
+            dcterms:description 'A short social media post made on the X microblogging service.'@en .
+    """ ;
+    rdfs:comment "A posting made on the social networking site X (formerly known as Twitter). A tweet is a text message limited to 140 characters in length, that is broadcast and readable by anyone who accesses X."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Micropost ;
+    vs:term_status reg:statusStable .
+

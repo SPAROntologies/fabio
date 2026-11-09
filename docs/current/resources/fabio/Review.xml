@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Review">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-review a fabio:Review ;
             dcterms:title 'Review of the book 'Intelligent Agents 101''@en ;
             dcterms:creator :john-doe ;
             dcterms:description 'A critical evaluation of a work, typically published in a journal or newspaper.'@en .
     </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A review of others' work.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:label xml:lang="en">review</rdfs:label>
-    <rdfs:comment xml:lang="en">A review of others' work.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
   </rdf:Description>
 </rdf:RDF>

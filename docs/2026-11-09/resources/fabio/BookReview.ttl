@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:BookReview a owl:Class ;
+    rdfs:label "book review"@en ;
+    vann:example """
+        :my-book-review a fabio:BookReview ;
+            dcterms:title 'A Critical Analysis of Darwin's Evolutionary Theory'@en ;
+            dcterms:creator :john-doe ;
+            dcterms:subject :origin-of-species ;
+            dcterms:description 'A detailed scholarly review and critical analysis of the arguments presented in 'On the Origin of Species'.'@en .
+    """ ;
+    rdfs:comment "A written review and critical analysis of the content, scope and quality of a book or other monographic work."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:Review ;
+    vs:term_status reg:statusStable .
+

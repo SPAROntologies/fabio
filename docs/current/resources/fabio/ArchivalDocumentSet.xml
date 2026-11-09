@@ -6,14 +6,19 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b64">
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb65">
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/ArchivalDocumentSet">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:comment xml:lang="en">A collection of archival documents.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb64"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb65"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ExpressionCollection"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">archival document set</rdfs:label>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
         :my-archival-document-set a fabio:ArchivalDocumentSet ;
@@ -22,15 +27,10 @@
             frbr:realizationOf :my-archival-record-set ;
             dcterms:description 'A collection of various archival documents.'@en .
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b65"/>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b64"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/ExpressionCollection"/>
-    <rdfs:label xml:lang="en">archival document set</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b65">
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb64">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/ArchivalDocument"/>
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
   </rdf:Description>
 </rdf:RDF>

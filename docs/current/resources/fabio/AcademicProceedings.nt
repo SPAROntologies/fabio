@@ -1,11 +1,11 @@
-<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#label> "academic proceedings"@en .
-<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b88 .
-<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb88 .
 <http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ExpressionCollection> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ProceedingsPaper> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b88 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected papers, or their abstracts, presented at an academic meeting."@en .
+<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb88 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
 <http://purl.org/spar/fabio/AcademicProceedings> <http://purl.org/vocab/vann/example> "\n        :my-academic-proceedings a fabio:AcademicProceedings ;\n            dcterms:title 'Patent Infringement Proceedings'@en ;\n            frbr:part :my-proceedings-paper .\n    " .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/ProceedingsPaper> .
+<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#label> "academic proceedings"@en .
+<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing the programme and collected papers, or their abstracts, presented at an academic meeting."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/AcademicProceedings> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

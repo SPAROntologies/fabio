@@ -1,0 +1,28 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:ArchivalDocumentSet a owl:Class ;
+    rdfs:label "archival document set"@en ;
+    vann:example """
+        :my-archival-document-set a fabio:ArchivalDocumentSet ;
+            dcterms:title 'Collection of documents related to Alan Turing's correspondence'@en ;
+            frbr:part :my-archival-document, :my-another-archival-document ;
+            frbr:realizationOf :my-archival-record-set ;
+            dcterms:description 'A collection of various archival documents.'@en .
+    """ ;
+    rdfs:comment "A collection of archival documents."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty frbr:part ;
+            owl:someValuesFrom fabio:ArchivalDocument ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fabio:ArchivalDocument ;
+            owl:onProperty frbr:part ],
+        fabio:ExpressionCollection ;
+    vs:term_status reg:statusStable .
+

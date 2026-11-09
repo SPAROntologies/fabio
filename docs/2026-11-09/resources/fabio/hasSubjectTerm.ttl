@@ -1,0 +1,26 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:hasSubjectTerm a owl:ObjectProperty ;
+    rdfs:label "has subject term"@en ;
+    vann:example """
+        :my-research-paper a fabio:ResearchPaper ;
+            fabio:hasSubjectTerm
+                :air-and-space-law ,
+                :computational-linguistics ,
+                :philosophy-of-law ,
+                :legal-aspects-of-computing ,
+                :artificial-intelligence-incl-robotics .
+    """ ;
+    rdfs:comment "A term in a particular classification system, related to an endeavour."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:range fabio:SubjectTerm ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    vs:term_status reg:statusStable .
+

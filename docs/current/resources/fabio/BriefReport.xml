@@ -7,10 +7,10 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/BriefReport">
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:subClassOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b93"/>
     <rdfs:comment xml:lang="en">A brief report document. This term may also be used synonymously with Rapid Communication to mean 'A short rapidly published research article or conference paper, typically reporting significant research results that have been recently discovered, or a brief news item reporting such discoveries.'</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb93"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdfs:label xml:lang="en">brief report</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-brief-report a fabio:BriefReport ;
@@ -19,19 +19,19 @@
             dcterms:description 'A short report providing early data and rapid updates on ongoing clinical observations.'@en ;
             dcterms:subject &lt;http://purl.uniprot.org/keywords/949&gt; .
     </vann:example>
-    <rdfs:label xml:lang="en">brief report</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b95">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://purl.org/spar/fabio/ReportDocument"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b93">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b94"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b94">
-    <rdf:rest rdf:nodeID="nbd59893e8a4144f9864e0ea78c01ebc3b95"/>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb94">
+    <rdf:rest rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb95"/>
     <rdf:first rdf:resource="http://purl.org/spar/fabio/RapidCommunication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb93">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb94"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na015ac9d06cd4cb1a3cee73cd225cdebb95">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/ReportDocument"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
 </rdf:RDF>

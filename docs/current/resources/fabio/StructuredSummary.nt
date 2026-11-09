@@ -1,13 +1,13 @@
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2004/02/skos/core#note> "\nSuch a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF. \nIt differs from the abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.\n                                               "@en .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b98 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MinimalInformationStandard> .
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#label> "structured summary"@en .
-<http://purl.org/spar/fabio/StructuredSummary> <http://purl.org/vocab/vann/example> "\n        :my-structured-summary a fabio:StructuredSummary ;\n            dcterms:title 'Structured summary of Project X'@en ;\n            frbr:realizationOf :my-minimal-information-standard ;\n            dcterms:description 'A summary of a document that is structured into formal sections, such as Background, Methods, Results, and Conclusions.'@en .\n    " .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na015ac9d06cd4cb1a3cee73cd225cdebb98 .
 <http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/SpecificationDocument> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b98 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbd59893e8a4144f9864e0ea78c01ebc3b98 .
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/spar/fabio/Abstract> .
-_:nbd59893e8a4144f9864e0ea78c01ebc3b98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard."@en .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb98 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/spar/fabio/Abstract> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb98 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/MinimalInformationStandard> .
+_:na015ac9d06cd4cb1a3cee73cd225cdebb98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/StructuredSummary> <http://purl.org/vocab/vann/example> "\n        :my-structured-summary a fabio:StructuredSummary ;\n            dcterms:title 'Structured summary of Project X'@en ;\n            frbr:realizationOf :my-minimal-information-standard ;\n            dcterms:description 'A summary of a document that is structured into formal sections, such as Background, Methods, Results, and Conclusions.'@en .\n    " .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2004/02/skos/core#note> "\nSuch a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF. \nIt differs from the abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.\n                                               "@en .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2000/01/rdf-schema#label> "structured summary"@en .
+<http://purl.org/spar/fabio/StructuredSummary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

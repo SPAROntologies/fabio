@@ -1,0 +1,7 @@
+<http://purl.org/spar/fabio/DataRepository> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fabio/DataRepository> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/DataRepository> <http://purl.org/vocab/vann/example> "\n        :my-data-repository a fabio:DataRepository ;\n            dcterms:title 'Zenodo'@en ;\n            dcterms:description 'A multi-disciplinary shared research data repository, helping researchers receive credit for making their research results available.'@en .\n    " .
+<http://purl.org/spar/fabio/DataRepository> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Repository> .
+<http://purl.org/spar/fabio/DataRepository> <http://www.w3.org/2000/01/rdf-schema#comment> "A repository for storing data."@en .
+<http://purl.org/spar/fabio/DataRepository> <http://www.w3.org/2000/01/rdf-schema#label> "data repository"@en .
+<http://purl.org/spar/fabio/DataRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

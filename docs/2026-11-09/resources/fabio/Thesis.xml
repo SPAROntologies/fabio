@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Thesis">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:note xml:lang="en">For the alternative meaning of the word 'thesis', namely the formulation of a concept, hypothesis, idea, point of view or theory presented for review and/or discussion, use fabio:Proposition.</skos:note>
+    <rdfs:label xml:lang="en">thesis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Book"/>
+    <vann:example>
+        :my-thesis a fabio:Thesis ;
+            dcterms:title 'Developing intelligent LLM-based agents'@en ;
+            dcterms:description 'A document presenting the author's research and findings, submitted in support of candidature for a degree or professional qualification.'@en .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A book authored by a student containing a formal presentations of research outputs submitted for examination in completion of a course of study at an institution of higher education, to fulfil the requirements for an academic degree. Also know as a dissertation.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

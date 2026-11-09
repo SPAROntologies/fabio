@@ -1,0 +1,20 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+dcterms:rights a owl:ObjectProperty ;
+    rdfs:label "has rights"@en ;
+    vann:example """
+        :my-dataset a fabio:Dataset ;
+            dcterms:rights <https://creativecommons.org/publicdomain/zero/1.0/> .
+    """ ;
+    rdfs:comment "Information about rights held in and over the resource."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    vs:term_status reg:statusStable ;
+    skos:note "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en .
+

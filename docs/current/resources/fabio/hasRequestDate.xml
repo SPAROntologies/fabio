@@ -6,15 +6,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/hasRequestDate">
-    <rdfs:comment xml:lang="en">The date on which an agent is requested to do something, for example a reviewer is requested to write a review of a paper submitted to a journal for publication, or an author is requested to supply a revised version of the paper in response to the reviews received.</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <vann:example>
         :my-journal-article a fabio:JournalArticle ;
             fabio:hasRequestDate '2026-05-15'^^xsd:date .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The date on which an agent is requested to do something, for example a reviewer is requested to write a review of a paper submitted to a journal for publication, or an author is requested to supply a revised version of the paper in response to the reviews received.</rdfs:comment>
     <rdfs:label xml:lang="en">has request date</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
   </rdf:Description>
 </rdf:RDF>

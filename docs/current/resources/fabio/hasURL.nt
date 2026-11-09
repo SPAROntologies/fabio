@@ -1,9 +1,9 @@
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web."@en .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
 <http://purl.org/spar/fabio/hasURL> <http://purl.org/vocab/vann/example> "\n        :my-journal-article a fabio:JournalArticle ;\n            fabio:hasURL 'https://www.example.org/articles/intro-semantic-web'^^xsd:anyURI .\n    " .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
 <http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#label> "has URL"@en .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .

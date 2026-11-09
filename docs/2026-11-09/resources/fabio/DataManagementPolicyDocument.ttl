@@ -1,0 +1,20 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:DataManagementPolicyDocument a owl:Class ;
+    rdfs:label "data management policy document"@en ;
+    vann:example """
+        :my-data-management-policy-document a fabio:DataManagementPolicyDocument ;
+            dcterms:title 'Official Research Data Policy Document'@en ;
+            frbr:realizationOf :my-data-management-policy ;
+            dcterms:description 'A physical or digital document that contains the text of a data management policy.'@en .
+    """ ;
+    rdfs:comment "A document embodying a policy that describes and defines how data should be managed, preserved and shared."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:PolicyDocument ;
+    vs:term_status reg:statusStable .
+

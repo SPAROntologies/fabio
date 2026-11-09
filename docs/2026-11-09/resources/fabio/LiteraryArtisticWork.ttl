@@ -1,0 +1,21 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fabio:LiteraryArtisticWork a owl:Class ;
+    rdfs:label "literary artistic work"@en ;
+    vann:example """
+        :my-literary-artistic-work a fabio:LiteraryArtisticWork ;
+            dcterms:title 'The Great Gatsby'@en ;
+            dcterms:creator :john-doe ;
+            frbr:realization :my-book ;
+            dcterms:description 'A work of a literary or artistic nature, including books, poems, plays, musical compositions, and paintings.'@en .
+    """ ;
+    rdfs:comment "A literary creative work, such as a novel, play, poem or song."@en ;
+    rdfs:isDefinedBy fabio: ;
+    rdfs:subClassOf fabio:ArtisticWork ;
+    vs:term_status reg:statusStable .
+
